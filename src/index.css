@@ -181,7 +181,7 @@
   }
 
   .destination-card {
-    @apply relative overflow-hidden rounded-xl cursor-pointer group;
+    @apply relative overflow-hidden rounded-xl cursor-pointer;
   }
 
   .destination-card img {
