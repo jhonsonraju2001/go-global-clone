@@ -14,7 +14,199 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      bookings: {
+        Row: {
+          created_at: string
+          destination: string
+          id: string
+          inquiry_id: string | null
+          notes: string | null
+          package_name: string
+          payment_status: string | null
+          status: string | null
+          total_amount: number | null
+          travel_date: string | null
+          travelers: number | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          destination: string
+          id?: string
+          inquiry_id?: string | null
+          notes?: string | null
+          package_name: string
+          payment_status?: string | null
+          status?: string | null
+          total_amount?: number | null
+          travel_date?: string | null
+          travelers?: number | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          destination?: string
+          id?: string
+          inquiry_id?: string | null
+          notes?: string | null
+          package_name?: string
+          payment_status?: string | null
+          status?: string | null
+          total_amount?: number | null
+          travel_date?: string | null
+          travelers?: number | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "bookings_inquiry_id_fkey"
+            columns: ["inquiry_id"]
+            isOneToOne: false
+            referencedRelation: "inquiries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      destinations: {
+        Row: {
+          created_at: string
+          description: string | null
+          hero_image: string | null
+          id: string
+          is_active: boolean | null
+          name: string
+          region: string | null
+          slug: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          hero_image?: string | null
+          id?: string
+          is_active?: boolean | null
+          name: string
+          region?: string | null
+          slug: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          hero_image?: string | null
+          id?: string
+          is_active?: boolean | null
+          name?: string
+          region?: string | null
+          slug?: string
+        }
+        Relationships: []
+      }
+      inquiries: {
+        Row: {
+          created_at: string
+          destination: string | null
+          email: string
+          id: string
+          message: string | null
+          name: string
+          package_name: string | null
+          phone: string | null
+          status: string | null
+          travelers: number | null
+        }
+        Insert: {
+          created_at?: string
+          destination?: string | null
+          email: string
+          id?: string
+          message?: string | null
+          name: string
+          package_name?: string | null
+          phone?: string | null
+          status?: string | null
+          travelers?: number | null
+        }
+        Update: {
+          created_at?: string
+          destination?: string | null
+          email?: string
+          id?: string
+          message?: string | null
+          name?: string
+          package_name?: string | null
+          phone?: string | null
+          status?: string | null
+          travelers?: number | null
+        }
+        Relationships: []
+      }
+      packages: {
+        Row: {
+          created_at: string
+          current_price: number | null
+          description: string | null
+          destination_id: string | null
+          discount: number | null
+          duration: string | null
+          exclusions: string[] | null
+          highlights: string[] | null
+          id: string
+          image: string | null
+          inclusions: string[] | null
+          is_active: boolean | null
+          itinerary: Json | null
+          name: string
+          original_price: number | null
+          slug: string
+        }
+        Insert: {
+          created_at?: string
+          current_price?: number | null
+          description?: string | null
+          destination_id?: string | null
+          discount?: number | null
+          duration?: string | null
+          exclusions?: string[] | null
+          highlights?: string[] | null
+          id?: string
+          image?: string | null
+          inclusions?: string[] | null
+          is_active?: boolean | null
+          itinerary?: Json | null
+          name: string
+          original_price?: number | null
+          slug: string
+        }
+        Update: {
+          created_at?: string
+          current_price?: number | null
+          description?: string | null
+          destination_id?: string | null
+          discount?: number | null
+          duration?: string | null
+          exclusions?: string[] | null
+          highlights?: string[] | null
+          id?: string
+          image?: string | null
+          inclusions?: string[] | null
+          is_active?: boolean | null
+          itinerary?: Json | null
+          name?: string
+          original_price?: number | null
+          slug?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "packages_destination_id_fkey"
+            columns: ["destination_id"]
+            isOneToOne: false
+            referencedRelation: "destinations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
