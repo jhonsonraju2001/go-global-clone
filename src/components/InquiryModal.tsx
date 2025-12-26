@@ -5,14 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 interface InquiryModalProps {
   isOpen: boolean;
   onClose: () => void;
   packageName?: string;
+  destination?: string;
 }
 
-const InquiryModal = ({ isOpen, onClose, packageName }: InquiryModalProps) => {
+const InquiryModal = ({ isOpen, onClose, packageName, destination }: InquiryModalProps) => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -27,17 +29,36 @@ const InquiryModal = ({ isOpen, onClose, packageName }: InquiryModalProps) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const { error } = await supabase.from("inquiries").insert({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        travelers: parseInt(formData.travelers) || 1,
+        message: formData.message,
+        package_name: packageName || null,
+        destination: destination || null,
+      });
 
-    toast({
-      title: "Inquiry Submitted!",
-      description: "We'll get back to you within 24 hours.",
-    });
+      if (error) throw error;
 
-    setFormData({ name: "", email: "", phone: "", travelers: "", message: "" });
-    setIsSubmitting(false);
-    onClose();
+      toast({
+        title: "Inquiry Submitted!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      setFormData({ name: "", email: "", phone: "", travelers: "", message: "" });
+      onClose();
+    } catch (error) {
+      console.error("Error submitting inquiry:", error);
+      toast({
+        title: "Error",
+        description: "Failed to submit inquiry. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -82,9 +103,10 @@ const InquiryModal = ({ isOpen, onClose, packageName }: InquiryModalProps) => {
 
             {/* Form */}
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
-              {packageName && (
+              {(packageName || destination) && (
                 <p className="text-center text-muted-foreground text-sm mb-4">
-                  Inquiry for: <span className="font-medium text-foreground">{packageName}</span>
+                  {packageName && <>Inquiry for: <span className="font-medium text-foreground">{packageName}</span></>}
+                  {destination && !packageName && <>Destination: <span className="font-medium text-foreground">{destination}</span></>}
                 </p>
               )}
 

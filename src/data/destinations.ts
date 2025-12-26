@@ -122,11 +122,11 @@ export const indiaDestinations: Destination[] = [
     link: "/destinations/goa"
   },
   {
-    id: "meghalaya",
-    name: "Meghalaya",
-    description: "Living root bridges & waterfalls",
-    image: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=800",
-    link: "/destinations/meghalaya"
+    id: "hyderabad",
+    name: "Hyderabad",
+    description: "City of Pearls & Biryani",
+    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800",
+    link: "/destinations/hyderabad"
   },
   {
     id: "andaman",
