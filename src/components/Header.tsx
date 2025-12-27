@@ -9,7 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import alisonLogo from "@/assets/alison-logo.png";
+import alisonLogo from "@/assets/alison-logo-white.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,9 +36,9 @@ const Header = () => {
       <div className="bg-foreground text-background py-2 text-sm">
         <div className="container-custom flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-6">
-            <a href="tel:+919032000233" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:+919550504544" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">+91 903 200 0233</span>
+              <span className="hidden sm:inline">+91 955 050 4544</span>
             </a>
             <a href="mailto:info@alisonholidays.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="w-4 h-4" />
@@ -52,7 +52,7 @@ const Header = () => {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Instagram
             </a>
-            <a href="https://wa.me/919032000233" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <a href="https://wa.me/919550504544" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Whatsapp
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">

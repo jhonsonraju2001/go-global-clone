@@ -380,7 +380,7 @@ const ServicePage = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="secondary" className="gap-2">
                 <Phone className="w-4 h-4" />
-                +91 903 200 0233
+                +91 955 050 4544
               </Button>
               <Button size="lg" variant="outline" className="gap-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 <Mail className="w-4 h-4" />
