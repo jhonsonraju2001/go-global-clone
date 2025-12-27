@@ -5,33 +5,36 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
 const ContactSection = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise(resolve => setTimeout(resolve, 1500));
     toast({
       title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
+      description: "We'll get back to you within 24 hours."
     });
     setIsSubmitting(false);
   };
-
-  return (
-    <section className="py-16 md:py-20 bg-background">
+  return <section className="py-16 md:py-20 bg-background">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left - Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: -30
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6
+        }}>
             <span className="text-primary font-medium mb-2 block">Get In Touch</span>
             <h2 className="section-title mb-6">Let's Plan Your Dream Vacation</h2>
             <p className="text-muted-foreground mb-8">
@@ -57,9 +60,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Call Us</h4>
-                  <a href="tel:+919032000233" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                    +91 903 200 0233
-                  </a>
+                  <a href="tel:+919032000233" className="text-muted-foreground text-sm hover:text-primary transition-colors">+91 95505 04544</a>
                 </div>
               </div>
 
@@ -78,12 +79,17 @@ const ContactSection = () => {
           </motion.div>
 
           {/* Right - Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: 30
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6
+        }}>
             <form onSubmit={handleSubmit} className="bg-card p-8 rounded-2xl shadow-lg border border-border">
               <h3 className="text-xl font-semibold mb-6">Send Us a Message</h3>
               
@@ -97,32 +103,18 @@ const ContactSection = () => {
                 <Input placeholder="Destination" className="h-12" />
               </div>
 
-              <Textarea 
-                placeholder="Tell us about your dream trip..." 
-                rows={4} 
-                className="mb-6"
-              />
+              <Textarea placeholder="Tell us about your dream trip..." rows={4} className="mb-6" />
 
-              <Button 
-                type="submit" 
-                className="w-full h-12 bg-primary hover:bg-primary/90"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  "Sending..."
-                ) : (
-                  <>
+              <Button type="submit" className="w-full h-12 bg-primary hover:bg-primary/90" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : <>
                     <Send className="w-5 h-5 mr-2" />
                     Send Message
-                  </>
-                )}
+                  </>}
               </Button>
             </form>
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
