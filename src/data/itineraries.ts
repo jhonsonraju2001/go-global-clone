@@ -462,10 +462,262 @@ export const hyderabadData: DestinationData = {
   ]
 };
 
+// Additional destinations with basic data
+export const ladakhData: DestinationData = {
+  id: "ladakh",
+  name: "Ladakh",
+  tagline: "Land of High Passes",
+  description: "Experience the breathtaking landscapes of Ladakh - from the pristine Pangong Lake to the rugged Nubra Valley. Discover ancient monasteries, high mountain passes, and the unique Ladakhi culture.",
+  heroImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800"
+  ],
+  packages: [
+    {
+      id: "ladakh-adventure",
+      name: "Ladakh Adventure",
+      duration: "7D/6N",
+      originalPrice: 45000,
+      currentPrice: 38250,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+      description: "Ultimate Ladakh adventure covering Leh, Nubra Valley, and Pangong Lake.",
+      highlights: ["Pangong Lake", "Nubra Valley", "Khardung La", "Monasteries"],
+      inclusions: ["6 Nights Accommodation", "All Meals", "Permits", "Sightseeing"],
+      exclusions: ["Airfare", "Personal Expenses"],
+      itinerary: [
+        { day: 1, title: "Arrival in Leh", description: "Arrive at Leh Airport. Rest and acclimatize.", highlights: ["Airport Pickup", "Acclimatization", "Light Walk"] },
+        { day: 2, title: "Leh Local Sightseeing", description: "Visit Shanti Stupa, Leh Palace, and local markets.", highlights: ["Shanti Stupa", "Leh Palace", "Local Market"] },
+        { day: 3, title: "Leh to Nubra Valley", description: "Drive to Nubra via Khardung La pass.", highlights: ["Khardung La", "Diskit Monastery", "Sand Dunes"] },
+        { day: 4, title: "Nubra to Pangong", description: "Drive to Pangong Lake via Shyok route.", highlights: ["Scenic Drive", "Pangong Lake", "Sunset at Lake"] },
+        { day: 5, title: "Pangong to Leh", description: "Return to Leh via Chang La pass.", highlights: ["Chang La", "Hemis Monastery", "Thiksey"] },
+        { day: 6, title: "Sham Valley Tour", description: "Visit Magnetic Hill, Sangam, and Alchi Monastery.", highlights: ["Magnetic Hill", "Sangam Point", "Alchi"] },
+        { day: 7, title: "Departure", description: "Transfer to Leh Airport.", highlights: ["Departure"] }
+      ]
+    }
+  ]
+};
+
+export const himachalData: DestinationData = {
+  id: "himachal-pradesh",
+  name: "Himachal Pradesh",
+  tagline: "Dev Bhoomi - Land of Gods",
+  description: "Explore the majestic hills of Himachal Pradesh - from the colonial charm of Shimla to the adventure hub Manali, spiritual Dharamshala to serene Dalhousie.",
+  heroImage: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
+    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800"
+  ],
+  packages: [
+    {
+      id: "himachal-highlights",
+      name: "Himachal Highlights",
+      duration: "6D/5N",
+      originalPrice: 28000,
+      currentPrice: 23800,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
+      description: "Best of Himachal covering Shimla, Kullu, and Manali.",
+      highlights: ["Mall Road Shimla", "Rohtang Pass", "Solang Valley", "Hadimba Temple"],
+      inclusions: ["5 Nights Accommodation", "Breakfast", "Transfers", "Sightseeing"],
+      exclusions: ["Airfare", "Lunch & Dinner", "Activities"],
+      itinerary: [
+        { day: 1, title: "Arrival in Shimla", description: "Arrive at Chandigarh, drive to Shimla.", highlights: ["Mall Road", "Ridge", "Evening Walk"] },
+        { day: 2, title: "Shimla Sightseeing", description: "Visit Kufri, Green Valley, and Christ Church.", highlights: ["Kufri", "Green Valley", "Christ Church"] },
+        { day: 3, title: "Shimla to Manali", description: "Scenic drive to Manali via Kullu Valley.", highlights: ["Kullu Valley", "Naggar Castle", "Vaishno Devi Temple"] },
+        { day: 4, title: "Manali Local", description: "Visit Hadimba Temple, Vashisht, and Mall Road.", highlights: ["Hadimba Temple", "Vashisht", "Old Manali"] },
+        { day: 5, title: "Solang Valley", description: "Excursion to Solang Valley for adventure activities.", highlights: ["Solang Valley", "Paragliding", "Snow Activities"] },
+        { day: 6, title: "Departure", description: "Drive back to Chandigarh for departure.", highlights: ["Departure"] }
+      ]
+    }
+  ]
+};
+
+export const goaData: DestinationData = {
+  id: "goa",
+  name: "Goa",
+  tagline: "Sun, Sand & Celebrations",
+  description: "Experience the vibrant culture of Goa - pristine beaches, Portuguese heritage, thrilling water sports, and legendary nightlife. The perfect beach destination.",
+  heroImage: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+  ],
+  packages: [
+    {
+      id: "goa-beach-holiday",
+      name: "Goa Beach Holiday",
+      duration: "4D/3N",
+      originalPrice: 18000,
+      currentPrice: 15300,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
+      description: "Perfect beach getaway covering North and South Goa beaches.",
+      highlights: ["Beach Hopping", "Water Sports", "Old Goa Churches", "Cruise"],
+      inclusions: ["3 Nights Beach Resort", "Breakfast", "North & South Goa Tour", "Cruise"],
+      exclusions: ["Airfare", "Lunch & Dinner", "Water Sports"],
+      itinerary: [
+        { day: 1, title: "Arrival in Goa", description: "Arrive at Goa Airport. Transfer to beach resort.", highlights: ["Beach Resort", "Beach Walk", "Sunset"] },
+        { day: 2, title: "North Goa Tour", description: "Visit Calangute, Baga, Aguada Fort, and Chapora.", highlights: ["Baga Beach", "Aguada Fort", "Chapora Fort"] },
+        { day: 3, title: "South Goa & Cruise", description: "Explore South Goa beaches. Evening cruise on Mandovi.", highlights: ["Colva Beach", "Old Goa Churches", "Mandovi Cruise"] },
+        { day: 4, title: "Departure", description: "Free morning. Transfer to airport.", highlights: ["Shopping", "Departure"] }
+      ]
+    }
+  ]
+};
+
+export const rajasthanData: DestinationData = {
+  id: "rajasthan",
+  name: "Rajasthan",
+  tagline: "Land of Kings",
+  description: "Discover the royal heritage of Rajasthan - magnificent forts, opulent palaces, colorful bazaars, and the golden desert. Experience the grandeur of Indian royalty.",
+  heroImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
+    "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800"
+  ],
+  packages: [
+    {
+      id: "rajasthan-royal",
+      name: "Royal Rajasthan",
+      duration: "7D/6N",
+      originalPrice: 42000,
+      currentPrice: 35700,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
+      description: "Royal tour covering Jaipur, Jodhpur, and Udaipur.",
+      highlights: ["Amber Fort", "Mehrangarh Fort", "City Palace Udaipur", "Desert Safari"],
+      inclusions: ["6 Nights Heritage Hotels", "Breakfast", "All Transfers", "Sightseeing"],
+      exclusions: ["Airfare", "Lunch & Dinner", "Entry Fees"],
+      itinerary: [
+        { day: 1, title: "Arrival in Jaipur", description: "Arrive at Jaipur. Evening Chokhi Dhani visit.", highlights: ["Airport Pickup", "Chokhi Dhani", "Rajasthani Dinner"] },
+        { day: 2, title: "Jaipur Sightseeing", description: "Visit Amber Fort, Hawa Mahal, and City Palace.", highlights: ["Amber Fort", "Hawa Mahal", "City Palace"] },
+        { day: 3, title: "Jaipur to Jodhpur", description: "Drive to Jodhpur. Visit Mehrangarh Fort.", highlights: ["Mehrangarh Fort", "Jaswant Thada", "Blue City Walk"] },
+        { day: 4, title: "Jodhpur to Jaisalmer", description: "Drive to Jaisalmer. Desert camp experience.", highlights: ["Desert Safari", "Sunset Dunes", "Desert Camp"] },
+        { day: 5, title: "Jaisalmer to Udaipur", description: "Visit Jaisalmer Fort. Drive to Udaipur.", highlights: ["Jaisalmer Fort", "Patwon Haveli", "Scenic Drive"] },
+        { day: 6, title: "Udaipur Sightseeing", description: "Visit City Palace and Lake Pichola boat ride.", highlights: ["City Palace", "Lake Pichola", "Jagdish Temple"] },
+        { day: 7, title: "Departure", description: "Transfer to Udaipur Airport.", highlights: ["Departure"] }
+      ]
+    }
+  ]
+};
+
+export const singaporeData: DestinationData = {
+  id: "singapore",
+  name: "Singapore",
+  tagline: "The Lion City",
+  description: "Experience the perfect blend of cultures in Singapore - futuristic gardens, world-class attractions, amazing food, and endless shopping. A city that never disappoints.",
+  heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
+    "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800"
+  ],
+  packages: [
+    {
+      id: "singapore-delight",
+      name: "Singapore Delight",
+      duration: "5D/4N",
+      originalPrice: 65000,
+      currentPrice: 55250,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
+      description: "Complete Singapore experience with Universal Studios and Sentosa.",
+      highlights: ["Marina Bay Sands", "Universal Studios", "Sentosa Island", "Gardens by the Bay"],
+      inclusions: ["4 Nights Hotel", "Breakfast", "Airport Transfers", "City Tour", "USS Tickets"],
+      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
+      itinerary: [
+        { day: 1, title: "Arrival Singapore", description: "Arrive Changi Airport. Night Safari experience.", highlights: ["Airport Transfer", "Night Safari", "Hotel Check-in"] },
+        { day: 2, title: "City Tour", description: "Half day city tour. Evening Marina Bay Sands.", highlights: ["Merlion Park", "Chinatown", "Marina Bay Sands"] },
+        { day: 3, title: "Sentosa Island", description: "Full day Sentosa with Universal Studios.", highlights: ["Universal Studios", "Cable Car", "Wings of Time"] },
+        { day: 4, title: "Gardens & Shopping", description: "Gardens by the Bay and Orchard Road shopping.", highlights: ["Gardens by the Bay", "Cloud Forest", "Shopping"] },
+        { day: 5, title: "Departure", description: "Free time. Transfer to airport.", highlights: ["Last Minute Shopping", "Departure"] }
+      ]
+    }
+  ]
+};
+
+export const thailandData: DestinationData = {
+  id: "thailand",
+  name: "Thailand",
+  tagline: "Land of Smiles",
+  description: "Discover the magic of Thailand - from Bangkok's temples and nightlife to Pattaya's beaches and Phuket's islands. Experience Thai hospitality at its best.",
+  heroImage: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800",
+    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800"
+  ],
+  packages: [
+    {
+      id: "thailand-tour",
+      name: "Amazing Thailand",
+      duration: "6D/5N",
+      originalPrice: 55000,
+      currentPrice: 46750,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800",
+      description: "Complete Thailand tour covering Bangkok and Pattaya.",
+      highlights: ["Grand Palace", "Coral Island", "Safari World", "Alcazar Show"],
+      inclusions: ["5 Nights Hotel", "Breakfast", "Transfers", "Island Tour", "City Tour"],
+      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
+      itinerary: [
+        { day: 1, title: "Arrival Bangkok", description: "Arrive Bangkok. Transfer to Pattaya.", highlights: ["Airport Pickup", "Pattaya Transfer", "Walking Street"] },
+        { day: 2, title: "Coral Island", description: "Full day Coral Island tour with water sports.", highlights: ["Coral Island", "Parasailing", "Banana Boat"] },
+        { day: 3, title: "Pattaya City", description: "Nong Nooch Garden and Alcazar Show.", highlights: ["Nong Nooch Garden", "Art in Paradise", "Alcazar Show"] },
+        { day: 4, title: "Pattaya to Bangkok", description: "Drive to Bangkok. Safari World visit.", highlights: ["Safari World", "Marine Park", "Hotel Check-in"] },
+        { day: 5, title: "Bangkok City", description: "Temple tour and shopping.", highlights: ["Grand Palace", "Wat Pho", "MBK Shopping"] },
+        { day: 6, title: "Departure", description: "Transfer to Bangkok Airport.", highlights: ["Departure"] }
+      ]
+    }
+  ]
+};
+
+export const baliData: DestinationData = {
+  id: "bali",
+  name: "Bali",
+  tagline: "Island of Gods",
+  description: "Experience the mystical beauty of Bali - ancient temples, rice terraces, volcanic mountains, and pristine beaches. The perfect tropical paradise.",
+  heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920",
+  bannerImages: [
+    "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
+    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800"
+  ],
+  packages: [
+    {
+      id: "bali-bliss",
+      name: "Bali Bliss",
+      duration: "6D/5N",
+      originalPrice: 72000,
+      currentPrice: 61200,
+      discount: 15,
+      image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
+      description: "Complete Bali experience with temples, beaches, and culture.",
+      highlights: ["Tanah Lot Temple", "Ubud Rice Terraces", "Kintamani", "Water Sports"],
+      inclusions: ["5 Nights Resort", "Breakfast", "Transfers", "Tours", "Water Sports"],
+      exclusions: ["Airfare", "Visa on Arrival", "Lunch & Dinner"],
+      itinerary: [
+        { day: 1, title: "Arrival Bali", description: "Arrive Ngurah Rai Airport. Transfer to hotel.", highlights: ["Airport Pickup", "Seminyak Beach", "Welcome Dinner"] },
+        { day: 2, title: "South Bali", description: "Uluwatu Temple and Kecak Dance at sunset.", highlights: ["Uluwatu Temple", "Padang Beach", "Kecak Dance"] },
+        { day: 3, title: "Ubud & Kintamani", description: "Rice terraces, Monkey Forest, and volcano views.", highlights: ["Tegallalang Rice Terraces", "Monkey Forest", "Kintamani"] },
+        { day: 4, title: "Water Sports", description: "Full day at Tanjung Benoa for water activities.", highlights: ["Jet Ski", "Parasailing", "Banana Boat"] },
+        { day: 5, title: "Tanah Lot", description: "Visit Tanah Lot Temple and spa session.", highlights: ["Tanah Lot Temple", "Balinese Spa", "Shopping"] },
+        { day: 6, title: "Departure", description: "Transfer to airport.", highlights: ["Departure"] }
+      ]
+    }
+  ]
+};
+
 export const allDestinations: Record<string, DestinationData> = {
   kashmir: kashmirData,
   kerala: keralaData,
   dubai: dubaiData,
   europe: europeData,
-  hyderabad: hyderabadData
+  hyderabad: hyderabadData,
+  ladakh: ladakhData,
+  "himachal-pradesh": himachalData,
+  goa: goaData,
+  rajasthan: rajasthanData,
+  singapore: singaporeData,
+  thailand: thailandData,
+  bali: baliData
 };

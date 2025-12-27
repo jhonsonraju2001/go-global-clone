@@ -9,6 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import alisonLogo from "@/assets/alison-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
 
   const indiaDestinations = [
     "Kashmir", "Ladakh", "Himachal Pradesh", "Kerala", "Rajasthan", 
-    "Goa", "Meghalaya", "Andaman", "Sikkim", "Uttarakhand"
+    "Goa", "Meghalaya", "Andaman", "Sikkim", "Uttarakhand", "Hyderabad"
   ];
 
   const globalDestinations = [
@@ -39,9 +40,9 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span className="hidden sm:inline">+91 903 200 0233</span>
             </a>
-            <a href="mailto:info@goglobalvacations.in" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="mailto:info@alisonholidays.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="w-4 h-4" />
-              <span className="hidden sm:inline">info@goglobalvacations.in</span>
+              <span className="hidden sm:inline">info@alisonholidays.com</span>
             </a>
           </div>
           <div className="flex items-center gap-4">
@@ -65,18 +66,11 @@ const Header = () => {
       <nav className="bg-background shadow-md py-3">
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold">
-                <span className="text-primary">GO</span>
-                <span className="text-accent"> GL</span>
-                <span className="text-primary">O</span>
-                <span className="text-foreground">BAL</span>
-              </span>
-            </div>
-            <div className="text-xs text-muted-foreground leading-tight hidden sm:block">
-              <div>VACATIONS</div>
-              <div className="text-[10px]">Your Favourite Holiday Maker</div>
+          <Link to="/" className="flex items-center gap-3">
+            <img src={alisonLogo} alt="Alison Holidays" className="h-12 w-auto" />
+            <div className="hidden sm:block">
+              <div className="text-xl font-bold text-primary">ALISON HOLIDAYS</div>
+              <div className="text-[10px] text-muted-foreground tracking-wider">TURNING DREAMS INTO DESTINATIONS</div>
             </div>
           </Link>
 

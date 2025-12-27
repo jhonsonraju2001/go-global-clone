@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Clock } from "lucide-react";
 import { motion } from "framer-motion";
+import alisonLogo from "@/assets/alison-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -14,7 +15,7 @@ const Footer = () => {
 
   const indiaDestinations = [
     "Kashmir", "Kerala", "Ladakh", "Goa", "Rajasthan", 
-    "Himachal Pradesh", "Meghalaya", "Andaman"
+    "Himachal Pradesh", "Hyderabad", "Andaman"
   ];
 
   const internationalDestinations = [
@@ -35,17 +36,12 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="mb-6">
-              <span className="text-3xl font-bold">
-                <span className="text-primary">GO</span>
-                <span className="text-accent"> GL</span>
-                <span className="text-primary">O</span>
-                <span className="text-background">BAL</span>
-              </span>
-              <p className="text-sm text-background/60 mt-1">VACATIONS</p>
-              <p className="text-xs text-background/50">Your Favourite Holiday Maker</p>
+              <img src={alisonLogo} alt="Alison Holidays" className="h-16 w-auto mb-2" />
+              <p className="text-lg font-bold text-primary">ALISON HOLIDAYS</p>
+              <p className="text-xs text-background/50 tracking-wider">TURNING DREAMS INTO DESTINATIONS</p>
             </div>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Go Global Vacations is the best tours & travel agency in Hyderabad, offering customized travel packages for domestic and international destinations with 99.9% visa success rate.
+              Alison Holidays is a premier tours & travel agency in Hyderabad, offering customized travel packages for domestic and international destinations with 99.9% visa success rate.
             </p>
             <div className="flex gap-4">
               <a
@@ -164,12 +160,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:info@goglobalvacations.in"
+              <a
+                  href="mailto:info@alisonholidays.com"
                   className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">info@goglobalvacations.in</span>
+                  <span className="text-sm">info@alisonholidays.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -187,7 +183,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
         <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/60">
-          <p>© 2024 Go Global Vacations. All rights reserved.</p>
+          <p>© 2024 Alison Holidays. All rights reserved.</p>
           <p>
             Best Tours & Travel Agency in Hyderabad | 
             <span className="text-primary ml-1">99.9% Visa Success Rate</span>
