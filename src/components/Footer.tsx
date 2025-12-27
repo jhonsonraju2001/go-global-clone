@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Clock } from "lucide-react";
 import { motion } from "framer-motion";
-import alisonLogo from "@/assets/alison-logo.png";
+import alisonLogo from "@/assets/alison-logo-white.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -152,11 +152,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+919032000233"
+                  href="tel:+919550504544"
                   className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
                 >
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">+91 903 200 0233</span>
+                  <span className="text-sm">+91 955 050 4544</span>
                 </a>
               </li>
               <li>
