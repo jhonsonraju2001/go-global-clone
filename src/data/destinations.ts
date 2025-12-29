@@ -306,27 +306,34 @@ export const internationalPackages: Package[] = [
 export const heroSlides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920",
-    title: "Experience Australia",
-    subtitle: "Breathtaking Beauty",
-    description: "FROM THE OUTBACK TO THE COAST"
+    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1920",
+    title: "Discover Hyderabad",
+    subtitle: "City of Pearls",
+    description: "HERITAGE, BIRYANI & BEYOND"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920",
-    title: "Discover Kerala",
-    subtitle: "God's Own Country",
-    description: "BACKWATERS, BEACHES & BEYOND"
-  },
-  {
-    id: 3,
     image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=1920",
     title: "Explore Kashmir",
     subtitle: "Paradise on Earth",
     description: "VALLEYS, LAKES & MOUNTAINS"
   },
   {
+    id: 3,
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920",
+    title: "Discover Kerala",
+    subtitle: "God's Own Country",
+    description: "BACKWATERS, BEACHES & BEYOND"
+  },
+  {
     id: 4,
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920",
+    title: "Experience Dubai",
+    subtitle: "City of Dreams",
+    description: "LUXURY, ADVENTURE & MODERN MARVELS"
+  },
+  {
+    id: 5,
     image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1920",
     title: "Tour Europe",
     subtitle: "Old World Charm",

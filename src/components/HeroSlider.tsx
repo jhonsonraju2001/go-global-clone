@@ -24,15 +24,18 @@ const HeroSlider = () => {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
-          initial={{ opacity: 0, scale: 1.1 }}
+          initial={{ opacity: 0, scale: 1.2 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 0.7 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <div
+          <motion.div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${heroSlides[currentSlide].image})` }}
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.1 }}
+            transition={{ duration: 6, ease: "linear" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
         </motion.div>
