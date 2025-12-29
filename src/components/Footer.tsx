@@ -49,13 +49,13 @@ const Footer = () => {
               Alison Holidays is a premier tours & travel agency in Hyderabad, offering customized travel packages for domestic and international destinations with 99.9% visa success rate.
             </p>
             <div className="flex gap-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.facebook.com/alisonholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.instagram.com/alisonholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.youtube.com/@alisonholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -139,12 +139,12 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-background/70 text-sm">+91 95505 04544</span>
+                <span className="text-background/70 text-sm">Abids, Hyderabad, Telangana 500001</span>
               </li>
               <li>
-                <a href="tel:+919032000233" className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
+                <a href="tel:+919550504544" className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">+91 903 200 0233</span>
+                  <span className="text-sm">+91 9550504544</span>
                 </a>
               </li>
               <li>

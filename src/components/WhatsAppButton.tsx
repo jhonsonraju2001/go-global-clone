@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const phoneNumber = "919550504544";
-  const message = "Hi! I'm interested in your travel packages. Can you help me plan my trip?";
+  const message = "Hi! I'm interested in Alison Holidays travel packages. Can you help me plan my trip?";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

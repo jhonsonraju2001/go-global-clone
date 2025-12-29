@@ -49,7 +49,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Visit Us</h4>
                   <p className="text-muted-foreground text-sm">
-                    3rd Floor, Shree Residency, Gachibowli, Hyderabad, Telangana 500032
+                    Abids, Hyderabad, Telangana 500001
                   </p>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Call Us</h4>
-                  <a href="tel:+919032000233" className="text-muted-foreground text-sm hover:text-primary transition-colors">+91 95505 04544</a>
+                  <a href="tel:+919550504544" className="text-muted-foreground text-sm hover:text-primary transition-colors">+91 9550504544</a>
                 </div>
               </div>
 
@@ -70,8 +70,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email Us</h4>
-                  <a href="mailto:info@goglobalvacations.in" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                    info@goglobalvacations.in
+                  <a href="mailto:info@alisonholidays.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    info@alisonholidays.com
                   </a>
                 </div>
               </div>
