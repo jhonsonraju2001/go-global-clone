@@ -5,9 +5,11 @@ import DestinationGrid from "@/components/DestinationGrid";
 import PackageCarousel from "@/components/PackageCarousel";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import GoogleReviewsSection from "@/components/GoogleReviewsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CompareButton from "@/components/CompareButton";
 import {
   worldDestinations,
   indiaDestinations,
@@ -62,6 +64,9 @@ const Index = () => {
         
         {/* Testimonials */}
         <TestimonialsSection />
+
+        {/* Google Reviews */}
+        <GoogleReviewsSection />
         
         {/* Contact Section */}
         <ContactSection />
@@ -71,6 +76,9 @@ const Index = () => {
       
       {/* WhatsApp Floating Button */}
       <WhatsAppButton />
+
+      {/* Compare Button */}
+      <CompareButton />
     </div>
   );
 };
