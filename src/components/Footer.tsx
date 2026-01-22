@@ -41,12 +41,12 @@ const Footer = () => {
           duration: 0.5
         }}>
             <div className="mb-6">
-              <img alt="Alison Holidays" className="h-16 w-auto mb-2" src="/lovable-uploads/dc444be7-3468-4219-8fff-466df45a1c7b.png" />
-              <p className="text-lg font-bold text-primary">ALISON HOLIDAYS</p>
+              <img alt="Alison Holidays & Events" className="h-16 w-auto mb-2" src="/lovable-uploads/dc444be7-3468-4219-8fff-466df45a1c7b.png" />
+              <p className="text-lg font-bold text-primary">ALISON HOLIDAYS & EVENTS</p>
               <p className="text-xs text-background/50 tracking-wider">TURNING DREAMS INTO DESTINATIONS</p>
             </div>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Alison Holidays is a premier tours & travel agency in Hyderabad, offering customized travel packages for domestic and international destinations with 99.9% visa success rate.
+              Alison Holidays & Events is a premier tours & travel agency in Hyderabad, offering customized travel packages for domestic and international destinations with 99.9% visa success rate.
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/alisonholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
@@ -168,7 +168,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
         <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/60">
-          <p>© 2024 Alison Holidays. All rights reserved.</p>
+          <p>© 2024 Alison Holidays & Events. All rights reserved.</p>
           <p>
             Best Tours & Travel Agency in Hyderabad | 
             <span className="text-primary ml-1">99.9% Visa Success Rate</span>

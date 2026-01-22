@@ -9,7 +9,7 @@ const testimonials = [
     location: "Hyderabad",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
     rating: 5,
-    text: "Amazing experience with Go Global Vacations! Our trip to Europe was perfectly planned. Every detail was taken care of, from flights to hotels to tours. Highly recommended!",
+    text: "Amazing experience with Alison Holidays & Events! Our trip to Europe was perfectly planned. Every detail was taken care of, from flights to hotels to tours. Highly recommended!",
     trip: "Europe Tour"
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     location: "Bangalore",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
     rating: 5,
-    text: "The Kashmir trip organized by Go Global was breathtaking. The team's attention to detail and customer service was exceptional. Will definitely book again!",
+    text: "The Kashmir trip organized by Alison Holidays was breathtaking. The team's attention to detail and customer service was exceptional. Will definitely book again!",
     trip: "Kashmir Tour"
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     location: "Chennai",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
     rating: 5,
-    text: "Best travel agency in Hyderabad! Got my Dubai visa in just 3 days. The entire process was smooth and hassle-free. Thank you Go Global team!",
+    text: "Best travel agency in Hyderabad! Got my Dubai visa in just 3 days. The entire process was smooth and hassle-free. Thank you Alison Holidays team!",
     trip: "Dubai Tour"
   },
   {
@@ -38,6 +38,24 @@ const testimonials = [
     rating: 5,
     text: "Our family trip to Kerala was absolutely wonderful. The backwater houseboat experience was the highlight. Professional service throughout!",
     trip: "Kerala Tour"
+  },
+  {
+    id: 5,
+    name: "Meera Patel",
+    location: "Ahmedabad",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",
+    rating: 5,
+    text: "Booked our honeymoon package to Bali through Alison Holidays & Events. Everything was perfect - from the resort to the private tours. Truly memorable experience!",
+    trip: "Bali Honeymoon"
+  },
+  {
+    id: 6,
+    name: "Vikram Singh",
+    location: "Delhi",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
+    rating: 5,
+    text: "Excellent service for our corporate team outing. The Alison team handled everything professionally. Will definitely recommend for corporate events!",
+    trip: "Corporate Tour"
   }
 ];
 

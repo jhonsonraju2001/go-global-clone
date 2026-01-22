@@ -93,12 +93,12 @@ const InquiryModal = ({ isOpen, onClose, packageName, destination }: InquiryModa
               >
                 <X className="w-6 h-6" />
               </button>
-              <div className="flex items-center justify-center mb-2">
-                <span className="text-3xl font-bold text-white">
-                  GO<span className="text-accent">GL</span>O<span className="text-white">BAL</span>
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-2xl font-bold text-white">
+                  ALISON HOLIDAYS & EVENTS
                 </span>
+                <p className="text-white/80 text-xs mt-1 tracking-wider">TURNING DREAMS INTO DESTINATIONS</p>
               </div>
-              <p className="text-white/80 text-sm">VACATIONS</p>
             </div>
 
             {/* Form */}

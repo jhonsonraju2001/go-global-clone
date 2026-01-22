@@ -273,7 +273,7 @@ const PackageDetail = () => {
                   <Button variant="outline" className="w-full" size="lg" onClick={() => setIsModalOpen(true)}>
                     Get Custom Quote
                   </Button>
-                  <a href="tel:+919032000233" className="block">
+                  <a href="tel:+919550504544" className="block">
                     <Button variant="secondary" className="w-full" size="lg">
                       <Phone className="w-4 h-4 mr-2" />
                       Call Us

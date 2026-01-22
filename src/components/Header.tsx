@@ -46,9 +46,9 @@ const Header = () => {
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img alt="Alison Holidays" className="h-12 w-auto" src="/lovable-uploads/cadcc361-4f3c-4944-9502-08349f05a174.png" />
+            <img alt="Alison Holidays & Events" className="h-12 w-auto" src="/lovable-uploads/cadcc361-4f3c-4944-9502-08349f05a174.png" />
             <div className="hidden sm:block">
-              <div className="text-xl font-bold text-primary">ALISON HOLIDAYS</div>
+              <div className="text-xl font-bold text-primary">ALISON HOLIDAYS & EVENTS</div>
               <div className="text-[10px] text-muted-foreground tracking-wider">TURNING DREAMS INTO DESTINATIONS</div>
             </div>
           </Link>
