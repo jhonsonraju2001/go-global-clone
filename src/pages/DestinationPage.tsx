@@ -4,6 +4,7 @@ import { MapPin, Clock, Star, ChevronRight, Check, X, Calendar } from "lucide-re
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PageTransition from "@/components/PageTransition";
 import { Button } from "@/components/ui/button";
 import { allDestinations, DestinationPackage } from "@/data/itineraries";
 import { useState } from "react";
@@ -49,7 +50,8 @@ const DestinationPage = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
@@ -318,6 +320,7 @@ const DestinationPage = () => {
         destination={destinationData.name}
       />
     </div>
+    </PageTransition>
   );
 };
 
