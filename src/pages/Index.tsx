@@ -3,6 +3,7 @@ import HeroSlider from "@/components/HeroSlider";
 import StatsSection from "@/components/StatsSection";
 import DestinationGrid from "@/components/DestinationGrid";
 import PackageCarousel from "@/components/PackageCarousel";
+import PackageSearch from "@/components/PackageSearch";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import GoogleReviewsSection from "@/components/GoogleReviewsSection";
@@ -45,7 +46,10 @@ const Index = () => {
             sectionId="experience-india"
           />
           
-          {/* India Packages */}
+          {/* Package Search & Filter */}
+          <PackageSearch />
+          
+          {/* India Packages Carousel */}
           <PackageCarousel
             title="Incredible India"
             subtitle="Popular Domestic Packages"
