@@ -2,11 +2,12 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   FileText, Shield, Banknote, Hotel, Plane, Briefcase, 
-  CheckCircle, ArrowRight, Phone, Mail, Clock, Star
+  CheckCircle, ArrowRight, Phone, Mail, Star
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PageTransition from "@/components/PageTransition";
 import { Button } from "@/components/ui/button";
 
 interface ServiceData {
@@ -215,8 +216,9 @@ const ServicePage = () => {
   const IconComponent = serviceData.icon;
 
   return (
-    <div className="min-h-screen">
-      <Header />
+    <PageTransition>
+      <div className="min-h-screen">
+        <Header />
 
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
@@ -394,6 +396,7 @@ const ServicePage = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </PageTransition>
   );
 };
 

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import TeamSection from "@/components/TeamSection";
 import GoogleReviewsSection from "@/components/GoogleReviewsSection";
+import PageTransition from "@/components/PageTransition";
 import { motion } from "framer-motion";
 import { Shield, Award, Users, Globe, Heart, Clock, CheckCircle, Target, Eye, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -44,8 +45,9 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Header />
+    <PageTransition>
+      <div className="min-h-screen">
+        <Header />
       
       <main>
         {/* Hero Section */}
@@ -332,6 +334,7 @@ const About = () => {
       <Footer />
       <WhatsAppButton />
     </div>
+    </PageTransition>
   );
 };
 
