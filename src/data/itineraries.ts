@@ -36,11 +36,11 @@ export const kashmirData: DestinationData = {
   name: "Kashmir",
   tagline: "Paradise on Earth",
   description: "Discover the breathtaking beauty of Kashmir with its pristine valleys, snow-capped mountains, serene lakes, and rich cultural heritage. Experience the warmth of Kashmiri hospitality and create memories that last a lifetime.",
-  heroImage: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=1920",
+  heroImage: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800",
-    "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800",
-    "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800"
+    "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -50,18 +50,48 @@ export const kashmirData: DestinationData = {
       originalPrice: 32680,
       currentPrice: 27180,
       discount: 17,
-      image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800",
-      description: "Experience the best of Kashmir with visits to Srinagar, Gulmarg, Pahalgam, and Sonmarg.",
+      image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop",
+      description: "Experience the best of Kashmir with visits to Srinagar, Gulmarg, Pahalgam, and Sonmarg. This comprehensive tour takes you through snow-capped peaks, pristine valleys, and the serene Dal Lake.",
       highlights: ["Shikara Ride on Dal Lake", "Gondola Ride in Gulmarg", "Betaab Valley Visit", "Mughal Gardens Tour"],
-      inclusions: ["5 Nights Accommodation", "Daily Breakfast & Dinner", "AC Vehicle", "Sightseeing as per itinerary", "Airport Transfers"],
-      exclusions: ["Airfare", "Personal Expenses", "Travel Insurance", "Tips & Gratuities"],
+      inclusions: ["5 Nights Accommodation in Premium Hotels", "Daily Breakfast & Dinner", "AC Vehicle for all transfers", "Sightseeing as per itinerary", "Airport Transfers", "Driver Allowance & Toll Taxes"],
+      exclusions: ["Airfare", "Personal Expenses", "Travel Insurance", "Tips & Gratuities", "Adventure Activities", "Pony Rides"],
       itinerary: [
-        { day: 1, title: "Arrival in Srinagar", description: "Arrive at Srinagar Airport. Transfer to houseboat on Dal Lake. Evening Shikara ride.", highlights: ["Airport Pickup", "Houseboat Check-in", "Shikara Ride"] },
-        { day: 2, title: "Srinagar - Gulmarg", description: "Drive to Gulmarg, the 'Meadow of Flowers'. Enjoy Gondola ride to Kongdoori and Apharwat Peak.", highlights: ["Gondola Ride Phase 1 & 2", "Snow Activities", "Scenic Views"] },
-        { day: 3, title: "Gulmarg - Pahalgam", description: "Drive to Pahalgam via Saffron fields. Visit Betaab Valley and Aru Valley.", highlights: ["Betaab Valley", "Aru Valley", "Lidder River"] },
-        { day: 4, title: "Pahalgam Exploration", description: "Full day exploration of Pahalgam. Visit Chandanwari and Baisaran Valley.", highlights: ["Chandanwari", "Baisaran Valley", "Local Markets"] },
-        { day: 5, title: "Pahalgam - Srinagar", description: "Return to Srinagar. Visit Mughal Gardens - Nishat Bagh, Shalimar Bagh, and Chashme Shahi.", highlights: ["Nishat Bagh", "Shalimar Bagh", "Chashme Shahi", "Local Shopping"] },
-        { day: 6, title: "Departure", description: "Transfer to Srinagar Airport for departure.", highlights: ["Airport Drop", "Fond Memories"] }
+        { 
+          day: 1, 
+          title: "Arrival in Srinagar - Gateway to Paradise", 
+          description: "Welcome to Srinagar, the summer capital of Jammu & Kashmir! Upon arrival at Sheikh ul-Alam International Airport, our representative will greet you and transfer you to your luxurious houseboat on the famous Dal Lake. After checking in and freshening up, embark on a magical 2-hour Shikara ride as the sun sets over the lake. Glide past floating vegetable gardens, witness local life on the water, and capture stunning photographs of the surrounding mountains reflected in the crystal-clear waters. Return to your houseboat for a delicious traditional Kashmiri dinner featuring Rogan Josh, Dum Aloo, and aromatic Kahwa tea.", 
+          highlights: ["Airport Welcome with Traditional Shawl", "Houseboat Check-in on Dal Lake", "2-Hour Sunset Shikara Ride", "Traditional Kashmiri Dinner"] 
+        },
+        { 
+          day: 2, 
+          title: "Srinagar to Gulmarg - The Meadow of Flowers", 
+          description: "After a hearty breakfast on your houseboat, begin your journey to Gulmarg (56 km, approx. 2 hours), one of the world's premier ski destinations. The drive takes you through charming apple orchards and pine forests. Upon arrival, board the famous Gulmarg Gondola - one of the highest cable cars in the world. Phase 1 takes you to Kongdoori at 10,050 feet, while Phase 2 ascends to the breathtaking Apharwat Peak at 13,780 feet. At the top, you'll be surrounded by pristine snow even in summer, with panoramic views of the Himalayan range including Nanga Parbat. Enjoy snow activities like sledding and snowball fights. In the evening, explore the Gulmarg Golf Course - the highest green golf course in the world. Overnight stay at Gulmarg hotel.", 
+          highlights: ["Scenic Drive Through Apple Orchards", "Gondola Ride Phase 1 to Kongdoori", "Gondola Phase 2 to Apharwat Peak (13,780 ft)", "Snow Activities & Photography", "World's Highest Golf Course Visit"] 
+        },
+        { 
+          day: 3, 
+          title: "Gulmarg to Pahalgam - Valley of Shepherds", 
+          description: "Wake up to fresh mountain air and enjoy breakfast with views of snow-capped peaks. Today you'll drive to Pahalgam (140 km, approx. 4 hours), passing through the historic town of Anantnag and the fragrant saffron fields of Pampore - the only place in India where saffron is cultivated. Pahalgam, meaning 'Valley of Shepherds,' is a stunning resort town at the confluence of the Lidder River and Sheshnag streams. After lunch, visit the famous Betaab Valley - named after the Bollywood film shot here. The valley is a visual paradise with lush green meadows, snow-capped mountains, and a gurgling stream. Continue to Aru Valley (11 km further), a base camp for trekking expeditions, offering spectacular views of snow peaks and meadows dotted with horses and sheep. Return to your hotel for dinner and overnight stay.", 
+          highlights: ["Saffron Fields of Pampore Visit", "Betaab Valley - Bollywood's Favorite Location", "Aru Valley Exploration", "Lidder River Scenic Views", "Traditional Lunch at Local Restaurant"] 
+        },
+        { 
+          day: 4, 
+          title: "Pahalgam Full Day Exploration", 
+          description: "Dedicate today to exploring the hidden gems of Pahalgam. After breakfast, hire ponies or walk to Baisaran Valley (locally known as 'Mini Switzerland'), a 5 km trek through pine forests leading to lush green meadows surrounded by dense forests and mountains. The views here are simply breathtaking. Next, visit Chandanwari (16 km from Pahalgam), the starting point of the annual Amarnath Yatra pilgrimage. Here you can enjoy sledging on snow bridges even in summer. For the adventurous, optional activities include river rafting on the Lidder River (Grade II rapids - perfect for beginners) or trout fishing in the crystal-clear streams. In the evening, stroll through Pahalgam's local market to shop for handmade shawls, dried fruits, and traditional Kashmiri handicrafts. Enjoy a riverside dinner featuring fresh trout fish.", 
+          highlights: ["Baisaran Valley Trek - 'Mini Switzerland'", "Chandanwari Visit - Amarnath Base", "Snow Sledging Experience", "Optional River Rafting on Lidder", "Local Market Shopping", "Fresh Trout Fish Dinner"] 
+        },
+        { 
+          day: 5, 
+          title: "Pahalgam to Srinagar - Mughal Gardens Heritage", 
+          description: "After a leisurely breakfast, bid farewell to Pahalgam and drive back to Srinagar (95 km, approx. 3 hours). Today is dedicated to exploring the magnificent Mughal Gardens - a testament to the love of Mughal emperors for Kashmir's beauty. Start with Nishat Bagh (Garden of Joy), built by Empress Nur Jahan's brother in 1633 AD, featuring 12 terraces representing the 12 zodiac signs with stunning Dal Lake views. Next, visit Shalimar Bagh (Abode of Love), built by Emperor Jahangir for his beloved wife Nur Jahan, with beautiful fountains and chinars. End with Chashme Shahi (Royal Spring), the smallest but most beautiful garden built around a natural spring whose waters are believed to have medicinal properties. In the afternoon, enjoy shopping at the famous Boulevard Road for Pashmina shawls, saffron, walnuts, and papier-mâché artifacts. Evening at leisure or optional visit to Shankaracharya Temple for panoramic city views.", 
+          highlights: ["Nishat Bagh - Garden of Joy (12 Terraces)", "Shalimar Bagh - Emperor's Love Garden", "Chashme Shahi - Royal Spring Water", "Boulevard Road Shopping Experience", "Local Handicraft & Pashmina Shopping", "Optional Shankaracharya Temple Visit"] 
+        },
+        { 
+          day: 6, 
+          title: "Departure from Srinagar - Fond Farewell", 
+          description: "On your final morning in paradise, wake up early for an optional sunrise Shikara ride to witness the magical floating vegetable market where locals have traded fresh produce on boats for centuries (best experienced 6-7 AM). Return to your accommodation for a sumptuous breakfast. Pack your bags along with beautiful memories and souvenirs. Our driver will transfer you to Sheikh ul-Alam International Airport for your onward journey. As you fly over the Kashmir Valley, take a final glimpse of the paradise you're leaving behind - the glistening lakes, the snow peaks, and the verdant valleys. Carry home not just photographs but a piece of Kashmir in your heart. Thank you for traveling with Alison Holidays!", 
+          highlights: ["Optional Sunrise Floating Vegetable Market", "Farewell Breakfast with Kahwa Tea", "Airport Transfer with Memories", "Complimentary Kashmiri Souvenir"] 
+        }
       ]
     },
     {
@@ -71,19 +101,54 @@ export const kashmirData: DestinationData = {
       originalPrice: 45000,
       currentPrice: 38500,
       discount: 14,
-      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800",
-      description: "Perfect honeymoon getaway with romantic houseboat stays and scenic destinations.",
-      highlights: ["2 Nights Houseboat Stay", "Romantic Shikara Ride", "Candlelight Dinner", "Private Tours"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "Private AC Vehicle", "Honeymoon Cake", "Flower Decoration"],
-      exclusions: ["Airfare", "Personal Expenses", "Adventure Activities"],
+      image: "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&h=600&fit=crop",
+      description: "Celebrate your love in the most romantic destination in India. This specially curated honeymoon package includes 2 nights on a decorated houseboat, candlelight dinners, and private tours through Kashmir's most scenic locations.",
+      highlights: ["2 Nights Decorated Houseboat Stay", "Romantic Sunset Shikara Ride", "Candlelight Dinner Setup", "Private Couple Tours"],
+      inclusions: ["6 Nights Premium Accommodation", "All Meals (Breakfast, Lunch & Dinner)", "Private AC Vehicle", "Honeymoon Cake & Flower Decoration", "Romantic Shikara Ride", "Candlelight Dinner"],
+      exclusions: ["Airfare", "Personal Expenses", "Adventure Activities", "Photography Services"],
       itinerary: [
-        { day: 1, title: "Arrival & Romance", description: "Arrive Srinagar. Special houseboat welcome with flowers and cake.", highlights: ["Romantic Welcome", "Houseboat Stay", "Sunset Shikara"] },
-        { day: 2, title: "Srinagar Sightseeing", description: "Visit Mughal Gardens and local handicraft centers.", highlights: ["Mughal Gardens", "Handicraft Shopping", "Couple Photos"] },
-        { day: 3, title: "Gulmarg Adventure", description: "Day trip to Gulmarg with Gondola ride.", highlights: ["Gondola Ride", "Snow Play", "Mountain Views"] },
-        { day: 4, title: "Pahalgam Journey", description: "Drive to Pahalgam, the Valley of Shepherds.", highlights: ["Scenic Drive", "Aru Valley", "Riverside Walk"] },
-        { day: 5, title: "Pahalgam Romance", description: "Private picnic at Betaab Valley.", highlights: ["Private Picnic", "Photography", "Nature Walks"] },
-        { day: 6, title: "Back to Srinagar", description: "Return to Srinagar houseboat. Candlelight dinner.", highlights: ["Candlelight Dinner", "Shikara Ride", "Stargazing"] },
-        { day: 7, title: "Departure", description: "Fond farewell and airport transfer.", highlights: ["Departure", "Sweet Memories"] }
+        { 
+          day: 1, 
+          title: "Romantic Arrival in Srinagar", 
+          description: "Welcome to your honeymoon paradise! As you arrive at Srinagar Airport, our representative welcomes you with fragrant roses and traditional Kashmiri Phiran shawls. Transfer to your beautifully decorated houseboat on Dal Lake, where you'll find rose petals, candles, and a special honeymoon cake awaiting you. After settling in, enjoy a private sunset Shikara ride with your beloved, complete with a guitarist playing romantic melodies as you glide past the stunning Mughal gardens and witness the sun painting the Zabarwan hills in golden hues. Return to your houseboat for a romantic candlelit dinner on the deck, with the moonlight reflecting on the still waters of Dal Lake.", 
+          highlights: ["Rose & Shawl Welcome at Airport", "Decorated Houseboat with Rose Petals", "Private Sunset Shikara with Guitarist", "Candlelight Dinner on Deck", "Honeymoon Cake Celebration"] 
+        },
+        { 
+          day: 2, 
+          title: "Srinagar Love Story", 
+          description: "Wake up to the gentle sounds of water lapping against your houseboat and the calls of kingfishers. Enjoy a leisurely breakfast in bed, followed by a couple's Shikhara ride to the famous floating gardens and the Char Chinar island - a romantic spot with four majestic Chinar trees surrounded by water. Spend the afternoon visiting the Mughal Gardens hand-in-hand - walk through the same terraces where emperors strolled with their queens. Visit the romantic fountains of Shalimar Bagh and capture beautiful couple photos among centuries-old Chinar trees. In the evening, visit the local handicraft centers where you can select a beautiful Pashmina shawl for your spouse - a perfect honeymoon gift. Return to your houseboat for another magical evening.", 
+          highlights: ["Breakfast in Bed", "Char Chinar Island Visit", "Romantic Mughal Gardens Walk", "Couple Photoshoot Spots", "Pashmina Shawl Shopping", "Candlelight Dinner"] 
+        },
+        { 
+          day: 3, 
+          title: "Gulmarg Adventure Together", 
+          description: "Today, embark on a romantic adventure to Gulmarg - the meadow of flowers. The scenic 2-hour drive through apple orchards and pine forests is perfect for holding hands and capturing memories. At Gulmarg, take the famous Gondola ride together to Kongdoori and then to Apharwat Peak. At the top, with snow all around you and the magnificent Himalayan peaks as your backdrop, it's the perfect spot for those dreamy honeymoon photographs. Play in the snow like children - build snowmen together and engage in friendly snowball fights! Enjoy hot Kahwa and Kashmiri snacks at a mountain café. The evening is perfect for a romantic walk on the golf course meadows as the sun sets behind the peaks.", 
+          highlights: ["Scenic Drive Through Apple Orchards", "Gondola Ride Holding Hands", "Snow Play Together at 13,780 ft", "Hot Kahwa at Mountain Café", "Sunset Walk on Golf Course", "Cozy Mountain Hotel Dinner"] 
+        },
+        { 
+          day: 4, 
+          title: "Pahalgam - Valley of Romance", 
+          description: "Drive to Pahalgam, the enchanting valley of shepherds. The journey takes you through some of Kashmir's most picturesque landscapes. Upon arrival, check into your riverside hotel with views of the flowing Lidder River. After lunch, visit the stunning Aru Valley - its peaceful meadows and snow peaks make it one of the most romantic spots in Kashmir. Take a leisurely walk through the valley, stopping for photos and to simply enjoy each other's company in this serene environment. For the adventurous couple, optional pony rides are available through the pine forests. In the evening, enjoy a riverside bonfire arranged specially for you, complete with hot chocolate and stargazing.", 
+          highlights: ["Scenic Pahalgam Valley Drive", "Riverside Hotel Check-in", "Aru Valley Private Walk", "Optional Pony Ride for Two", "Private Riverside Bonfire", "Stargazing & Hot Chocolate"] 
+        },
+        { 
+          day: 5, 
+          title: "Pahalgam Romance Continues", 
+          description: "Today is all about creating intimate memories. After breakfast, visit Betaab Valley - named after a Bollywood romance film and frequently used as a backdrop for romantic movie scenes. The lush green meadows surrounded by snow-capped mountains create a fairytale setting. Arrange for a private picnic by the stream, complete with Kashmiri delicacies and wine (if preferred). In the afternoon, visit Chandanwari for some snow fun together. Try sledging on the snow bridges - an exhilarating experience for couples! Return to Pahalgam and enjoy an evening stroll through the local market, picking up souvenirs together. Dinner is a special candlelight affair by the riverside, with live traditional Kashmiri music.", 
+          highlights: ["Betaab Valley Private Picnic", "Romantic Streamside Lunch", "Chandanwari Snow Sledging", "Couple Shopping at Local Market", "Riverside Candlelight Dinner", "Live Traditional Music"] 
+        },
+        { 
+          day: 6, 
+          title: "Return to Srinagar Houseboat", 
+          description: "After a leisurely morning, drive back to Srinagar for your final night on the romantic houseboat. Spend the afternoon at leisure - perhaps indulge in a couple's Shikhara ride through the less-explored corners of Dal Lake, or simply relax on the houseboat deck with books and each other's company. In the evening, a very special celebration awaits - a private candlelight dinner is arranged on a decorated Shikara floating in the middle of Dal Lake under the stars. With candles flickering, soft music playing, and the stars as your witness, it's a truly once-in-a-lifetime experience. Return to your houseboat filled with beautiful memories.", 
+          highlights: ["Leisurely Return to Srinagar", "Afternoon Relaxation on Houseboat", "Optional Couple Shikara Adventure", "Private Dinner on Floating Shikara", "Starlit Lake Experience", "Final Night Memories"] 
+        },
+        { 
+          day: 7, 
+          title: "Farewell from Paradise", 
+          description: "On your final morning, enjoy a romantic breakfast together on the houseboat deck, reminiscing about the beautiful week you've spent together. Our representative will help you with any last-minute shopping for gifts for family back home. Transfer to Srinagar Airport for your departure, carrying not just photographs and souvenirs, but a treasure trove of romantic memories that will strengthen your bond forever. As you leave the valley, know that you've celebrated your love in one of the most beautiful places on earth. Congratulations on your new journey together!", 
+          highlights: ["Romantic Breakfast on Deck", "Last-Minute Gift Shopping", "Airport Transfer", "Farewell with Love"] 
+        }
       ]
     },
     {
@@ -93,20 +158,60 @@ export const kashmirData: DestinationData = {
       originalPrice: 52000,
       currentPrice: 44200,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800",
-      description: "Adventure-packed Kashmir tour with trekking, camping, and thrilling activities.",
-      highlights: ["Kashmir Great Lakes Trek", "Camping Under Stars", "River Rafting", "Mountain Biking"],
-      inclusions: ["7 Nights Accommodation", "All Meals", "Trekking Equipment", "Guide & Porter", "Permits"],
-      exclusions: ["Airfare", "Personal Gear", "Tips"],
+      image: "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&h=600&fit=crop",
+      description: "For the adventurous soul, this trek through the Kashmir Great Lakes is a journey through some of the most pristine alpine landscapes in the world. Camp under stars, cross high passes, and witness seven stunning high-altitude lakes.",
+      highlights: ["Kashmir Great Lakes Trek", "Camping Under Stars", "7 Alpine Lakes", "Mountain Wildlife Spotting"],
+      inclusions: ["7 Nights Accommodation (Hotels & Camps)", "All Meals During Trek", "Professional Trek Guide", "Porters & Ponies", "Trekking Equipment", "Forest Permits"],
+      exclusions: ["Airfare", "Personal Trekking Gear", "Tips for Guide & Porters", "Travel Insurance"],
       itinerary: [
-        { day: 1, title: "Arrival in Srinagar", description: "Arrive and acclimatize. Evening briefing.", highlights: ["Arrival", "Briefing", "Equipment Check"] },
-        { day: 2, title: "Trek Start", description: "Drive to Sonamarg. Begin trek to Nichnai.", highlights: ["Sonamarg", "Trek Begin", "Campsite"] },
-        { day: 3, title: "Nichnai to Vishansar", description: "Trek through alpine meadows to Vishansar Lake.", highlights: ["Alpine Meadows", "Vishansar Lake", "Camping"] },
-        { day: 4, title: "Vishansar to Gadsar", description: "Cross Gadsar Pass to reach Gadsar Lake.", highlights: ["Gadsar Pass", "High Altitude Trek", "Lake Views"] },
-        { day: 5, title: "Gadsar to Satsar", description: "Trek to the beautiful Satsar Lakes.", highlights: ["Seven Lakes", "Photography", "Wildlife"] },
-        { day: 6, title: "Satsar to Gangabal", description: "Reach the pristine Gangabal Lake.", highlights: ["Gangabal Lake", "Mt Harmukh Views", "Final Camp"] },
-        { day: 7, title: "Descent to Naranag", description: "Trek down to Naranag. Drive to Srinagar.", highlights: ["Descent", "Ancient Temple", "Hotel Stay"] },
-        { day: 8, title: "Departure", description: "Morning free. Airport transfer.", highlights: ["Departure", "Memories"] }
+        { 
+          day: 1, 
+          title: "Arrival in Srinagar - Trek Briefing", 
+          description: "Arrive at Srinagar Airport and transfer to your hotel. After lunch, attend a comprehensive trek briefing session conducted by your experienced trek leader. Learn about the route, daily schedules, safety protocols, and what to expect at high altitudes. The guide will check your gear and provide any missing essential equipment. Evening is spent exploring the local market for any last-minute requirements. Meet your fellow trekkers over dinner and get to know your team. Early dinner and rest is advised as the adventure begins early tomorrow. Altitude: 1,600m (5,249 ft).", 
+          highlights: ["Airport Pickup & Hotel Check-in", "Detailed Trek Briefing Session", "Equipment Check & Distribution", "Meet Fellow Trekkers", "Local Market Visit", "Early Dinner & Rest"] 
+        },
+        { 
+          day: 2, 
+          title: "Srinagar to Sonamarg to Nichnai", 
+          description: "Wake up early for a 3-hour drive to Sonamarg (Meadow of Gold), passing through stunning valleys. From Sonamarg, the trek begins! The first day is a gentle introduction, covering 12 km to Nichnai. The trail winds through lush meadows dotted with wildflowers, dense birch and pine forests, and offers your first views of the Great Lakes region. Cross the Nichnai stream multiple times as you ascend gradually. Arrive at the beautiful Nichnai campsite (3,500m) by afternoon. Set up camp in a meadow surrounded by snow peaks. Evening orientation on high altitude precautions. Dinner around a bonfire followed by stargazing at the crystal-clear high-altitude sky. Trek Distance: 12 km | Altitude Gain: 1,900m", 
+          highlights: ["Scenic Drive to Sonamarg (3 hrs)", "Trek Start Through Meadows (12 km)", "Wildflower Meadows & Pine Forests", "Stream Crossings", "First High-Altitude Camp at 3,500m", "Bonfire & Stargazing Session"] 
+        },
+        { 
+          day: 3, 
+          title: "Nichnai to Vishansar Lake", 
+          description: "Today you'll witness your first alpine lake! After an early breakfast, begin the ascent towards Nichnai Pass (4,100m). The trail steepens as you leave the tree line behind and enter true alpine territory. The climb is demanding but the views are rewarding - look back to see the valley you climbed from, and ahead to snow-covered peaks. Cross the pass and descend to the stunning Vishansar Lake (3,710m) - a pristine turquoise lake surrounded by rocky mountains and snow patches. The reflection of peaks in the still waters is mesmerizing. Set up camp by the lake. Afternoon is free to explore, photograph, or simply sit by the lake in quiet contemplation. Trek Distance: 11 km | Altitude Gain: 600m to pass, descent to 3,710m", 
+          highlights: ["Nichnai Pass Crossing (4,100m)", "First Alpine Lake - Vishansar", "Turquoise Waters & Snow Peaks", "Lakeside Camping", "Mountain Reflections Photography", "Wildlife Spotting Opportunities"] 
+        },
+        { 
+          day: 4, 
+          title: "Vishansar to Gadsar Lake", 
+          description: "One of the most spectacular days of the trek! After breakfast, walk along the shores of Vishansar Lake and then climb towards Gadsar Pass (4,200m). En route, pass by the beautiful Krishansar Lake - a twin lake connected to Vishansar. The ascent to Gadsar Pass is challenging but the views from the top are among the best in the entire trek - you can see multiple lakes and endless mountain ranges. Descend to Gadsar Lake, known as the 'Lake of Fish' due to its abundance of brown trout. Camp is set up on a grassy plateau overlooking the lake. This is prime territory for spotting Himalayan wildlife including Marmots and if lucky, the elusive Himalayan Black Bear. Trek Distance: 10 km | Altitude: Cross 4,200m pass", 
+          highlights: ["Krishansar Lake Visit (Twin Lake)", "Gadsar Pass Crossing (4,200m)", "Panoramic Views of Lake Region", "Gadsar Lake - Lake of Fish", "Wildlife: Marmots & Possibly Bears", "Remote Wilderness Camping"] 
+        },
+        { 
+          day: 5, 
+          title: "Gadsar to Satsar Lakes", 
+          description: "Today's trek takes you through diverse landscapes to the mystical Satsar Lakes. Satsar means 'Seven Lakes' - a chain of interconnected small lakes at varying elevations. The trail descends from Gadsar and then climbs through beautiful meadows carpeted with wildflowers in season. The region is known for its rich biodiversity - look out for various species of birds, butterflies, and small mammals. Reach the Satsar campsite situated among the lakes by afternoon. Each lake has its own character - some are deep blue, others are greenish, and they're all surrounded by mountains. Take time to explore the different lakes and find your favorite spot for photography or meditation. Trek Distance: 9 km | Altitude: 3,600m", 
+          highlights: ["Trek Through Wildflower Meadows", "Seven Interconnected Lakes", "Rich Biodiversity Region", "Bird & Butterfly Watching", "Multiple Lake Photography", "Serene Camping Among Lakes"] 
+        },
+        { 
+          day: 6, 
+          title: "Satsar to Gangabal Lake", 
+          description: "Today you'll reach the crown jewel of the trek - Gangabal Lake, the largest and most sacred of all Kashmir lakes! The trail involves crossing the Zajibal Pass (4,000m) with stunning views in all directions. The descent to Gangabal reveals the magnificent lake in stages - first you see glimpses, then the full expanse opens up before you. At 2.5 km long and 1 km wide, Gangabal is vast and sits majestically at the feet of Mount Harmukh (5,142m), one of the most revered peaks in Kashmir. The lake is considered sacred by Kashmiri Hindus, and its turquoise waters are hauntingly beautiful. Set up final camp by the lake with Harmukh towering above. Evening celebration dinner with your trek team. Trek Distance: 10 km | Altitude: 3,570m", 
+          highlights: ["Zajibal Pass Crossing (4,000m)", "First Views of Sacred Gangabal", "Largest Lake of the Trek", "Mount Harmukh Base (5,142m)", "Sacred Hindu Pilgrimage Site", "Celebration Dinner by Lake"] 
+        },
+        { 
+          day: 7, 
+          title: "Descent to Naranag - Journey Back", 
+          description: "Final day of trekking! Wake up early for sunrise over Gangabal - the light playing on Harmukh's peaks and reflecting in the lake is a sight you'll never forget. After breakfast, begin the descent to Naranag (14 km). The trail is well-defined and passes through beautiful forests and meadows. Stop at the ancient Naranag temples, dating back to the 8th century - these ruins showcase remarkable Kashmiri Hindu architecture and are an important archaeological site. From Naranag, drive back to Srinagar (3 hours). Check into hotel, enjoy a hot shower (much appreciated after the trek!), and a celebratory dinner with your new trekking friends. Trek Distance: 14 km | Descent to 2,200m", 
+          highlights: ["Sunrise Over Gangabal Lake", "Final Trek Descent (14 km)", "Ancient Naranag Temple Ruins", "8th Century Archaeological Site", "Drive Back to Srinagar (3 hrs)", "Hot Shower & Celebration Dinner"] 
+        },
+        { 
+          day: 8, 
+          title: "Departure from Srinagar", 
+          description: "After a well-deserved rest, enjoy a leisurely breakfast. Morning is free for optional shopping - pick up certificates of your achievement, trek photos, and souvenirs. Bid farewell to your trek leader, guides, and fellow adventurers who have become friends over this incredible journey. Transfer to Srinagar Airport for your departure. You leave Kashmir not just with memories of stunning lakes and challenging passes, but with a sense of accomplishment and a deeper connection to nature. The Great Lakes of Kashmir will forever remain in your heart.", 
+          highlights: ["Leisurely Morning & Breakfast", "Trek Certificate Collection", "Farewell to Trek Team", "Optional Local Shopping", "Airport Transfer", "Carry Home Incredible Memories"] 
+        }
       ]
     },
     {
@@ -116,17 +221,42 @@ export const kashmirData: DestinationData = {
       originalPrice: 35000,
       currentPrice: 29750,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800",
-      description: "Experience magical winter in Kashmir with skiing, snow activities, and frozen landscapes.",
-      highlights: ["Skiing in Gulmarg", "Frozen Dal Lake", "Snow Adventures", "Hot Kahwa by Fire"],
-      inclusions: ["4 Nights Accommodation", "All Meals", "Snow Gear", "Skiing Lessons", "Transfers"],
-      exclusions: ["Airfare", "Personal Expenses", "Optional Activities"],
+      image: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&h=600&fit=crop",
+      description: "Experience the magical white Christmas vibes of Kashmir in winter. From skiing in Gulmarg to walking on the frozen Dal Lake, this winter special package offers unique experiences that can only be enjoyed when Kashmir transforms into a snow-covered paradise.",
+      highlights: ["Skiing in Gulmarg", "Frozen Dal Lake Walk", "Snow Adventures", "Hot Kahwa by Fireplace"],
+      inclusions: ["4 Nights Premium Heated Accommodation", "All Meals", "Snow Gear & Equipment", "Skiing Lessons (Beginner)", "Transfers in Snow-Ready Vehicle"],
+      exclusions: ["Airfare", "Personal Expenses", "Optional Advanced Activities", "Personal Warm Clothing"],
       itinerary: [
-        { day: 1, title: "Arrival in Winter Paradise", description: "Arrive Srinagar. Experience frozen Dal Lake.", highlights: ["Frozen Lake Walk", "Hot Kahwa", "Snow Photos"] },
-        { day: 2, title: "Gulmarg Skiing", description: "Full day skiing and snow activities in Gulmarg.", highlights: ["Skiing Lessons", "Gondola Ride", "Snow Play"] },
-        { day: 3, title: "More Snow Fun", description: "Advanced skiing or snowboarding. Evening bonfire.", highlights: ["Advanced Slopes", "Snowboarding", "Bonfire"] },
-        { day: 4, title: "Pahalgam Snow", description: "Drive to snowy Pahalgam for sledge rides.", highlights: ["Sledge Rides", "Frozen Waterfalls", "Warm Cuisine"] },
-        { day: 5, title: "Departure", description: "Transfer to airport.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival in Winter Paradise", 
+          description: "Welcome to Winter Wonderland! Arrive at Srinagar Airport, likely covered in snow during peak winter months (December-February). As you step out, the chilly mountain air and snow-covered peaks greet you. Transfer to your centrally heated houseboat or hotel - both equipped with bukhari (traditional Kashmiri heaters). Warm up with traditional Kahwa tea spiced with saffron and almonds. If weather permits, experience the unique phenomenon of walking on the frozen Dal Lake - something only possible in peak winter when temperatures drop to -10°C. The frozen lake, surrounded by snow-covered houseboats and Zabarwan hills, is an otherworldly sight. Evening hot chocolate and traditional Wazwan dinner. Snuggle up in your warm room as snow may fall outside.", 
+          highlights: ["Snowy Airport Arrival", "Heated Houseboat/Hotel Welcome", "Traditional Kahwa by Bukhari", "Frozen Dal Lake Walk (if weather permits)", "Snow Photography Session", "Wazwan Dinner by Fireplace"] 
+        },
+        { 
+          day: 2, 
+          title: "Gulmarg Skiing Adventure", 
+          description: "Today is all about snow sports! After breakfast, drive to Gulmarg (56 km) - Asia's premier skiing destination with some of the best powder snow in the world. The drive itself is magical with snow-laden trees and white landscapes. Upon arrival, get fitted with skiing equipment and meet your ski instructor. Beginners will learn on the nursery slopes, mastering the basics of balance, stopping, and turning. More experienced skiers can explore the intermediate runs or take the Gondola to access higher slopes. The Gulmarg ski runs are famous worldwide, attracting skiers from across the globe. After an exhilarating day, warm up with hot soup and Maggi at a snow café. Option to stay overnight in Gulmarg for early skiing tomorrow or return to Srinagar.", 
+          highlights: ["Scenic Snow Drive to Gulmarg", "Professional Ski Equipment Fitting", "2-Hour Beginner Skiing Lesson", "Powder Snow Experience", "Optional Advanced Slopes via Gondola", "Hot Soup at Snow Café"] 
+        },
+        { 
+          day: 3, 
+          title: "More Snow Fun in Gulmarg", 
+          description: "Another day in snow paradise! Start with an early morning Gondola ride to Kongdoori (Phase 1) or brave the heights to Apharwat Peak (Phase 2 at 13,780 ft). At Apharwat, you'll find yourself in a world of pure white - deep snow as far as you can see, with stunning views of Nanga Parbat and other Himalayan giants. Try snowboarding, sledging, or simply make snow angels! For the adventurous, Gulmarg offers off-piste skiing opportunities that are legendary among winter sports enthusiasts. Afternoon, return to base and enjoy traditional Kashmiri street food - try the delicious Kashmiri kebabs and seekh kababs freshly grilled. Evening bonfire session at the hotel with songs and stories. Hot butter tea (Nun Chai) before bed.", 
+          highlights: ["Early Gondola to Apharwat Peak", "Deep Powder Snow Experience", "Views of Nanga Parbat", "Snowboarding & Sledging", "Optional Off-Piste Skiing", "Evening Bonfire with Hot Butter Tea"] 
+        },
+        { 
+          day: 4, 
+          title: "Pahalgam Snow Magic", 
+          description: "Today, drive to Pahalgam (140 km, approx. 4 hours in winter), experiencing the diverse winter landscapes of Kashmir. The valley is blanketed in white, with the Lidder River partially frozen and icicles hanging from rocks. Visit Betaab Valley, which looks even more magical in winter - pristine white snow covering the meadows with frozen streams. Try sledge rides pulled by local guides - a traditional Kashmiri winter activity. If accessible, visit Chandanwari for more snow activities on the permanent snow bridges. Experience local winter food - try Harissa, a traditional Kashmiri winter delicacy made from slow-cooked mutton and rice, incredibly warming and delicious. Evening by the fire with traditional storytelling.", 
+          highlights: ["Winter Drive to Pahalgam", "Betaab Valley in Snow", "Traditional Sledge Rides", "Frozen Waterfall Photography", "Harissa - Traditional Winter Delicacy", "Storytelling by Fireplace"] 
+        },
+        { 
+          day: 5, 
+          title: "Departure from Winter Paradise", 
+          description: "Your winter fairy tale comes to an end, but the memories will keep you warm forever. Enjoy a hearty breakfast featuring Kashmiri bread (Girda, Lavasa) with butter and honey. If time permits, visit the local market for last-minute shopping - winter is the best time to buy authentic Kashmiri shawls as you can test their warmth immediately! Purchase walnuts, almonds, and saffron - Kashmir's famous exports. Transfer to Srinagar Airport for your departure. As your flight takes off over the snow-covered valley, take one last look at the paradise that has given you unforgettable winter memories. See you next winter!", 
+          highlights: ["Traditional Kashmiri Breakfast", "Warm Shawl Shopping", "Dry Fruit & Saffron Purchase", "Airport Transfer", "Farewell from Winter Wonderland"] 
+        }
       ]
     },
     {
@@ -136,18 +266,48 @@ export const kashmirData: DestinationData = {
       originalPrice: 48000,
       currentPrice: 40800,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800",
-      description: "Perfect family vacation with kid-friendly activities and comfortable stays.",
-      highlights: ["Pony Rides", "Shikara Fun", "Apple Orchards", "Cultural Shows"],
-      inclusions: ["5 Nights Family Rooms", "All Meals", "Kid-Friendly Activities", "Private Vehicle", "Guide"],
-      exclusions: ["Airfare", "Personal Expenses", "Shopping"],
+      image: "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=800&h=600&fit=crop",
+      description: "A perfect family vacation designed with activities suitable for all ages. From grandparents to children, everyone will enjoy this carefully crafted itinerary featuring comfortable stays, kid-friendly adventures, and cultural experiences the whole family will treasure.",
+      highlights: ["Pony Rides for Kids", "Family Shikara Experiences", "Apple Orchard Visits", "Cultural Shows & Workshops"],
+      inclusions: ["5 Nights Family-Friendly Accommodation", "All Meals (Kids Menu Available)", "Kid-Friendly Activities", "Private Family Vehicle", "English-Speaking Guide"],
+      exclusions: ["Airfare", "Personal Expenses", "Shopping", "Optional Activities"],
       itinerary: [
-        { day: 1, title: "Welcome to Kashmir", description: "Arrive Srinagar. Shikara ride for the whole family.", highlights: ["Family Shikara Ride", "Houseboat Tour", "Local Snacks"] },
-        { day: 2, title: "Gulmarg Fun", description: "Gondola ride and pony rides for kids.", highlights: ["Pony Rides", "Snow Play", "Gondola Adventure"] },
-        { day: 3, title: "Pahalgam Adventure", description: "Visit valleys with horse riding for kids.", highlights: ["Betaab Valley", "Horse Riding", "River Picnic"] },
-        { day: 4, title: "Sonmarg Day Trip", description: "Visit the beautiful meadow of gold.", highlights: ["Thajiwas Glacier", "Pony Ride to Glacier", "Picnic Lunch"] },
-        { day: 5, title: "Srinagar Exploration", description: "Gardens, handicraft tour, and cultural show.", highlights: ["Mughal Gardens", "Papier-Mâché Workshop", "Cultural Show"] },
-        { day: 6, title: "Departure", description: "Shopping for souvenirs and departure.", highlights: ["Souvenir Shopping", "Departure"] }
+        { 
+          day: 1, 
+          title: "Family Arrival in Srinagar", 
+          description: "Welcome families to paradise! Arrive at Srinagar Airport where our guide welcomes your family with traditional garlands. Children receive a special Kashmiri toy as a welcome gift. Transfer to your family houseboat on Dal Lake - an experience kids will never forget! Watch their eyes light up as they realize they'll be living on a boat! After settling in, enjoy a fun family Shikara ride on Dal Lake. Kids can help paddle the Shikara (with supervision) and feed the fish. Stop at a floating shop for Kashmiri snacks. Look out for kingfishers and other birds. Return for a family dinner on the houseboat deck, with special items on the kids' menu. Storytelling session with Kashmiri folk tales before bed.", 
+          highlights: ["Family Welcome with Gifts for Kids", "Houseboat Living Experience", "Family Shikara Ride", "Kids Paddle & Feed Fish", "Birds & Nature Spotting", "Kashmiri Storytelling Session"] 
+        },
+        { 
+          day: 2, 
+          title: "Gulmarg Family Fun", 
+          description: "Load up the family for an exciting day at Gulmarg! The drive through apple orchards is delightful - make stops for family photos. At Gulmarg, the Gondola ride is a thrilling experience for all ages - kids will love 'flying' over snow-covered mountains. At Kongdoori, there's plenty of gentle snow for the whole family to enjoy. Build snowmen together, have friendly snowball fights, and make snow angels. For grandparents who prefer to relax, there are comfortable cafés with stunning views. Pony rides are available and are a hit with children - gentle ponies are specially selected for young riders. Late afternoon, visit the meadows where kids can run around freely. Drive back to Srinagar with happy, tired kids for a good night's sleep.", 
+          highlights: ["Scenic Family Drive", "Gondola Ride for All Ages", "Gentle Snow Play Area", "Family Snowman Building", "Safe Pony Rides for Kids", "Cafés for Grandparents"] 
+        },
+        { 
+          day: 3, 
+          title: "Pahalgam Adventures for All", 
+          description: "Drive to Pahalgam, stopping at an apple orchard en route. Kids can pick apples (in season) and learn how apple juice and dried apples are made. At Pahalgam, the Lidder River provides safe spots where the whole family can enjoy riverside picnics. Children love throwing stones in the river and wading in the shallow edges (supervision required). Visit Betaab Valley - the vast meadows are perfect for family games like frisbee and football. Horse rides are organized for kids through safe trails with trained guides. For adventure-seeking teenagers, optional supervised pony trek to nearby viewpoints. Return to your hotel for an early dinner - kids will be tired and hungry!", 
+          highlights: ["Apple Orchard Visit & Picking", "Riverside Family Picnic", "Betaab Valley Family Games", "Safe Pony Rides with Guides", "Nature Exploration for Kids", "Teenager Adventure Options"] 
+        },
+        { 
+          day: 4, 
+          title: "Sonmarg - Meadow of Gold", 
+          description: "Day trip to Sonmarg - one of Kashmir's most beautiful meadows. The drive is scenic with the Sindh River flowing alongside. At Sonmarg, families can take pony rides to Thajiwas Glacier - kids ride on their own ponies (with handlers walking alongside) while adults can also ride or walk. The glacier area is perfect for supervised snow play even in summer. Safe sledge rides on snow are popular with children. The meadows are ideal for family picnics - we arrange a special lunch with items everyone enjoys. Spot marmots (cute mountain squirrels) that kids find fascinating. Return to Srinagar via Kangan, stopping at roadside stalls for fresh corn and walnuts. Evening cultural show featuring traditional Kashmiri Rouf dance - colorful and entertaining for the whole family.", 
+          highlights: ["Scenic Drive Along Sindh River", "Pony Ride to Thajiwas Glacier", "Safe Snow Sledge Rides", "Marmot (Mountain Squirrel) Spotting", "Family Picnic in Meadows", "Evening Cultural Dance Show"] 
+        },
+        { 
+          day: 5, 
+          title: "Srinagar Exploration", 
+          description: "Today we explore Srinagar with kid-friendly activities. Start with the beautiful Mughal Gardens - Nishat Bagh has terraced lawns perfect for kids to run around, and the fountains are a hit. At Chashme Shahi, drink from the natural spring - tell kids the legend that this water makes wishes come true! Visit a Papier-mâché workshop where children can paint their own small boxes (take home as souvenirs). Adults might enjoy a visit to the saffron research center while kids continue crafts. Afternoon optional visit to the zoo or a walk through old Srinagar's charming alleys. Final family Shikara ride to watch the sunset. Farewell dinner on the houseboat with a special celebration - maybe it's someone's birthday, or just celebrating a wonderful family holiday!", 
+          highlights: ["Mughal Gardens with Play Areas", "Wish-Making at Chashme Shahi", "Papier-Mâché Kids' Workshop", "Take-Home Craft Souvenirs", "Zoo or Old City Walk", "Farewell Celebration Dinner"] 
+        },
+        { 
+          day: 6, 
+          title: "Departure with Happy Memories", 
+          description: "Last morning in Kashmir! Enjoy a leisurely family breakfast on the houseboat. Collect all the photos and videos captured over the trip. Kids can say goodbye to the houseboat crew who have become friends. Quick visit to a dry fruit shop - let kids pick their favorite nuts to take home (walnuts are highly recommended!). Transfer to airport for your departure. As you fly home, the whole family will be sharing their favorite memories - was it the Gondola ride, the pony trek, the snow play, or living on a houseboat? Kashmir has given your family bonds that will last forever. Thank you for choosing Alison Holidays for your family adventure!", 
+          highlights: ["Leisurely Family Breakfast", "Goodbye to Houseboat Friends", "Kids' Dry Fruit Shopping", "Airport Transfer", "Lasting Family Memories"] 
+        }
       ]
     }
   ]
@@ -159,11 +319,11 @@ export const keralaData: DestinationData = {
   name: "Kerala",
   tagline: "God's Own Country",
   description: "Experience the magic of Kerala with its serene backwaters, lush tea gardens, pristine beaches, and rich cultural heritage. Discover Ayurvedic wellness and taste the flavors of authentic Malabar cuisine.",
-  heroImage: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920",
+  heroImage: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800",
-    "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800",
-    "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800"
+    "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -173,17 +333,42 @@ export const keralaData: DestinationData = {
       originalPrice: 28500,
       currentPrice: 23800,
       discount: 16,
-      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800",
-      description: "Cruise through the serene backwaters of Alleppey on a traditional houseboat.",
-      highlights: ["Houseboat Stay", "Kathakali Show", "Ayurvedic Spa", "Tea Garden Visit"],
-      inclusions: ["4 Nights Accommodation", "All Meals on Houseboat", "AC Vehicle", "Sightseeing"],
-      exclusions: ["Airfare", "Personal Expenses", "Optional Activities"],
+      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop",
+      description: "Cruise through the serene backwaters of Alleppey on a traditional houseboat, explore Cochin's colonial heritage, and wander through the misty tea gardens of Munnar.",
+      highlights: ["Overnight Houseboat Stay", "Kathakali Dance Show", "Ayurvedic Spa Session", "Tea Garden Visit"],
+      inclusions: ["4 Nights Accommodation", "All Meals on Houseboat", "AC Private Vehicle", "All Sightseeing as per itinerary"],
+      exclusions: ["Airfare", "Personal Expenses", "Optional Activities", "Travel Insurance"],
       itinerary: [
-        { day: 1, title: "Arrival in Cochin", description: "Arrive at Cochin Airport. Visit Fort Kochi, Chinese Fishing Nets, and St. Francis Church.", highlights: ["Fort Kochi", "Chinese Fishing Nets", "Jewish Synagogue"] },
-        { day: 2, title: "Cochin to Munnar", description: "Drive to Munnar through scenic tea plantations. Visit tea museum.", highlights: ["Tea Gardens", "Mattupetty Dam", "Echo Point"] },
-        { day: 3, title: "Munnar to Thekkady", description: "Visit Eravikulam National Park. Drive to Thekkady.", highlights: ["Eravikulam", "Spice Plantation", "Periyar Lake"] },
-        { day: 4, title: "Thekkady to Alleppey", description: "Board houseboat at Alleppey. Cruise through backwaters.", highlights: ["Houseboat Cruise", "Village Views", "Sunset Cruise"] },
-        { day: 5, title: "Departure", description: "Disembark houseboat. Transfer to Cochin Airport.", highlights: ["Morning Cruise", "Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival in Cochin - Queen of Arabian Sea", 
+          description: "Welcome to Kerala! Arrive at Cochin International Airport and transfer to your heritage hotel in Fort Kochi, a charming area steeped in 500 years of colonial history. After freshening up, begin exploring this unique city that blends Portuguese, Dutch, and British influences. Walk to the iconic Chinese Fishing Nets, centuries-old fishing contraptions that have become Cochin's symbol. Watch fishermen operate these massive nets as the sun sets - a perfect photo opportunity. Visit St. Francis Church, India's oldest European church where Vasco da Gama was originally buried. Explore the atmospheric Jewish Synagogue in Mattancherry and the nearby antique shops. Evening, witness a mesmerizing Kathakali performance - an ancient dance-drama unique to Kerala, featuring elaborate costumes, makeup, and expressive storytelling.", 
+          highlights: ["Fort Kochi Heritage Hotel Check-in", "Iconic Chinese Fishing Nets at Sunset", "St. Francis Church - Vasco da Gama's First Burial Site", "Jewish Synagogue Visit", "Mesmerizing Kathakali Dance Performance", "Fresh Seafood Dinner by the Sea"] 
+        },
+        { 
+          day: 2, 
+          title: "Cochin to Munnar - Into the Clouds", 
+          description: "After breakfast, embark on one of India's most scenic drives as you climb from sea level to 1,600 meters through the Western Ghats to Munnar. The 130 km journey (approx. 4 hours) takes you through tropical forests, rubber plantations, and aromatic spice gardens. Stop at Cheeyappara and Valara Waterfalls for photos and fresh coconut water. As you climb higher, the landscape transforms - tea plantations begin to appear, covering hillsides in carpets of green. The air becomes cooler and fresher. Arrive at Munnar, a former summer retreat of the British. After lunch, visit the fascinating Tea Museum to learn about tea production from plantation to cup, including tea tasting. Drive to Mattupetty Dam and Echo Point, where your voice echoes across the valley. Optional boating on the serene Mattupetty Lake. Return to your hillside resort for dinner with misty mountain views.", 
+          highlights: ["Scenic Western Ghats Drive", "Cheeyappara & Valara Waterfalls", "Spice Gardens & Rubber Plantations", "Tea Museum & Tea Tasting", "Mattupetty Dam & Echo Point", "Hillside Resort with Valley Views"] 
+        },
+        { 
+          day: 3, 
+          title: "Munnar to Thekkady - Spice Hills & Wildlife", 
+          description: "Start early for a visit to Eravikulam National Park (open September-March), home to the endangered Nilgiri Tahr mountain goats. The park's rolling grasslands and stunning views make it a nature lover's paradise. After breakfast, drive to Thekkady (95 km, approx. 3 hours), gateway to the Periyar Wildlife Sanctuary. The route passes through cardamom and pepper plantations - you can smell the spices in the air! Upon arrival, check into your resort surrounded by spice gardens. After lunch, take a guided spice plantation walk - see pepper vines climbing trees, cardamom plants with aromatic pods, nutmeg, cinnamon, and vanilla. Your guide will explain the cultivation and uses of each spice. Evening, enjoy a boat cruise on Periyar Lake with chances to spot wild elephants, gaur (Indian bison), and various birds. Night entertainment includes traditional Kalaripayattu martial arts show.", 
+          highlights: ["Eravikulam National Park & Nilgiri Tahr", "Drive Through Cardamom Hills", "Spice Plantation Walk & Tasting", "Periyar Lake Boat Safari", "Wild Elephant Spotting Chance", "Kalaripayattu Martial Arts Show"] 
+        },
+        { 
+          day: 4, 
+          title: "Thekkady to Alleppey - Backwater Paradise", 
+          description: "Morning optional activities in Thekkady - choose from bamboo rafting, nature walks, or elephant interaction programs. Then drive to Alleppey (130 km, approx. 4 hours), the Venice of the East. Here awaits the highlight of your Kerala journey - the traditional houseboat (Kettuvallam)! Board your floating hotel around noon, welcomed with lime juice and fresh fruits. As the boat glides through the famous Alleppey backwaters, watch village life unfold along the shores. See farmers in rice paddies, children swimming in canals, women washing clothes, and fishermen casting nets. Pass under low bridges, through narrow canals lined with coconut palms. The crew serves you lunch of fresh fish curry, coconut rice, and local vegetables - cooked fresh on board! Evening, anchor at a scenic spot. Enjoy sunset from the deck, followed by dinner under the stars. Sleep to the gentle sounds of water lapping against the boat.", 
+          highlights: ["Optional Morning Activities in Thekkady", "Drive to Alleppey - Venice of the East", "Traditional Houseboat Boarding", "Backwater Village Life Experience", "Fresh Fish Curry Lunch On-Board", "Sunset & Dinner Under Stars on Deck"] 
+        },
+        { 
+          day: 5, 
+          title: "Alleppey to Cochin - Departure", 
+          description: "Wake up to sunrise over the backwaters - one of the most peaceful mornings you'll ever experience. Enjoy an early morning cruise as the backwaters come alive with fishing boats and village activity. A traditional Kerala breakfast is served on board - appam (rice pancakes), stew, puttu, and fresh tropical fruits. Disembark after breakfast and drive to Cochin Airport (85 km, approx. 2 hours). If time permits, stop at the Lulu Mall (India's largest shopping mall) for last-minute shopping or refreshments. Transfer to Cochin Airport for your onward journey. As you fly over the backwaters and green landscapes of Kerala, carry with you the warmth of God's Own Country. The sights, sounds, tastes, and hospitality of Kerala will stay with you forever. Namaste and safe travels!", 
+          highlights: ["Sunrise Cruise on Backwaters", "Traditional Kerala Breakfast On-Board", "Final Village Views from Boat", "Optional Lulu Mall Shopping", "Airport Transfer", "Memories of God's Own Country"] 
+        }
       ]
     },
     {
@@ -193,19 +378,54 @@ export const keralaData: DestinationData = {
       originalPrice: 42000,
       currentPrice: 35700,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800",
-      description: "Comprehensive Kerala tour covering all major attractions from hills to beaches.",
-      highlights: ["Munnar Hills", "Periyar Wildlife", "Alleppey Backwaters", "Kovalam Beach"],
-      inclusions: ["6 Nights Accommodation", "Daily Breakfast", "AC Vehicle", "All Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Boat Rides"],
+      image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&h=600&fit=crop",
+      description: "Comprehensive Kerala tour covering all major attractions from the misty hills of Munnar to the beaches of Kovalam. Experience wildlife, backwaters, and cultural heritage in one complete journey.",
+      highlights: ["Munnar Tea Gardens", "Periyar Wildlife Sanctuary", "Alleppey Backwaters", "Kovalam Beach"],
+      inclusions: ["6 Nights Quality Accommodation", "Daily Breakfast", "AC Private Vehicle", "All Sightseeing Entry Fees"],
+      exclusions: ["Airfare", "Lunch & Dinner", "Boat Rides & Optional Activities"],
       itinerary: [
-        { day: 1, title: "Cochin Arrival", description: "Explore Cochin - Fort Kochi, Chinese Nets, Mattancherry Palace.", highlights: ["Fort Kochi", "Mattancherry", "Kathakali Show"] },
-        { day: 2, title: "Cochin to Munnar", description: "Scenic drive to Munnar. Visit Cheeyappara Waterfalls.", highlights: ["Waterfalls", "Spice Gardens", "Tea Estates"] },
-        { day: 3, title: "Munnar Sightseeing", description: "Full day Munnar exploration.", highlights: ["Eravikulam", "Top Station", "Photo Point"] },
-        { day: 4, title: "Munnar to Thekkady", description: "Drive to Thekkady. Evening spice plantation tour.", highlights: ["Periyar", "Spice Walk", "Tribal Dance"] },
-        { day: 5, title: "Thekkady to Alleppey", description: "Houseboat cruise in Alleppey backwaters.", highlights: ["Houseboat", "Backwater Cruise", "Local Life"] },
-        { day: 6, title: "Alleppey to Kovalam", description: "Drive to Kovalam Beach. Evening at leisure.", highlights: ["Beach Walk", "Lighthouse", "Sunset"] },
-        { day: 7, title: "Departure", description: "Transfer to Trivandrum Airport.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Cochin Arrival - Heritage & History", 
+          description: "Arrive at Cochin Airport and transfer to your hotel in the historic Fort Kochi area. This former trading post is where the Portuguese, Dutch, British, and Arabs left their mark over centuries. After refreshments, begin your exploration. Visit the famous Chinese Fishing Nets - massive cantilevered structures believed to have been introduced by Chinese traders in the 14th century. Watch the sunset through these iconic nets for memorable photos. Walk to St. Francis Church, built in 1503, where Vasco da Gama was first buried (his remains were later moved to Portugal). Explore the 450-year-old Jewish Synagogue with its beautiful Belgian glass chandeliers and hand-painted Chinese floor tiles. Evening, witness an authentic Kathakali performance - an elaborate dance-drama unique to Kerala. The artists spend hours applying makeup that transforms them into characters from Hindu epics. Dinner at a seafood restaurant where you can choose your fish fresh from the catch.", 
+          highlights: ["Fort Kochi Heritage Hotel", "Chinese Fishing Nets at Sunset", "St. Francis Church - Oldest European Church", "Mattancherry Jewish Synagogue", "Authentic Kathakali Dance Performance", "Fresh Seafood Dinner by Harbor"] 
+        },
+        { 
+          day: 2, 
+          title: "Cochin to Munnar - Journey to the Hills", 
+          description: "After a leisurely breakfast, begin your scenic ascent to Munnar (130 km, approx. 4 hours). The drive is one of Kerala's most beautiful - watch the landscape transform from coastal plains to rubber plantations, spice gardens, and finally endless tea estates. Stop at Cheeyappara Falls, a seven-tiered waterfall cascading down the hillside. Further up, visit a spice garden to see how pepper, cardamom, coffee, and other spices are grown. You can purchase fresh spices at excellent prices. Continue climbing through hairpin bends as the air becomes cooler and the views more spectacular. Arrive at Munnar, nestled among the highest tea plantations in the world. After lunch and check-in, visit the KDHP Tea Museum to understand the history and process of tea-making, complete with tasting. Evening drive to Photo Point and View Point for panoramic views of the tea-covered hills extending to the horizon.", 
+          highlights: ["Scenic 4-Hour Hill Drive", "Cheeyappara Waterfalls Photo Stop", "Spice Garden Visit & Shopping", "Arrive Munnar - World's Highest Tea Gardens", "KDHP Tea Museum & Tea Tasting", "Sunset at View Point"] 
+        },
+        { 
+          day: 3, 
+          title: "Munnar Full Day Exploration", 
+          description: "Today is dedicated to experiencing Munnar's stunning natural beauty. Start early for Eravikulam National Park (open September-March), home to the endangered Nilgiri Tahr mountain goat. The park's grassy slopes and shola forests are remarkably beautiful. If closed for breeding season, instead visit the nearby Tata Tea Museum and Tea Factory. Next, drive to Top Station - at 1,700m, it offers stunning views of the neighboring state of Tamil Nadu and on clear days, the distant Western Ghats. The drive itself is spectacular through the highest tea plantations. After lunch, visit Mattupetty Dam and enjoy a boat ride on the serene lake surrounded by hills. Continue to Echo Point where your voice echoes multiple times across the valley. Return via Photo Point and Pothamedu View Point for more stunning vistas. Evening at leisure to enjoy your resort's facilities or take a walk through nearby tea plantations.", 
+          highlights: ["Eravikulam National Park & Nilgiri Tahr", "Top Station - Panoramic Views (1,700m)", "Drive Through Highest Tea Plantations", "Mattupetty Dam Boating", "Echo Point Experience", "Leisurely Resort Evening"] 
+        },
+        { 
+          day: 4, 
+          title: "Munnar to Thekkady - Spice Country", 
+          description: "After breakfast, drive to Thekkady (95 km, approx. 3 hours), gateway to the famous Periyar Wildlife Sanctuary. The route takes you through scenic cardamom hills - Thekkady is the heart of Kerala's spice trade. Check into your hotel, often set amidst spice plantations themselves. After lunch, enjoy a guided spice plantation walk. Your guide will show you how pepper vines climb trees, how cardamom grows in shaded forest floors, and you'll see nutmeg, cloves, cinnamon, coffee, and vanilla. The aromas are intoxicating! Late afternoon, head to Periyar Lake for a boat cruise. The lake is surrounded by Periyar Tiger Reserve, and from the boat, you have excellent chances of seeing wild elephants coming to drink, gaur (Indian bison), sambar deer, wild boar, and numerous birds. Evening, choose from local entertainment - Kalaripayattu martial arts show or tribal dance performances.", 
+          highlights: ["Scenic Cardamom Hills Drive", "Spice Plantation Guided Walk", "See Pepper, Cardamom, Vanilla Growing", "Periyar Lake Boat Safari", "Wild Elephant Sightings (Common)", "Kalaripayattu Martial Arts Show"] 
+        },
+        { 
+          day: 5, 
+          title: "Thekkady to Alleppey - Venice of the East", 
+          description: "Morning, optional activities in Thekkady - bamboo rafting on the lake, guided nature walks in Periyar, or visit an elephant camp. After breakfast, drive to Alleppey (130 km, approx. 4 hours), the heart of Kerala's backwater country. Around noon, board your traditional houseboat (Kettuvallam) - your floating hotel for the next 22 hours. These boats were once used to transport rice and spices; now converted into comfortable houseboats with bedrooms, bathrooms, and a kitchen. As the boat glides through narrow canals lined with coconut palms, watch village life unfold - farmers in rice paddies, children waving from shore, fishermen casting nets. Fresh Kerala meals are prepared on board by your cook. The cuisine here focuses on fish curry, prawn preparations, and traditional vegetarian dishes. Evening, anchor at a scenic spot. Watch the sunset from your deck, enjoy dinner under the stars, and fall asleep to the gentle sounds of the backwaters.", 
+          highlights: ["Optional Thekkady Morning Activities", "Drive to Alleppey Backwaters", "Traditional Houseboat Boarding", "Glide Through Palm-Lined Canals", "Fresh Kerala Lunch & Dinner On-Board", "Overnight on Backwaters Under Stars"] 
+        },
+        { 
+          day: 6, 
+          title: "Alleppey to Kovalam - Beach Arrival", 
+          description: "Wake up to a magical sunrise over the backwaters. After breakfast on board, continue cruising through the morning. Disembark around 9:30 AM and begin your drive to Kovalam (175 km, approx. 4.5 hours), Kerala's most famous beach destination. En route, you may stop at the Krishnapuram Palace or other heritage sites. Arrive at Kovalam by afternoon and check into your beachside hotel. Kovalam features a beautiful crescent beach divided by rocky promontories into three coves. The Lighthouse Beach is the most popular, named after the red and white lighthouse at its southern end. After settling in, walk down to the beach. The Arabian Sea here is perfect for swimming (be mindful of flags indicating safety). Watch the sunset from the beach as fishermen return with their catch. Evening, stroll along the beach promenade lined with restaurants, shops, and cafes. Enjoy fresh seafood dinner at a beachside shack - the grilled lobster and tiger prawns are exceptional.", 
+          highlights: ["Sunrise & Breakfast on Houseboat", "Morning Backwater Cruise", "Drive to Kovalam Beach", "Lighthouse Beach Arrival", "Arabian Sea Sunset", "Fresh Seafood Beach Dinner"] 
+        },
+        { 
+          day: 7, 
+          title: "Kovalam & Departure", 
+          description: "Your final morning in Kerala! Wake up early for a walk on the beach as the sun rises over the Arabian Sea - fishermen will be setting out in their boats, a serene and timeless scene. Enjoy a relaxed breakfast at your hotel. If time permits, visit the nearby Padmanabhapuram Palace (a stunning wooden palace) or the Vizhinjam fishing harbor. Alternatively, indulge in a traditional Ayurvedic massage at your hotel or one of Kovalam's many spas - the perfect way to end your Kerala journey. Around midday, transfer to Trivandrum Airport (15 km, approx. 30 minutes) for your departure. As you leave Kerala, you carry with you memories of misty mountains, serene backwaters, golden beaches, rich spices, and the warmth of Kerala hospitality. Namaste - until we meet again!", 
+          highlights: ["Sunrise Beach Walk", "Relaxed Breakfast by the Sea", "Optional Padmanabhapuram Palace Visit", "Optional Ayurvedic Spa Treatment", "Trivandrum Airport Transfer (30 mins)", "Farewell from God's Own Country"] 
+        }
       ]
     },
     {
@@ -215,18 +435,48 @@ export const keralaData: DestinationData = {
       originalPrice: 55000,
       currentPrice: 46750,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800",
-      description: "Rejuvenating Ayurvedic wellness retreat with traditional treatments and yoga.",
-      highlights: ["Ayurvedic Treatments", "Daily Yoga", "Meditation Sessions", "Organic Cuisine"],
-      inclusions: ["5 Nights Resort Stay", "All Ayurvedic Treatments", "Yoga & Meditation", "All Meals"],
-      exclusions: ["Airfare", "Personal Expenses", "Additional Treatments"],
+      image: "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800&h=600&fit=crop",
+      description: "Rejuvenate your mind, body, and soul with this comprehensive Ayurvedic wellness retreat. Experience authentic Panchakarma treatments, daily yoga and meditation, and organic Sattvic cuisine in a peaceful beachside setting.",
+      highlights: ["Personalized Ayurvedic Treatments", "Daily Yoga & Meditation", "Meditation Sessions", "Organic Sattvic Cuisine"],
+      inclusions: ["5 Nights Ayurveda Resort Stay", "All Ayurvedic Treatments", "Daily Yoga & Meditation", "All Meals (Ayurvedic Diet)"],
+      exclusions: ["Airfare", "Personal Expenses", "Additional Treatments", "Travel Insurance"],
       itinerary: [
-        { day: 1, title: "Arrival & Consultation", description: "Arrive at resort. Doctor consultation and treatment planning.", highlights: ["Welcome", "Consultation", "Diet Planning"] },
-        { day: 2, title: "Panchakarma Begin", description: "Start Ayurvedic treatments. Morning yoga session.", highlights: ["Abhyanga", "Yoga", "Meditation"] },
-        { day: 3, title: "Deep Detox", description: "Continue treatments with detox therapies.", highlights: ["Shirodhara", "Steam Bath", "Nature Walk"] },
-        { day: 4, title: "Rejuvenation", description: "Rejuvenation therapies and relaxation.", highlights: ["Pizhichil", "Herbal Bath", "Cooking Class"] },
-        { day: 5, title: "Wellness Continue", description: "Final treatments and wellness activities.", highlights: ["Treatments", "Beach Visit", "Sunset Meditation"] },
-        { day: 6, title: "Departure", description: "Final consultation and departure.", highlights: ["Consultation", "Farewell"] }
+        { 
+          day: 1, 
+          title: "Arrival & Ayurvedic Assessment", 
+          description: "Welcome to your healing journey! Arrive at Trivandrum or Cochin Airport and transfer to your Ayurveda resort, typically set in a serene beachside or backwater location. Upon arrival, settle into your comfortable room and enjoy a welcome drink of fresh herbal tea. After resting, meet your personal Ayurvedic physician for a detailed consultation. The doctor will assess your constitution (Prakriti) and current imbalances (Vikriti) through pulse diagnosis, observation, and health history. Based on this assessment, a personalized treatment plan is created for your stay, including specific therapies, diet, and lifestyle recommendations. Evening, attend an orientation session about the Ayurvedic lifestyle. Your first Sattvic dinner is served - fresh, vegetarian, and prepared according to Ayurvedic principles to support your healing journey.", 
+          highlights: ["Resort Welcome & Herbal Tea", "Comfortable Room Check-in", "Detailed Ayurvedic Consultation", "Prakriti & Vikriti Assessment", "Personalized Treatment Plan Creation", "First Sattvic Ayurvedic Dinner"] 
+        },
+        { 
+          day: 2, 
+          title: "Beginning the Healing Journey", 
+          description: "Your treatment journey begins today. Wake up early (around 6 AM) for a guided yoga session - Hatha yoga adapted to your constitution and health needs. After yoga, enjoy a light Ayurvedic breakfast. Mid-morning, your treatments begin. Today's signature therapy is Abhyanga - a synchronized full-body massage performed by two therapists using warm medicated oils selected for your body type. The massage improves circulation, releases toxins, and deeply relaxes the nervous system. After Abhyanga, you'll experience Swedana - a herbal steam bath that opens the pores and helps eliminate toxins loosened by the massage. Rest after treatment - this is crucial for the healing process. Light lunch is followed by free time. Evening, attend a meditation session. The day ends with dinner and early sleep - rest is essential in Ayurveda.", 
+          highlights: ["6 AM Yoga Session", "Ayurvedic Breakfast", "Abhyanga - Two-Therapist Oil Massage", "Swedana - Herbal Steam Bath", "Mandatory Rest Period", "Evening Meditation & Early Sleep"] 
+        },
+        { 
+          day: 3, 
+          title: "Deep Cleansing & Detoxification", 
+          description: "By day three, your body is beginning to respond to the treatments. Morning yoga focuses on pranayama (breathing exercises) which accelerates the cleansing process. Today's signature treatment is Shirodhara - a deeply relaxing therapy where warm medicated oil is poured in a continuous stream on the forehead (third eye). This treatment profoundly calms the nervous system, relieves stress, improves sleep, and enhances mental clarity. The sensation is deeply hypnotic and many people enter a meditative state. Following Shirodhara, enjoy a relaxing head, neck, and shoulder massage. Afternoon includes a nature walk on the beach or through the resort's gardens - gentle exercise is encouraged. Optional: join a cooking class to learn about Ayurvedic food preparation principles. Evening includes guided meditation or chanting sessions.", 
+          highlights: ["Pranayama (Breathing) Yoga Focus", "Shirodhara - Third Eye Oil Treatment", "Deeply Relaxing Nervous System Reset", "Beach or Garden Nature Walk", "Optional Ayurvedic Cooking Class", "Evening Chanting & Meditation"] 
+        },
+        { 
+          day: 4, 
+          title: "Rejuvenation Therapies", 
+          description: "Your body is now cleansed and ready for rejuvenation therapies. Morning yoga continues with postures tailored to your needs. Today's highlight is Pizhichil - the royal treatment! Warm medicated oil is poured continuously over your body while two therapists simultaneously massage in synchronized strokes. Historically reserved for royalty, this treatment deeply nourishes the tissues, improves skin health, and creates profound relaxation. After Pizhichil, enjoy Njavara Kizhi - a massage using boluses filled with cooked medicated rice, which strengthens muscles and provides excellent nutrition to the skin. Afternoon, enjoy free time for reading, journaling, or simply sitting peacefully. The resort may offer sessions on Ayurvedic lifestyle principles, stress management, or diet planning to take home.", 
+          highlights: ["Personalized Morning Yoga", "Pizhichil - Royal Oil Bath Treatment", "Two-Therapist Synchronized Massage", "Njavara Kizhi - Medicated Rice Bolus", "Ayurvedic Lifestyle Workshop", "Peaceful Free Time for Reflection"] 
+        },
+        { 
+          day: 5, 
+          title: "Continued Wellness & Cultural Experience", 
+          description: "Your treatments continue with consistency - Ayurveda believes in repetition for lasting benefits. Morning yoga and meditation as usual. Today's treatments may include specialized therapies based on your specific needs - Nasya (nasal treatment) for respiratory or sinus issues, Netra Tarpana (eye rejuvenation) for computer-strained eyes, or Kati Basti (lower back treatment) for spine health. The physician monitors your progress and may adjust treatments. Afternoon brings a cultural experience - visit a nearby beach or fishing village, or enjoy a traditional Kathakali or Mohiniyattam dance performance arranged at the resort. These cultural experiences are part of Kerala's rich heritage and provide mental rejuvenation. Evening meditation focuses on visualization and gratitude, setting intentions for your life after the retreat.", 
+          highlights: ["Morning Yoga & Meditation", "Specialized Therapies Based on Needs", "Physician Progress Assessment", "Beach or Village Visit", "Traditional Dance Performance", "Gratitude & Intention Meditation"] 
+        },
+        { 
+          day: 6, 
+          title: "Completion & New Beginning", 
+          description: "Your retreat concludes, but your Ayurvedic journey is just beginning. Early morning yoga and final meditation session. Enjoy a peaceful breakfast. Final consultation with your physician who provides a comprehensive take-home plan including: recommended diet according to your constitution, beneficial yoga postures to continue at home, herbs or supplements to support ongoing health, and lifestyle modifications. You receive detailed written instructions. Time to pack and collect any herbal products you may wish to purchase from the resort's dispensary. Exchange contacts with fellow travelers who may have become friends during this healing journey. Transfer to airport with a heart full of peace, a body full of vitality, and wisdom to continue your wellness path. The effects of Ayurveda will continue to unfold in the weeks ahead!", 
+          highlights: ["Final Yoga & Meditation", "Consultation with Take-Home Plan", "Personalized Diet & Lifestyle Guide", "Herbal Products Shopping", "Farewell to New Friends", "Airport Transfer with New Vitality"] 
+        }
       ]
     },
     {
@@ -236,18 +486,48 @@ export const keralaData: DestinationData = {
       originalPrice: 52000,
       currentPrice: 44200,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800",
-      description: "Romantic Kerala honeymoon with private houseboat, candlelight dinners, and couple spa.",
-      highlights: ["Private Houseboat", "Candlelight Dinners", "Couple Spa", "Romantic Settings"],
-      inclusions: ["5 Nights Premium Stay", "All Meals", "Private Transfers", "Couple Activities"],
-      exclusions: ["Airfare", "Personal Shopping", "Optional Tours"],
+      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
+      description: "Celebrate your love story in God's Own Country. This romantic Kerala honeymoon includes private houseboat stays, candlelight dinners, couple spa treatments, and intimate moments amidst nature's most beautiful settings.",
+      highlights: ["Private Houseboat Experience", "Candlelight Beach Dinners", "Couple Ayurvedic Spa", "Romantic Settings Throughout"],
+      inclusions: ["5 Nights Premium Accommodation", "All Meals", "Private Transfers", "Couple Activities & Romantic Setups"],
+      exclusions: ["Airfare", "Personal Shopping", "Optional Tours", "Travel Insurance"],
       itinerary: [
-        { day: 1, title: "Romantic Arrival", description: "Arrive Cochin. Flower-decorated room and welcome dinner.", highlights: ["Romantic Welcome", "Candlelight Dinner", "Fort Kochi Walk"] },
-        { day: 2, title: "Munnar Romance", description: "Drive to Munnar. Private tea estate visit.", highlights: ["Scenic Drive", "Private Tea Tasting", "Mountain Views"] },
-        { day: 3, title: "Love in the Hills", description: "Private picnic and couple photoshoot.", highlights: ["Private Picnic", "Photoshoot", "Sunset Point"] },
-        { day: 4, title: "Houseboat Romance", description: "Private houseboat experience with chef.", highlights: ["Private Houseboat", "Candlelight Dinner on Boat", "Stargazing"] },
-        { day: 5, title: "Beach Bliss", description: "Kovalam beach. Couple spa and beach dinner.", highlights: ["Couple Ayurvedic Spa", "Beach Walk", "Seafood Dinner"] },
-        { day: 6, title: "Departure", description: "Farewell with sweet memories.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Romantic Arrival in Cochin", 
+          description: "Your romantic escape begins! Arrive at Cochin Airport where our representative welcomes you with a fragrant flower garland and transfers you to your heritage hotel in the charming Fort Kochi area. Your room is decorated with rose petals, balloons, and a honeymoon cake awaits you. After freshening up, enjoy complimentary couples mocktails on the rooftop as you gaze at the stunning sunset over the Arabian Sea with the Chinese Fishing Nets silhouetted against the sky. Evening, take a romantic walk along the Fort Kochi beach, hand in hand. Dinner is a special candlelit affair on a private table at a colonial-era restaurant - fresh seafood, Kerala cuisine, and wine complement the romantic ambiance. The sound of waves, twinkling stars, and your beloved by your side - the perfect start to your honeymoon.", 
+          highlights: ["Flower Garland Airport Welcome", "Rose Petal Decorated Room", "Honeymoon Cake Surprise", "Rooftop Sunset Mocktails", "Romantic Fort Kochi Beach Walk", "Candlelit Colonial Restaurant Dinner"] 
+        },
+        { 
+          day: 2, 
+          title: "Munnar - Romance in the Hills", 
+          description: "After a leisurely breakfast, drive to Munnar (130 km, approx. 4 hours) through the scenic Western Ghats. The journey is romantic in itself - winding through spice gardens, rubber plantations, and eventually endless tea estates. Make stops at waterfalls for photos and to enjoy each other's company. Arrive at Munnar and check into a romantic hillside resort with valley views. After lunch, take a private tea plantation walk just for two. Wander through the tea bushes as mist rolls in, learning about tea production while stealing moments together. Optional tea leaf plucking experience followed by private tea tasting. Evening, dinner at the resort's best table with views of the mist-covered hills - warm Kashmiri Kahwa and local delicacies set the mood.", 
+          highlights: ["Scenic Couple's Drive Through Ghats", "Waterfall Photo Stops", "Valley-View Hillside Resort", "Private Tea Plantation Walk", "Tea Tasting for Two", "Misty Hill Dinner with Views"] 
+        },
+        { 
+          day: 3, 
+          title: "Munnar - Love in the Clouds", 
+          description: "Wake up in the clouds - literally! Munnar mornings are often wrapped in mist, creating a dreamlike atmosphere. Enjoy breakfast with mountain views. Today is for private adventures together. Visit Top Station - the highest point in Munnar - where on clear days you can see the neighboring state of Tamil Nadu. The drive through tea plantations is incredibly romantic. Stop at Photo Point and take countless photos together. Continue to Mattupetty Dam for a private paddle boat ride on the serene lake surrounded by hills - perfect for quiet conversations and shared moments. Later, enjoy a private picnic arranged by your hotel at a scenic viewpoint. Evening, return to your resort for a special couple's Ayurvedic massage - a synchronized treatment that promotes bonding while relaxing you both.", 
+          highlights: ["Misty Mountain Morning Breakfast", "Top Station Romantic Drive", "Endless Tea Plantation Photos", "Private Paddle Boat at Mattupetty", "Romantic Hillside Picnic for Two", "Couple's Ayurvedic Massage"] 
+        },
+        { 
+          day: 4, 
+          title: "Private Houseboat Romance", 
+          description: "Today you experience Kerala's most romantic offering - a private houseboat just for two! Drive from Munnar to Alleppey (170 km, approx. 5 hours) through changing landscapes. Around noon, board your premium private houseboat, lavishly decorated for your honeymoon - flowers, candles, and special touches everywhere. The boat is exclusively yours, staffed by a captain, a chef, and a helper. As the boat glides through palm-fringed canals, enjoy a lunch of fresh fish curry prepared on board. Spend the afternoon on the deck watching village life and nature. Your personal chef prepares a special candlelight dinner on the deck as the boat anchors in a peaceful spot. With stars above, gentle waters around, and your love beside you, it's a night you'll never forget. Sleep to the gentle sounds of the backwaters.", 
+          highlights: ["Drive Through Scenic Landscapes", "Private Honeymoon Houseboat", "Exclusive Flower-Decorated Boat", "Fresh Fish Lunch On-Board", "Lazy Backwater Afternoon", "Candlelit Deck Dinner Under Stars"] 
+        },
+        { 
+          day: 5, 
+          title: "Kovalam Beach Bliss", 
+          description: "Wake up to sunrise over the backwaters - a magical moment to share. Enjoy breakfast on the boat, then continue cruising through the morning, soaking in the last views. Disembark and drive to Kovalam (175 km, approx. 4 hours), Kerala's premier beach resort. Check into your beachfront room with Arabian Sea views. After lunch, head to the beach. The crescent-shaped Lighthouse Beach is perfect for couples - swim together in the warm sea, walk on the golden sand, or simply relax under an umbrella with refreshing drinks. Late afternoon, climb to the lighthouse for panoramic views. Sunset on the beach is romantic - as the sky turns orange and pink, stroll along the shore. Dinner is arranged at a beachside restaurant - your table is set on the sand, candles flickering, waves lapping nearby, and a delicious seafood spread before you.", 
+          highlights: ["Sunrise Breakfast on Houseboat", "Final Backwater Cruise", "Beachfront Hotel Check-in", "Swimming in Arabian Sea Together", "Lighthouse Panoramic Views", "Candlelit Dinner on the Beach Sand"] 
+        },
+        { 
+          day: 6, 
+          title: "Sweet Farewell from Kerala", 
+          description: "Your honeymoon in God's Own Country comes to a beautiful end. Wake up early for a walk on the beach as the sun rises - fishermen will be setting out, a scene unchanged for centuries. Return for breakfast at the hotel. If time permits, indulge in a final couple's Ayurvedic spa treatment - perhaps a relaxing Shirodhara where warm oil is poured on your forehead, inducing deep relaxation. Alternatively, visit the nearby Padmanabhapuram Palace, a stunning ancient wooden palace. Transfer to Trivandrum Airport (15 km, approx. 30 minutes) for your departure. As you fly over Kerala's green landscapes and blue seas, carry with you the warmth of this tropical paradise and the memories of a honeymoon that has strengthened your bond. Wishing you a lifetime of happiness together!", 
+          highlights: ["Romantic Sunrise Beach Walk", "Final Breakfast Together", "Optional Couple's Spa Treatment", "Optional Palace Visit", "Airport Transfer", "Lifetime of Kerala Memories"] 
+        }
       ]
     },
     {
@@ -257,17 +537,42 @@ export const keralaData: DestinationData = {
       originalPrice: 32000,
       currentPrice: 27200,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800",
-      description: "Wildlife adventure in Kerala's best sanctuaries and national parks.",
+      image: "https://images.unsplash.com/photo-1606567595334-d39972c85dfd?w=800&h=600&fit=crop",
+      description: "Explore Kerala's incredible biodiversity in this wildlife-focused tour. From the elephant herds of Periyar to the birds of Kumarakom and the diverse ecosystems of Silent Valley, this is a nature lover's paradise.",
       highlights: ["Periyar Tiger Reserve", "Elephant Safari", "Bird Watching", "Nature Camps"],
-      inclusions: ["4 Nights Accommodation", "All Meals", "Safari Permits", "Naturalist Guide"],
+      inclusions: ["4 Nights Wildlife Lodges", "All Meals", "Safari Permits & Entry", "Naturalist Guide"],
       exclusions: ["Airfare", "Personal Expenses", "Camera Fees"],
       itinerary: [
-        { day: 1, title: "Arrival Thekkady", description: "Arrive and transfer to Thekkady wildlife resort.", highlights: ["Resort Check-in", "Nature Walk", "Wildlife Documentary"] },
-        { day: 2, title: "Periyar Safari", description: "Morning boat safari on Periyar Lake. Evening bamboo rafting.", highlights: ["Boat Safari", "Elephant Sighting", "Bamboo Rafting"] },
-        { day: 3, title: "Nature Trails", description: "Guided jungle trek and spice plantation visit.", highlights: ["Jungle Trek", "Wildlife Spotting", "Spice Plantation"] },
-        { day: 4, title: "Kumarakom Birds", description: "Visit Kumarakom Bird Sanctuary. Evening backwater cruise.", highlights: ["Bird Watching", "Migratory Birds", "Backwater Cruise"] },
-        { day: 5, title: "Departure", description: "Transfer to Cochin Airport.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival at Thekkady - Periyar Gateway", 
+          description: "Arrive at Cochin or Madurai Airport and transfer to Thekkady (130-145 km, approx. 4 hours). Thekkady is the gateway to the famous Periyar Wildlife Sanctuary, one of India's most popular wildlife reserves. The drive takes you through the cardamom-covered hills of Idukki, and the aroma of spices fills the air. Check into your wildlife lodge or treehouse resort - many offer views of the surrounding forests where elephants may occasionally wander by! After lunch, attend a briefing about the reserve and the wildlife you might encounter. Late afternoon, take a nature walk in the surrounding forests with a naturalist guide. Learn to identify trees, spot birds, and understand the forest ecosystem. Evening, watch a documentary about Periyar's wildlife conservation efforts. Early dinner and rest - tomorrow's adventures begin at dawn.", 
+          highlights: ["Transfer Through Cardamom Hills", "Wildlife Lodge or Treehouse Check-in", "Periyar Wildlife Briefing", "Guided Nature Walk", "Bird Spotting Introduction", "Wildlife Documentary Screening"] 
+        },
+        { 
+          day: 2, 
+          title: "Periyar Wildlife Experience", 
+          description: "Wake before dawn for the best wildlife experience! The early morning boat cruise on Periyar Lake offers the highest chances of wildlife sightings. As the sun rises over the mist-covered lake, watch the forest come alive. Wild elephants are regularly seen coming to the water's edge to drink and bathe - seeing a herd of elephants in their natural habitat is an unforgettable experience. Also look for Gaur (Indian Bison), Sambar deer, wild boar, and if extremely lucky, a tiger or leopard. The lake is surrounded by deciduous and evergreen forests, and numerous birds including cormorants, kingfishers, and hornbills are common. Return for a hearty breakfast. Mid-morning, embark on a bamboo rafting expedition - float silently on bamboo rafts through remote areas of the reserve, increasing chances of seeing shy wildlife. Afternoon, explore outside the sanctuary - visit an elephant rehabilitation center where you can observe and learn about these gentle giants.", 
+          highlights: ["Dawn Boat Safari on Periyar Lake", "Wild Elephant Herds Sighting", "Gaur, Sambar, Wild Boar Spotting", "Bamboo Rafting in Remote Areas", "Elephant Rehabilitation Center Visit", "Wildlife Photography Opportunities"] 
+        },
+        { 
+          day: 3, 
+          title: "Periyar Tribal Trek & Forest Night", 
+          description: "Today's adventure goes deeper into the forest. After breakfast, join a Border Hiking Trail led by tribal guides - former poachers who now work in conservation. These local experts know the forest intimately and can spot wildlife that others miss. The trek goes through different forest types, past tribal settlements, and to viewpoints where you can observe wildlife without disturbing them. Learn about traditional tracking methods and medicinal plants. Pack lunch is served in the forest. Afternoon, participate in a spice plantation tour - Thekkady is famous for pepper, cardamom, and other spices. See how they grow and learn about their uses. For the truly adventurous, an optional night trek or camping in the forest outskirts can be arranged - hearing the sounds of the jungle at night and perhaps spotting nocturnal animals is an incredible experience.", 
+          highlights: ["Border Hiking with Tribal Guides", "Former Poachers as Expert Trackers", "Deep Forest Wildlife Tracking", "Forest Picnic Lunch", "Spice Plantation Tour", "Optional Night Trek or Camping"] 
+        },
+        { 
+          day: 4, 
+          title: "Kumarakom Bird Sanctuary", 
+          description: "Bid farewell to Periyar and drive to Kumarakom (130 km, approx. 4 hours), home to one of India's most famous bird sanctuaries. Check into a lakeside resort on the banks of Vembanad Lake, Kerala's largest lake and a Ramsar wetland of international importance. After lunch, head to the Kumarakom Bird Sanctuary for a guided walk. The sanctuary is spread over 14 acres of evergreen and mangrove forests. Depending on the season, you may spot: Siberian Storks, Egrets, Darters, Herons, Teal, and many more. The evening is ideal for bird photography as birds return to roost. Later, take a sunset boat cruise on Vembanad Lake - watch as thousands of birds fly across the orange sky returning to the sanctuary. The reflections on the water are stunning. Dinner at the resort, listening to the sounds of the wetland.", 
+          highlights: ["Drive to Kumarakom Wetlands", "Vembanad Lake Resort Stay", "Kumarakom Bird Sanctuary Walk", "Migratory & Local Bird Spotting", "Sunset Boat Cruise", "Bird Photography Opportunities"] 
+        },
+        { 
+          day: 5, 
+          title: "Early Birding & Departure", 
+          description: "Serious birders will want an early morning outing - the hours after dawn are best for bird activity. Arrange for a 5:30 AM boat ride through the narrow canals around the sanctuary where birds are most active. Your naturalist guide will help identify species and their calls. Alternatively, take a nature walk on the paths around the sanctuary. Return for a leisurely breakfast, sharing stories and comparing wildlife sightings from your trip. Check out and transfer to Cochin Airport (75 km, approx. 2 hours). If your flight is later, optional activities include a brief backwater cruise or visit to the Kerala Folklore Museum in Cochin. As you leave Kerala, carry with you the memories of wild elephants, exotic birds, and the incredible biodiversity of God's Own Country. May these experiences inspire a lifelong connection with nature!", 
+          highlights: ["5:30 AM Canal Birding Expedition", "Final Nature Walk", "Breakfast Bird Count Review", "Optional Backwater Cruise", "Cochin Airport Transfer", "Wildlife Memories to Cherish"] 
+        }
       ]
     }
   ]
@@ -279,11 +584,11 @@ export const ladakhData: DestinationData = {
   name: "Ladakh",
   tagline: "Land of High Passes",
   description: "Experience the breathtaking landscapes of Ladakh - from the pristine Pangong Lake to the rugged Nubra Valley. Discover ancient monasteries, high mountain passes, and the unique Ladakhi culture.",
-  heroImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1920",
+  heroImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -293,19 +598,54 @@ export const ladakhData: DestinationData = {
       originalPrice: 45000,
       currentPrice: 38250,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Ultimate Ladakh adventure covering Leh, Nubra Valley, and Pangong Lake.",
-      highlights: ["Pangong Lake", "Nubra Valley", "Khardung La", "Monasteries"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "Permits", "Sightseeing"],
-      exclusions: ["Airfare", "Personal Expenses"],
+      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+      description: "Ultimate Ladakh adventure covering Leh, Nubra Valley, and Pangong Lake. Experience the world's highest motorable passes, ancient Buddhist monasteries, and landscapes that seem otherworldly.",
+      highlights: ["Pangong Lake", "Nubra Valley", "Khardung La Pass", "Ancient Monasteries"],
+      inclusions: ["6 Nights Accommodation", "All Meals", "Inner Line Permits", "Sightseeing in Private Vehicle"],
+      exclusions: ["Airfare", "Personal Expenses", "Oxygen Cylinders (if needed)"],
       itinerary: [
-        { day: 1, title: "Arrival in Leh", description: "Arrive at Leh Airport. Rest and acclimatize.", highlights: ["Airport Pickup", "Acclimatization", "Light Walk"] },
-        { day: 2, title: "Leh Local Sightseeing", description: "Visit Shanti Stupa, Leh Palace, and local markets.", highlights: ["Shanti Stupa", "Leh Palace", "Local Market"] },
-        { day: 3, title: "Leh to Nubra Valley", description: "Drive to Nubra via Khardung La pass.", highlights: ["Khardung La", "Diskit Monastery", "Sand Dunes"] },
-        { day: 4, title: "Nubra to Pangong", description: "Drive to Pangong Lake via Shyok route.", highlights: ["Scenic Drive", "Pangong Lake", "Sunset at Lake"] },
-        { day: 5, title: "Pangong to Leh", description: "Return to Leh via Chang La pass.", highlights: ["Chang La", "Hemis Monastery", "Thiksey"] },
-        { day: 6, title: "Sham Valley Tour", description: "Visit Magnetic Hill, Sangam, and Alchi Monastery.", highlights: ["Magnetic Hill", "Sangam Point", "Alchi"] },
-        { day: 7, title: "Departure", description: "Transfer to Leh Airport.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival in Leh - Acclimatization Day", 
+          description: "Welcome to Ladakh - the Land of High Passes! Your flight to Leh is spectacular in itself, offering aerial views of the Himalayas. Upon arrival at Kushok Bakula Rimpochee Airport (one of the highest commercial airports at 3,256m), you immediately feel the crisp mountain air. IMPORTANT: The high altitude requires proper acclimatization. Transfer to your hotel and rest for the entire afternoon - this is essential to prevent Acute Mountain Sickness (AMS). Drink plenty of water and avoid strenuous activity. Light lunch in the hotel. Late afternoon, take a gentle 20-minute walk to nearby Shanti Stupa - the short climb will test how your body is adjusting. The stupa offers panoramic views of Leh town and the surrounding mountains glowing golden in the sunset. Return to hotel for dinner and early sleep. Altitude: 3,500m (11,483 ft).", 
+          highlights: ["Himalayan Aerial Views During Flight", "Leh Airport Arrival (3,256m)", "Critical Acclimatization Rest", "Hydration & Light Activity Only", "Shanti Stupa Sunset Walk", "Panoramic Leh Town Views"] 
+        },
+        { 
+          day: 2, 
+          title: "Leh Local Sightseeing", 
+          description: "After breakfast, and assuming no altitude sickness symptoms, begin exploring Leh's cultural heritage. Visit the 17th-century Leh Palace, often called 'Little Potala' for its resemblance to the Dalai Lama's palace in Tibet. The nine-story structure offers commanding views of the town and surrounding peaks. Continue to Namgyal Tsemo Gompa, a 15th-century monastery perched on a ridge above the palace - the effort of climbing is rewarded with stunning views. After lunch, explore the Leh Main Bazaar - a colorful market selling Tibetan handicrafts, pashmina shawls, and turquoise jewelry. Visit the 550-year-old Jama Masjid, showcasing the religious harmony of Ladakh. Evening, attend the sunset prayer ceremony at a local monastery. The rhythmic chanting, incense, and setting sun create a spiritually uplifting experience. Dinner featuring Ladakhi cuisine - try Thukpa (noodle soup), Momos (dumplings), and butter tea.", 
+          highlights: ["17th Century Leh Palace", "Namgyal Tsemo Monastery Climb", "Panoramic City Views", "Leh Main Bazaar Shopping", "Historic Jama Masjid Visit", "Evening Monastery Prayer Ceremony"] 
+        },
+        { 
+          day: 3, 
+          title: "Leh to Nubra Valley - Over Khardung La", 
+          description: "Today you conquer one of the world's highest motorable roads! After an early breakfast, drive towards Nubra Valley via Khardung La Pass (5,359m or 17,582 ft). The climb takes about 2 hours through dramatic moonscape terrain. At the top, the thin air makes even simple movements challenging - don't linger too long! Take photos at the famous signboard, enjoy the surreal 360-degree views, and then descend. The landscape changes dramatically as you enter Nubra Valley - from barren peaks to green oasis villages. Stop at Diskit Monastery, the largest monastery in Nubra, featuring a 32-meter statue of Maitreya Buddha overlooking the valley. Continue to Hunder village, famous for its sand dunes and double-humped Bactrian camels - a remnant from Silk Road days. Optional camel ride on the dunes at sunset. Overnight at a camp or guesthouse in Hunder. Altitude: Khardung La 5,359m, Hunder 3,048m.", 
+          highlights: ["Early Start for Khardung La", "World's Highest Motorable Pass (5,359m)", "Surreal High-Altitude Landscapes", "Diskit Monastery & 32m Buddha", "Hunder Sand Dunes", "Double-Humped Bactrian Camel Safari"] 
+        },
+        { 
+          day: 4, 
+          title: "Nubra to Pangong Lake via Shyok", 
+          description: "After breakfast, drive to the legendary Pangong Tso Lake via the stunning Shyok River route (approx. 170 km, 6-7 hours). This route is less traveled and incredibly scenic - following the Shyok River through narrow gorges and past remote villages. The road conditions vary, making it a true adventure. En route, stop at small villages where you can interact with locals and perhaps see yaks grazing. As you approach Pangong, the landscape becomes even more dramatic - barren mountains with remarkable color striations. Then, the first glimpse of Pangong Lake takes your breath away! Stretching 134 km (one-third in India, two-thirds in Tibet), the lake is famous for its ever-changing colors - from azure to turquoise to deep blue, depending on the sunlight. Arrive by afternoon and simply sit by the lake, absorbing its ethereal beauty. Sunset at Pangong is magical - the mountains glow red and orange while the lake reflects the colors. Overnight in lakeside camps or homestays. Altitude: 4,350m (14,270 ft).", 
+          highlights: ["Scenic Shyok River Route", "Remote Village Encounters", "Dramatic Color-Banded Mountains", "First View of Legendary Pangong", "Lake's Color-Changing Magic", "Spectacular Lakeside Sunset & Camp"] 
+        },
+        { 
+          day: 5, 
+          title: "Pangong to Leh via Chang La", 
+          description: "Wake early to witness sunrise at Pangong - the lake slowly illuminated in golden light is a photographer's dream. After breakfast, bid farewell to this magical lake and drive to Leh (approximately 160 km, 5 hours) via Chang La Pass (5,360m) - the third highest motorable pass in the world. The road climbs dramatically from the lake through rocky terrain. At Chang La, visit the café run by the army for hot snacks. Descending towards Leh, stop at the spectacular Hemis Monastery - the largest and wealthiest monastery in Ladakh, famous for its annual Hemis Festival featuring masked dances. Continue to Thiksey Monastery, often compared to Tibet's Potala Palace. If timed right, you can witness the morning prayers with monks chanting in the prayer hall. Arrive in Leh by evening. Final dinner in Leh - celebrate completing the lake circuits!", 
+          highlights: ["Magical Sunrise at Pangong", "Chang La Pass (5,360m)", "Army Café Hot Refreshments", "Hemis Monastery - Largest in Ladakh", "Thiksey Monastery & Prayers", "Return to Leh - Circuit Complete"] 
+        },
+        { 
+          day: 6, 
+          title: "Sham Valley Excursion", 
+          description: "Today explore the Sham Valley (Lower Ladakh), known for its milder climate and historic sites. After breakfast, drive to the famous Magnetic Hill - a gravity-defying spot where vehicles appear to roll uphill on their own (optical illusion, but fun!). Continue to Sangam, the confluence of the Indus and Zanskar rivers - the different colored waters meeting is a striking sight. Optional river rafting on the Indus River (Grade 2-3, suitable for beginners). Drive further to visit Alchi Monastery (1,000 years old), famous for its unique Kashmiri-style paintings and woodwork - unlike any other Ladakhi monastery. Continue to Likir Monastery with its 25-meter golden Buddha statue. Return to Leh via Basgo, stopping at the dramatic ruins of a medieval fortress. Evening free for last-minute shopping in Leh market - pick up Pashmina, turquoise, or Thangka paintings.", 
+          highlights: ["Magnetic Hill Optical Illusion", "Sangam - Indus-Zanskar Confluence", "Optional Indus River Rafting", "1,000-Year-Old Alchi Monastery", "Likir's Golden Buddha Statue", "Basgo Fortress Ruins"] 
+        },
+        { 
+          day: 7, 
+          title: "Departure from Ladakh", 
+          description: "Your Ladakh odyssey concludes today. Enjoy a leisurely breakfast and last moments in Leh. Depending on your flight time, you might have time for final souvenir shopping or a last visit to a nearby site. Transfer to Leh Airport for your departure. The flight out of Leh is as spectacular as the arrival - watch the Himalayas pass beneath you, perhaps spotting K2, Nanga Parbat, and other giants if you're on the right side of the aircraft. As you leave the Land of High Passes, take with you memories of ancient monasteries, turquoise lakes, dramatic passes, and the warm smiles of Ladakhi people. The stark beauty of this high-altitude desert will stay with you forever. Julley (Ladakhi farewell) - until we meet again!", 
+          highlights: ["Leisurely Final Breakfast", "Last-Minute Shopping (if time)", "Airport Transfer", "Himalayan Aerial Views on Departure", "Memories of High Passes & Blue Lakes", "Julley - Ladakhi Farewell"] 
+        }
       ]
     },
     {
@@ -315,21 +655,66 @@ export const ladakhData: DestinationData = {
       originalPrice: 65000,
       currentPrice: 55250,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800",
-      description: "Epic bike expedition through the world's highest motorable roads.",
-      highlights: ["Royal Enfield Bikes", "Khardung La", "Tanglang La", "Magnetic Hill"],
-      inclusions: ["8 Nights Accommodation", "All Meals", "Bike with Fuel", "Mechanic Support", "Permits"],
-      exclusions: ["Airfare", "Gear", "Personal Expenses"],
+      image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop",
+      description: "The ultimate biking adventure across the world's highest motorable roads. Ride Royal Enfield motorcycles through incredible landscapes, conquering legendary passes and creating stories that will last a lifetime.",
+      highlights: ["Royal Enfield Bikes", "Khardung La (18,380 ft)", "Tanglang La (17,480 ft)", "Magnetic Hill"],
+      inclusions: ["8 Nights Accommodation", "All Meals", "Royal Enfield Bike with Fuel", "Mechanic & Backup Vehicle", "All Permits"],
+      exclusions: ["Airfare", "Riding Gear", "Personal Expenses", "Alcohol"],
       itinerary: [
-        { day: 1, title: "Arrival & Acclimatization", description: "Arrive Leh. Rest and bike allocation.", highlights: ["Bike Handover", "Test Ride", "Route Briefing"] },
-        { day: 2, title: "Leh Exploration", description: "Easy ride to local monasteries.", highlights: ["Shanti Stupa", "Thiksey", "Hemis"] },
-        { day: 3, title: "Leh to Nubra", description: "Ride over Khardung La to Nubra Valley.", highlights: ["Khardung La 18380ft", "Diskit", "Hunder Dunes"] },
-        { day: 4, title: "Nubra to Pangong", description: "Ride through Shyok Valley to Pangong.", highlights: ["Shyok Route", "Pangong Lake", "Lakeside Stay"] },
-        { day: 5, title: "Pangong to Hanle", description: "Remote ride to Hanle via Chushul.", highlights: ["Chang La", "Chushul", "Hanle Observatory"] },
-        { day: 6, title: "Hanle to Tso Moriri", description: "Ride to the pristine Tso Moriri Lake.", highlights: ["Remote Trails", "Tso Moriri", "Wild Camping"] },
-        { day: 7, title: "Tso Moriri to Leh", description: "Ride back via More Plains and Tanglang La.", highlights: ["More Plains", "Tanglang La", "Upshi"] },
-        { day: 8, title: "Buffer Day", description: "Rest day or explore Leh markets.", highlights: ["Shopping", "Cafe Hopping", "Photography"] },
-        { day: 9, title: "Departure", description: "Return bikes and airport transfer.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival & Bike Handover", 
+          description: "Welcome to the adventure of a lifetime! Arrive in Leh and transfer to your hotel. Today is strictly for acclimatization - the high altitude (3,500m) requires your body to adjust before any strenuous activity. Rest in the afternoon. Late evening, attend the expedition briefing where you meet your fellow riders, the expedition leader, and the support crew. The mechanic will introduce you to your Royal Enfield Himalayan or Classic 350 - the trusted steeds for this adventure. Inspect your bike, take a short test ride around the hotel, and ensure everything is comfortable. Get fitted with helmets and check riding gear. Dinner with the group, sharing excitement and setting expectations. Early to bed - tomorrow the engines roar!", 
+          highlights: ["Leh Airport Arrival", "Mandatory Acclimatization", "Expedition Briefing Session", "Meet Fellow Riders & Crew", "Royal Enfield Bike Handover", "Short Test Ride & Gear Check"] 
+        },
+        { 
+          day: 2, 
+          title: "Leh Warm-Up Ride", 
+          description: "Your first riding day is a gentle warm-up to help you adjust to altitude and the bikes. After breakfast, ride to Shanti Stupa for spectacular views and a photo op with your bike. Continue to the historic Leh Palace and then through Leh market. The morning is about getting comfortable with your bike at altitude. After lunch, ride to Thiksey Monastery (19 km) - the climb is easy but helps you understand how the bike responds in thin air. Visit the beautiful monastery, often compared to the Potala Palace. Continue to Hemis Monastery (45 km from Leh), the largest in Ladakh. The roads are good, allowing you to build confidence. Return to Leh via the same route. Evening, the mechanic checks all bikes and makes any necessary adjustments. Rider debriefing and route discussion for the next day. Ride Distance: ~90 km.", 
+          highlights: ["Shanti Stupa Photo with Bike", "Leh Palace & Market Ride", "Thiksey Monastery Visit", "Hemis Monastery Exploration", "Mechanic Bike Check", "Route Briefing for Day 3"] 
+        },
+        { 
+          day: 3, 
+          title: "Leh to Nubra via Khardung La", 
+          description: "Today you conquer the legendary Khardung La! Depart early (6 AM) to cross the pass before weather changes and traffic increases. The climb is steady but thrilling - watch the landscape change from green to barren to snow. At 5,359m (claimed 5,602m by BRO), Khardung La is an iconic achievement for every rider. The air is thin - don't stop too long at the top! Quick photos at the famous board, hot chai, and then the exhilarating descent to Nubra Valley. The road switchbacks dramatically down into the valley. Stop at Diskit Monastery and the 32-meter Maitreya Buddha. Ride to Hunder and enjoy a camel safari on the sand dunes (optional). Camp or stay in a guest house. Celebrate conquering Khardung La with your fellow riders! Ride Distance: ~120 km. Altitude: Khardung La 5,359m, Hunder 3,048m.", 
+          highlights: ["6 AM Early Start", "Khardung La Conquest (5,359m)", "World's Highest Pass Achievement", "Dramatic Descent to Valley", "Diskit Monastery & Giant Buddha", "Hunder Sand Dune Camp"] 
+        },
+        { 
+          day: 4, 
+          title: "Nubra to Pangong via Shyok", 
+          description: "A long but incredibly scenic ride day! Depart after breakfast and ride through the Shyok River valley - the road follows the river, often running along narrow ledges with stunning views. This is a less-traveled route, adding to the adventure. The road quality varies, providing technical challenges. Cross small streams and navigate rocky sections. Villages are sparse but locals are welcoming. Pack lunch en route. The terrain becomes more dramatic as you approach Pangong - striped mountains and bizarre rock formations. Then, the moment every rider waits for - your first glimpse of Pangong Tso Lake! Ride along the lakeshore to your campsite. Parking your bike at the edge of this legendarily blue lake is a moment of pure achievement. Evening at the lake, watching the colors change. Campfire dinner with the team. Ride Distance: ~170 km. Altitude: 4,350m.", 
+          highlights: ["Shyok Valley Adventure Route", "River Valley & Gorge Riding", "Technical Off-Road Sections", "Dramatic Approach to Pangong", "Lakeside Bike Photo Moment", "Campfire Celebration Dinner"] 
+        },
+        { 
+          day: 5, 
+          title: "Pangong to Hanle via Chushul", 
+          description: "An off-the-beaten-path adventure to one of Ladakh's hidden gems! Wake early for sunrise at Pangong - capture your bike against the golden lake. After breakfast, ride along the lake towards Chushul, the last village before the Line of Control with China. The road is rough but the remoteness is incredible - you might not see another vehicle for hours. Stop at War Memorial at Rezang La, honoring the heroes of the 1962 war. Continue through the Changthang plateau, possibly spotting wild animals like Kiang (Tibetan Wild Ass) and Marmots. Arrive at Hanle by afternoon - this remote village is home to one of the world's highest astronomical observatories. The night sky here is remarkably clear, perfect for stargazing. Overnight in basic but clean homestays - experience authentic Ladakhi hospitality. Ride Distance: ~150 km. Altitude: Hanle 4,500m.", 
+          highlights: ["Sunrise Bike Photo at Pangong", "Chushul Border Region", "Rezang La War Memorial", "Changthang Plateau Wildlife", "Kiang & Marmot Spotting", "Hanle Observatory Stargazing"] 
+        },
+        { 
+          day: 6, 
+          title: "Hanle to Tso Moriri", 
+          description: "Continue through the pristine Changthang region to another legendary lake. The ride from Hanle to Tso Moriri is through some of the most remote and beautiful landscapes in India. Few tourists come this way - it's a true explorer's route. The terrain is high plateau, open and wild. Spot herds of Pashmina goats, whose wool becomes the famous Pashmina shawls. You may also see nomadic Changpa herders with their yak trains. Around midday, the stunning Tso Moriri Lake comes into view - less famous than Pangong but equally beautiful, and more peaceful. At 4,522m and surrounded by snow-capped peaks, it's a sight to behold. Camp at Korzok village, one of the highest inhabited villages in India with a 300-year-old monastery. Evening walk around the lake, photography, and quiet contemplation. Ride Distance: ~140 km. Altitude: Tso Moriri 4,522m.", 
+          highlights: ["Changthang Wilderness Ride", "Pashmina Goat Herds", "Changpa Nomad Encounters", "First View of Tso Moriri", "Korzok Village (Highest Settlement)", "Lakeside Camping & Monastery Visit"] 
+        },
+        { 
+          day: 7, 
+          title: "Tso Moriri to Leh via More Plains", 
+          description: "The final major riding day takes you through dramatic landscapes back to Leh. Wake early for a lakeside sunrise and morning stroll. After breakfast, ride through the vast More Plains - a high-altitude desert that feels like riding on another planet. The straight road stretching to the horizon is perfect for opening up the throttle (safely!). Cross Tanglang La (5,328m or 17,480 ft), the second-highest pass on the Leh-Manali highway. The climb is gradual but the altitude is significant. Descend past Pang camp and through stunning canyon formations. Continue to Upshi, where you rejoin the main Leh highway. The final stretch to Leh is smooth and reflective - you've traversed some of the world's most incredible terrain! Arrive Leh by late afternoon. Celebratory dinner with your riding team - you've accomplished an incredible journey! Ride Distance: ~240 km.", 
+          highlights: ["Tso Moriri Sunrise", "More Plains Open Throttle", "Tanglang La Pass (5,328m)", "Canyon & Plateau Riding", "Final Stretch to Leh", "Celebratory Team Dinner"] 
+        },
+        { 
+          day: 8, 
+          title: "Buffer Day in Leh", 
+          description: "A well-deserved rest day! This day is built into the itinerary as a buffer for any delays due to weather, road conditions, or bike issues (though our excellent mechanics usually prevent the latter). If everything has gone smoothly, enjoy this day at your leisure in Leh. Sleep in, enjoy a late breakfast, and explore Leh at your own pace. Visit the main market for souvenirs - Pashmina shawls, turquoise jewelry, prayer wheels, Thangka paintings. Explore the old town's atmospheric alleyways. Visit a café for excellent coffee and meet fellow travelers. The mechanic will service all bikes and prepare them for return. Optional activities include a half-day trip to Alchi Monastery or Sangam (Indus-Zanskar confluence). Farewell dinner in a nice restaurant - share stories, photos, and perhaps even tears as this incredible journey comes to an end.", 
+          highlights: ["Well-Deserved Sleep-In", "Leisurely Leh Exploration", "Main Market Shopping", "Old Town Wander", "Bike Return & Service", "Farewell Dinner with Riders"] 
+        },
+        { 
+          day: 9, 
+          title: "Departure from Leh", 
+          description: "Your epic Ladakh bike expedition comes to an end. After breakfast, transfer to Leh Airport for your departure. As you board your flight, you're no longer the same person who arrived - you've conquered the highest motorable passes, ridden through landscapes few ever see, and formed bonds with fellow adventurers. The sound of your Royal Enfield, the thin air at the top of Khardung La, the blue of Pangong, the remoteness of Hanle, the peace of Tso Moriri - these memories are now part of you. You carry home not just photos, but stories of adventure, achievement, and the realization that some of the best things in life require stepping out of comfort zones. Julley, brave rider - until the road calls again!", 
+          highlights: ["Final Breakfast in Leh", "Airport Transfer", "Carry Home Stories of Achievement", "Bonds with Fellow Riders", "Memories of High Passes & Lakes", "Julley - Until Next Ride"] 
+        }
       ]
     },
     {
@@ -339,18 +724,48 @@ export const ladakhData: DestinationData = {
       originalPrice: 38000,
       currentPrice: 32300,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      description: "Spiritual journey through ancient Buddhist monasteries of Ladakh.",
-      highlights: ["Hemis Monastery", "Thiksey", "Diskit", "Alchi"],
-      inclusions: ["5 Nights Accommodation", "All Meals", "Permits", "Expert Guide"],
-      exclusions: ["Airfare", "Photography Fees", "Personal Expenses"],
+      image: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800&h=600&fit=crop",
+      description: "A spiritual journey through the ancient Buddhist monasteries of Ladakh. Witness morning prayers, interact with monks, understand Buddhist philosophy, and experience the deep spirituality that permeates this land.",
+      highlights: ["Hemis Monastery", "Thiksey Monastery", "Diskit Monastery", "Alchi Ancient Murals"],
+      inclusions: ["5 Nights Accommodation", "All Meals", "Inner Line Permits", "Expert Spiritual Guide"],
+      exclusions: ["Airfare", "Photography Fees at Monasteries", "Personal Expenses"],
       itinerary: [
-        { day: 1, title: "Arrival Leh", description: "Arrive and acclimatize. Visit Shanti Stupa.", highlights: ["Shanti Stupa", "Sunset Views", "Rest"] },
-        { day: 2, title: "Central Ladakh Monasteries", description: "Visit Thiksey, Hemis, and Stok Palace.", highlights: ["Thiksey Morning Prayer", "Hemis", "Stok Museum"] },
-        { day: 3, title: "Sham Valley Monasteries", description: "Explore Likir, Alchi, and Lamayuru.", highlights: ["Likir", "Alchi Murals", "Lamayuru Moonland"] },
-        { day: 4, title: "Nubra Monastery Tour", description: "Cross Khardung La. Visit Diskit and Samstanling.", highlights: ["Diskit Buddha", "Samstanling", "Monastery Stay"] },
-        { day: 5, title: "Return to Leh", description: "Return via monasteries. Evening meditation session.", highlights: ["Meditation", "Local Interaction", "Cultural Evening"] },
-        { day: 6, title: "Departure", description: "Early morning departure.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival in Leh - Gateway to Buddhism", 
+          description: "Arrive at Leh Airport and transfer to your hotel. After the necessary acclimatization rest (crucial at 3,500m), take a gentle evening walk to Shanti Stupa, a stunning white-domed Buddhist shrine built by Japanese monks to promote world peace. Climb the 500 steps (go slowly due to altitude) as the sun sets behind the Stokh range. The stupa is beautifully illuminated at dusk, and the panoramic views of Leh town are spectacular. Observe monks and locals circumambulating the stupa in prayer. This is your first introduction to the Buddhism that defines Ladakh. Return for dinner and meet your expert guide who will accompany you throughout this spiritual journey. Your guide is well-versed in Buddhist history, philosophy, and monastery etiquette, adding depth to every visit.", 
+          highlights: ["Leh Airport Arrival & Transfer", "Acclimatization Rest Period", "Shanti Stupa Sunset Walk", "500 Steps Gentle Climb", "Panoramic Views of Leh", "Meet Expert Buddhist Guide"] 
+        },
+        { 
+          day: 2, 
+          title: "Central Ladakh Monasteries", 
+          description: "Rise before dawn for a truly special experience - morning prayers at Thiksey Monastery. The drive (19 km) in pre-dawn darkness ends as you climb to the monastery perched on a hilltop. Enter the prayer hall around 6 AM as young monks begin their chanting. The rhythmic mantras, flickering butter lamps, and the scent of incense create a profoundly spiritual atmosphere. Watch as monks sip butter tea between prayers. After prayers, explore Thiksey - often called 'Mini Potala' for its resemblance to the Dalai Lama's palace in Tibet. The 12-story complex houses exceptional statues and Thangka paintings. After breakfast, drive to Hemis Monastery (47 km from Leh), the largest and wealthiest monastery in Ladakh. It houses a priceless collection of Thangkas including a three-story high Thangka displayed only once in 12 years. Visit the museum with its incredible artifacts. Afternoon, visit Stok Palace and its museum to understand Ladakh's royal heritage.", 
+          highlights: ["Pre-Dawn Drive to Thiksey", "6 AM Morning Prayer Session", "Monks Chanting & Butter Tea", "Thiksey - 'Mini Potala' Exploration", "Hemis - Largest Ladakhi Monastery", "Stok Palace Royal Museum"] 
+        },
+        { 
+          day: 3, 
+          title: "Sham Valley Monastery Circuit", 
+          description: "Today, explore the remarkable monasteries of Sham Valley (Lower Ladakh). Drive to Alchi Monastery (70 km), one of Ladakh's hidden treasures. Unlike other hillside monasteries, Alchi is in a valley, preserved by its isolation. Founded in the 11th century, it contains India's oldest surviving wall paintings - Kashmiri-influenced Buddhist art that predates Tibetan influence. The murals in the main chapel are breathtaking and UNESCO-worthy. Photography is prohibited inside to preserve these 1,000-year-old masterpieces. Continue to Likir Monastery, dramatically set against barren mountains with a 25-meter golden Maitreya Buddha visible from miles away. Explore the monastery school where young monks study. Visit Lamayuru Monastery, perched above a lunar landscape called 'Moonland.' Legend says this valley was once a lake drained by a Buddhist sage. The monastery's age (1,000+ years) and setting are remarkable. Return to Leh, stopping at Basgo ruins for sunset photos.", 
+          highlights: ["Alchi - 1,000-Year-Old Murals", "Kashmiri Buddhist Art Masterpieces", "Likir's 25-Meter Golden Buddha", "Young Monk School Visit", "Lamayuru & Moonland Landscape", "Basgo Fortress Sunset"] 
+        },
+        { 
+          day: 4, 
+          title: "Nubra Valley Monasteries via Khardung La", 
+          description: "Cross Khardung La Pass (5,359m) to Nubra Valley for a unique monastery experience. Leave early for the pass, pausing at the top for quick photos before descending. Nubra's monasteries have a slightly different character - more relaxed and less touristy. First, visit Diskit Monastery, Nubra's largest, founded in the 14th century. The highlight is the newly built 32-meter Maitreya Buddha statue overlooking the valley - a stunning sight. Enter the monastery's ancient chapels for prayer wheel spinning and butter lamp lighting. Drive to Samstanling Monastery in Sumur village - a relatively modern monastery (150 years old) known for its annual masked dance festival. If lucky, you might witness monks practicing for festivals. Unique experience: arrange for an overnight stay at a monastery guest house (subject to availability). Join evening prayers, dine with monks, and experience monastic life firsthand. If monastery stay isn't available, comfortable guest houses in Hunder.", 
+          highlights: ["Khardung La Pass Crossing", "Diskit - Nubra's Largest Monastery", "32-Meter Maitreya Buddha Statue", "Butter Lamp Lighting Ritual", "Samstanling Monastery Visit", "Optional Monastery Guest House Stay"] 
+        },
+        { 
+          day: 5, 
+          title: "Return to Leh - Final Monastery Visits", 
+          description: "Return to Leh via Khardung La, but with time for more monastery exploration. In the morning, if you stayed at a monastery, join the 6 AM prayers before breakfast. Otherwise, take an early morning walk in the peaceful Nubra Valley. After breakfast, drive back towards Leh. En route, stop at Spituk Monastery, built by Od-de, the elder brother of King Tashi Namgyal. The monastery's hilltop location offers commanding views of Leh Valley and the Indus River. The highlight is the Mahakala temple, opened only once a year during the Gustor festival when monks perform sacred mask dances. In Leh, visit Sankar Monastery, a subsidiary of Spituk, notable for its Avalokiteshvara statue with 1,000 heads and 1,000 arms. Evening, attend a meditation session arranged at a local monastery - guided by a monk, experience the stillness that monks cultivate daily. Farewell dinner in Leh.", 
+          highlights: ["Optional Morning Prayers at Nubra", "Khardung La Return", "Spituk Monastery Hilltop", "Mahakala Temple Visit", "Sankar's 1,000-Headed Avalokiteshvara", "Guided Meditation Session with Monk"] 
+        },
+        { 
+          day: 6, 
+          title: "Departure - Carrying the Blessings", 
+          description: "Your spiritual journey through Ladakh's monasteries concludes today. Enjoy a peaceful breakfast and final moments of reflection. Your guide may offer you a blessed 'kata' (white scarf) as a farewell - a traditional offering symbolizing purity of intention. Transfer to Leh Airport for your departure. As you fly over the Himalayas, reflect on the spiritual richness you've experienced - the morning prayers that begin each monastic day, the centuries-old murals that have witnessed countless pilgrims, the young monks who will carry forward ancient traditions, and the profound peace that pervades these sacred spaces. You leave Ladakh not just with photographs, but with a deeper understanding of Buddhist philosophy and perhaps, a slightly more peaceful mind. Om Mani Padme Hum.", 
+          highlights: ["Peaceful Final Breakfast", "Blessed Kata Scarf Farewell", "Airport Transfer", "Himalayan Departure Views", "Carry Home Spiritual Memories", "Om Mani Padme Hum"] 
+        }
       ]
     },
     {
@@ -360,20 +775,60 @@ export const ladakhData: DestinationData = {
       originalPrice: 72000,
       currentPrice: 61200,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Photography expedition capturing Ladakh's stunning landscapes and culture.",
+      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+      description: "A photographer's dream expedition designed to capture Ladakh's otherworldly landscapes. Timed for golden hours, with expert guidance on locations and techniques, this tour maximizes your photographic opportunities.",
       highlights: ["Golden Hour Shoots", "Monastery Photography", "Landscape Sessions", "Astrophotography"],
-      inclusions: ["7 Nights Accommodation", "All Meals", "Photography Guide", "Best Viewpoints", "Permits"],
+      inclusions: ["7 Nights Accommodation", "All Meals", "Photography Guide", "Best Viewpoints Access", "All Permits"],
       exclusions: ["Airfare", "Camera Gear", "Personal Expenses"],
       itinerary: [
-        { day: 1, title: "Arrival & Sunset Shoot", description: "Arrive Leh. Evening shoot at Shanti Stupa.", highlights: ["Sunset Photography", "Cityscape", "Acclimatization"] },
-        { day: 2, title: "Monastery Light", description: "Sunrise at Thiksey. Hemis afternoon.", highlights: ["Thiksey Sunrise", "Monk Portraits", "Hemis Architecture"] },
-        { day: 3, title: "Nubra Landscapes", description: "Drive to Nubra. Dune photography.", highlights: ["Khardung La Shots", "Sand Dunes", "Camel Shots"] },
-        { day: 4, title: "Pangong Magic", description: "Drive to Pangong. Sunset and blue hour.", highlights: ["Lake Reflections", "Color Changes", "Milky Way"] },
-        { day: 5, title: "Pangong Sunrise", description: "Early morning shoot. Drive to Leh.", highlights: ["Sunrise Shoot", "Landscape Shots", "Chang La Views"] },
-        { day: 6, title: "Sham Valley", description: "Photography in Sham Valley monasteries.", highlights: ["Alchi Murals", "Lamayuru Moonland", "Sangam Point"] },
-        { day: 7, title: "Local Life", description: "Street photography and cultural shots.", highlights: ["Market Scenes", "Local Portraits", "Cultural Events"] },
-        { day: 8, title: "Departure", description: "Sunrise shoot and departure.", highlights: ["Final Shoot", "Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival & Sunset Shoot at Shanti Stupa", 
+          description: "Arrive in Leh and transfer to your hotel. Rest and hydrate for acclimatization. Late afternoon, as the light turns golden, head to Shanti Stupa for your first photography session. The stupa's white dome against the blue sky, with the Zanskar range behind, makes for stunning compositions. Your photography guide will help you find the best angles and settings. As the sun sets, the stupa is illuminated, creating a completely different mood. Capture the transition from daylight to blue hour to night. The city lights of Leh below add to the scene. Practice long exposures as darkness falls. Return to hotel for dinner and first day's image review with tips from your guide.", 
+          highlights: ["Leh Arrival & Acclimatization", "Golden Hour at Shanti Stupa", "Sunset Stupa Compositions", "Blue Hour Photography", "Long Exposure Practice", "Evening Image Review Session"] 
+        },
+        { 
+          day: 2, 
+          title: "Monastery Morning Light & Culture", 
+          description: "Photography is about light, and the best monastery light is at sunrise. Depart before dawn for Thiksey Monastery. Capture the monastery in pre-dawn blue, then watch as the first rays hit the peak behind it and gradually illuminate the 12-story structure. The morning prayer session begins around 6 AM - photograph monks in prayer, butter lamps flickering, and ancient thangkas in candlelight (low-light technique session). After breakfast, continue to Hemis Monastery for different perspectives. The interior chapels with their massive Buddha statues require skillful low-light photography. Your guide will help with settings and composition. Afternoon, visit Stok Palace and capture the royal artifacts. Evening session at Leh Palace - photograph the ancient structure against sunset, then stay for blue hour and the first stars appearing over the palace.", 
+          highlights: ["Pre-Dawn Thiksey Monastery", "Sunrise Light on 12-Story Structure", "Low-Light Prayer Room Photography", "Hemis Interior Chapels", "Stok Palace Artifacts", "Leh Palace Sunset & Stars"] 
+        },
+        { 
+          day: 3, 
+          title: "Nubra Valley - Dunes & Monasteries", 
+          description: "Cross Khardung La, stopping for quick photos at the pass (don't linger long due to altitude). The real photography begins in Nubra Valley. First, Diskit Monastery - the 32-meter Maitreya Buddha against dramatic sky is an iconic shot. Explore angles from below looking up, and from monastery terraces looking at the valley. The monastery's interiors with their detailed murals require careful technique. After lunch, head to Hunder Sand Dunes for a unique session - Bactrian camels against sand dunes and snow-capped peaks. Position for best light as the sun lowers. Evening, stay for sunset over the dunes - the warm light on sand creates magical colors. After dinner, attempt astrophotography - the Milky Way is clearly visible, and capturing it over the dune landscape is exceptional.", 
+          highlights: ["Khardung La Quick Pass Photos", "Diskit's 32m Buddha Composition", "Monastery Interior Murals", "Bactrian Camels on Dunes", "Golden Hour Sand Photography", "Milky Way Over Hunder"] 
+        },
+        { 
+          day: 4, 
+          title: "Pangong Lake - Color & Light Magic", 
+          description: "Drive to Pangong Lake via the scenic Shyok route. The striped mountains and river valley en route offer excellent stops. Arrival at Pangong is a photographer's dream - the lake's famous color-changing nature provides endless compositions. Spend the afternoon capturing the lake from various points - shoreline reflections, wide landscapes, intimate details. As afternoon progresses, watch the color shift from blue to turquoise to almost purple. Sunset at Pangong is spectacular - position yourself for the mountains reflected in still water. After sunset, continue shooting as stars appear over the lake. The clear high-altitude sky makes Pangong an exceptional location for astro-photography. Camp by the lake - the experience of sleeping by this legendary water body is unforgettable.", 
+          highlights: ["Shyok Valley Scenic Stops", "Pangong Color Variations", "Reflection Photography Session", "Sunset Mountain-Lake Compositions", "Astrophotography at 4,350m", "Lakeside Camp Experience"] 
+        },
+        { 
+          day: 5, 
+          title: "Pangong Sunrise & Chang La Return", 
+          description: "Wake early - the sunrise at Pangong is not to be missed! The first rays illuminate the peaks while the lake remains in shadow, creating dramatic contrast. As light fills the valley, the lake's colors intensify. Capture the morning light for at least two hours. After breakfast, drive towards Leh via Chang La Pass. The terrain around Pangong is incredibly photogenic - capture the dramatic landscapes. At Chang La (5,360m), quick shots of the pass signboard and prayer flags. Descending, stop at viewpoints overlooking the valleys. Afternoon arrival in Leh with time for rest. Evening optional - local street photography in Leh market, capturing daily life, colorful shops, and interesting faces (always ask permission for portraits). Or rest and prepare for the next day's adventures.", 
+          highlights: ["Legendary Pangong Sunrise", "2-Hour Morning Light Session", "Dramatic Terrain Photography", "Chang La Pass Documentation", "Valley Viewpoint Stops", "Optional Leh Street Photography"] 
+        },
+        { 
+          day: 6, 
+          title: "Sham Valley - Ancient Art & Landscapes", 
+          description: "Focus on the unique photographic opportunities of Sham Valley. Start at Sangam, the confluence of Indus and Zanskar rivers - the different colored waters meeting creates unique compositions. Try various shutter speeds to capture the water. Continue to Alchi Monastery for its 1,000-year-old murals (photography prohibited inside, but exterior and compound are excellent). Lamayuru Monastery and its 'Moonland' landscape offer otherworldly images - the eroded, lunar-like terrain against the blue sky is surreal. Capture the monastery from multiple angles and distances. Return towards Leh via Basgo - the ruined fortress against the setting sun creates dramatic silhouettes. End the day at Magnetic Hill for quirky photos of 'gravity-defying' vehicles and the unique landscape.", 
+          highlights: ["Sangam Confluence Waters", "Alchi Monastery Exteriors", "Lamayuru Moonland Landscapes", "Surreal Terrain Photography", "Basgo Fortress Sunset Silhouettes", "Magnetic Hill Creative Shots"] 
+        },
+        { 
+          day: 7, 
+          title: "Local Life & Final Golden Hours", 
+          description: "Today focuses on cultural and people photography. Morning, visit a local village to photograph daily life - farming, weaving, traditional dress. Your guide will facilitate interactions and translations. The faces of Ladakh - weathered skin, bright eyes, warm smiles - tell stories of lives lived at high altitude. Visit a school (with permissions) to capture the joyful faces of young students. Afternoon, a different perspective - shoot Leh from Khardung La highway viewpoints looking down at the valley. Position for the perfect light as the sun lowers. Final sunset session at Leh Palace or another chosen location based on your preferences and what you most want to capture. Evening, extended image review session with your guide, editing tips, and selecting the best shots from your week.", 
+          highlights: ["Village Life Photography", "Portrait Sessions with Locals", "School Children Joyful Faces", "Aerial Valley Views", "Final Sunset Mastershot", "Image Review & Selection Session"] 
+        },
+        { 
+          day: 8, 
+          title: "Departure with Visual Treasures", 
+          description: "Your photography expedition ends today. If your flight is later, optional early morning shoot at a location of your choice - perhaps a final monastery visit or a quiet spot your guide recommends. Breakfast and pack your bags full of visual treasures. You leave Ladakh with thousands of images - landscapes that seem otherworldly, monasteries that speak of centuries of faith, faces full of character, and moments of light and color that few places on earth can offer. Transfer to airport, perhaps capturing a few final frames from the plane as you fly over the Himalayas. Back home, these images will not only be beautiful art but windows to the spiritual, stark, stunning world of Ladakh.", 
+          highlights: ["Optional Final Morning Shoot", "Curated Images in Memory Cards", "Himalayan Aerial Views", "Carry Home Visual Treasures", "Memories in Every Frame", "Ladakh Forever in Your Portfolio"] 
+        }
       ]
     },
     {
@@ -383,20 +838,60 @@ export const ladakhData: DestinationData = {
       originalPrice: 55000,
       currentPrice: 46750,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800",
-      description: "Explore the hidden gem Tso Moriri and remote regions of Changthang.",
-      highlights: ["Tso Moriri Lake", "Changthang Plateau", "Nomadic Tribes", "Wildlife"],
-      inclusions: ["7 Nights Accommodation", "All Meals", "4x4 Vehicle", "Permits", "Camping Gear"],
+      image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop",
+      description: "Venture beyond the tourist trails to the hidden gem of Tso Moriri and the vast Changthang plateau. Experience true wilderness, encounter nomadic herders, and discover a Ladakh that few travelers ever see.",
+      highlights: ["Tso Moriri Lake", "Changthang Plateau", "Nomadic Changpa Tribes", "Wildlife Spotting"],
+      inclusions: ["7 Nights Accommodation", "All Meals", "4x4 Vehicle", "All Permits", "Camping Equipment"],
       exclusions: ["Airfare", "Personal Expenses", "Tips"],
       itinerary: [
-        { day: 1, title: "Arrival Leh", description: "Arrive and rest for acclimatization.", highlights: ["Rest", "Light Walk", "Briefing"] },
-        { day: 2, title: "Leh Sightseeing", description: "Explore Leh Palace and monasteries.", highlights: ["Leh Palace", "Shanti Stupa", "Market"] },
-        { day: 3, title: "Leh to Tso Moriri", description: "Drive via Chumathang to Tso Moriri.", highlights: ["Chumathang Hot Springs", "Mahe Bridge", "Korzok Village"] },
-        { day: 4, title: "Tso Moriri Exploration", description: "Full day at the pristine lake.", highlights: ["Lake Walk", "Korzok Monastery", "Wildlife Spotting"] },
-        { day: 5, title: "Tso Moriri to Pangong", description: "Cross Changthang to reach Pangong.", highlights: ["Changthang Plateau", "Wild Ass", "Pangong Lake"] },
-        { day: 6, title: "Pangong to Nubra", description: "Drive to Nubra via Shyok.", highlights: ["Shyok Valley", "Diskit", "Sand Dunes"] },
-        { day: 7, title: "Nubra to Leh", description: "Return via Khardung La.", highlights: ["Khardung La", "North Pullu", "Leh Market"] },
-        { day: 8, title: "Departure", description: "Airport transfer.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival Leh - Gateway to Changthang", 
+          description: "Arrive at Leh Airport and transfer to your hotel. The usual acclimatization rest is essential. Unlike the typical Ladakh tour, this expedition takes you to the remote Changthang plateau, requiring even more careful altitude management. Spend the afternoon resting and hydrating. Late afternoon, take a gentle walk to Shanti Stupa for acclimatization. The views of Leh and the surrounding peaks are your first taste of Ladakh's stark beauty. Evening briefing about the expedition, focusing on the unique aspects of Changthang - its wildlife, nomadic culture, and the extreme conditions. Learn about the Changpa people, traditional herders who live at some of the highest inhabited altitudes on earth. Dinner and early sleep.", 
+          highlights: ["Leh Airport Arrival", "Acclimatization Rest (Essential)", "Shanti Stupa Gentle Walk", "Changthang Expedition Briefing", "Changpa Nomad Culture Introduction", "Early Dinner & Rest"] 
+        },
+        { 
+          day: 2, 
+          title: "Leh Local Exploration", 
+          description: "Another day in Leh to ensure proper acclimatization - the Changthang plateau is at 4,500m+, and poor acclimatization can be dangerous. Morning, visit Leh Palace and explore the old town's atmospheric alleyways. Stop at local cafés for excellent coffee and people-watching. After lunch, visit Thiksey Monastery - the climb is excellent altitude training. Explore the 12-story monastery, see the beautiful murals, and if timed right, observe evening prayers. Drive to Hemis Monastery (45 km), the largest and wealthiest in Ladakh. The peaceful compound and ancient artifacts are impressive. Return to Leh via Stok Palace and its museum. Evening, final preparations for the expedition - pack appropriately as the nights at Tso Moriri will be cold even in summer.", 
+          highlights: ["Leh Palace & Old Town", "Altitude Training Walks", "Thiksey Monastery Visit", "Hemis Monastery Exploration", "Stok Palace Museum", "Expedition Packing Session"] 
+        },
+        { 
+          day: 3, 
+          title: "Leh to Tso Moriri via Chumathang", 
+          description: "The adventure begins! Drive towards the Changthang plateau via the traditional southern route (approx. 250 km, 8 hours including stops). The journey takes you along the Indus River, through stunning canyon landscapes, and over passes. Stop at Chumathang Hot Springs - natural thermal pools where locals bathe, believed to have medicinal properties. The warm water is refreshing after hours of driving. Continue through increasingly remote terrain - villages become sparse and the landscape becomes vast and open. Cross Mahe Bridge over the Indus and enter true Changthang. The road to Tso Moriri passes through terrain that feels like another planet. Finally, the stunning blue lake appears - Tso Moriri at 4,522m, surrounded by 6,000m peaks. Arrive at Korzok village and check into your guest house or camp. The remoteness and peace are palpable.", 
+          highlights: ["Indus River Canyon Drive", "Chumathang Hot Springs Stop", "Remote Changthang Entry", "First View of Tso Moriri", "Korzok Village at 4,522m", "One of the Highest Lakes"] 
+        },
+        { 
+          day: 4, 
+          title: "Tso Moriri Full Day Exploration", 
+          description: "A full day to explore this pristine lake and its surroundings. Wake early to witness sunrise over Tso Moriri - the light hitting the snow-capped peaks and reflecting in the still water is magical. After breakfast, take a guided walk around parts of the lake shore. The lake is home to numerous migratory birds including the Bar-headed Goose, Brahmin Ducks, and the Great Crested Grebe. Your guide will point out various species. Visit Korzok Monastery, a 300-year-old Tibetan Buddhist monastery with commanding views over the lake. Interact with the monks and learn about life in this remote community. Afternoon, visit a Changpa nomad camp if one is nearby. These traditional herders live in black yak-hair tents, herding pashmina goats and yaks. Learn about their lifestyle, see how pashmina wool is processed, and perhaps share butter tea with them. Evening by the lake, stargazing in some of the clearest skies on earth.", 
+          highlights: ["Tso Moriri Sunrise", "Bird Watching Session", "Bar-headed Goose & Other Species", "Korzok Monastery Visit", "Changpa Nomad Camp Interaction", "Exceptional Stargazing"] 
+        },
+        { 
+          day: 5, 
+          title: "Tso Moriri to Pangong Lake", 
+          description: "Drive from one legendary lake to another across the Changthang plateau. This is one of the most remote and scenic drives in all of India. The route takes you through vast, open terrain where you may encounter herds of Kiang (Tibetan Wild Ass), Marmots basking in the sun, and possibly even the elusive Tibetan Wolf or rare Snow Leopard tracks. Stop frequently for wildlife spotting and photography. The landscape is immense - snow peaks on the horizon, vast plains where few humans tread. This is true wilderness. By afternoon, approach Pangong Lake from a different direction than most tourists. The first glimpse of its legendary blue waters after the desolate plateau is particularly striking. Camp by Pangong, comparing this experience to Tso Moriri. Both lakes are extraordinary, each with its unique character. Dinner watching sunset paint the mountains.", 
+          highlights: ["Cross-Changthang Remote Drive", "Kiang (Wild Ass) Sightings", "Marmot & Wildlife Spotting", "Immense Wilderness Landscapes", "Pangong Lake via Back Route", "Sunset Camp by Legendary Lake"] 
+        },
+        { 
+          day: 6, 
+          title: "Pangong to Nubra via Shyok", 
+          description: "Continue the expedition through spectacular terrain. Morning at Pangong for photography - the lake's colors in morning light are exceptional. Then drive the adventurous Shyok route to Nubra Valley. This route follows the Shyok River through narrow gorges, crosses water crossings, and offers dramatic scenery. The road is challenging in parts, adding to the adventure. Emerge into the green oasis of Nubra Valley - a stark contrast to the plateau you've been traversing. Visit Diskit Monastery and its 32-meter Buddha statue overlooking the valley. Continue to Hunder for the famous sand dunes and Bactrian camels. After the high, cold Changthang, the relatively lower Nubra (3,048m) feels warm and lush. Optional camel ride on the dunes at sunset. Overnight at comfortable camps in Hunder.", 
+          highlights: ["Pangong Morning Photography", "Shyok River Adventure Route", "Water Crossings & Gorges", "Diskit Monastery & Buddha", "Hunder Sand Dunes", "Bactrian Camel Sunset"] 
+        },
+        { 
+          day: 7, 
+          title: "Nubra to Leh via Khardung La", 
+          description: "Return to Leh via the famous Khardung La Pass. Morning, explore Nubra at a relaxed pace - perhaps a walk through the orchards and fields of Sumur or a visit to Samstanling Monastery. After breakfast, begin the climb to Khardung La (5,359m). This world-famous pass is a fitting climax to your expedition. Stop at the top for photographs at the signboard and a hot cup of chai. The views from the pass, having now traversed so much of Ladakh's remote regions, feel even more significant. Descend to Leh, arriving by afternoon. Check into your hotel - the comfort feels wonderful after the remote camps! Final evening in Leh - celebration dinner with your team, sharing stories from this incredible expedition. Toast to the wild Changthang, the sacred lakes, and the adventures shared.", 
+          highlights: ["Nubra Morning Exploration", "Khardung La Conquest (5,359m)", "World's Highest Viewpoint", "Descent to Comfortable Leh", "Celebration Dinner", "Expedition Stories Shared"] 
+        },
+        { 
+          day: 8, 
+          title: "Departure from Leh", 
+          description: "Your Tso Moriri expedition concludes. Enjoy a leisurely breakfast - no early alarms today! Time for last-minute shopping in Leh market - pick up pashmina from the Changpa herders you may have met, or turquoise and silver jewelry. Transfer to Leh Airport for your departure. As you fly over the Himalayas, reflect on what you've seen: the remote Tso Moriri that few tourists reach, the vast Changthang where Changpa nomads follow ancient traditions, the wildlife that survives in this harsh environment, and the legendary passes you've crossed. This isn't the Ladakh that appears on postcards - it's deeper, wilder, and more profound. You've experienced the true heart of the Land of High Passes.", 
+          highlights: ["Leisurely Final Breakfast", "Leh Market Shopping", "Pashmina & Jewelry Souvenirs", "Airport Transfer", "Himalayan Aerial Farewell", "Heart of Ladakh in Your Soul"] 
+        }
       ]
     }
   ]
@@ -408,11 +903,11 @@ export const himachalData: DestinationData = {
   name: "Himachal Pradesh",
   tagline: "Dev Bhoomi - Land of Gods",
   description: "Explore the majestic hills of Himachal Pradesh - from the colonial charm of Shimla to the adventure hub Manali, spiritual Dharamshala to serene Dalhousie.",
-  heroImage: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=1920",
+  heroImage: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
-    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800",
-    "https://images.unsplash.com/photo-1591018653367-067fd14a5616?w=800"
+    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -422,18 +917,48 @@ export const himachalData: DestinationData = {
       originalPrice: 28000,
       currentPrice: 23800,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
-      description: "Best of Himachal covering Shimla, Kullu, and Manali.",
+      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
+      description: "Best of Himachal covering Shimla, Kullu, and Manali. Experience colonial heritage, snow-capped peaks, adventure activities, and the warmth of pahadi hospitality.",
       highlights: ["Mall Road Shimla", "Rohtang Pass", "Solang Valley", "Hadimba Temple"],
-      inclusions: ["5 Nights Accommodation", "Breakfast", "Transfers", "Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Activities"],
+      inclusions: ["5 Nights Accommodation", "Daily Breakfast", "Airport Transfers", "Sightseeing by Private Vehicle"],
+      exclusions: ["Airfare", "Lunch & Dinner", "Adventure Activities", "Rohtang Permit"],
       itinerary: [
-        { day: 1, title: "Arrival in Shimla", description: "Arrive at Chandigarh, drive to Shimla.", highlights: ["Mall Road", "Ridge", "Evening Walk"] },
-        { day: 2, title: "Shimla Sightseeing", description: "Visit Kufri, Green Valley, and Christ Church.", highlights: ["Kufri", "Green Valley", "Christ Church"] },
-        { day: 3, title: "Shimla to Manali", description: "Scenic drive to Manali via Kullu Valley.", highlights: ["Kullu Valley", "Naggar Castle", "Vaishno Devi Temple"] },
-        { day: 4, title: "Manali Local", description: "Visit Hadimba Temple, Vashisht, and Mall Road.", highlights: ["Hadimba Temple", "Vashisht", "Old Manali"] },
-        { day: 5, title: "Solang Valley", description: "Excursion to Solang Valley for adventure activities.", highlights: ["Solang Valley", "Paragliding", "Snow Activities"] },
-        { day: 6, title: "Departure", description: "Drive back to Chandigarh for departure.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival in Shimla - Queen of Hills", 
+          description: "Arrive at Chandigarh Airport/Railway Station and begin your scenic drive to Shimla (117 km, approx. 4 hours). The journey takes you through the Himalayan foothills, with views becoming more dramatic as you climb. Shimla, the former summer capital of British India, retains its colonial charm with Gothic architecture, pedestrian-only Mall Road, and a relaxed hill station vibe. Check into your hotel with valley views. After refreshments, take an evening stroll on the famous Mall Road - lined with shops, cafes, and colonial-era buildings. Visit the neo-Gothic Christ Church, one of the most photographed landmarks in Shimla. Watch the sunset from the Ridge, an open space in the heart of town with views of snow-capped peaks. Dinner at a local restaurant - try the famous Shimla Café's coffee and pastries.", 
+          highlights: ["Chandigarh to Shimla Drive (4 hrs)", "Valley View Hotel Check-in", "Mall Road Evening Stroll", "Christ Church Visit", "Ridge Sunset Point", "Famous Shimla Café Experience"] 
+        },
+        { 
+          day: 2, 
+          title: "Shimla Sightseeing & Kufri", 
+          description: "After breakfast, explore Shimla's colonial heritage. Start at the Viceregal Lodge (now Indian Institute of Advanced Studies), a stunning Scottish baronial mansion where major decisions about India's independence were made. The grounds are perfect for a morning walk. Drive to Kufri (16 km), a small hill station famous for adventure activities. At Kufri, enjoy pony rides through apple orchards and forests to the Mahasu Peak for panoramic views. The Green Valley en route offers excellent photo opportunities. Return to Shimla for lunch. Afternoon, visit the Jakhu Temple - the highest point in Shimla (2,455m) with a giant 108-ft Hanuman statue and spectacular views. The temple requires a 2km uphill trek or short drive. Evening free on Mall Road - browse through handicraft shops for Himachali shawls, caps, and local apples.", 
+          highlights: ["Viceregal Lodge - Independence Heritage", "Kufri Hill Station Visit", "Pony Ride Through Orchards", "Green Valley Photography", "Jakhu Temple & 108ft Hanuman", "Mall Road Shopping"] 
+        },
+        { 
+          day: 3, 
+          title: "Shimla to Manali - Scenic Highway", 
+          description: "Today's drive from Shimla to Manali (260 km, approx. 8 hours) is one of India's most beautiful road journeys. Start early to enjoy the scenery. The route follows the Beas River, passing through terraced farms, apple orchards, and dense pine forests. Stop at Kullu, the valley of gods, known for its temples and colorful festivals. Optional visit to the famous Kullu shawl factories to see traditional weaving. Continue along the Beas River to Manali, a major tourist destination nestled at the foot of the Pir Panjal range. The town transitions from bustling Mall Road to the charming Old Manali, with its hippie cafes, guest houses, and relaxed atmosphere. Check into your hotel. Evening, explore Old Manali's eclectic mix of cafes, craft shops, and backpacker culture. Dinner at a riverside café with views of rushing waters.", 
+          highlights: ["Scenic Shimla-Manali Highway (8 hrs)", "Beas River Valley Views", "Kullu Valley of Gods", "Kullu Shawl Factory Visit", "Manali Hotel Check-in", "Old Manali Café Evening"] 
+        },
+        { 
+          day: 4, 
+          title: "Manali Local Sightseeing", 
+          description: "After breakfast, explore Manali's rich cultural and natural attractions. Start at Hadimba Temple, a unique 16th-century pagoda-style wooden temple dedicated to the goddess Hadimba, set amidst towering cedar forests. The architecture is distinctive and the atmosphere serene. Continue to the Manu Temple, dedicated to the sage who is said to have meditated here. Visit the Vashisht hot springs and temple - the natural hot water pools are perfect for a relaxing dip (especially welcome in winter). The temple is believed to be the abode of sage Vashisht. After lunch, visit the Tibetan Monastery and the traditional Himachali village of Vashisht with its beautiful wooden architecture. Evening, stroll through Mall Road for shopping - Manali is famous for woolens, handicrafts, and the locally made Kullu caps. Dinner at a local restaurant - try the Himachali sidu and trout fish.", 
+          highlights: ["Hadimba Temple in Cedar Forest", "16th Century Pagoda Architecture", "Vashisht Hot Springs Dip", "Tibetan Monastery Visit", "Traditional Himachali Village", "Mall Road Shopping & Local Cuisine"] 
+        },
+        { 
+          day: 5, 
+          title: "Solang Valley Adventure Day", 
+          description: "Today is all about adventure! After breakfast, drive to Solang Valley (13 km), a stunning valley that transforms into a ski resort in winter and adventure hub in summer. The valley offers spectacular views of the surrounding glaciers and peaks. Adventure activities available include: paragliding (soar above the valley with tandem pilots), zorbing (roll down the hill in a giant inflatable ball), horse riding, rappelling, and in winter, skiing and snowboarding. The ropeway (if operational) offers excellent views. Even non-adventurous visitors can enjoy the beauty of the valley with walks, photography, and maggi at the numerous stalls. Return to Manali for late lunch. Afternoon at leisure - perhaps a cooking class for Himachali cuisine or a spa session. Evening optional visit to the local handicraft center or simply relax in your hotel overlooking the mountains.", 
+          highlights: ["Solang Valley Adventure Hub", "Paragliding Over Mountains", "Zorbing & Horse Riding", "Ropeway Mountain Views", "Mountain Maggi & Chai", "Evening Leisure or Spa"] 
+        },
+        { 
+          day: 6, 
+          title: "Departure from Manali", 
+          description: "After a leisurely breakfast with mountain views, check out of your hotel. Depending on your departure time, you may have time for a final walk through Old Manali or a visit to any missed attractions. Optional early morning visit to Rohtang Pass (subject to permit availability and weather) for those with flights from Delhi - though this requires a very early start and extends the journey. Transfer to Chandigarh Airport/Railway Station (310 km, approx. 7-8 hours). Alternatively, fly from Kullu-Manali Airport (50 km) if connecting flights are available. As you descend through the Himalayas, carry with you memories of snow-capped peaks, colonial heritage, adventure in the valleys, and the warm hospitality of the pahadi (hill) people. Himachal's mountains will call you back!", 
+          highlights: ["Mountain View Breakfast", "Old Manali Final Walk", "Optional Rohtang Pass Visit", "Chandigarh/Kullu Airport Transfer", "Himalayan Memories", "Pahadi Farewell"] 
+        }
       ]
     },
     {
@@ -443,19 +968,54 @@ export const himachalData: DestinationData = {
       originalPrice: 42000,
       currentPrice: 35700,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800",
-      description: "Romantic honeymoon covering Shimla, Manali, and Dharamshala.",
+      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop",
+      description: "Romantic honeymoon covering Shimla, Manali, and Dharamshala. Experience colonial charm, mountain adventures, and spiritual tranquility together.",
       highlights: ["Scenic Drives", "Private Cabins", "Candlelight Dinners", "Couple Activities"],
-      inclusions: ["6 Nights Premium Stay", "All Meals", "Private Transfers", "Romantic Setups"],
+      inclusions: ["6 Nights Premium Accommodation", "All Meals", "Private Transfers", "Romantic Setups"],
       exclusions: ["Airfare", "Personal Shopping", "Optional Activities"],
       itinerary: [
-        { day: 1, title: "Romantic Arrival", description: "Arrive Chandigarh. Drive to Shimla with decorated room.", highlights: ["Flower Decoration", "Welcome Cake", "Evening Mall Road"] },
-        { day: 2, title: "Shimla Romance", description: "Toy train ride and scenic walks.", highlights: ["Toy Train", "Kufri", "Private Dinner"] },
-        { day: 3, title: "Shimla to Manali", description: "Scenic drive through Kullu Valley.", highlights: ["Kullu Shawl Shopping", "River Views", "Manali Welcome"] },
-        { day: 4, title: "Manali Adventure", description: "Solang Valley adventures together.", highlights: ["Paragliding", "Snow Fun", "Hot Chocolate"] },
-        { day: 5, title: "Manali Exploration", description: "Private tour of Old Manali and temples.", highlights: ["Hadimba Temple", "Old Manali Cafes", "Riverside Walk"] },
-        { day: 6, title: "Dharamshala", description: "Drive to Dharamshala. Visit Dalai Lama Temple.", highlights: ["Dalai Lama Temple", "Bhagsu Falls", "Sunset Point"] },
-        { day: 7, title: "Departure", description: "Drive to Chandigarh for departure.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Romantic Arrival in Shimla", 
+          description: "Your honeymoon begins with a scenic drive from Chandigarh to Shimla (117 km, approx. 4 hours). As you climb through the Himalayan foothills, the excitement builds. Arrive at your heritage hotel or boutique property in Shimla, where your room has been decorated with rose petals, candles, and a special honeymoon cake awaits. After check-in and freshening up, enjoy complimentary couples' mocktails on the balcony with valley views. Late afternoon, take a romantic horse-drawn cart ride through the scenic areas of Shimla. Evening, stroll hand-in-hand on the famous Mall Road under the streetlights. End the day with a candlelit dinner at a heritage restaurant overlooking the valley - the perfect start to your new journey together.", 
+          highlights: ["Scenic Drive to Shimla", "Rose Petal Decorated Room", "Honeymoon Cake Surprise", "Couples' Mocktails with Views", "Horse Cart Ride Together", "Candlelit Valley-View Dinner"] 
+        },
+        { 
+          day: 2, 
+          title: "Shimla Romance & Heritage", 
+          description: "After a leisurely breakfast in bed (room service available), experience one of India's most romantic rail journeys - the UNESCO Heritage Toy Train from Shimla to Barog (or a section of your choice). The narrow-gauge train chugs through 102 tunnels and over numerous bridges, offering stunning valley views - the perfect setting for honeymoon photographs. Return to Shimla for a late lunch. Afternoon, visit the Viceregal Lodge and its beautiful gardens - great for couple photos. Take a walk through the pine forests of Annadale. As evening approaches, enjoy a private sunset viewing arranged at a scenic point. Dinner is a special affair - a private table at a restaurant with live music or at your hotel's best location with special arrangements.", 
+          highlights: ["Breakfast in Bed", "UNESCO Toy Train Journey", "Scenic Railway Photography", "Viceregal Lodge Gardens", "Pine Forest Romantic Walk", "Private Sunset & Dinner"] 
+        },
+        { 
+          day: 3, 
+          title: "Shimla to Manali - Romantic Road Trip", 
+          description: "Today's drive to Manali (260 km, approx. 8 hours) is a romantic road trip through some of Himachal's most beautiful landscapes. Start early with packed breakfast. The route follows the Beas River, and we'll stop at scenic points for photos and chai. Stop at Kullu for shopping - buy matching shawls for each other! Arrive in Manali and check into a riverside cottage or mountain-view resort. Your room is prepared with romantic décor. After freshening up, take a walk to Old Manali in the golden afternoon light - the quirky cafes, rustic lanes, and laid-back atmosphere are perfect for honeymooners. Dinner by the riverside, listening to the Beas River flow past.", 
+          highlights: ["Romantic Road Trip (8 hrs)", "Scenic Photo Stops", "Matching Shawl Shopping", "Riverside/Mountain Cottage", "Old Manali Sunset Walk", "Riverside Dinner Experience"] 
+        },
+        { 
+          day: 4, 
+          title: "Manali Adventure Together", 
+          description: "Today is for adventure and bonding! After breakfast, drive to Solang Valley for couple activities. Try tandem paragliding together - the thrill of flying over mountains is an incredible shared experience. For less adventurous moments, take pony rides through the valley side by side. Try zorbing or simply sit with hot chocolate, watching the clouds play with the peaks. Return to Manali for a special couples' spa session - Ayurvedic massages synchronized for both of you, followed by a steam bath. Post-spa, enjoy a private bonfire arranged at your hotel with music, marshmallows, and stargazing. The mountain stars are exceptionally bright. End with a candlelit dinner under the stars.", 
+          highlights: ["Solang Valley Couple Adventures", "Tandem Paragliding Together", "Pony Rides Side by Side", "Couples' Ayurvedic Spa", "Private Bonfire & Stargazing", "Candlelit Dinner Under Stars"] 
+        },
+        { 
+          day: 5, 
+          title: "Manali to Dharamshala - Spiritual Journey", 
+          description: "Drive to Dharamshala (240 km, approx. 7 hours), home to the Dalai Lama and a place of profound peace. The drive passes through Kangra Valley with stunning views of the Dhauladhar range. Arrive at McLeodganj, the upper town of Dharamshala, and check into a boutique hotel with mountain views. The atmosphere here is distinctly peaceful and spiritual - perfect for newlyweds beginning their journey together. After freshening up, visit the Dalai Lama Temple Complex where you may spin prayer wheels together and absorb the peaceful ambiance. Walk through the colorful Tibetan market. Evening, find a rooftop café with views of the sunset over the mountains. Dinner is authentic Tibetan cuisine in a cozy restaurant.", 
+          highlights: ["Kangra Valley Scenic Drive", "McLeodganj Boutique Hotel", "Dalai Lama Temple Visit", "Prayer Wheel Spinning", "Tibetan Market Exploration", "Rooftop Sunset Café"] 
+        },
+        { 
+          day: 6, 
+          title: "Dharamshala - Peace & Romance", 
+          description: "Wake up to the clearest mountain views - the Dhauladhars seem close enough to touch. After breakfast, participate in a couple's meditation or yoga session arranged at your hotel or a nearby center - start your married life with mindfulness. Visit the beautiful Bhagsu Falls and temple - the short hike to the waterfall is romantic, and the views from there are stunning. Enjoy the famous Shiva Café for chai with a view. Afternoon, optional St. John in the Wilderness church visit - a beautiful stone church in the forest. Alternatively, simply relax at your hotel, enjoying each other's company with the mountains as backdrop. Final evening is special - a private dinner arranged at a scenic viewpoint, just for two, with the mountains glowing in the sunset.", 
+          highlights: ["Dhauladhar Mountain Views", "Couple's Yoga/Meditation", "Bhagsu Falls Trek", "Shiva Café Mountain Chai", "St. John Church or Leisure", "Private Mountain Sunset Dinner"] 
+        },
+        { 
+          day: 7, 
+          title: "Departure - New Beginnings", 
+          description: "Your romantic honeymoon in Himachal concludes today. Enjoy a leisurely breakfast - no rush. If time permits, take a final walk through McLeodganj, perhaps picking up matching prayer beads or a piece of Tibetan art as honeymoon memorabilia. Transfer to Dharamshala Airport (14 km, approx. 30 mins) for your departure. Alternatively, transfer to Pathankot (90 km, approx. 3 hours) for trains. As you leave the mountains, you carry with you not just photographs but the beginning of a beautiful journey together. The peace of Dharamshala, the adventure in Manali, and the charm of Shimla - these memories will be the foundation of your married life. Congratulations and best wishes for a lifetime of love!", 
+          highlights: ["Leisurely Final Breakfast", "McLeodganj Memorabilia Shopping", "Matching Prayer Beads", "Airport/Station Transfer", "Mountain Memories for Life", "New Journey Begins"] 
+        }
       ]
     },
     {
@@ -465,21 +1025,66 @@ export const himachalData: DestinationData = {
       originalPrice: 55000,
       currentPrice: 46750,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1591018653367-067fd14a5616?w=800",
-      description: "Epic journey through the cold desert of Spiti Valley.",
-      highlights: ["Key Monastery", "Chandratal Lake", "Kunzum Pass", "Kaza"],
-      inclusions: ["8 Nights Accommodation", "All Meals", "4x4 Vehicle", "Permits"],
+      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+      description: "Epic journey through the cold desert of Spiti Valley. Remote monasteries, ancient villages, and landscapes that seem extraterrestrial await on this unforgettable expedition.",
+      highlights: ["Key Monastery", "Chandratal Lake", "Kunzum Pass", "Kaza Town"],
+      inclusions: ["8 Nights Accommodation", "All Meals", "4x4 Vehicle", "Inner Line Permits"],
       exclusions: ["Airfare", "Personal Expenses", "Tips"],
       itinerary: [
-        { day: 1, title: "Arrival Shimla", description: "Arrive Chandigarh. Drive to Shimla.", highlights: ["Shimla Check-in", "Mall Road", "Preparation"] },
-        { day: 2, title: "Shimla to Sarahan", description: "Drive to Sarahan via Narkanda.", highlights: ["Narkanda", "Bhimakali Temple", "Apple Orchards"] },
-        { day: 3, title: "Sarahan to Sangla", description: "Enter Kinnaur valley. Reach Sangla.", highlights: ["Kinnaur Views", "Kamru Fort", "Sangla Valley"] },
-        { day: 4, title: "Sangla to Tabo", description: "Cross into Spiti. Visit Tabo Monastery.", highlights: ["Nako Lake", "Tabo Monastery", "1000-Year History"] },
-        { day: 5, title: "Tabo to Kaza", description: "Arrive at Spiti's headquarters.", highlights: ["Dhankar Monastery", "Pin Valley", "Kaza Town"] },
-        { day: 6, title: "Kaza Exploration", description: "Visit Key, Kibber, and Hikkim.", highlights: ["Key Monastery", "Kibber Village", "Highest Post Office"] },
-        { day: 7, title: "Kaza to Chandratal", description: "Drive to the Moon Lake.", highlights: ["Kunzum Pass", "Chandratal Lake", "Camping"] },
-        { day: 8, title: "Chandratal to Manali", description: "Cross Rohtang and reach Manali.", highlights: ["Rohtang Pass", "Scenic Drive", "Manali"] },
-        { day: 9, title: "Departure", description: "Drive to Chandigarh for departure.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival Shimla - Gateway to Spiti", 
+          description: "Arrive at Chandigarh and drive to Shimla (117 km, approx. 4 hours). Shimla is the staging point for your Spiti expedition. Check into your hotel and rest. In the evening, attend a briefing about the challenging days ahead - Spiti is a high-altitude cold desert with basic infrastructure, and this expedition requires adventurous spirit. The remote valleys you'll explore are among India's least visited yet most spectacular regions. Walk on Mall Road for dinner and preparation. Pack only essentials - luggage space in Spiti's 4x4 vehicles is limited. Early to bed - the expedition begins at dawn.", 
+          highlights: ["Chandigarh to Shimla Drive", "Spiti Expedition Briefing", "Expedition Preparation", "Mall Road Evening Walk", "Essential Packing Only", "Early Rest for Dawn Start"] 
+        },
+        { 
+          day: 2, 
+          title: "Shimla to Sarahan via Narkanda", 
+          description: "Begin your journey into the remote Kinnaur Valley. Drive from Shimla to Sarahan (175 km, approx. 7 hours) via Narkanda. Stop at Narkanda for its famous Hatu Peak views and apple orchards. The landscape becomes more rugged as you leave the tourist areas behind. Pass through the ancient fruit-growing region, seeing terraced orchards and traditional villages. Arrive at Sarahan, home to the Bhimakali Temple - a stunning example of Kinnauri architecture combining Hindu and Buddhist elements. The temple, with its centuries-old wooden structure and silver doors, is impressive. The village offers peaceful evening walks with views of the Shrikhand Mahadev peak. Overnight in Sarahan - a gentle introduction to the remoteness ahead.", 
+          highlights: ["Shimla to Remote Kinnaur", "Narkanda & Hatu Peak", "Apple Orchard Region", "Bhimakali Temple Visit", "Ancient Kinnauri Architecture", "Peaceful Mountain Village Night"] 
+        },
+        { 
+          day: 3, 
+          title: "Sarahan to Sangla Valley", 
+          description: "Drive deeper into Kinnaur to the beautiful Sangla Valley (100 km, approx. 5 hours). The road clings to cliffs above the Sutlej River, offering dramatic views. This is where the landscape begins to shift - drier, more rugged, and increasingly spectacular. Enter the Sangla Valley, one of Himachal's most beautiful - green terraces, apple orchards, and snow peaks. Check into a camp or guest house by the Baspa River. After lunch, explore Sangla village with its traditional wooden houses. Drive or walk to Kamru Fort, an ancient wooden tower fort with excellent views and a temple dedicated to goddess Kamakshi. The fort's architecture is unique - stacked wooden layers that have survived earthquakes for 800 years. Evening by the river, watching the peaks glow at sunset.", 
+          highlights: ["Cliffside Sutlej River Road", "Dramatic Kinnaur Landscapes", "Sangla Valley Arrival", "Baspa Riverside Camp", "800-Year-Old Kamru Fort", "Sunset Over Snow Peaks"] 
+        },
+        { 
+          day: 4, 
+          title: "Sangla to Tabo via Nako", 
+          description: "Today you cross into Spiti - the Trans-Himalayan cold desert. Drive from Sangla to Tabo (180 km, approx. 8 hours). The route passes through some of the most dramatic scenery in the Himalayas. Stop at Nako, a beautiful village with Nako Lake and a thousand-year-old monastery. The village sits on a cliff edge with stunning views. Continue towards Spiti, stopping at Gue Monastery to see a 500-year-old mummified monk - a rare and fascinating sight. The landscape becomes increasingly barren and otherworldly - welcome to the moon mountains. Arrive at Tabo, one of the oldest continuously functioning Buddhist monasteries in the world (over 1,000 years old). The mud-brick monastery houses remarkable frescoes comparable to those in Ajanta. Overnight in Tabo's humble guest houses - authenticity over luxury.", 
+          highlights: ["Sangla to Spiti Crossing", "Nako Lake & Village", "1,000-Year-Old Nako Monastery", "500-Year-Old Mummified Monk", "Moon Landscape Entry", "Tabo - Oldest Active Monastery"] 
+        },
+        { 
+          day: 5, 
+          title: "Tabo to Kaza via Dhankar", 
+          description: "Explore Tabo's treasures in the morning. Enter the 'Ajanta of the Himalayas' - the main prayer hall (Dukhang) contains some of the oldest and finest Buddhist murals in India, dating to 996 AD. The soft colors and detailed images are breathtaking. After this spiritual immersion, drive to Kaza (45 km, approx. 2 hours) via Dhankar. Stop at Dhankar Monastery, dramatically perched on a cliff above the confluence of the Spiti and Pin rivers. The views from Dhankar are among the best in Spiti - the stark valley, snowy peaks, and the ancient monastery create an iconic image. A 1-hour hike leads to Dhankar Lake, a sacred high-altitude lake (optional). Continue to Kaza, the administrative center of Spiti. Kaza has cafes, shops, and better facilities. Evening, explore the town and acclimate to the altitude (3,650m).", 
+          highlights: ["Tabo's 1,000-Year-Old Murals", "Ajanta of the Himalayas", "Dhankar Monastery Cliffs", "Spiti-Pin Confluence Views", "Optional Dhankar Lake Hike", "Kaza Town Exploration"] 
+        },
+        { 
+          day: 6, 
+          title: "Kaza - Key, Kibber & Langza", 
+          description: "A full day exploring Spiti's most iconic sites. Start at Key Monastery, the largest and most famous in Spiti. Perched on a hilltop, its layered architecture is instantly recognizable - the image of Spiti itself. The monastery houses 300 monks and contains excellent murals and thankas. Continue to Kibber, once claimed to be the highest motorable village in the world (now debated). The village is a great spot for spotting ibex and blue sheep. Drive to Langza, famous for its giant Buddha statue against the backdrop of Chau Chau Kang Nilda peak. Langza is also known for marine fossils - millions of years ago, this was under the Tethys Sea! Search for ammonite fossils with local guides. Return to Kaza for dinner. Optional visit to Hikkim village nearby - home to the world's highest post office, where you can mail a postcard to loved ones.", 
+          highlights: ["Key Monastery - Largest in Spiti", "300 Monks' Ancient Residence", "Kibber High-Altitude Village", "Langza Giant Buddha Statue", "Marine Fossil Hunting", "Hikkim - World's Highest Post Office"] 
+        },
+        { 
+          day: 7, 
+          title: "Kaza to Chandratal Lake", 
+          description: "Drive from Kaza to Chandratal Lake (110 km, approx. 5 hours), crossing the mighty Kunzum Pass (4,551m). The climb to Kunzum is spectacular - the barren mountains reveal their colors as you ascend. At the pass, a small temple to the goddess Kunzum provides blessings for travelers - spin the prayer wheels and add your prayers. The descent towards Chandratal takes you through terrain that feels prehistoric. Chandratal ('Moon Lake') at 4,300m is one of India's most beautiful high-altitude lakes. The crescent-shaped lake changes colors with the sky - turquoise, blue, emerald. Camp near the lake (camping not allowed on immediate shoreline). Take an evening walk to the lake for sunset - the colors are otherworldly. Night camping under the clearest skies you've ever seen - the Milky Way arches overhead.", 
+          highlights: ["Kunzum Pass Crossing (4,551m)", "Kunzum Temple Blessings", "Prehistoric Landscape Descent", "Chandratal - Crescent Moon Lake", "Color-Changing Lake Waters", "Milky Way Camping Night"] 
+        },
+        { 
+          day: 8, 
+          title: "Chandratal to Manali via Rohtang", 
+          description: "Wake early for sunrise at Chandratal - the morning light on the lake is magical. After breakfast at camp, begin the journey to Manali (110 km, approx. 6 hours). The route crosses Rohtang Pass (3,978m), one of the most famous passes in India. The road can be challenging - water crossings, broken sections, and landslide-prone areas - but this is part of the Spiti adventure. At Rohtang, you're back in tourist territory - a stark contrast to the remote Spiti you've been exploring. The descent to Manali reveals green forests and flowing rivers after days in the cold desert. Arrive in Manali and check into a comfortable hotel - after basic Spiti accommodations, this feels luxurious! Hot shower, comfortable bed, and celebratory dinner - you've completed one of India's most adventurous circuits!", 
+          highlights: ["Chandratal Sunrise", "Final Camp Breakfast", "Rohtang Pass Adventure", "Return to Green Landscapes", "Manali Comfort After Spiti", "Expedition Celebration Dinner"] 
+        },
+        { 
+          day: 9, 
+          title: "Departure from Manali", 
+          description: "Your Spiti expedition concludes. Enjoy a leisurely breakfast - the comfort of regular beds and hot showers is appreciated! If time permits, take a final walk through Old Manali or visit any missed local attractions. Transfer to Chandigarh Airport/Railway Station (310 km, approx. 7-8 hours) or fly from Kullu-Manali Airport. As you leave the mountains, you carry with you memories of one of the world's most remote and beautiful regions - the ancient monasteries of Tabo and Key, the impossible villages of Kibber and Langza, the moon lake of Chandratal, and the vast landscapes that reminded you how small we are in the grand scale of nature. Spiti changes those who visit - you return home different, perhaps more aware of life's impermanence and beauty.", 
+          highlights: ["Leisurely Comfortable Breakfast", "Old Manali Final Walk", "Airport/Station Transfer", "Memories of Remote Spiti", "Ancient Monasteries in Heart", "Changed by the Journey"] 
+        }
       ]
     },
     {
@@ -489,17 +1094,42 @@ export const himachalData: DestinationData = {
       originalPrice: 22000,
       currentPrice: 18700,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
-      description: "Spiritual retreat in the abode of Dalai Lama with treks and meditation.",
+      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop",
+      description: "Spiritual retreat in the abode of the Dalai Lama with treks, meditation, and immersion in Tibetan culture.",
       highlights: ["Dalai Lama Temple", "Triund Trek", "Tibetan Culture", "Bhagsu Falls"],
-      inclusions: ["4 Nights Accommodation", "Breakfast", "Transfers", "Trek Guide"],
+      inclusions: ["4 Nights Accommodation", "Daily Breakfast", "Airport Transfers", "Trek Guide"],
       exclusions: ["Airfare", "Lunch & Dinner", "Personal Expenses"],
       itinerary: [
-        { day: 1, title: "Arrival McLeodganj", description: "Arrive and explore local markets.", highlights: ["Tibetan Market", "Dalai Lama Temple", "Sunset Point"] },
-        { day: 2, title: "Triund Trek", description: "Trek to Triund for panoramic views.", highlights: ["Triund Trek", "Himalayan Views", "Camping Optional"] },
-        { day: 3, title: "Dharamkot & Bhagsu", description: "Visit Dharamkot and Bhagsu Falls.", highlights: ["Bhagsu Falls", "Shiva Cafe", "Meditation Class"] },
-        { day: 4, title: "Kangra Valley", description: "Visit Kangra Fort and Tea Gardens.", highlights: ["Kangra Fort", "Tea Gardens", "Chamunda Temple"] },
-        { day: 5, title: "Departure", description: "Drive to Dharamshala Airport.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival in McLeodganj", 
+          description: "Arrive at Dharamshala Airport (14 km) or Pathankot Railway Station (90 km) and transfer to McLeodganj, the upper town of Dharamshala and the seat of the Tibetan Government in Exile. This small hill town became world-famous when the Dalai Lama made it his home after fleeing Tibet in 1959. Check into your hotel with views of the Dhauladhar mountains. After rest and refreshments, explore the town on foot. Walk through the colorful main square with its Tibetan prayer flags, shops selling Buddhist artifacts, and cafes offering momos and butter tea. Visit the Dalai Lama Temple Complex (Tsuglagkhang) - the spiritual heart of the exiled Tibetan community. If you're fortunate, you may see monks debating in the courtyard - a fascinating sight. Evening, find a rooftop café for sunset views over the mountains.", 
+          highlights: ["McLeodganj Arrival & Check-in", "Dhauladhar Mountain Views", "Main Square Exploration", "Dalai Lama Temple Visit", "Monks Debating (if lucky)", "Rooftop Sunset Café"] 
+        },
+        { 
+          day: 2, 
+          title: "Triund Trek - Heaven on Earth", 
+          description: "Today's highlight is the famous Triund trek! After an early breakfast, meet your guide and begin the trek from Galu Devi temple (accessible by shared taxi from McLeodganj). The 9 km trek takes 4-5 hours through oak and rhododendron forests. The trail is well-marked and moderately challenging. As you climb, views of the Kangra Valley open up below. The final stretch involves a steeper climb before you reach Triund meadow at 2,875m. The view from Triund is breathtaking - the snow-capped Dhauladhar range seems close enough to touch, while the Kangra Valley spreads below. Spend time at the top, taking photos and absorbing the peace. For those staying overnight, tents are available; otherwise, return by the same route. Evening back in McLeodganj - you've earned a good meal and rest!", 
+          highlights: ["Early Breakfast & Trek Start", "9 km Forest Trail", "Oak & Rhododendron Woods", "Triund Meadow (2,875m)", "Dhauladhar Range Close Views", "Return & Well-Earned Rest"] 
+        },
+        { 
+          day: 3, 
+          title: "Dharamkot, Bhagsu & Waterfall", 
+          description: "Today is about exploration and spirituality. Start with an early morning yoga or meditation session - McLeodganj has numerous excellent centers offering drop-in classes. After breakfast, walk to Dharamkot village (3 km uphill), known for its spiritual retreats and organic cafes. The village has a peaceful, alternative vibe. Continue to Bhagsu, famous for its waterfall and ancient temple. The 1.5 km walk to Bhagsu Falls is scenic, and the waterfall itself is refreshing - you can wade in the pool at its base. The famous Shiva Café, perched near the falls, offers excellent chai and views - a must-stop. Walk back via the Bhagsu Nag Temple, an ancient Shiva temple said to date back 5,000 years. Afternoon, optional visit to the Norbulingka Institute (20 mins drive) - a center preserving Tibetan arts and crafts, with beautiful temple and gardens. Evening at leisure in McLeodganj.", 
+          highlights: ["Morning Yoga/Meditation Class", "Dharamkot Village Walk", "Bhagsu Falls & Pool", "Famous Shiva Café Chai", "5,000-Year-Old Bhagsu Temple", "Norbulingka Tibetan Arts (optional)"] 
+        },
+        { 
+          day: 4, 
+          title: "Kangra Valley Exploration", 
+          description: "Today, explore the broader Kangra Valley. Drive to Kangra Fort (20 km, approx. 45 mins), one of the oldest forts in India, dating back to the 4th century BC. Once the seat of the Katoch dynasty, the fort was captured by Mahmud of Ghazni, Mughals, and British. Its ruins still impress with their scale and views. Continue to the Chamunda Devi Temple, an important Shakti Peeth with excellent views. Next, visit the Kangra Art Museum to understand the famous Kangra miniature painting style. If time permits, visit the Dharamshala International Cricket Stadium - one of the most scenic cricket grounds in the world, with the Dhauladhars as backdrop. Return to McLeodganj. Evening, attend a teaching or public talk at the Dalai Lama Temple if available (check schedules), or spend time in the Tibetan Library reading about Buddhism and Tibetan history.", 
+          highlights: ["Kangra Fort (4th Century BC)", "Historical Dynasties Stories", "Chamunda Devi Temple", "Kangra Art Museum", "Cricket Stadium Mountain Views", "Temple Teaching or Library Visit"] 
+        },
+        { 
+          day: 5, 
+          title: "Departure - Carrying Peace Within", 
+          description: "Your spiritual retreat in Dharamshala concludes. Enjoy a final breakfast with mountain views. If time permits, take a last walk through the main square, picking up prayer flags, singing bowls, or Tibetan jewelry as souvenirs. Perhaps light a butter lamp at the temple as a final act of gratitude. Transfer to Dharamshala Airport or Pathankot Railway Station for your departure. As you leave this peaceful abode, you carry with you more than memories - the calm of meditation, the joy of trekking to Triund's heights, the warmth of Tibetan butter tea, and perhaps a slightly different perspective on life. McLeodganj changes visitors - the presence of thousands of exiled Tibetans preserving their culture with dignity, the teachings of compassion, and the majestic mountains all contribute to an experience that stays with you. Om Mani Padme Hum.", 
+          highlights: ["Mountain View Final Breakfast", "Main Square Souvenir Shopping", "Prayer Flag & Singing Bowl", "Temple Butter Lamp Lighting", "Airport/Station Transfer", "Peace & Perspective to Carry Home"] 
+        }
       ]
     },
     {
@@ -509,2147 +1139,75 @@ export const himachalData: DestinationData = {
       originalPrice: 48000,
       currentPrice: 40800,
       discount: 15,
-      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800",
-      description: "Action-packed adventure tour with trekking, rafting, and paragliding.",
-      highlights: ["River Rafting", "Paragliding", "Trekking", "Camping"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "All Activities", "Equipment", "Guides"],
-      exclusions: ["Airfare", "Personal Gear", "Tips"],
+      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+      description: "Action-packed adventure tour with trekking, river rafting, paragliding, and camping under the Himalayan stars.",
+      highlights: ["White Water Rafting", "Paragliding", "Himalayan Trekking", "Camping Under Stars"],
+      inclusions: ["6 Nights Accommodation", "All Meals", "All Adventure Activities", "Equipment & Safety Gear", "Expert Guides"],
+      exclusions: ["Airfare", "Personal Gear", "Tips", "Insurance"],
       itinerary: [
-        { day: 1, title: "Arrival Kullu", description: "Arrive and prepare for adventure.", highlights: ["Briefing", "Equipment Check", "Light Trek"] },
-        { day: 2, title: "River Rafting", description: "White water rafting on Beas River.", highlights: ["Rafting Grade 2-3", "Beach Games", "Riverside Camping"] },
-        { day: 3, title: "Paragliding", description: "Fly like a bird in Solang Valley.", highlights: ["Tandem Paragliding", "Video Recording", "Snow Activities"] },
-        { day: 4, title: "Trek Day 1", description: "Begin Beas Kund Trek.", highlights: ["Trek Start", "Alpine Meadows", "Base Camp"] },
-        { day: 5, title: "Trek Day 2", description: "Reach Beas Kund and return.", highlights: ["Beas Kund Lake", "Source of Beas", "Descent"] },
-        { day: 6, title: "Zorbing & Relaxation", description: "Zorbing and relaxation activities.", highlights: ["Zorbing", "ATV Ride", "Hot Springs"] },
-        { day: 7, title: "Departure", description: "Drive to Chandigarh.", highlights: ["Departure"] }
+        { 
+          day: 1, 
+          title: "Arrival Manali - Adventure Briefing", 
+          description: "Arrive at Chandigarh or Kullu Airport and transfer to Manali (310/50 km). Check into your adventure camp or resort on the banks of the Beas River. After freshening up and lunch, attend a comprehensive adventure briefing. Meet your guides - experienced professionals certified in various adventure activities. Learn about safety protocols, equipment usage, and the exciting days ahead. Evening, take an acclimatization walk to Old Manali, crossing the scenic footbridge over the Beas. Explore the quirky cafes and shops. Return for an adventure-themed dinner at camp with fellow adventure seekers. Early to bed - the adrenaline starts flowing tomorrow!", 
+          highlights: ["Transfer to Riverside Camp", "Adventure Activity Briefing", "Meet Expert Guides", "Safety & Equipment Introduction", "Old Manali Evening Walk", "Adventure Team Dinner"] 
+        },
+        { 
+          day: 2, 
+          title: "River Rafting on Beas", 
+          description: "Your first adventure day begins with white water rafting on the Beas River! After breakfast, drive to the put-in point near Pirdi (15 km). Your guide briefs you on paddling techniques, commands, and safety. Don your wetsuit and life jacket, and launch into the river. The 14 km stretch from Pirdi to Jhiri features Grade II-III rapids with names like 'Roller Coaster' and 'Golf Course.' The rapids are exhilarating without being too extreme - perfect for beginners and experienced rafters alike. Between rapids, enjoy the scenic canyon walls and wildlife along the banks. After about 2 hours of rafting, you'll reach the take-out point. Celebrate with hot chai and snacks. Return to camp for lunch and rest. Evening, try cliff jumping at a safe spot on the Beas (with guides) or go for a nature walk. Bonfire dinner with rafting story sharing.", 
+          highlights: ["White Water Rafting on Beas", "Grade II-III Rapids", "14 km River Adventure", "Expert Guide & Safety Gear", "Optional Cliff Jumping", "Bonfire Celebration Dinner"] 
+        },
+        { 
+          day: 3, 
+          title: "Paragliding at Solang", 
+          description: "Today you fly! After breakfast, drive to Solang Valley, one of India's premier paragliding destinations. The tandem paragliding experience doesn't require any prior experience - you fly with an expert pilot who handles all the technical aspects. After a safety briefing and harness fitting, you'll take a short run off the launch site and suddenly you're airborne! The 15-20 minute flight offers unparalleled views of the Solang Valley, snow peaks, and the patchwork of villages below. Your pilot may perform some gentle acrobatic maneuvers if you're willing. Landing is smooth on a designated field. Videos and photos of your flight are available. Afternoon, try other activities in Solang - zorbing, ATV rides, or rope courses. Return to camp for relaxation and dinner.", 
+          highlights: ["Solang Valley Paragliding", "Tandem Flight with Expert", "15-20 Minute Aerial Views", "Acrobatic Maneuvers Option", "Flight Video & Photos", "Afternoon Activity Options"] 
+        },
+        { 
+          day: 4, 
+          title: "Manali to Kullu - Riverside Camping", 
+          description: "After breakfast, drive towards Kullu (40 km, 1.5 hours), stopping at river beaches for various activities. Try your hand at rock climbing on natural rock faces with proper gear and guides. Next, rappelling down a cliff face - an exhilarating experience! After a riverside lunch, go for a moderate hike through the forests and meadows. The Kullu Valley is known for its biodiversity and beautiful trails. In the afternoon, you'll reach your riverside campsite - tents set up on the banks of the Beas with the sound of rushing water as your soundtrack. Evening, learn basic survival skills - fire starting, knot tying, and shelter building. Dinner is cooked on an open fire, and the night ends with a bonfire, music, and stargazing in the clear mountain sky.", 
+          highlights: ["Rock Climbing on Natural Face", "Rappelling Adventure", "Riverside Lunch", "Kullu Valley Forest Hike", "Riverside Camping Setup", "Survival Skills & Bonfire Night"] 
+        },
+        { 
+          day: 5, 
+          title: "Trekking & Camping at Himalayan Meadows", 
+          description: "Today's trek takes you to a beautiful Himalayan meadow. After an early breakfast at camp, begin your trek from a nearby trailhead. The 10-12 km trek (depending on route chosen) takes you through dense forests of oak and deodar, past streams and waterfalls, to a high meadow with stunning views. Your guides will point out local flora and fauna. Reach your camping spot by afternoon - a meadow at around 3,000m with panoramic views. Tents are already set up by the support team. Explore the area, photograph wildflowers, or simply sit in the silence of the mountains. As evening falls, watch the sunset paint the peaks. Dinner under the stars in the middle of nowhere - this is the essence of Himalayan adventure. Night in tents with sleeping bags.", 
+          highlights: ["10-12 km Himalayan Trek", "Oak & Deodar Forests", "Streams & Waterfall Crossings", "High Meadow Camp (3,000m)", "Sunset Over Snow Peaks", "Dinner Under Stars in Wilderness"] 
+        },
+        { 
+          day: 6, 
+          title: "Trek Return & Mountain Biking", 
+          description: "Wake up to a stunning mountain sunrise from your meadow camp. After a hot breakfast, pack up and trek back to the roadhead. The descent is easier and faster, taking around 4 hours. Upon reaching the road, you're met with vehicles and equipment for the afternoon's activity - mountain biking! After lunch, gear up with helmets and pads for a thrilling downhill ride on forest trails. The 15 km route takes you through varied terrain - dirt tracks, forest paths, and scenic roads. Your guides lead the way, stopping at viewpoints and ensuring safety. End the ride at your final night's accommodation - a comfortable hotel in Manali after days of camping. Hot shower, comfortable bed, and a celebratory farewell dinner with your adventure team.", 
+          highlights: ["Sunrise from Himalayan Meadow", "Trek Descent (4 hrs)", "Mountain Bike Equipment", "15 km Downhill Ride", "Forest Trails & Dirt Tracks", "Celebratory Farewell Dinner"] 
+        },
+        { 
+          day: 7, 
+          title: "Departure - Adventure Complete", 
+          description: "Your Himachal adventure expedition concludes. Enjoy a leisurely breakfast - the comfort of the hotel is well-deserved after your adventures! Collect certificates of completion for your activities. Exchange contacts with fellow adventurers and your guides. Transfer to Chandigarh Airport/Railway Station (310 km, approx. 7 hours) or Kullu Airport (50 km). As you leave the mountains, you carry not just photos and videos but a sense of accomplishment. You've rafted rivers, flown over valleys, climbed rocks, trekked to meadows, and camped under Himalayan stars. These adventures have pushed your boundaries and shown you what you're capable of. The mountains have challenged and rewarded you - until the next adventure!", 
+          highlights: ["Leisurely Farewell Breakfast", "Activity Completion Certificates", "Adventure Team Contacts", "Airport/Station Transfer", "Sense of Accomplishment", "Ready for Next Adventure"] 
+        }
       ]
     }
   ]
 };
 
-// Rajasthan Packages
-export const rajasthanData: DestinationData = {
-  id: "rajasthan",
-  name: "Rajasthan",
-  tagline: "Land of Kings",
-  description: "Discover the royal heritage of Rajasthan - magnificent forts, opulent palaces, colorful bazaars, and the golden desert. Experience the grandeur of Indian royalty.",
-  heroImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
-    "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800",
-    "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800"
-  ],
-  packages: [
-    {
-      id: "rajasthan-royal",
-      name: "Royal Rajasthan",
-      duration: "7D/6N",
-      originalPrice: 42000,
-      currentPrice: 35700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
-      description: "Royal tour covering Jaipur, Jodhpur, and Udaipur.",
-      highlights: ["Amber Fort", "Mehrangarh Fort", "City Palace Udaipur", "Desert Safari"],
-      inclusions: ["6 Nights Heritage Hotels", "Breakfast", "All Transfers", "Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Entry Fees"],
-      itinerary: [
-        { day: 1, title: "Arrival in Jaipur", description: "Arrive at Jaipur. Evening Chokhi Dhani visit.", highlights: ["Airport Pickup", "Chokhi Dhani", "Rajasthani Dinner"] },
-        { day: 2, title: "Jaipur Sightseeing", description: "Visit Amber Fort, Hawa Mahal, and City Palace.", highlights: ["Amber Fort", "Hawa Mahal", "City Palace"] },
-        { day: 3, title: "Jaipur to Jodhpur", description: "Drive to Jodhpur. Visit Mehrangarh Fort.", highlights: ["Mehrangarh Fort", "Jaswant Thada", "Blue City Walk"] },
-        { day: 4, title: "Jodhpur to Jaisalmer", description: "Drive to Jaisalmer. Desert camp experience.", highlights: ["Desert Safari", "Sunset Dunes", "Desert Camp"] },
-        { day: 5, title: "Jaisalmer to Udaipur", description: "Visit Jaisalmer Fort. Drive to Udaipur.", highlights: ["Jaisalmer Fort", "Patwon Haveli", "Scenic Drive"] },
-        { day: 6, title: "Udaipur Sightseeing", description: "Visit City Palace and Lake Pichola boat ride.", highlights: ["City Palace", "Lake Pichola", "Jagdish Temple"] },
-        { day: 7, title: "Departure", description: "Transfer to Udaipur Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "rajasthan-golden-triangle",
-      name: "Golden Triangle with Rajasthan",
-      duration: "8D/7N",
-      originalPrice: 48000,
-      currentPrice: 40800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800",
-      description: "Classic Golden Triangle extended with Rajasthan's heritage cities.",
-      highlights: ["Taj Mahal", "Amber Fort", "Qutub Minar", "Pushkar"],
-      inclusions: ["7 Nights Hotels", "Breakfast", "AC Vehicle", "Monument Entry", "Guide"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Delhi", description: "Arrive Delhi. Old and New Delhi tour.", highlights: ["Red Fort", "Jama Masjid", "India Gate"] },
-        { day: 2, title: "Delhi to Agra", description: "Drive to Agra. Visit Taj Mahal at sunset.", highlights: ["Taj Mahal Sunset", "Agra Fort", "Mehtab Bagh"] },
-        { day: 3, title: "Agra to Jaipur", description: "Drive to Jaipur via Fatehpur Sikri.", highlights: ["Fatehpur Sikri", "Abhaneri Stepwell", "Jaipur Arrival"] },
-        { day: 4, title: "Jaipur Sightseeing", description: "Full day Jaipur exploration.", highlights: ["Amber Fort", "City Palace", "Hawa Mahal"] },
-        { day: 5, title: "Jaipur to Pushkar", description: "Drive to holy Pushkar. Evening Ganga Aarti.", highlights: ["Pushkar Lake", "Brahma Temple", "Aarti Ceremony"] },
-        { day: 6, title: "Pushkar to Jodhpur", description: "Drive to Blue City Jodhpur.", highlights: ["Mehrangarh Fort", "Blue City Walk", "Local Markets"] },
-        { day: 7, title: "Jodhpur Exploration", description: "Full day Jodhpur sightseeing.", highlights: ["Umaid Bhawan", "Jaswant Thada", "Clock Tower"] },
-        { day: 8, title: "Departure", description: "Transfer to Jodhpur Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "rajasthan-desert-adventure",
-      name: "Rajasthan Desert Adventure",
-      duration: "6D/5N",
-      originalPrice: 38000,
-      currentPrice: 32300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800",
-      description: "Desert adventure through Jaisalmer and Bikaner with camel safaris.",
-      highlights: ["Camel Safari", "Desert Camping", "Sam Sand Dunes", "Bikaner Fort"],
-      inclusions: ["5 Nights Accommodation", "All Meals", "Desert Safari", "Camp Stay"],
-      exclusions: ["Airfare", "Personal Expenses", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Jaisalmer", description: "Arrive and explore Golden City.", highlights: ["Jaisalmer Fort", "Patwon Haveli", "Sunset Point"] },
-        { day: 2, title: "Desert Safari", description: "Full day camel safari to Sam Dunes.", highlights: ["Camel Safari", "Village Visits", "Cultural Evening"] },
-        { day: 3, title: "Desert Camping", description: "Explore Khuri dunes. Night at desert camp.", highlights: ["Khuri Dunes", "Star Gazing", "Folk Music"] },
-        { day: 4, title: "Jaisalmer to Bikaner", description: "Drive to Bikaner. Visit Karni Mata.", highlights: ["Karni Mata Temple", "Junagarh Fort", "Camel Farm"] },
-        { day: 5, title: "Bikaner Exploration", description: "Full day Bikaner sightseeing.", highlights: ["Junagarh Fort", "Lalgarh Palace", "Local Markets"] },
-        { day: 6, title: "Departure", description: "Transfer to Bikaner Station/Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "rajasthan-heritage-haveli",
-      name: "Rajasthan Heritage Haveli Tour",
-      duration: "9D/8N",
-      originalPrice: 65000,
-      currentPrice: 55250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
-      description: "Luxury heritage tour staying in converted palaces and havelis.",
-      highlights: ["Heritage Palace Stays", "Royal Experiences", "Private Tours", "Cultural Evenings"],
-      inclusions: ["8 Nights Heritage Hotels", "All Meals", "Private Transfers", "Cultural Programs"],
-      exclusions: ["Airfare", "Personal Expenses", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Arrival Jaipur Palace", description: "Arrive at heritage palace hotel.", highlights: ["Palace Welcome", "Royal Dinner", "Cultural Show"] },
-        { day: 2, title: "Royal Jaipur", description: "Private tour of Jaipur with elephant ride.", highlights: ["Elephant Ride", "Amber Fort", "Private Dining"] },
-        { day: 3, title: "Jaipur to Jodhpur", description: "Heritage drive to Jodhpur haveli.", highlights: ["Scenic Route", "Haveli Check-in", "Blue City Tour"] },
-        { day: 4, title: "Jodhpur Royalty", description: "Mehrangarh Fort and Umaid Bhawan.", highlights: ["Private Fort Tour", "Umaid Bhawan", "High Tea"] },
-        { day: 5, title: "Jodhpur to Jaisalmer", description: "Desert drive to Jaisalmer haveli.", highlights: ["Desert Views", "Haveli Stay", "Fort Visit"] },
-        { day: 6, title: "Jaisalmer Experience", description: "Private desert safari and camp dinner.", highlights: ["Private Safari", "Sunset Dunes", "Royal Camp Dinner"] },
-        { day: 7, title: "Jaisalmer to Udaipur", description: "Long drive to Lake City.", highlights: ["Scenic Drive", "Ranakpur Temples", "Lake Palace View"] },
-        { day: 8, title: "Udaipur Romance", description: "Private boat and palace tours.", highlights: ["Private Boat Ride", "City Palace", "Sunset Dinner"] },
-        { day: 9, title: "Departure", description: "Royal farewell and airport transfer.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "rajasthan-weekend",
-      name: "Rajasthan Weekend Escape",
-      duration: "3D/2N",
-      originalPrice: 18000,
-      currentPrice: 15300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800",
-      description: "Quick weekend getaway to the Pink City Jaipur.",
-      highlights: ["Amber Fort", "Hawa Mahal", "Local Cuisine", "Shopping"],
-      inclusions: ["2 Nights Hotel", "Breakfast", "AC Vehicle", "Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Entry Fees"],
-      itinerary: [
-        { day: 1, title: "Arrival & Heritage", description: "Arrive Jaipur. Visit Amber Fort and Jal Mahal.", highlights: ["Amber Fort", "Jal Mahal", "Evening Markets"] },
-        { day: 2, title: "Pink City Tour", description: "Full day city exploration.", highlights: ["City Palace", "Hawa Mahal", "Jantar Mantar", "Shopping"] },
-        { day: 3, title: "Departure", description: "Morning Nahargarh Fort visit and departure.", highlights: ["Nahargarh Fort", "City Views", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Goa Packages
-export const goaData: DestinationData = {
-  id: "goa",
-  name: "Goa",
-  tagline: "Sun, Sand & Celebrations",
-  description: "Experience the vibrant culture of Goa - pristine beaches, Portuguese heritage, thrilling water sports, and legendary nightlife. The perfect beach destination.",
-  heroImage: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
-    "https://images.unsplash.com/photo-1516370873344-fb769e10f1f6?w=800"
-  ],
-  packages: [
-    {
-      id: "goa-beach-holiday",
-      name: "Goa Beach Holiday",
-      duration: "4D/3N",
-      originalPrice: 18000,
-      currentPrice: 15300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
-      description: "Perfect beach getaway covering North and South Goa beaches.",
-      highlights: ["Beach Hopping", "Water Sports", "Old Goa Churches", "Cruise"],
-      inclusions: ["3 Nights Beach Resort", "Breakfast", "North & South Goa Tour", "Cruise"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Water Sports"],
-      itinerary: [
-        { day: 1, title: "Arrival in Goa", description: "Arrive at Goa Airport. Transfer to beach resort.", highlights: ["Beach Resort", "Beach Walk", "Sunset"] },
-        { day: 2, title: "North Goa Tour", description: "Visit Calangute, Baga, Aguada Fort, and Chapora.", highlights: ["Baga Beach", "Aguada Fort", "Chapora Fort"] },
-        { day: 3, title: "South Goa & Cruise", description: "Explore South Goa beaches. Evening cruise on Mandovi.", highlights: ["Colva Beach", "Old Goa Churches", "Mandovi Cruise"] },
-        { day: 4, title: "Departure", description: "Free morning. Transfer to airport.", highlights: ["Shopping", "Departure"] }
-      ]
-    },
-    {
-      id: "goa-adventure",
-      name: "Goa Adventure Package",
-      duration: "5D/4N",
-      originalPrice: 28000,
-      currentPrice: 23800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
-      description: "Action-packed Goa adventure with water sports and island hopping.",
-      highlights: ["Scuba Diving", "Parasailing", "Island Trips", "Jet Ski"],
-      inclusions: ["4 Nights Resort", "Breakfast", "All Water Sports", "Island Tour"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival & Beach", description: "Arrive and hit the beach for evening activities.", highlights: ["Beach Check-in", "Sunset Sports", "Night Market"] },
-        { day: 2, title: "Water Sports Galore", description: "Full day water sports at Baga.", highlights: ["Parasailing", "Jet Ski", "Banana Boat", "Bumper Ride"] },
-        { day: 3, title: "Scuba Adventure", description: "Scuba diving experience at Grande Island.", highlights: ["Scuba Diving", "Snorkeling", "Underwater Photos"] },
-        { day: 4, title: "Island Hopping", description: "Explore Bat Island and Honeymoon Beach.", highlights: ["Boat Ride", "Island Beaches", "Fishing"] },
-        { day: 5, title: "Departure", description: "Morning beach time and departure.", highlights: ["Beach Time", "Departure"] }
-      ]
-    },
-    {
-      id: "goa-honeymoon",
-      name: "Goa Romantic Honeymoon",
-      duration: "5D/4N",
-      originalPrice: 35000,
-      currentPrice: 29750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1516370873344-fb769e10f1f6?w=800",
-      description: "Romantic Goa honeymoon with beach candlelight dinners and private experiences.",
-      highlights: ["Beach Candlelight Dinner", "Couple Spa", "Private Cruise", "Wine Tasting"],
-      inclusions: ["4 Nights Premium Resort", "All Meals", "Romantic Setups", "Private Transfers"],
-      exclusions: ["Airfare", "Personal Shopping", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Romantic Welcome", description: "Arrive to flower-decorated room and beach dinner.", highlights: ["Flower Decoration", "Beach Candlelight Dinner", "Sunset Walk"] },
-        { day: 2, title: "Beach Romance", description: "Private beach cabana and couple spa.", highlights: ["Private Cabana", "Couple Spa", "Wine Tasting"] },
-        { day: 3, title: "Island Escape", description: "Private boat to secluded beach.", highlights: ["Private Boat", "Secluded Beach", "Picnic Lunch"] },
-        { day: 4, title: "Heritage & Culture", description: "Old Goa visit and sunset cruise.", highlights: ["Portuguese Churches", "Sunset Cruise", "Dance Party"] },
-        { day: 5, title: "Departure", description: "Leisurely checkout and departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "goa-party",
-      name: "Goa Party Package",
-      duration: "4D/3N",
-      originalPrice: 22000,
-      currentPrice: 18700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
-      description: "Ultimate party experience with beach clubs, casinos, and nightlife.",
-      highlights: ["Beach Clubs", "Casino Night", "Pool Parties", "Nightlife Tour"],
-      inclusions: ["3 Nights Party Resort", "Breakfast", "Club Entries", "Casino Chips"],
-      exclusions: ["Airfare", "Drinks & Food at Clubs", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Party Begins", description: "Arrive and hit Tito's Lane.", highlights: ["Beach Party", "Tito's Lane", "Night Clubs"] },
-        { day: 2, title: "Pool & Casino", description: "Day pool party. Evening casino experience.", highlights: ["Pool Party", "Casino Night", "Lucky Draw"] },
-        { day: 3, title: "Beach Club Hopping", description: "Visit famous beach clubs.", highlights: ["Curlies", "W Hotel Beach", "Sunset Parties"] },
-        { day: 4, title: "Departure", description: "Recovery breakfast and departure.", highlights: ["Brunch", "Departure"] }
-      ]
-    },
-    {
-      id: "goa-heritage",
-      name: "Goa Heritage & Culture",
-      duration: "4D/3N",
-      originalPrice: 20000,
-      currentPrice: 17000,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1516370873344-fb769e10f1f6?w=800",
-      description: "Discover Portuguese heritage, spice plantations, and Goan culture.",
-      highlights: ["Old Goa Churches", "Spice Plantation", "Fontainhas", "Goan Cuisine"],
-      inclusions: ["3 Nights Heritage Hotel", "All Meals", "Guided Tours", "Cooking Class"],
-      exclusions: ["Airfare", "Personal Expenses", "Tips"],
-      itinerary: [
-        { day: 1, title: "Old Goa Heritage", description: "Explore UNESCO World Heritage churches.", highlights: ["Se Cathedral", "Basilica Bom Jesus", "Church of St. Francis"] },
-        { day: 2, title: "Spice & Culture", description: "Spice plantation tour and cooking class.", highlights: ["Spice Plantation", "Elephant Bath", "Goan Cooking Class"] },
-        { day: 3, title: "Fontainhas Walk", description: "Latin Quarter walk and local food trail.", highlights: ["Fontainhas", "Portuguese Houses", "Bebinca Tasting"] },
-        { day: 4, title: "Departure", description: "Visit Reis Magos Fort and departure.", highlights: ["Reis Magos Fort", "Art Gallery", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Meghalaya Packages
-export const meghalayaData: DestinationData = {
-  id: "meghalaya",
-  name: "Meghalaya",
-  tagline: "Abode of Clouds",
-  description: "Explore the mystical northeast - living root bridges, crystal-clear rivers, stunning waterfalls, and unique Khasi culture in India's wettest state.",
-  heroImage: "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=800",
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-    "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800"
-  ],
-  packages: [
-    {
-      id: "meghalaya-classic",
-      name: "Meghalaya Classic Tour",
-      duration: "6D/5N",
-      originalPrice: 35000,
-      currentPrice: 29750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=800",
-      description: "Complete Meghalaya experience with waterfalls, caves, and root bridges.",
-      highlights: ["Living Root Bridge", "Nohkalikai Falls", "Dawki River", "Mawsmai Cave"],
-      inclusions: ["5 Nights Accommodation", "All Meals", "Transfers", "Sightseeing", "Permits"],
-      exclusions: ["Airfare", "Personal Expenses", "Camera Fees"],
-      itinerary: [
-        { day: 1, title: "Arrival Guwahati", description: "Arrive Guwahati. Drive to Shillong.", highlights: ["Guwahati Pickup", "Umiam Lake", "Shillong Evening"] },
-        { day: 2, title: "Shillong Exploration", description: "Visit Don Bosco Museum and local attractions.", highlights: ["Don Bosco Museum", "Ward's Lake", "Police Bazaar"] },
-        { day: 3, title: "Cherrapunji Day", description: "Explore the wettest place on Earth.", highlights: ["Nohkalikai Falls", "Mawsmai Cave", "Seven Sisters Falls"] },
-        { day: 4, title: "Living Root Bridge", description: "Trek to the famous Double Decker Root Bridge.", highlights: ["Root Bridge Trek", "Rainbow Falls", "Local Cuisine"] },
-        { day: 5, title: "Dawki & Mawlynnong", description: "Crystal clear Dawki River and Asia's cleanest village.", highlights: ["Dawki Boating", "Mawlynnong Village", "Bangladesh Border"] },
-        { day: 6, title: "Departure", description: "Drive to Guwahati for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "meghalaya-adventure",
-      name: "Meghalaya Adventure Trek",
-      duration: "7D/6N",
-      originalPrice: 42000,
-      currentPrice: 35700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Adventurous trekking through root bridges and hidden waterfalls.",
-      highlights: ["Multiple Root Bridges", "Cave Exploration", "Cliff Jumping", "Village Homestays"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "Trek Guide", "Equipment", "Permits"],
-      exclusions: ["Airfare", "Personal Gear", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival & Acclimatize", description: "Arrive Guwahati. Drive to Shillong.", highlights: ["Arrival", "Shillong Check-in", "Light Walk"] },
-        { day: 2, title: "Laitlum Grand Canyon", description: "Trek through the Grand Canyon of Meghalaya.", highlights: ["Laitlum Canyon", "Rasong Village", "Panoramic Views"] },
-        { day: 3, title: "Root Bridge Trek 1", description: "Trek to Double Decker Living Root Bridge.", highlights: ["3500 Steps", "Double Decker", "Natural Pool Swim"] },
-        { day: 4, title: "Nongriat Exploration", description: "Explore hidden falls and Rainbow Bridge.", highlights: ["Rainbow Falls", "Cliff Jumping", "Village Life"] },
-        { day: 5, title: "Mawryngkhang Trek", description: "Bamboo bridge and King of Caves trek.", highlights: ["Bamboo Sky Bridge", "Krang Suri Falls", "Cave Walk"] },
-        { day: 6, title: "Caving Adventure", description: "Explore caves of Meghalaya.", highlights: ["Mawsmai Cave", "Krem Puri Cave", "Caving Experience"] },
-        { day: 7, title: "Departure", description: "Return to Guwahati.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "meghalaya-photography",
-      name: "Meghalaya Photography Tour",
-      duration: "6D/5N",
-      originalPrice: 48000,
-      currentPrice: 40800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800",
-      description: "Capture the stunning landscapes and unique culture of Meghalaya.",
-      highlights: ["Golden Hour Shoots", "Waterfall Long Exposure", "Root Bridge Photography", "Tribal Portraits"],
-      inclusions: ["5 Nights Accommodation", "All Meals", "Photography Guide", "Model Permissions"],
-      exclusions: ["Airfare", "Camera Gear", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival & Sunset", description: "Arrive and sunset shoot at Umiam Lake.", highlights: ["Umiam Lake Sunset", "Cloud Formations", "Blue Hour"] },
-        { day: 2, title: "Cherrapunji Waterfalls", description: "Photograph the dramatic waterfalls.", highlights: ["Nohkalikai Falls", "Long Exposure", "Misty Landscapes"] },
-        { day: 3, title: "Root Bridge", description: "Early morning root bridge photography.", highlights: ["Morning Light", "Double Decker", "Tribal Portraits"] },
-        { day: 4, title: "Dawki Magic", description: "Crystal clear river photography.", highlights: ["Dawki River", "Underwater Shots", "Boat Reflections"] },
-        { day: 5, title: "Village Life", description: "Document Khasi village life.", highlights: ["Mawlynnong", "Daily Life", "Cultural Portraits"] },
-        { day: 6, title: "Departure", description: "Final shots and departure.", highlights: ["Morning Shots", "Departure"] }
-      ]
-    },
-    {
-      id: "meghalaya-shnongpdeng",
-      name: "Meghalaya River Camping",
-      duration: "5D/4N",
-      originalPrice: 32000,
-      currentPrice: 27200,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=800",
-      description: "River camping and water activities at Shnongpdeng.",
-      highlights: ["River Camping", "Kayaking", "Cliff Jumping", "Snorkeling"],
-      inclusions: ["4 Nights Camping/Homestay", "All Meals", "Water Activities", "Equipment"],
-      exclusions: ["Airfare", "Personal Expenses", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Shillong", description: "Arrive and evening at leisure.", highlights: ["Shillong Check-in", "Police Bazaar", "Local Food"] },
-        { day: 2, title: "To Shnongpdeng", description: "Drive to campsite on Umngot River.", highlights: ["Scenic Drive", "Camp Setup", "Evening Swim"] },
-        { day: 3, title: "River Adventures", description: "Full day water activities.", highlights: ["Kayaking", "Snorkeling", "Cliff Jumping"] },
-        { day: 4, title: "Dawki & Border", description: "Boating at Dawki and Bangladesh border.", highlights: ["Glass Bottom Boat", "Border View", "Photography"] },
-        { day: 5, title: "Departure", description: "Return to Guwahati.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "meghalaya-weekend",
-      name: "Meghalaya Weekend Getaway",
-      duration: "3D/2N",
-      originalPrice: 18000,
-      currentPrice: 15300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Quick weekend escape to the Scotland of the East.",
-      highlights: ["Shillong City", "Elephant Falls", "Local Markets"],
-      inclusions: ["2 Nights Hotel", "Breakfast", "Transfers", "Local Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival Shillong", description: "Arrive and explore Shillong city.", highlights: ["Ward's Lake", "Don Bosco Museum", "Cafe Hopping"] },
-        { day: 2, title: "Cherrapunji Day", description: "Day trip to Cherrapunji.", highlights: ["Nohkalikai Falls", "Mawsmai Cave", "Eco Park"] },
-        { day: 3, title: "Departure", description: "Elephant Falls visit and departure.", highlights: ["Elephant Falls", "Shopping", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Andaman Packages
-export const andamanData: DestinationData = {
-  id: "andaman",
-  name: "Andaman",
-  tagline: "Emerald Isles of India",
-  description: "Discover pristine beaches, world-class scuba diving, and WWII history in the Andaman Islands. Crystal clear waters and untouched beauty await.",
-  heroImage: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?w=800"
-  ],
-  packages: [
-    {
-      id: "andaman-island-hopping",
-      name: "Andaman Island Hopping",
-      duration: "6D/5N",
-      originalPrice: 42000,
-      currentPrice: 35700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800",
-      description: "Complete Andaman tour covering Port Blair, Havelock, and Neil Island.",
-      highlights: ["Radhanagar Beach", "Cellular Jail", "Scuba Diving", "Glass Bottom Boat"],
-      inclusions: ["5 Nights Accommodation", "All Meals", "Ferry Tickets", "Sightseeing"],
-      exclusions: ["Airfare", "Water Sports", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival Port Blair", description: "Arrive and visit Cellular Jail. Evening Sound & Light Show.", highlights: ["Airport Pickup", "Cellular Jail", "Light & Sound Show"] },
-        { day: 2, title: "Port Blair to Havelock", description: "Ferry to Havelock Island. Visit Radhanagar Beach.", highlights: ["Ferry Cruise", "Radhanagar Beach", "Sunset"] },
-        { day: 3, title: "Havelock Activities", description: "Water sports and beach exploration.", highlights: ["Elephant Beach", "Snorkeling", "Kayaking"] },
-        { day: 4, title: "Havelock to Neil", description: "Ferry to Neil Island. Natural Bridge.", highlights: ["Neil Island", "Natural Bridge", "Laxmanpur Beach"] },
-        { day: 5, title: "Neil to Port Blair", description: "Return to Port Blair. Local sightseeing.", highlights: ["Ferry Return", "Corbyn's Cove", "Museums"] },
-        { day: 6, title: "Departure", description: "Transfer to Port Blair Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "andaman-scuba",
-      name: "Andaman Scuba Adventure",
-      duration: "5D/4N",
-      originalPrice: 55000,
-      currentPrice: 46750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?w=800",
-      description: "Ultimate scuba diving experience in crystal clear Andaman waters.",
-      highlights: ["Certified Scuba Dives", "Multiple Dive Sites", "Underwater Photography", "Marine Life"],
-      inclusions: ["4 Nights Accommodation", "All Meals", "3 Certified Dives", "Equipment", "PADI Certificate"],
-      exclusions: ["Airfare", "Personal Expenses", "Extra Dives"],
-      itinerary: [
-        { day: 1, title: "Arrival & Theory", description: "Arrive Havelock. Pool training session.", highlights: ["Pool Training", "Theory Class", "Equipment Intro"] },
-        { day: 2, title: "First Open Water Dive", description: "First dive experience at Aquarium site.", highlights: ["Open Water Dive", "Coral Reef", "Fish Spotting"] },
-        { day: 3, title: "Deep Dive", description: "Deeper dives at Lighthouse and Seduction.", highlights: ["Deep Dive", "Wall Dive", "Underwater Photos"] },
-        { day: 4, title: "Final Certification", description: "Complete certification dives.", highlights: ["Certification", "Barracuda Beach", "Celebration"] },
-        { day: 5, title: "Departure", description: "Return to Port Blair for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "andaman-honeymoon",
-      name: "Andaman Romantic Escape",
-      duration: "6D/5N",
-      originalPrice: 58000,
-      currentPrice: 49300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      description: "Romantic island honeymoon with private beach experiences.",
-      highlights: ["Private Beach Dinner", "Luxury Resort", "Couple Snorkeling", "Sunset Cruise"],
-      inclusions: ["5 Nights Premium Resort", "All Meals", "Private Transfers", "Romantic Setups"],
-      exclusions: ["Airfare", "Personal Shopping", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Romantic Arrival", description: "Arrive with flower welcome. Beach dinner.", highlights: ["Flower Welcome", "Beach Candlelight Dinner", "Moonlight Walk"] },
-        { day: 2, title: "Private Island", description: "Private boat to Ross Island.", highlights: ["Private Boat", "Ross Island", "Picnic Lunch"] },
-        { day: 3, title: "Havelock Romance", description: "Ferry to Havelock. Radhanagar sunset.", highlights: ["Luxury Ferry", "Beach Cabana", "Sunset Cocktails"] },
-        { day: 4, title: "Water Fun", description: "Couple snorkeling and kayaking.", highlights: ["Couple Snorkeling", "Kayaking", "Beach Photography"] },
-        { day: 5, title: "Relaxation", description: "Spa day and sunset cruise.", highlights: ["Couple Spa", "Sunset Cruise", "Dinner on Deck"] },
-        { day: 6, title: "Departure", description: "Fond farewell and departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "andaman-adventure",
-      name: "Andaman Adventure Package",
-      duration: "7D/6N",
-      originalPrice: 48000,
-      currentPrice: 40800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800",
-      description: "Adventure-packed tour with water sports, trekking, and camping.",
-      highlights: ["Sea Walking", "Jet Ski", "Island Camping", "Night Kayaking"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "All Adventure Activities", "Equipment"],
-      exclusions: ["Airfare", "Personal Expenses", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Adventure", description: "Arrive and evening water sports.", highlights: ["Jet Ski", "Parasailing", "Beach BBQ"] },
-        { day: 2, title: "Underwater Walk", description: "Sea walking experience at North Bay.", highlights: ["Sea Walking", "Glass Bottom Boat", "Coral Viewing"] },
-        { day: 3, title: "Havelock Sports", description: "Elephant Beach adventure activities.", highlights: ["Snorkeling", "Banana Boat", "Speed Boat"] },
-        { day: 4, title: "Island Camping", description: "Camp at Neil Island beach.", highlights: ["Beach Camping", "Bonfire", "Stargazing"] },
-        { day: 5, title: "Night Kayaking", description: "Bioluminescent kayaking experience.", highlights: ["Night Kayaking", "Bioluminescence", "Beach Walk"] },
-        { day: 6, title: "Trek & Explore", description: "Mangrove trek and bird watching.", highlights: ["Mangrove Trek", "Bird Watching", "Kayak Tours"] },
-        { day: 7, title: "Departure", description: "Return to Port Blair.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "andaman-weekend",
-      name: "Andaman Quick Escape",
-      duration: "4D/3N",
-      originalPrice: 28000,
-      currentPrice: 23800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?w=800",
-      description: "Quick island getaway covering best of Andaman.",
-      highlights: ["Cellular Jail", "Havelock Beach", "Snorkeling", "Island Views"],
-      inclusions: ["3 Nights Accommodation", "Breakfast", "Ferry Tickets", "Basic Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Water Sports"],
-      itinerary: [
-        { day: 1, title: "Arrival", description: "Arrive Port Blair. City tour.", highlights: ["Cellular Jail", "Corbyn's Cove", "Light Show"] },
-        { day: 2, title: "Havelock Island", description: "Day trip to Havelock Island.", highlights: ["Ferry Ride", "Radhanagar Beach", "Snorkeling"] },
-        { day: 3, title: "Island Exploration", description: "North Bay and Ross Island.", highlights: ["North Bay", "Ross Island", "Water Activities"] },
-        { day: 4, title: "Departure", description: "Morning free. Departure.", highlights: ["Shopping", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Sikkim Packages
-export const sikkimData: DestinationData = {
-  id: "sikkim",
-  name: "Sikkim",
-  tagline: "Small But Beautiful",
-  description: "Discover the hidden kingdom of Sikkim with stunning views of Kanchenjunga, ancient monasteries, and diverse flora. A pristine Himalayan paradise.",
-  heroImage: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800",
-    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
-  ],
-  packages: [
-    {
-      id: "sikkim-gangtok-darjeeling",
-      name: "Sikkim Gangtok Darjeeling",
-      duration: "7D/6N",
-      originalPrice: 38000,
-      currentPrice: 32300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800",
-      description: "Complete tour covering Gangtok, Tsomgo Lake, and Darjeeling.",
-      highlights: ["Tsomgo Lake", "Nathula Pass", "Tiger Hill", "Tea Gardens"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "Permits", "Sightseeing"],
-      exclusions: ["Airfare", "Personal Expenses", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Bagdogra", description: "Arrive and drive to Gangtok.", highlights: ["Bagdogra Pickup", "Scenic Drive", "Gangtok Check-in"] },
-        { day: 2, title: "Gangtok Sightseeing", description: "Local sightseeing including monasteries.", highlights: ["Rumtek Monastery", "Do Drul Chorten", "Handicraft Center"] },
-        { day: 3, title: "Tsomgo & Nathula", description: "Visit frozen lake and India-China border.", highlights: ["Tsomgo Lake", "Nathula Pass", "Baba Harbhajan Temple"] },
-        { day: 4, title: "Gangtok to Pelling", description: "Drive to Pelling with Kanchenjunga views.", highlights: ["Ravangla Buddha Park", "Pelling Views", "Sunset Point"] },
-        { day: 5, title: "Pelling Exploration", description: "Visit Pemayangtse and Khecheopalri Lake.", highlights: ["Pemayangtse Monastery", "Khecheopalri Lake", "Skywalk"] },
-        { day: 6, title: "Pelling to Darjeeling", description: "Drive to Queen of Hills.", highlights: ["Darjeeling Arrival", "Mall Road", "Toy Train View"] },
-        { day: 7, title: "Darjeeling & Departure", description: "Tiger Hill sunrise and departure.", highlights: ["Tiger Hill Sunrise", "Batasia Loop", "Departure"] }
-      ]
-    },
-    {
-      id: "sikkim-north",
-      name: "North Sikkim Explorer",
-      duration: "6D/5N",
-      originalPrice: 42000,
-      currentPrice: 35700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800",
-      description: "Explore the remote and stunning North Sikkim.",
-      highlights: ["Lachung", "Yumthang Valley", "Zero Point", "Gurudongmar Lake"],
-      inclusions: ["5 Nights Accommodation", "All Meals", "Permits", "4x4 Vehicle"],
-      exclusions: ["Airfare", "Personal Expenses", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Gangtok", description: "Arrive and rest.", highlights: ["Gangtok Check-in", "MG Marg Evening", "Local Food"] },
-        { day: 2, title: "Gangtok to Lachung", description: "Drive through stunning mountain scenery.", highlights: ["Waterfalls", "Seven Sisters Falls", "Lachung Valley"] },
-        { day: 3, title: "Yumthang & Zero Point", description: "Visit Valley of Flowers and Zero Point.", highlights: ["Yumthang Valley", "Zero Point 15000ft", "Hot Springs"] },
-        { day: 4, title: "Lachung to Lachen", description: "Drive to Lachen for Gurudongmar expedition.", highlights: ["Scenic Drive", "Lachen Village", "Early Rest"] },
-        { day: 5, title: "Gurudongmar Lake", description: "Early morning trip to sacred lake.", highlights: ["Gurudongmar Lake", "Kala Patthar", "Return Gangtok"] },
-        { day: 6, title: "Departure", description: "Transfer to Bagdogra Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "sikkim-adventure",
-      name: "Sikkim Adventure Trek",
-      duration: "8D/7N",
-      originalPrice: 52000,
-      currentPrice: 44200,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      description: "Trekking adventure through Sikkim's pristine trails.",
-      highlights: ["Goechala Trek", "Kanchenjunga Views", "Dzongri", "Mountain Camping"],
-      inclusions: ["7 Nights Accommodation", "All Meals", "Trek Equipment", "Guide & Porter", "Permits"],
-      exclusions: ["Airfare", "Personal Trekking Gear", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival & Preparation", description: "Arrive Yuksom. Trek briefing.", highlights: ["Yuksom Check-in", "Trek Briefing", "Equipment Check"] },
-        { day: 2, title: "Trek Day 1", description: "Trek from Yuksom to Sachen.", highlights: ["Trek Start", "Forest Trail", "Sachen Camp"] },
-        { day: 3, title: "Trek Day 2", description: "Trek to Tshoka via Bakhim.", highlights: ["Rhododendron Forest", "Bakhim", "Tshoka Camp"] },
-        { day: 4, title: "Trek Day 3", description: "Trek to Dzongri.", highlights: ["Alpine Meadows", "Dzongri Peak View", "Acclimatization"] },
-        { day: 5, title: "Dzongri Top", description: "Early morning Dzongri Top. Trek to Thansing.", highlights: ["Sunrise at Dzongri Top", "Kanchenjunga View", "Thansing"] },
-        { day: 6, title: "Goechala", description: "Pre-dawn trek to Goechala viewpoint.", highlights: ["Goechala Viewpoint", "Kanchenjunga Close-up", "Samiti Lake"] },
-        { day: 7, title: "Descent", description: "Long descent back to Yuksom.", highlights: ["Rapid Descent", "Yuksom Arrival", "Celebration"] },
-        { day: 8, title: "Departure", description: "Drive to Bagdogra for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "sikkim-monastery",
-      name: "Sikkim Monastery Trail",
-      duration: "5D/4N",
-      originalPrice: 28000,
-      currentPrice: 23800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800",
-      description: "Spiritual journey through ancient Buddhist monasteries of Sikkim.",
-      highlights: ["Rumtek Monastery", "Pemayangtse", "Enchey Monastery", "Prayer Sessions"],
-      inclusions: ["4 Nights Accommodation", "All Meals", "Permits", "Expert Guide"],
-      exclusions: ["Airfare", "Photography Fees", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival Gangtok", description: "Arrive and visit Enchey Monastery.", highlights: ["Enchey Monastery", "Do Drul Chorten", "Evening Prayers"] },
-        { day: 2, title: "Rumtek Day", description: "Full day at Rumtek Monastery.", highlights: ["Rumtek Monastery", "Golden Stupa", "Dharma Centre"] },
-        { day: 3, title: "Gangtok to Pelling", description: "Drive to Pelling. Visit Rabdentse ruins.", highlights: ["Rabdentse Ruins", "Pelling Arrival", "Sunset Point"] },
-        { day: 4, title: "Pemayangtse & Lakes", description: "Visit Pemayangtse and sacred lake.", highlights: ["Pemayangtse Monastery", "Khecheopalri Lake", "Wishes at Lake"] },
-        { day: 5, title: "Departure", description: "Sangachoeling and departure.", highlights: ["Sangachoeling", "Departure"] }
-      ]
-    },
-    {
-      id: "sikkim-short-break",
-      name: "Sikkim Short Break",
-      duration: "4D/3N",
-      originalPrice: 22000,
-      currentPrice: 18700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800",
-      description: "Quick Sikkim getaway covering Gangtok highlights.",
-      highlights: ["Gangtok City", "Tsomgo Lake", "Ropeway", "MG Marg"],
-      inclusions: ["3 Nights Accommodation", "Breakfast", "Transfers", "Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Nathula Permit"],
-      itinerary: [
-        { day: 1, title: "Arrival Gangtok", description: "Arrive and MG Marg evening.", highlights: ["Gangtok Check-in", "MG Marg", "Local Food"] },
-        { day: 2, title: "Tsomgo Lake", description: "Full day Tsomgo Lake excursion.", highlights: ["Tsomgo Lake", "Yak Ride", "Baba Mandir"] },
-        { day: 3, title: "Gangtok Sightseeing", description: "City tour and ropeway.", highlights: ["Ropeway", "Hanuman Tok", "Flower Exhibition"] },
-        { day: 4, title: "Departure", description: "Morning free and departure.", highlights: ["Shopping", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Uttarakhand Packages
-export const uttarakhandData: DestinationData = {
-  id: "uttarakhand",
-  name: "Uttarakhand",
-  tagline: "Land of Gods",
-  description: "Explore the divine land of Uttarakhand - sacred temples, adventure sports, pristine valleys, and majestic Himalayan peaks. Spiritual seekers and adventure lovers alike find their calling here.",
-  heroImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
-    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800"
-  ],
-  packages: [
-    {
-      id: "uttarakhand-char-dham",
-      name: "Char Dham Yatra",
-      duration: "11D/10N",
-      originalPrice: 65000,
-      currentPrice: 55250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Sacred pilgrimage to all four Dhams - Yamunotri, Gangotri, Kedarnath, and Badrinath.",
-      highlights: ["All Four Dhams", "VIP Darshan", "Helicopter Option", "Expert Pandit"],
-      inclusions: ["10 Nights Accommodation", "All Meals", "Transfers", "Puja Arrangements", "Guide"],
-      exclusions: ["Airfare", "Helicopter Tickets", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival Haridwar", description: "Arrive Delhi/Dehradun. Transfer to Haridwar.", highlights: ["Haridwar", "Ganga Aarti", "Rest"] },
-        { day: 2, title: "Haridwar to Barkot", description: "Drive to Barkot via Dehradun.", highlights: ["Scenic Drive", "Mussoorie View", "Barkot Stay"] },
-        { day: 3, title: "Yamunotri Darshan", description: "Trek to Yamunotri Temple.", highlights: ["Yamunotri Temple", "Divya Shila", "Hot Springs"] },
-        { day: 4, title: "Barkot to Uttarkashi", description: "Drive to Uttarkashi.", highlights: ["Uttarkashi", "Vishwanath Temple", "Rest"] },
-        { day: 5, title: "Gangotri Darshan", description: "Visit Gangotri Temple.", highlights: ["Gangotri Temple", "Ganga Origin", "Holy Dip"] },
-        { day: 6, title: "Uttarkashi to Guptkashi", description: "Long drive to Guptkashi.", highlights: ["Tehri Lake View", "Guptkashi", "Ardh Nareshwar Temple"] },
-        { day: 7, title: "Kedarnath Darshan", description: "Trek/Helicopter to Kedarnath.", highlights: ["Kedarnath Temple", "Adi Shankaracharya Samadhi", "Night at Temple"] },
-        { day: 8, title: "Kedarnath to Badrinath", description: "Return from Kedarnath. Drive towards Badrinath.", highlights: ["Descent", "Joshimath Stay", "Preparation"] },
-        { day: 9, title: "Badrinath Darshan", description: "Visit Badrinath Temple.", highlights: ["Badrinath Temple", "Mana Village", "Vasudhara Falls"] },
-        { day: 10, title: "Badrinath to Rishikesh", description: "Return drive to Rishikesh.", highlights: ["Scenic Return", "Rishikesh Ganga Aarti", "Celebration"] },
-        { day: 11, title: "Departure", description: "Transfer to Dehradun/Delhi.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "uttarakhand-nainital-mussoorie",
-      name: "Nainital Mussoorie Tour",
-      duration: "6D/5N",
-      originalPrice: 28000,
-      currentPrice: 23800,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
-      description: "Hill station hopping covering the Queen of Hills and Lake District.",
-      highlights: ["Naini Lake", "Mall Road", "Kempty Falls", "Snow View Point"],
-      inclusions: ["5 Nights Accommodation", "Breakfast", "Transfers", "Sightseeing"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Boating"],
-      itinerary: [
-        { day: 1, title: "Arrival Nainital", description: "Arrive Delhi. Drive to Nainital.", highlights: ["Naini Lake", "Evening Walk", "Mall Road"] },
-        { day: 2, title: "Nainital Sightseeing", description: "Full day Nainital exploration.", highlights: ["Snow View Point", "Naina Devi Temple", "Cave Garden"] },
-        { day: 3, title: "Nainital Lakes", description: "Visit Bhimtal, Sattal, and Naukuchiatal.", highlights: ["Bhimtal", "Sattal", "Butterfly Museum"] },
-        { day: 4, title: "Nainital to Mussoorie", description: "Scenic drive to Mussoorie.", highlights: ["Corbett View", "Mussoorie Arrival", "Evening Mall Road"] },
-        { day: 5, title: "Mussoorie Exploration", description: "Full day Mussoorie tour.", highlights: ["Kempty Falls", "Gun Hill", "Company Garden"] },
-        { day: 6, title: "Departure", description: "Drive to Delhi for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "uttarakhand-adventure",
-      name: "Uttarakhand Adventure Package",
-      duration: "7D/6N",
-      originalPrice: 42000,
-      currentPrice: 35700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800",
-      description: "Action-packed adventure in Rishikesh and Auli.",
-      highlights: ["River Rafting", "Bungee Jumping", "Skiing", "Camping"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "Adventure Activities", "Equipment"],
-      exclusions: ["Airfare", "Personal Gear", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Rishikesh", description: "Arrive and riverside camping setup.", highlights: ["Rishikesh Arrival", "Beach Camping", "Bonfire"] },
-        { day: 2, title: "Rafting Adventure", description: "White water rafting on Ganga.", highlights: ["Rafting 26km", "Cliff Jumping", "Beach Games"] },
-        { day: 3, title: "Extreme Sports", description: "Bungee jumping and flying fox.", highlights: ["Bungee Jumping", "Flying Fox", "Giant Swing"] },
-        { day: 4, title: "Rishikesh to Auli", description: "Drive to Auli ski resort.", highlights: ["Scenic Drive", "Joshimath", "Auli Cable Car"] },
-        { day: 5, title: "Skiing Day", description: "Full day skiing in Auli.", highlights: ["Skiing Lessons", "Slopes", "Mountain Views"] },
-        { day: 6, title: "Auli Exploration", description: "Trekking and snow activities.", highlights: ["Gorson Bugyal", "Snow Trek", "Photography"] },
-        { day: 7, title: "Departure", description: "Return to Dehradun for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "uttarakhand-valley-of-flowers",
-      name: "Valley of Flowers Trek",
-      duration: "7D/6N",
-      originalPrice: 32000,
-      currentPrice: 27200,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Trek to the UNESCO World Heritage Valley of Flowers.",
-      highlights: ["Valley of Flowers", "Hemkund Sahib", "Alpine Meadows", "Rare Flora"],
-      inclusions: ["6 Nights Accommodation", "All Meals", "Trek Guide", "Permits"],
-      exclusions: ["Airfare", "Personal Gear", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrival Haridwar", description: "Arrive and drive to Joshimath.", highlights: ["Haridwar", "Scenic Drive", "Joshimath Stay"] },
-        { day: 2, title: "Joshimath to Ghangaria", description: "Drive to Govindghat. Trek to Ghangaria.", highlights: ["Govindghat", "Trek Start", "Ghangaria Camp"] },
-        { day: 3, title: "Valley of Flowers", description: "Full day exploring the valley.", highlights: ["Flower Valley", "300+ Species", "Photography"] },
-        { day: 4, title: "Hemkund Sahib", description: "Trek to sacred Hemkund Sahib.", highlights: ["Hemkund Lake", "Gurudwara", "Spiritual Experience"] },
-        { day: 5, title: "Valley Day 2", description: "Return to Valley of Flowers.", highlights: ["Different Route", "More Flowers", "Wildlife Spotting"] },
-        { day: 6, title: "Ghangaria to Joshimath", description: "Trek down and drive to Joshimath.", highlights: ["Descent", "Rest", "Local Market"] },
-        { day: 7, title: "Departure", description: "Drive to Haridwar for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "uttarakhand-rishikesh-yoga",
-      name: "Rishikesh Yoga Retreat",
-      duration: "5D/4N",
-      originalPrice: 25000,
-      currentPrice: 21250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
-      description: "Spiritual yoga retreat in the Yoga Capital of the World.",
-      highlights: ["Daily Yoga", "Meditation", "Ganga Aarti", "Ayurvedic Food"],
-      inclusions: ["4 Nights Ashram Stay", "All Sattvic Meals", "Yoga Sessions", "Meditation Classes"],
-      exclusions: ["Airfare", "Personal Expenses", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Arrival & Introduction", description: "Arrive Rishikesh. Ashram welcome.", highlights: ["Ashram Check-in", "Introduction", "Evening Aarti"] },
-        { day: 2, title: "Yoga Begins", description: "Full yoga schedule starts.", highlights: ["Morning Yoga", "Pranayama", "Philosophy Class"] },
-        { day: 3, title: "Deep Practice", description: "Intensive yoga and meditation.", highlights: ["Advanced Asanas", "Meditation", "Sound Healing"] },
-        { day: 4, title: "Spiritual Exploration", description: "Temple visits and evening practices.", highlights: ["Beatles Ashram", "Temple Visit", "Ganga Aarti"] },
-        { day: 5, title: "Departure", description: "Sunrise yoga and departure.", highlights: ["Sunrise Session", "Farewell", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Hyderabad Packages
-export const hyderabadData: DestinationData = {
-  id: "hyderabad",
-  name: "Hyderabad",
-  tagline: "City of Pearls & Biryani",
-  description: "Explore the royal heritage of Hyderabad - from magnificent Charminar to the grand Golconda Fort, delicious Nizami cuisine to the world-famous Hyderabadi pearls. Experience the perfect blend of history and modernity.",
-  heroImage: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800",
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-    "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?w=800"
-  ],
-  packages: [
-    {
-      id: "hyderabad-heritage",
-      name: "Hyderabad Heritage Tour",
-      duration: "3D/2N",
-      originalPrice: 15000,
-      currentPrice: 12750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800",
-      description: "Discover the royal heritage of Nizam's Hyderabad with historic monuments and authentic cuisine.",
-      highlights: ["Charminar", "Golconda Fort", "Salar Jung Museum", "Pearl Shopping"],
-      inclusions: ["2 Nights Hotel", "Daily Breakfast", "AC Vehicle", "Monument Entry Fees", "Guide"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Old City Exploration", description: "Visit Charminar, Mecca Masjid, and Laad Bazaar for pearl shopping.", highlights: ["Charminar", "Mecca Masjid", "Laad Bazaar", "Pearl Shopping"] },
-        { day: 2, title: "Golconda & Museums", description: "Morning visit to Golconda Fort. Afternoon at Salar Jung Museum.", highlights: ["Golconda Fort", "Sound & Light Show", "Salar Jung Museum", "Chowmahalla Palace"] },
-        { day: 3, title: "Modern Hyderabad", description: "Visit Ramoji Film City or Hussain Sagar. Departure.", highlights: ["Ramoji Film City", "Hussain Sagar", "Tank Bund", "Departure"] }
-      ]
-    },
-    {
-      id: "hyderabad-complete",
-      name: "Complete Hyderabad Experience",
-      duration: "4D/3N",
-      originalPrice: 22000,
-      currentPrice: 18700,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Comprehensive Hyderabad tour covering heritage, culture, entertainment, and culinary delights.",
-      highlights: ["Ramoji Film City", "Nehru Zoo", "Birla Temple", "Food Tour"],
-      inclusions: ["3 Nights Hotel", "All Breakfasts", "AC Vehicle", "All Entry Fees", "Food Tour"],
-      exclusions: ["Airfare", "Optional Activities", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Heritage Walk", description: "Charminar, Laad Bazaar, Mecca Masjid, and Chowmahalla Palace.", highlights: ["Charminar", "Laad Bazaar Bangles", "Mecca Masjid", "Chowmahalla Palace"] },
-        { day: 2, title: "Golconda & Culture", description: "Golconda Fort, Qutub Shahi Tombs, and evening sound & light show.", highlights: ["Golconda Fort", "Qutub Shahi Tombs", "Taramati Baradari", "Sound & Light Show"] },
-        { day: 3, title: "Entertainment Day", description: "Full day at Ramoji Film City - world's largest film studio complex.", highlights: ["Ramoji Film City", "Film Sets", "Adventure Zone", "Live Shows"] },
-        { day: 4, title: "Museums & Departure", description: "Salar Jung Museum, Birla Mandir, and departure.", highlights: ["Salar Jung Museum", "Birla Mandir", "Hussain Sagar", "Departure"] }
-      ]
-    },
-    {
-      id: "hyderabad-foodie",
-      name: "Hyderabad Foodie Trail",
-      duration: "3D/2N",
-      originalPrice: 18000,
-      currentPrice: 15300,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?w=800",
-      description: "A gastronomic journey through Hyderabad's legendary Nizami cuisine and street food.",
-      highlights: ["Biryani Trail", "Street Food Tour", "Irani Chai", "Sweet Shops"],
-      inclusions: ["2 Nights Hotel", "All Food Tastings", "Expert Food Guide", "AC Vehicle"],
-      exclusions: ["Airfare", "Shopping", "Alcohol"],
-      itinerary: [
-        { day: 1, title: "Biryani & Breakfast", description: "Start with legendary Hyderabadi breakfast. Lunch at iconic Biryani spots.", highlights: ["Irani Chai & Osmania Biscuits", "Paradise Biryani", "Shah Ghouse", "Bawarchi"] },
-        { day: 2, title: "Street Food Safari", description: "Old City street food tour - from kebabs to sweets.", highlights: ["Pista House Haleem", "Shadab Kebabs", "Nimrah Irani Chai", "Old City Street Food"] },
-        { day: 3, title: "Royal Feast", description: "Cooking class and farewell Nizami thali lunch.", highlights: ["Cooking Class", "Nizami Cuisine", "Sweet Shops", "Departure"] }
-      ]
-    },
-    {
-      id: "hyderabad-weekend",
-      name: "Hyderabad Weekend Getaway",
-      duration: "2D/1N",
-      originalPrice: 8500,
-      currentPrice: 7225,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800",
-      description: "Quick weekend escape to explore Hyderabad's top attractions.",
-      highlights: ["Charminar", "Golconda Fort", "Local Food", "Shopping"],
-      inclusions: ["1 Night Hotel", "Breakfast", "AC Vehicle", "Monument Entry"],
-      exclusions: ["Airfare", "Meals except breakfast", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Heritage & Food", description: "Charminar, Laad Bazaar shopping, lunch at Paradise, Golconda Fort.", highlights: ["Charminar", "Pearl Shopping", "Biryani Lunch", "Golconda Fort"] },
-        { day: 2, title: "Museums & Departure", description: "Salar Jung Museum, Hussain Sagar, departure.", highlights: ["Salar Jung Museum", "Buddha Statue", "Departure"] }
-      ]
-    },
-    {
-      id: "hyderabad-family",
-      name: "Hyderabad Family Fun",
-      duration: "5D/4N",
-      originalPrice: 35000,
-      currentPrice: 29750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
-      description: "Perfect family vacation with theme parks, zoo, and kid-friendly attractions.",
-      highlights: ["Ramoji Film City", "Snow World", "Nehru Zoo", "Ocean Park"],
-      inclusions: ["4 Nights Hotel", "Breakfast", "All Entry Tickets", "AC Vehicle"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Optional Rides"],
-      itinerary: [
-        { day: 1, title: "Arrival & City Tour", description: "Arrive Hyderabad. Visit Hussain Sagar and Lumbini Park.", highlights: ["Hussain Sagar", "Boat Ride to Buddha", "Lumbini Park", "NTR Gardens"] },
-        { day: 2, title: "Theme Park Day", description: "Full day at Ramoji Film City with all attractions.", highlights: ["Ramoji Film City", "Bahubali Set", "Adventure Zone", "Live Shows"] },
-        { day: 3, title: "Wildlife & Snow", description: "Morning at Nehru Zoological Park. Afternoon at Snow World.", highlights: ["Nehru Zoo", "Safari", "Snow World", "Ice Sculptures"] },
-        { day: 4, title: "Heritage & Fun", description: "Charminar, Golconda Fort, and Ocean Park.", highlights: ["Charminar", "Golconda Fort", "Ocean Park", "Water Rides"] },
-        { day: 5, title: "Shopping & Departure", description: "Shopping at GVK One Mall. Departure.", highlights: ["Shopping", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Dubai Packages
-export const dubaiData: DestinationData = {
-  id: "dubai",
-  name: "Dubai",
-  tagline: "City of Dreams",
-  description: "Experience the glitz and glamour of Dubai - from towering skyscrapers to golden deserts, luxury shopping to thrilling adventures. Discover a city where the future meets tradition.",
-  heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
-    "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800",
-    "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=800"
-  ],
-  packages: [
-    {
-      id: "dubai-delights",
-      name: "Dubai Delights",
-      duration: "5D/4N",
-      originalPrice: 85000,
-      currentPrice: 72250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
-      description: "Experience the best of Dubai with city tours, desert safari, and world-class attractions.",
-      highlights: ["Burj Khalifa", "Desert Safari", "Dubai Mall", "Dhow Cruise"],
-      inclusions: ["4 Nights Hotel", "Daily Breakfast", "Airport Transfers", "City Tour", "Desert Safari"],
-      exclusions: ["Airfare", "Visa", "Lunch & Dinner", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Arrival in Dubai", description: "Arrive at Dubai Airport. Transfer to hotel. Evening at leisure.", highlights: ["Airport Pickup", "Hotel Check-in", "Marina Walk"] },
-        { day: 2, title: "Dubai City Tour", description: "Full day city tour - Old Dubai, New Dubai, Burj Khalifa.", highlights: ["Dubai Creek", "Gold Souk", "Burj Khalifa 124th Floor"] },
-        { day: 3, title: "Desert Safari", description: "Afternoon Desert Safari with BBQ dinner and entertainment.", highlights: ["Dune Bashing", "Camel Ride", "BBQ Dinner", "Belly Dance"] },
-        { day: 4, title: "Free Day & Dhow Cruise", description: "Day free for shopping. Evening Dhow Cruise with dinner.", highlights: ["Dubai Mall", "Shopping", "Dhow Cruise Dinner"] },
-        { day: 5, title: "Departure", description: "Transfer to Dubai Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "dubai-luxury",
-      name: "Luxury Dubai Experience",
-      duration: "6D/5N",
-      originalPrice: 145000,
-      currentPrice: 123250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800",
-      description: "Ultimate luxury Dubai experience with premium hotels, exclusive tours, and VIP access.",
-      highlights: ["5-Star Hotels", "Private Tours", "Helicopter Tour", "At the Top Burj Khalifa SKY"],
-      inclusions: ["5 Nights Luxury Hotel", "All Meals", "Private Transfers", "VIP Access to Attractions"],
-      exclusions: ["Airfare", "Visa", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "VIP Arrival", description: "Arrive Dubai. VIP airport transfer. Luxury hotel check-in.", highlights: ["VIP Transfer", "Premium Hotel", "Welcome Dinner"] },
-        { day: 2, title: "Private City Tour", description: "Private guided tour of Dubai landmarks.", highlights: ["Burj Al Arab", "Palm Jumeirah", "Dubai Frame"] },
-        { day: 3, title: "Helicopter Experience", description: "Morning helicopter tour. Afternoon at leisure.", highlights: ["Helicopter Tour", "Spa Session", "Fine Dining"] },
-        { day: 4, title: "Abu Dhabi Day Trip", description: "Full day Abu Dhabi tour with Louvre Museum.", highlights: ["Grand Mosque", "Louvre Abu Dhabi", "Emirates Palace"] },
-        { day: 5, title: "Luxury Desert", description: "Private desert camp with gourmet dining.", highlights: ["Private Safari", "Stargazing", "Gourmet Dinner"] },
-        { day: 6, title: "Departure", description: "Leisurely breakfast. VIP airport transfer.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "dubai-adventure",
-      name: "Dubai Adventure Package",
-      duration: "5D/4N",
-      originalPrice: 95000,
-      currentPrice: 80750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=800",
-      description: "Action-packed Dubai adventure with theme parks, water sports, and desert activities.",
-      highlights: ["IMG Worlds", "Skydiving Option", "Jet Ski", "Dune Buggy"],
-      inclusions: ["4 Nights Hotel", "Breakfast", "Theme Park Tickets", "Desert Activities"],
-      exclusions: ["Airfare", "Visa", "Optional Adventures", "Meals"],
-      itinerary: [
-        { day: 1, title: "Arrival & Marina", description: "Arrive Dubai. Evening JBR Beach and Marina walk.", highlights: ["Arrival", "Marina Walk", "Beach Time"] },
-        { day: 2, title: "Theme Park Day", description: "Full day at IMG Worlds of Adventure.", highlights: ["IMG Worlds", "Marvel Zone", "Cartoon Network Zone"] },
-        { day: 3, title: "Water Sports", description: "Morning Jet Ski and water sports at Palm.", highlights: ["Jet Ski", "Banana Boat", "Parasailing"] },
-        { day: 4, title: "Desert Adventures", description: "Dune buggy and sandboarding. Evening camp.", highlights: ["Dune Buggy", "Sandboarding", "Quad Biking"] },
-        { day: 5, title: "Departure", description: "Free time for shopping. Airport transfer.", highlights: ["Shopping", "Departure"] }
-      ]
-    },
-    {
-      id: "dubai-family",
-      name: "Dubai Family Fun",
-      duration: "6D/5N",
-      originalPrice: 125000,
-      currentPrice: 106250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
-      description: "Perfect family vacation with theme parks, aquarium, and kid-friendly activities.",
-      highlights: ["Legoland", "Aquaventure", "Dubai Aquarium", "Global Village"],
-      inclusions: ["5 Nights Family Hotel", "Breakfast", "Theme Park Tickets", "Transfers"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Family Arrival", description: "Arrive Dubai. Evening at Dubai Fountain show.", highlights: ["Hotel Check-in", "Dubai Fountain", "Dubai Mall Walk"] },
-        { day: 2, title: "Legoland Adventure", description: "Full day at Legoland Dubai.", highlights: ["Legoland", "Miniland", "Lego Factory Tour"] },
-        { day: 3, title: "Aquaventure & Aquarium", description: "Water park fun and underwater world.", highlights: ["Aquaventure", "Lost Chambers", "Dubai Aquarium"] },
-        { day: 4, title: "Desert Family Safari", description: "Family-friendly desert experience.", highlights: ["Camel Ride", "Sandboarding", "BBQ Dinner"] },
-        { day: 5, title: "Global Village", description: "Evening at Global Village theme park.", highlights: ["Global Village", "Cultural Pavilions", "Street Food"] },
-        { day: 6, title: "Departure", description: "Morning free. Airport transfer.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "dubai-honeymoon",
-      name: "Dubai Romantic Honeymoon",
-      duration: "5D/4N",
-      originalPrice: 135000,
-      currentPrice: 114750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800",
-      description: "Romantic Dubai honeymoon with luxury stays, private dinners, and couple experiences.",
-      highlights: ["Burj Al Arab Dinner", "Private Yacht", "Desert Romance", "Couple Spa"],
-      inclusions: ["4 Nights Luxury Hotel", "All Meals", "Private Transfers", "Romantic Setups"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Romantic Welcome", description: "Arrive to flower-decorated room. Private dinner.", highlights: ["Romantic Room Setup", "Private Dinner", "City Lights Tour"] },
-        { day: 2, title: "Luxury Experiences", description: "Burj Khalifa SKY lounge. Burj Al Arab dinner.", highlights: ["Burj Khalifa SKY", "Burj Al Arab Dinner", "Dubai Fountain View"] },
-        { day: 3, title: "Yacht & Beach", description: "Private yacht cruise. Beach club experience.", highlights: ["Private Yacht", "Beach Club", "Sunset Cruise"] },
-        { day: 4, title: "Desert Romance", description: "Private desert camp with starlit dinner.", highlights: ["Private Safari", "Stargazing", "Candlelight Dinner"] },
-        { day: 5, title: "Departure", description: "Couple spa and departure.", highlights: ["Couple Spa", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Singapore Packages
-export const singaporeData: DestinationData = {
-  id: "singapore",
-  name: "Singapore",
-  tagline: "The Lion City",
-  description: "Experience the perfect blend of cultures in Singapore - futuristic gardens, world-class attractions, amazing food, and endless shopping. A city that never disappoints.",
-  heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
-    "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800",
-    "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=800"
-  ],
-  packages: [
-    {
-      id: "singapore-delight",
-      name: "Singapore Delight",
-      duration: "5D/4N",
-      originalPrice: 65000,
-      currentPrice: 55250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
-      description: "Complete Singapore experience with Universal Studios and Sentosa.",
-      highlights: ["Marina Bay Sands", "Universal Studios", "Sentosa Island", "Gardens by the Bay"],
-      inclusions: ["4 Nights Hotel", "Breakfast", "Airport Transfers", "City Tour", "USS Tickets"],
-      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Arrival Singapore", description: "Arrive Changi Airport. Night Safari experience.", highlights: ["Airport Transfer", "Night Safari", "Hotel Check-in"] },
-        { day: 2, title: "City Tour", description: "Half day city tour. Evening Marina Bay Sands.", highlights: ["Merlion Park", "Chinatown", "Marina Bay Sands"] },
-        { day: 3, title: "Sentosa Island", description: "Full day Sentosa with Universal Studios.", highlights: ["Universal Studios", "Cable Car", "Wings of Time"] },
-        { day: 4, title: "Gardens & Shopping", description: "Gardens by the Bay and Orchard Road shopping.", highlights: ["Gardens by the Bay", "Cloud Forest", "Shopping"] },
-        { day: 5, title: "Departure", description: "Free time. Transfer to airport.", highlights: ["Last Minute Shopping", "Departure"] }
-      ]
-    },
-    {
-      id: "singapore-family",
-      name: "Singapore Family Package",
-      duration: "6D/5N",
-      originalPrice: 95000,
-      currentPrice: 80750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800",
-      description: "Ultimate family vacation with theme parks and kid-friendly attractions.",
-      highlights: ["Universal Studios", "S.E.A. Aquarium", "Legoland", "Zoo"],
-      inclusions: ["5 Nights Family Hotel", "Breakfast", "All Theme Park Tickets", "Transfers"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Family Arrival", description: "Arrive and evening at Gardens by the Bay.", highlights: ["Gardens by the Bay", "Supertree Grove", "Light Show"] },
-        { day: 2, title: "Universal Studios", description: "Full day at Universal Studios Singapore.", highlights: ["USS", "All Rides", "Character Meet"] },
-        { day: 3, title: "Singapore Zoo", description: "Day at Singapore Zoo and River Safari.", highlights: ["Singapore Zoo", "River Safari", "Rainforest Lumina"] },
-        { day: 4, title: "Legoland Day", description: "Day trip to Legoland Malaysia.", highlights: ["Legoland", "Water Park", "All Rides"] },
-        { day: 5, title: "Sentosa Fun", description: "S.E.A. Aquarium and beach activities.", highlights: ["S.E.A. Aquarium", "Beach", "Cable Car"] },
-        { day: 6, title: "Departure", description: "Morning free and departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "singapore-honeymoon",
-      name: "Singapore Romantic Escape",
-      duration: "5D/4N",
-      originalPrice: 85000,
-      currentPrice: 72250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=800",
-      description: "Romantic Singapore honeymoon with luxury experiences.",
-      highlights: ["Marina Bay Sands Stay", "Private Dinner", "Couple Spa", "Sunset Cruise"],
-      inclusions: ["4 Nights Luxury Hotel", "All Meals", "Private Transfers", "Romantic Experiences"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Romantic Arrival", description: "Arrive to decorated room. Marina Bay Sands.", highlights: ["MBS Check-in", "Infinity Pool", "Private Dinner"] },
-        { day: 2, title: "Gardens Romance", description: "Gardens by the Bay private tour.", highlights: ["Private Garden Tour", "Flower Dome", "Supertree Dinner"] },
-        { day: 3, title: "Sentosa Day", description: "Beach activities and sunset at Tanjong.", highlights: ["Beach Club", "Sunset at Tanjong", "Candlelight Dinner"] },
-        { day: 4, title: "Cruise & Spa", description: "Sunset cruise and couple spa.", highlights: ["Sunset Cruise", "Couple Spa", "River Walk Dinner"] },
-        { day: 5, title: "Departure", description: "Leisurely departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "singapore-cruise",
-      name: "Singapore with Cruise",
-      duration: "7D/6N",
-      originalPrice: 125000,
-      currentPrice: 106250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
-      description: "Singapore city experience combined with 2-night cruise.",
-      highlights: ["City Tour", "Universal Studios", "2 Night Cruise", "Malaysia Port"],
-      inclusions: ["4 Nights Hotel", "2 Nights Cruise", "All Meals on Cruise", "Transfers"],
-      exclusions: ["Airfare", "Visa", "Port Excursions"],
-      itinerary: [
-        { day: 1, title: "Arrival", description: "Arrive Singapore. City orientation.", highlights: ["Arrival", "Marina Bay Walk", "Merlion Park"] },
-        { day: 2, title: "City Tour", description: "Full day Singapore city tour.", highlights: ["City Tour", "Gardens by the Bay", "Clarke Quay"] },
-        { day: 3, title: "Universal Studios", description: "Full day at USS.", highlights: ["Universal Studios", "All Rides", "Sentosa"] },
-        { day: 4, title: "Cruise Embarkation", description: "Board cruise ship for 2-night cruise.", highlights: ["Cruise Check-in", "Ship Exploration", "Dinner on Board"] },
-        { day: 5, title: "Port of Call", description: "Explore Malaysian port or ship activities.", highlights: ["Port Exploration", "Ship Activities", "Entertainment"] },
-        { day: 6, title: "Return to Singapore", description: "Disembark and free time.", highlights: ["Disembark", "Shopping", "Rest"] },
-        { day: 7, title: "Departure", description: "Airport transfer.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "singapore-weekend",
-      name: "Singapore Weekend Getaway",
-      duration: "4D/3N",
-      originalPrice: 55000,
-      currentPrice: 46750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800",
-      description: "Quick Singapore escape with highlights.",
-      highlights: ["Merlion", "Gardens by the Bay", "Sentosa", "Shopping"],
-      inclusions: ["3 Nights Hotel", "Breakfast", "Transfers", "City Tour"],
-      exclusions: ["Airfare", "Visa", "Theme Park Tickets"],
-      itinerary: [
-        { day: 1, title: "Arrival", description: "Arrive and evening city exploration.", highlights: ["Marina Bay Sands View", "Gardens Light Show", "Clarke Quay"] },
-        { day: 2, title: "City Highlights", description: "Full day city tour and shopping.", highlights: ["Merlion", "Chinatown", "Orchard Road"] },
-        { day: 3, title: "Sentosa Day", description: "Day at Sentosa Island.", highlights: ["Beach", "Cable Car", "Wings of Time"] },
-        { day: 4, title: "Departure", description: "Morning free and departure.", highlights: ["Shopping", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Thailand Packages
-export const thailandData: DestinationData = {
-  id: "thailand",
-  name: "Thailand",
-  tagline: "Land of Smiles",
-  description: "Discover the magic of Thailand - from Bangkok's temples and nightlife to Pattaya's beaches and Phuket's islands. Experience Thai hospitality at its best.",
-  heroImage: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800",
-    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800",
-    "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800"
-  ],
-  packages: [
-    {
-      id: "thailand-tour",
-      name: "Amazing Thailand",
-      duration: "6D/5N",
-      originalPrice: 55000,
-      currentPrice: 46750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800",
-      description: "Complete Thailand tour covering Bangkok and Pattaya.",
-      highlights: ["Grand Palace", "Coral Island", "Safari World", "Alcazar Show"],
-      inclusions: ["5 Nights Hotel", "Breakfast", "Transfers", "Island Tour", "City Tour"],
-      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Arrival Bangkok", description: "Arrive Bangkok. Transfer to Pattaya.", highlights: ["Airport Pickup", "Pattaya Transfer", "Walking Street"] },
-        { day: 2, title: "Coral Island", description: "Full day Coral Island tour with water sports.", highlights: ["Coral Island", "Parasailing", "Banana Boat"] },
-        { day: 3, title: "Pattaya City", description: "Nong Nooch Garden and Alcazar Show.", highlights: ["Nong Nooch Garden", "Art in Paradise", "Alcazar Show"] },
-        { day: 4, title: "Pattaya to Bangkok", description: "Drive to Bangkok. Safari World visit.", highlights: ["Safari World", "Marine Park", "Hotel Check-in"] },
-        { day: 5, title: "Bangkok City", description: "Temple tour and shopping.", highlights: ["Grand Palace", "Wat Pho", "MBK Shopping"] },
-        { day: 6, title: "Departure", description: "Transfer to Bangkok Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "thailand-phuket",
-      name: "Thailand with Phuket",
-      duration: "7D/6N",
-      originalPrice: 72000,
-      currentPrice: 61200,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800",
-      description: "Bangkok and Phuket island paradise experience.",
-      highlights: ["Phi Phi Islands", "James Bond Island", "Patong Beach", "Temples"],
-      inclusions: ["6 Nights Hotel", "Breakfast", "Transfers", "Island Tours"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Arrival Bangkok", description: "Arrive and city exploration.", highlights: ["Arrival", "Asiatique", "Dinner Cruise"] },
-        { day: 2, title: "Bangkok Temples", description: "Temple and palace tour.", highlights: ["Grand Palace", "Wat Arun", "Wat Pho"] },
-        { day: 3, title: "Fly to Phuket", description: "Morning flight to Phuket.", highlights: ["Flight", "Patong Beach", "Bangla Road"] },
-        { day: 4, title: "Phi Phi Islands", description: "Full day Phi Phi island tour.", highlights: ["Phi Phi Islands", "Maya Bay", "Snorkeling"] },
-        { day: 5, title: "James Bond Island", description: "Phang Nga Bay tour.", highlights: ["James Bond Island", "Canoeing", "Sea Cave"] },
-        { day: 6, title: "Beach Day", description: "Free day at Phuket beaches.", highlights: ["Beach Time", "Thai Massage", "Shopping"] },
-        { day: 7, title: "Departure", description: "Transfer to airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "thailand-honeymoon",
-      name: "Thailand Honeymoon Special",
-      duration: "7D/6N",
-      originalPrice: 85000,
-      currentPrice: 72250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800",
-      description: "Romantic Thailand honeymoon in Phuket and Krabi.",
-      highlights: ["Private Beaches", "Island Hopping", "Couple Spa", "Sunset Dinner"],
-      inclusions: ["6 Nights Luxury Resort", "All Meals", "Private Transfers", "Romantic Setups"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Romantic Arrival", description: "Arrive Phuket. Decorated room welcome.", highlights: ["Flower Welcome", "Sunset Dinner", "Beach Walk"] },
-        { day: 2, title: "Private Island", description: "Private speedboat to secluded islands.", highlights: ["Private Speedboat", "Island Picnic", "Snorkeling"] },
-        { day: 3, title: "Spa Day", description: "Full day couple spa retreat.", highlights: ["Couple Spa", "Thai Massage", "Pool Time"] },
-        { day: 4, title: "Phuket to Krabi", description: "Ferry to Krabi. Sunset at Railay.", highlights: ["Ferry Ride", "Railay Beach", "Rock Climbing View"] },
-        { day: 5, title: "4 Islands Tour", description: "Private 4 islands tour.", highlights: ["4 Islands", "Private Boat", "Beach Picnic"] },
-        { day: 6, title: "Ao Nang Romance", description: "Free day and sunset cruise.", highlights: ["Beach Day", "Sunset Cruise", "Candlelight Dinner"] },
-        { day: 7, title: "Departure", description: "Transfer to Krabi Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "thailand-adventure",
-      name: "Thailand Adventure Package",
-      duration: "6D/5N",
-      originalPrice: 65000,
-      currentPrice: 55250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800",
-      description: "Adventure-packed Thailand tour with water sports and jungle activities.",
-      highlights: ["Scuba Diving", "Jungle Trek", "White Water Rafting", "Elephant Sanctuary"],
-      inclusions: ["5 Nights Adventure Resort", "All Meals", "All Activities", "Equipment"],
-      exclusions: ["Airfare", "Visa", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival Phuket", description: "Arrive and water sports introduction.", highlights: ["Arrival", "Beach Sports", "Briefing"] },
-        { day: 2, title: "Scuba Adventure", description: "Full day scuba diving experience.", highlights: ["Scuba Diving", "Coral Reefs", "Underwater Photos"] },
-        { day: 3, title: "Jungle Day", description: "Jungle trekking and elephant sanctuary.", highlights: ["Jungle Trek", "Elephant Sanctuary", "Cooking Class"] },
-        { day: 4, title: "Island Adventure", description: "Island hopping with cliff jumping.", highlights: ["Speed Boat", "Cliff Jumping", "Cave Exploration"] },
-        { day: 5, title: "Rafting", description: "White water rafting and ATV.", highlights: ["White Water Rafting", "ATV Ride", "Zip Lining"] },
-        { day: 6, title: "Departure", description: "Morning beach time and departure.", highlights: ["Beach Time", "Departure"] }
-      ]
-    },
-    {
-      id: "thailand-budget",
-      name: "Thailand Budget Tour",
-      duration: "5D/4N",
-      originalPrice: 35000,
-      currentPrice: 29750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800",
-      description: "Affordable Thailand experience with best highlights.",
-      highlights: ["Grand Palace", "Floating Market", "Pattaya Beach", "Night Market"],
-      inclusions: ["4 Nights Budget Hotel", "Breakfast", "Transfers", "Basic Tours"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Arrival Bangkok", description: "Arrive and explore Khao San Road.", highlights: ["Arrival", "Khao San Road", "Street Food"] },
-        { day: 2, title: "Bangkok Highlights", description: "Temple tour and floating market.", highlights: ["Grand Palace", "Floating Market", "Chatuchak Market"] },
-        { day: 3, title: "Pattaya Trip", description: "Day trip to Pattaya.", highlights: ["Pattaya Beach", "Walking Street", "Night Market"] },
-        { day: 4, title: "Bangkok Shopping", description: "Free day for shopping and exploring.", highlights: ["MBK", "Pratunam", "Night Market"] },
-        { day: 5, title: "Departure", description: "Airport transfer.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
-// Bali Packages
-export const baliData: DestinationData = {
-  id: "bali",
-  name: "Bali",
-  tagline: "Island of Gods",
-  description: "Experience the mystical beauty of Bali - ancient temples, rice terraces, volcanic mountains, and pristine beaches. The perfect tropical paradise.",
-  heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
-    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800",
-    "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800"
-  ],
-  packages: [
-    {
-      id: "bali-bliss",
-      name: "Bali Bliss",
-      duration: "6D/5N",
-      originalPrice: 72000,
-      currentPrice: 61200,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
-      description: "Complete Bali experience with temples, beaches, and culture.",
-      highlights: ["Tanah Lot Temple", "Ubud Rice Terraces", "Kintamani", "Water Sports"],
-      inclusions: ["5 Nights Resort", "Breakfast", "Transfers", "Tours", "Water Sports"],
-      exclusions: ["Airfare", "Visa on Arrival", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Arrival Bali", description: "Arrive Ngurah Rai Airport. Transfer to hotel.", highlights: ["Airport Pickup", "Seminyak Beach", "Welcome Dinner"] },
-        { day: 2, title: "South Bali", description: "Uluwatu Temple and Kecak Dance at sunset.", highlights: ["Uluwatu Temple", "Padang Beach", "Kecak Dance"] },
-        { day: 3, title: "Ubud & Kintamani", description: "Rice terraces, Monkey Forest, and volcano views.", highlights: ["Tegallalang Rice Terraces", "Monkey Forest", "Kintamani"] },
-        { day: 4, title: "Water Sports", description: "Full day at Tanjung Benoa for water activities.", highlights: ["Jet Ski", "Parasailing", "Banana Boat"] },
-        { day: 5, title: "Tanah Lot", description: "Visit Tanah Lot Temple and spa session.", highlights: ["Tanah Lot Temple", "Balinese Spa", "Shopping"] },
-        { day: 6, title: "Departure", description: "Transfer to airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "bali-honeymoon",
-      name: "Bali Romantic Honeymoon",
-      duration: "7D/6N",
-      originalPrice: 95000,
-      currentPrice: 80750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800",
-      description: "Romantic Bali honeymoon with private pool villas and couple experiences.",
-      highlights: ["Private Pool Villa", "Floating Breakfast", "Couple Spa", "Sunset Dinner"],
-      inclusions: ["6 Nights Private Villa", "All Meals", "Private Transfers", "Romantic Setups"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Paradise Welcome", description: "Arrive to flower-decorated villa.", highlights: ["Private Villa", "Floating Breakfast Setup", "Romantic Dinner"] },
-        { day: 2, title: "Ubud Romance", description: "Private tour of Ubud's romantic spots.", highlights: ["Swing Photoshoot", "Rice Terrace Walk", "Private Dinner"] },
-        { day: 3, title: "Spa Day", description: "Full day Balinese spa experience.", highlights: ["Couple Spa", "Flower Bath", "Traditional Massage"] },
-        { day: 4, title: "Beach Day", description: "Private beach club experience.", highlights: ["Beach Club", "Sunset Cocktails", "Candlelight Dinner"] },
-        { day: 5, title: "Temple & Sunset", description: "Tanah Lot sunset experience.", highlights: ["Tanah Lot", "Private Dinner at Temple View", "Romance"] },
-        { day: 6, title: "Nusa Penida", description: "Private day trip to Nusa Penida.", highlights: ["Private Boat", "Kelingking Beach", "Crystal Bay"] },
-        { day: 7, title: "Departure", description: "Floating breakfast and departure.", highlights: ["Floating Breakfast", "Departure"] }
-      ]
-    },
-    {
-      id: "bali-adventure",
-      name: "Bali Adventure Package",
-      duration: "6D/5N",
-      originalPrice: 75000,
-      currentPrice: 63750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800",
-      description: "Adventure-filled Bali with rafting, trekking, and water activities.",
-      highlights: ["White Water Rafting", "Mt. Batur Sunrise", "Waterfall Trek", "Diving"],
-      inclusions: ["5 Nights Resort", "Breakfast", "All Adventures", "Equipment"],
-      exclusions: ["Airfare", "Visa", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Arrival & Beach", description: "Arrive and beach sports introduction.", highlights: ["Arrival", "Surfing Lesson", "Beach Games"] },
-        { day: 2, title: "Rafting Adventure", description: "White water rafting on Ayung River.", highlights: ["Ayung Rafting", "Jungle Views", "Waterfall Swim"] },
-        { day: 3, title: "Mt. Batur Sunrise", description: "Early trek for sunrise at Mt. Batur.", highlights: ["Sunrise Trek", "Volcanic Views", "Hot Springs"] },
-        { day: 4, title: "Waterfall Chase", description: "Trek to hidden waterfalls.", highlights: ["Sekumpul Waterfalls", "Banyumala", "Natural Pools"] },
-        { day: 5, title: "Island Diving", description: "Scuba diving at Nusa Penida.", highlights: ["Scuba Diving", "Manta Rays", "Crystal Bay"] },
-        { day: 6, title: "Departure", description: "Morning surf and departure.", highlights: ["Morning Surf", "Departure"] }
-      ]
-    },
-    {
-      id: "bali-family",
-      name: "Bali Family Fun",
-      duration: "6D/5N",
-      originalPrice: 85000,
-      currentPrice: 72250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
-      description: "Perfect family vacation with kid-friendly activities and resorts.",
-      highlights: ["Waterbom", "Safari Park", "Monkey Forest", "Beach Activities"],
-      inclusions: ["5 Nights Family Resort", "Breakfast", "Transfers", "Activity Tickets"],
-      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Family Arrival", description: "Arrive and resort fun.", highlights: ["Resort Check-in", "Pool Time", "Kids Club"] },
-        { day: 2, title: "Waterbom Day", description: "Full day at Waterbom water park.", highlights: ["Waterbom Park", "All Slides", "Lazy River"] },
-        { day: 3, title: "Safari Adventure", description: "Bali Safari and Marine Park.", highlights: ["Safari Ride", "Animal Shows", "Night Safari"] },
-        { day: 4, title: "Ubud Fun", description: "Monkey Forest and rice terrace walk.", highlights: ["Monkey Forest", "Swing", "Chocolate Factory"] },
-        { day: 5, title: "Beach Day", description: "Beach activities and sunset.", highlights: ["Beach Games", "Sandcastle", "Sunset BBQ"] },
-        { day: 6, title: "Departure", description: "Morning pool and departure.", highlights: ["Pool Time", "Departure"] }
-      ]
-    },
-    {
-      id: "bali-weekend",
-      name: "Bali Quick Escape",
-      duration: "4D/3N",
-      originalPrice: 45000,
-      currentPrice: 38250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800",
-      description: "Quick Bali getaway with best highlights.",
-      highlights: ["Beach", "Temple", "Rice Terrace", "Spa"],
-      inclusions: ["3 Nights Hotel", "Breakfast", "Transfers", "Half Day Tour"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Arrival", description: "Arrive and beach evening.", highlights: ["Arrival", "Seminyak Beach", "Sunset"] },
-        { day: 2, title: "Bali Highlights", description: "Rice terrace and temple tour.", highlights: ["Tegallalang", "Ubud", "Tanah Lot Sunset"] },
-        { day: 3, title: "Beach & Spa", description: "Beach time and Balinese spa.", highlights: ["Beach", "Spa Session", "Shopping"] },
-        { day: 4, title: "Departure", description: "Morning free and departure.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
-// Europe Packages
-export const europeData: DestinationData = {
-  id: "europe",
-  name: "Europe",
-  tagline: "Old World Charm",
-  description: "Discover the enchanting beauty of Europe - from romantic Paris to historic Rome, scenic Switzerland to vibrant Amsterdam. Experience rich culture, stunning architecture, and unforgettable experiences.",
-  heroImage: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800",
-    "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800",
-    "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800"
-  ],
-  packages: [
-    {
-      id: "europe-highlights",
-      name: "European Highlights",
-      duration: "10D/9N",
-      originalPrice: 285000,
-      currentPrice: 256500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800",
-      description: "Best of Europe tour covering Paris, Switzerland, and Italy.",
-      highlights: ["Eiffel Tower", "Swiss Alps", "Venice Gondola", "Vatican City"],
-      inclusions: ["9 Nights Hotels", "Daily Breakfast", "Coach Travel", "Guided Tours", "Schengen Visa Assistance"],
-      exclusions: ["Airfare", "Visa Fee", "Lunch & Dinner", "Tips"],
-      itinerary: [
-        { day: 1, title: "Arrive Paris", description: "Arrive in Paris. Hotel check-in. Evening Seine River Cruise.", highlights: ["Airport Pickup", "Seine Cruise", "Paris by Night"] },
-        { day: 2, title: "Paris Exploration", description: "Full day Paris tour - Eiffel Tower, Louvre, Champs-Élysées.", highlights: ["Eiffel Tower", "Louvre Museum", "Arc de Triomphe"] },
-        { day: 3, title: "Paris to Lucerne", description: "Train to Lucerne, Switzerland. Evening at leisure.", highlights: ["TGV Train", "Lake Lucerne", "Chapel Bridge"] },
-        { day: 4, title: "Mt. Titlis Excursion", description: "Day trip to Mt. Titlis with cable car ride.", highlights: ["Mt. Titlis", "Ice Flyer", "Glacier Park"] },
-        { day: 5, title: "Lucerne to Milan", description: "Scenic drive to Milan. Visit Duomo Cathedral.", highlights: ["Scenic Drive", "Milan Duomo", "Galleria Vittorio"] },
-        { day: 6, title: "Venice Day Trip", description: "Full day in Venice with Gondola ride.", highlights: ["St. Mark's Square", "Gondola Ride", "Rialto Bridge"] },
-        { day: 7, title: "Milan to Rome", description: "High-speed train to Rome. Evening Colosseum view.", highlights: ["Fast Train", "Colosseum", "Trevi Fountain"] },
-        { day: 8, title: "Vatican & Rome", description: "Vatican City tour and Rome sightseeing.", highlights: ["Vatican Museum", "Sistine Chapel", "Spanish Steps"] },
-        { day: 9, title: "Rome Free Day", description: "Free day for shopping and exploration.", highlights: ["Shopping", "Local Cuisine", "Roman Nightlife"] },
-        { day: 10, title: "Departure", description: "Transfer to Rome Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "swiss-splendor",
-      name: "Swiss Splendor",
-      duration: "7D/6N",
-      originalPrice: 195000,
-      currentPrice: 165750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800",
-      description: "Complete Switzerland tour with scenic train journeys and alpine adventures.",
-      highlights: ["Jungfraujoch", "Glacier Express", "Lake Geneva", "Interlaken"],
-      inclusions: ["6 Nights Hotels", "All Breakfasts", "Swiss Pass", "Mountain Excursions"],
-      exclusions: ["Airfare", "Visa", "Lunches & Dinners"],
-      itinerary: [
-        { day: 1, title: "Arrive Zurich", description: "Arrive Zurich. City tour and Lake Zurich visit.", highlights: ["Zurich City", "Lake Zurich", "Old Town"] },
-        { day: 2, title: "Zurich to Lucerne", description: "Train to Lucerne. Mt. Pilatus excursion.", highlights: ["Mt. Pilatus", "Dragon Ride", "Lake Lucerne"] },
-        { day: 3, title: "Interlaken", description: "Scenic drive to Interlaken. Adventure activities.", highlights: ["Interlaken", "Paragliding Option", "Lake Brienz"] },
-        { day: 4, title: "Jungfraujoch", description: "Excursion to Top of Europe - Jungfraujoch.", highlights: ["Jungfraujoch", "Ice Palace", "Sphinx Observatory"] },
-        { day: 5, title: "Glacier Express", description: "Scenic Glacier Express journey to Zermatt.", highlights: ["Glacier Express", "Alpine Views", "Zermatt"] },
-        { day: 6, title: "Matterhorn & Geneva", description: "Matterhorn views. Travel to Geneva.", highlights: ["Matterhorn", "Geneva", "Jet d'Eau"] },
-        { day: 7, title: "Departure", description: "Transfer to Geneva Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "italy-romance",
-      name: "Romantic Italy",
-      duration: "8D/7N",
-      originalPrice: 225000,
-      currentPrice: 191250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800",
-      description: "Romantic Italian journey through Rome, Florence, and Venice.",
-      highlights: ["Colosseum", "Tuscan Countryside", "Venice Canals", "Amalfi Coast"],
-      inclusions: ["7 Nights Hotels", "Daily Breakfast", "Train Tickets", "Guided Tours"],
-      exclusions: ["Airfare", "Visa", "Optional Activities", "Meals"],
-      itinerary: [
-        { day: 1, title: "Arrive Rome", description: "Arrive Rome. Evening Trevi Fountain and Spanish Steps.", highlights: ["Arrival", "Trevi Fountain", "Spanish Steps"] },
-        { day: 2, title: "Ancient Rome", description: "Colosseum, Roman Forum, and Vatican tour.", highlights: ["Colosseum", "Vatican", "Sistine Chapel"] },
-        { day: 3, title: "Amalfi Coast", description: "Day trip to Amalfi Coast - Positano and Ravello.", highlights: ["Positano", "Amalfi", "Ravello"] },
-        { day: 4, title: "Rome to Florence", description: "Train to Florence. Evening Ponte Vecchio walk.", highlights: ["Florence", "Ponte Vecchio", "Piazza della Signoria"] },
-        { day: 5, title: "Florence & Tuscany", description: "Uffizi Gallery and Tuscan wine tour.", highlights: ["Uffizi Gallery", "Chianti", "Wine Tasting"] },
-        { day: 6, title: "Florence to Venice", description: "Train to Venice. Grand Canal cruise.", highlights: ["Venice", "Grand Canal", "Sunset Views"] },
-        { day: 7, title: "Venice Romance", description: "St. Mark's, Doge's Palace, and Gondola ride.", highlights: ["St. Mark's", "Gondola", "Murano Island"] },
-        { day: 8, title: "Departure", description: "Transfer to Venice Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "europe-grand-tour",
-      name: "Grand European Tour",
-      duration: "14D/13N",
-      originalPrice: 385000,
-      currentPrice: 346500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800",
-      description: "Ultimate Europe tour covering 8 countries in 14 days.",
-      highlights: ["Paris", "Amsterdam", "Brussels", "Frankfurt", "Switzerland", "Italy", "Austria", "Prague"],
-      inclusions: ["13 Nights Hotels", "All Breakfasts", "Deluxe Coach", "Expert Guide", "Visa Assistance"],
-      exclusions: ["Airfare", "Visa Fee", "Optional Tours", "Meals"],
-      itinerary: [
-        { day: 1, title: "Paris Arrival", description: "Arrive Paris. City orientation.", highlights: ["Paris Check-in", "Montmartre", "Welcome Dinner"] },
-        { day: 2, title: "Paris Full Day", description: "Complete Paris exploration.", highlights: ["Eiffel Tower", "Louvre", "Notre Dame Area"] },
-        { day: 3, title: "Brussels & Amsterdam", description: "Visit Brussels. Continue to Amsterdam.", highlights: ["Grand Place", "Manneken Pis", "Amsterdam Canals"] },
-        { day: 4, title: "Amsterdam", description: "Full day Amsterdam tour.", highlights: ["Anne Frank House", "Rijksmuseum", "Canal Cruise"] },
-        { day: 5, title: "Cologne & Frankfurt", description: "Cologne Cathedral. Evening Frankfurt.", highlights: ["Cologne Cathedral", "Rhine Views", "Frankfurt"] },
-        { day: 6, title: "Rhine Valley", description: "Scenic Rhine Valley cruise.", highlights: ["Rhine Cruise", "Castle Views", "Wine Tasting"] },
-        { day: 7, title: "Swiss Alps", description: "Enter Switzerland. Lucerne evening.", highlights: ["Swiss Border", "Lake Lucerne", "Chapel Bridge"] },
-        { day: 8, title: "Jungfraujoch", description: "Top of Europe excursion.", highlights: ["Jungfraujoch", "Ice Palace", "Alpine Views"] },
-        { day: 9, title: "Swiss to Italy", description: "Scenic drive to Milan/Venice.", highlights: ["Alpine Drive", "Italian Border", "Venice Arrival"] },
-        { day: 10, title: "Venice Full Day", description: "Complete Venice experience.", highlights: ["St. Mark's", "Gondola", "Murano Glass"] },
-        { day: 11, title: "Venice to Vienna", description: "Train to Vienna.", highlights: ["Scenic Train", "Vienna Arrival", "Evening Walk"] },
-        { day: 12, title: "Vienna", description: "Imperial Vienna tour.", highlights: ["Schönbrunn Palace", "Ring Road", "Opera House"] },
-        { day: 13, title: "Prague", description: "Day trip to Prague.", highlights: ["Charles Bridge", "Old Town", "Prague Castle"] },
-        { day: 14, title: "Departure", description: "Transfer to Vienna Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "scandinavia-tour",
-      name: "Scandinavian Wonders",
-      duration: "10D/9N",
-      originalPrice: 295000,
-      currentPrice: 265500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800",
-      description: "Explore the Nordic countries - Norway, Sweden, Denmark, and Finland.",
-      highlights: ["Norwegian Fjords", "Northern Lights", "Stockholm", "Copenhagen"],
-      inclusions: ["9 Nights Hotels", "All Breakfasts", "Fjord Cruise", "Nordic Trains"],
-      exclusions: ["Airfare", "Visa", "Optional Activities", "Meals"],
-      itinerary: [
-        { day: 1, title: "Copenhagen Arrival", description: "Arrive Copenhagen. City walk.", highlights: ["Little Mermaid", "Nyhavn", "Tivoli Gardens"] },
-        { day: 2, title: "Copenhagen Full Day", description: "Complete Copenhagen tour.", highlights: ["Rosenborg Castle", "Amalienborg", "Canal Tour"] },
-        { day: 3, title: "To Oslo", description: "Train to Oslo.", highlights: ["Scenic Train", "Oslo Arrival", "Karl Johan Gate"] },
-        { day: 4, title: "Oslo & Fjords", description: "Oslo tour and fjord intro.", highlights: ["Viking Museum", "Vigeland Park", "Opera House"] },
-        { day: 5, title: "Bergen", description: "Train to Bergen. Bryggen walk.", highlights: ["Scenic Railway", "Bryggen Wharf", "Fish Market"] },
-        { day: 6, title: "Fjord Cruise", description: "Full day fjord experience.", highlights: ["Hardangerfjord", "Sognefjord", "Waterfalls"] },
-        { day: 7, title: "To Stockholm", description: "Fly to Stockholm.", highlights: ["Stockholm Arrival", "Gamla Stan", "Evening Walk"] },
-        { day: 8, title: "Stockholm", description: "Full day Stockholm tour.", highlights: ["Vasa Museum", "Royal Palace", "ABBA Museum"] },
-        { day: 9, title: "Helsinki Day Trip", description: "Ferry to Helsinki.", highlights: ["Helsinki Cathedral", "Suomenlinna", "Market Square"] },
-        { day: 10, title: "Departure", description: "Fly out from Stockholm.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
-// USA Packages
-export const usaData: DestinationData = {
-  id: "usa",
-  name: "USA",
-  tagline: "Land of Dreams",
-  description: "Experience the United States - from iconic New York to sunny California, majestic National Parks to thrilling theme parks. A land of endless possibilities.",
-  heroImage: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800"
-  ],
-  packages: [
-    {
-      id: "usa-east-coast",
-      name: "USA East Coast Classic",
-      duration: "10D/9N",
-      originalPrice: 295000,
-      currentPrice: 265500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800",
-      description: "Classic East Coast tour - New York, Washington DC, and Niagara Falls.",
-      highlights: ["Statue of Liberty", "White House", "Niagara Falls", "Times Square"],
-      inclusions: ["9 Nights Hotels", "Daily Breakfast", "Transfers", "City Tours", "Visa Assistance"],
-      exclusions: ["Airfare", "Visa Fee", "Lunch & Dinner", "Tips"],
-      itinerary: [
-        { day: 1, title: "New York Arrival", description: "Arrive JFK. Times Square evening.", highlights: ["JFK Pickup", "Times Square", "Broadway Area"] },
-        { day: 2, title: "NYC Landmarks", description: "Statue of Liberty and Lower Manhattan.", highlights: ["Statue of Liberty", "Ellis Island", "Wall Street"] },
-        { day: 3, title: "NYC Exploration", description: "Empire State, Central Park, and museums.", highlights: ["Empire State", "Central Park", "Metropolitan Museum"] },
-        { day: 4, title: "To Washington DC", description: "Train to capital. Evening monuments.", highlights: ["Amtrak", "Washington Monument", "Lincoln Memorial by Night"] },
-        { day: 5, title: "DC Full Day", description: "Smithsonian and Capitol tour.", highlights: ["Smithsonian Museums", "Capitol Building", "White House View"] },
-        { day: 6, title: "DC to Philadelphia", description: "Visit Philadelphia landmarks.", highlights: ["Liberty Bell", "Independence Hall", "Philly Cheesesteak"] },
-        { day: 7, title: "To Niagara", description: "Drive to Niagara Falls.", highlights: ["Scenic Drive", "Niagara Arrival", "Falls View Dinner"] },
-        { day: 8, title: "Niagara Falls", description: "Full Niagara experience.", highlights: ["Maid of the Mist", "Cave of Winds", "Illumination Show"] },
-        { day: 9, title: "Back to NYC", description: "Return drive to New York.", highlights: ["Scenic Return", "Last Minute Shopping", "Farewell Dinner"] },
-        { day: 10, title: "Departure", description: "Transfer to airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "usa-west-coast",
-      name: "California Dreaming",
-      duration: "9D/8N",
-      originalPrice: 275000,
-      currentPrice: 247500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800",
-      description: "West Coast adventure - Los Angeles, San Francisco, and Las Vegas.",
-      highlights: ["Hollywood", "Golden Gate", "Las Vegas Strip", "Grand Canyon"],
-      inclusions: ["8 Nights Hotels", "Breakfast", "Transfers", "City Tours", "Vegas Show"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Los Angeles Arrival", description: "Arrive LAX. Santa Monica evening.", highlights: ["LAX Pickup", "Santa Monica Pier", "Venice Beach"] },
-        { day: 2, title: "Hollywood Day", description: "Universal Studios full day.", highlights: ["Universal Studios", "Studio Tour", "Harry Potter World"] },
-        { day: 3, title: "LA Sightseeing", description: "Hollywood Walk and Beverly Hills.", highlights: ["Walk of Fame", "Beverly Hills", "Rodeo Drive"] },
-        { day: 4, title: "LA to Las Vegas", description: "Drive to Las Vegas.", highlights: ["Desert Drive", "Vegas Arrival", "Strip Walk"] },
-        { day: 5, title: "Grand Canyon", description: "Day trip to Grand Canyon.", highlights: ["South Rim", "Canyon Views", "Sunset Point"] },
-        { day: 6, title: "Vegas Free Day", description: "Casinos and shows.", highlights: ["Casino Time", "Vegas Shows", "Nightlife"] },
-        { day: 7, title: "To San Francisco", description: "Fly to San Francisco.", highlights: ["Flight", "Fisherman's Wharf", "Pier 39"] },
-        { day: 8, title: "San Francisco", description: "Full day SF exploration.", highlights: ["Golden Gate", "Alcatraz", "Cable Car"] },
-        { day: 9, title: "Departure", description: "Transfer to SFO Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "usa-theme-parks",
-      name: "USA Theme Park Special",
-      duration: "8D/7N",
-      originalPrice: 225000,
-      currentPrice: 191250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      description: "Theme park adventure - Orlando's magical world.",
-      highlights: ["Walt Disney World", "Universal Studios", "SeaWorld", "Kennedy Space"],
-      inclusions: ["7 Nights Hotel", "Breakfast", "All Park Tickets", "Transfers"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Orlando Arrival", description: "Arrive and resort check-in.", highlights: ["Orlando Arrival", "Resort Check-in", "Disney Springs"] },
-        { day: 2, title: "Magic Kingdom", description: "Full day at Magic Kingdom.", highlights: ["Magic Kingdom", "Classic Rides", "Fireworks"] },
-        { day: 3, title: "Epcot & Hollywood", description: "Epcot morning, Hollywood Studios evening.", highlights: ["Epcot World", "Hollywood Studios", "Star Wars"] },
-        { day: 4, title: "Animal Kingdom", description: "Safari and Avatar world.", highlights: ["Animal Kingdom", "Pandora", "Safari Ride"] },
-        { day: 5, title: "Universal Studios", description: "Universal and Islands of Adventure.", highlights: ["Universal", "Harry Potter", "Jurassic World"] },
-        { day: 6, title: "SeaWorld", description: "Marine park experience.", highlights: ["SeaWorld", "Aquatica", "Marine Shows"] },
-        { day: 7, title: "Kennedy Space", description: "NASA Kennedy Space Center.", highlights: ["Space Center", "Rocket Garden", "Shuttle Experience"] },
-        { day: 8, title: "Departure", description: "Transfer to Orlando Airport.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "usa-national-parks",
-      name: "USA National Parks Tour",
-      duration: "10D/9N",
-      originalPrice: 285000,
-      currentPrice: 256500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      description: "Nature's wonders - Grand Canyon, Yellowstone, and more.",
-      highlights: ["Grand Canyon", "Yellowstone", "Monument Valley", "Antelope Canyon"],
-      inclusions: ["9 Nights Hotels/Lodges", "Breakfast", "4x4 Transfers", "Park Entry"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Las Vegas Arrival", description: "Arrive and orientation.", highlights: ["Vegas Arrival", "Trip Briefing", "Evening Walk"] },
-        { day: 2, title: "To Grand Canyon", description: "Drive to South Rim.", highlights: ["Desert Drive", "Grand Canyon", "Sunset Views"] },
-        { day: 3, title: "Grand Canyon", description: "Full day exploration.", highlights: ["Rim Trail", "Viewpoints", "Sunset Point"] },
-        { day: 4, title: "Monument Valley", description: "Drive to Monument Valley.", highlights: ["Navajo Nation", "Monument Valley", "Jeep Tour"] },
-        { day: 5, title: "Antelope Canyon", description: "Slot canyon experience.", highlights: ["Antelope Canyon", "Horseshoe Bend", "Photography"] },
-        { day: 6, title: "Zion National Park", description: "Explore Zion's beauty.", highlights: ["Angels Landing", "The Narrows", "Scenic Drive"] },
-        { day: 7, title: "Bryce Canyon", description: "Visit Bryce Canyon.", highlights: ["Hoodoos", "Sunrise Point", "Rim Walk"] },
-        { day: 8, title: "To Salt Lake", description: "Drive to Salt Lake City.", highlights: ["Scenic Drive", "Salt Lake City", "Temple Square"] },
-        { day: 9, title: "Yellowstone Intro", description: "Enter Yellowstone.", highlights: ["Old Faithful", "Geysers", "Wildlife Spotting"] },
-        { day: 10, title: "Departure", description: "Fly from Jackson Hole.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "usa-honeymoon",
-      name: "USA Romantic Escape",
-      duration: "9D/8N",
-      originalPrice: 345000,
-      currentPrice: 293250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800",
-      description: "Romantic USA honeymoon - New York, San Francisco, and Hawaii.",
-      highlights: ["Broadway Show", "Golden Gate", "Hawaii Beaches", "Helicopter Tour"],
-      inclusions: ["8 Nights Luxury Hotels", "All Meals", "Private Transfers", "Romantic Experiences"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "NYC Romance", description: "Arrive to decorated suite.", highlights: ["Luxury Suite", "Central Park Walk", "Romantic Dinner"] },
-        { day: 2, title: "NYC Experience", description: "Private city tour and Broadway.", highlights: ["Private Tour", "Empire State Sunset", "Broadway Show"] },
-        { day: 3, title: "To San Francisco", description: "Fly to San Francisco.", highlights: ["Flight", "Fisherman's Wharf", "Seafood Dinner"] },
-        { day: 4, title: "SF Romance", description: "Private wine country tour.", highlights: ["Napa Valley", "Wine Tasting", "Vineyard Dinner"] },
-        { day: 5, title: "To Hawaii", description: "Fly to Maui.", highlights: ["Flight", "Beach Resort", "Sunset Cocktails"] },
-        { day: 6, title: "Maui Beach", description: "Private beach day.", highlights: ["Private Beach", "Snorkeling", "Beach Dinner"] },
-        { day: 7, title: "Helicopter Tour", description: "Scenic helicopter experience.", highlights: ["Helicopter Tour", "Volcano Views", "Waterfalls"] },
-        { day: 8, title: "Relaxation", description: "Spa day and luau dinner.", highlights: ["Couple Spa", "Luau Dinner", "Hawaiian Music"] },
-        { day: 9, title: "Departure", description: "Farewell and departure.", highlights: ["Lei Farewell", "Departure"] }
-      ]
-    }
-  ]
-};
-
-// Switzerland Packages
-export const switzerlandData: DestinationData = {
-  id: "switzerland",
-  name: "Switzerland",
-  tagline: "Heaven on Earth",
-  description: "Experience the pristine beauty of Switzerland - majestic Alps, crystal-clear lakes, charming villages, and world-class chocolate and cheese. A true Alpine paradise.",
-  heroImage: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800",
-    "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?w=800",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
-  ],
-  packages: [
-    {
-      id: "swiss-complete",
-      name: "Complete Switzerland",
-      duration: "8D/7N",
-      originalPrice: 225000,
-      currentPrice: 191250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800",
-      description: "Complete Switzerland experience with all major destinations.",
-      highlights: ["Jungfraujoch", "Matterhorn", "Lake Geneva", "Glacier Express"],
-      inclusions: ["7 Nights Hotels", "All Breakfasts", "Swiss Pass", "Mountain Excursions"],
-      exclusions: ["Airfare", "Visa", "Lunches & Dinners"],
-      itinerary: [
-        { day: 1, title: "Zurich Arrival", description: "Arrive and explore Zurich.", highlights: ["Zurich Airport", "Old Town", "Lake Zurich"] },
-        { day: 2, title: "Lucerne Day", description: "Day in Lucerne with Mt. Pilatus.", highlights: ["Chapel Bridge", "Mt. Pilatus", "Lion Monument"] },
-        { day: 3, title: "To Interlaken", description: "Train to Interlaken.", highlights: ["Scenic Train", "Interlaken", "Adventure Options"] },
-        { day: 4, title: "Jungfraujoch", description: "Top of Europe excursion.", highlights: ["Jungfraujoch", "Ice Palace", "Sphinx Observatory"] },
-        { day: 5, title: "Glacier Express", description: "Iconic train to Zermatt.", highlights: ["Glacier Express", "Alpine Views", "Zermatt Arrival"] },
-        { day: 6, title: "Matterhorn Day", description: "Gornergrat and Matterhorn views.", highlights: ["Gornergrat", "Matterhorn", "Alpine Town"] },
-        { day: 7, title: "To Geneva", description: "Train to Geneva.", highlights: ["Scenic Route", "Lake Geneva", "Jet d'Eau"] },
-        { day: 8, title: "Departure", description: "Geneva departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "swiss-adventure",
-      name: "Swiss Alpine Adventure",
-      duration: "7D/6N",
-      originalPrice: 195000,
-      currentPrice: 165750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?w=800",
-      description: "Adventure-focused Switzerland tour with outdoor activities.",
-      highlights: ["Paragliding", "Skiing/Hiking", "Bungee Jumping", "Glacier Walks"],
-      inclusions: ["6 Nights Hotels", "Breakfast", "All Activities", "Equipment", "Guides"],
-      exclusions: ["Airfare", "Visa", "Personal Expenses"],
-      itinerary: [
-        { day: 1, title: "Zurich to Interlaken", description: "Arrive and transfer to adventure hub.", highlights: ["Interlaken Arrival", "Activity Briefing", "Town Exploration"] },
-        { day: 2, title: "Paragliding Day", description: "Tandem paragliding experience.", highlights: ["Paragliding", "Alpine Views", "Lake Landing"] },
-        { day: 3, title: "Jungfraujoch", description: "Top of Europe and snow activities.", highlights: ["Jungfraujoch", "Snow Hiking", "Ice Fun"] },
-        { day: 4, title: "Canyoning", description: "Canyoning adventure.", highlights: ["Canyoning", "Waterfall Jumps", "Natural Pools"] },
-        { day: 5, title: "Zermatt Adventure", description: "Matterhorn views and hiking.", highlights: ["Zermatt", "Alpine Hiking", "Matterhorn Views"] },
-        { day: 6, title: "Glacier Walk", description: "Guided glacier experience.", highlights: ["Glacier Walk", "Ice Caves", "Alpine Photography"] },
-        { day: 7, title: "Departure", description: "Transfer to Geneva.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "swiss-honeymoon",
-      name: "Swiss Romantic Escape",
-      duration: "7D/6N",
-      originalPrice: 275000,
-      currentPrice: 233750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      description: "Romantic Switzerland honeymoon with luxury experiences.",
-      highlights: ["Private Cabins", "Scenic Trains", "Candlelight Dinners", "Couple Spa"],
-      inclusions: ["6 Nights Luxury Hotels", "All Meals", "Private Transfers", "Romantic Setups"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Romantic Arrival", description: "Arrive Zurich. Private transfer to Lucerne.", highlights: ["Private Transfer", "Lake View Room", "Welcome Dinner"] },
-        { day: 2, title: "Lucerne Romance", description: "Boat cruise and mountain sunset.", highlights: ["Private Boat", "Mt. Rigi Sunset", "Candlelight Dinner"] },
-        { day: 3, title: "To Interlaken", description: "First class train to Interlaken.", highlights: ["Scenic Train", "Luxury Hotel", "Couple Spa"] },
-        { day: 4, title: "Jungfraujoch", description: "Private Top of Europe experience.", highlights: ["Private Guide", "Jungfraujoch", "Fondue Dinner"] },
-        { day: 5, title: "Glacier Express", description: "Iconic train journey.", highlights: ["First Class", "Glacier Express", "Zermatt Arrival"] },
-        { day: 6, title: "Matterhorn Romance", description: "Gornergrat and mountain dinner.", highlights: ["Matterhorn Sunrise", "Spa Day", "Mountain Restaurant Dinner"] },
-        { day: 7, title: "Departure", description: "Leisurely departure.", highlights: ["Breakfast", "Departure"] }
-      ]
-    },
-    {
-      id: "swiss-family",
-      name: "Swiss Family Fun",
-      duration: "7D/6N",
-      originalPrice: 235000,
-      currentPrice: 199750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800",
-      description: "Family-friendly Switzerland with kid-friendly activities.",
-      highlights: ["Chocolate Factory", "Swiss Transport Museum", "Easy Hikes", "Train Rides"],
-      inclusions: ["6 Nights Family Hotels", "Breakfast", "Swiss Pass", "Activity Tickets"],
-      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Zurich Arrival", description: "Arrive and explore kid-friendly Zurich.", highlights: ["Zoo Zurich", "Chocolate Store", "Lake Walk"] },
-        { day: 2, title: "Lucerne Fun", description: "Transport Museum and lake activities.", highlights: ["Swiss Transport Museum", "Boat Ride", "Old Town"] },
-        { day: 3, title: "Mt. Pilatus", description: "Cogwheel train adventure.", highlights: ["Cogwheel Railway", "Mt. Pilatus", "Dragon Path"] },
-        { day: 4, title: "Interlaken", description: "Adventure activities for family.", highlights: ["Trotti Bike", "Easy Hikes", "Lake Boat"] },
-        { day: 5, title: "Jungfraujoch", description: "Top of Europe experience.", highlights: ["Train Ride", "Snow Fun", "Ice Palace"] },
-        { day: 6, title: "Gruyères Day", description: "Cheese and chocolate factory.", highlights: ["Cheese Factory", "Chocolate Factory", "Castle Visit"] },
-        { day: 7, title: "Departure", description: "Geneva departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "swiss-winter",
-      name: "Swiss Winter Wonderland",
-      duration: "6D/5N",
-      originalPrice: 185000,
-      currentPrice: 157250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?w=800",
-      description: "Winter skiing and snow activities in Swiss Alps.",
-      highlights: ["Skiing", "Snowboarding", "Winter Trains", "Cozy Chalets"],
-      inclusions: ["5 Nights Hotels", "Breakfast", "Ski Pass", "Equipment Rental"],
-      exclusions: ["Airfare", "Visa", "Ski Lessons"],
-      itinerary: [
-        { day: 1, title: "Zurich to Zermatt", description: "Arrive and transfer to ski resort.", highlights: ["Scenic Transfer", "Zermatt Check-in", "Equipment Fitting"] },
-        { day: 2, title: "Skiing Day 1", description: "Full day on Matterhorn slopes.", highlights: ["Skiing", "Alpine Views", "Après-Ski"] },
-        { day: 3, title: "Skiing Day 2", description: "Explore different pistes.", highlights: ["Advanced Slopes", "Snowboarding Option", "Mountain Lunch"] },
-        { day: 4, title: "Glacier Paradise", description: "Matterhorn Glacier Paradise visit.", highlights: ["Glacier Palace", "Highest Viewpoint", "Snow Park"] },
-        { day: 5, title: "Free Ski Day", description: "Ski or explore Zermatt.", highlights: ["Skiing", "Village Walk", "Spa Option"] },
-        { day: 6, title: "Departure", description: "Transfer to Geneva.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
-// France Packages
-export const franceData: DestinationData = {
-  id: "france",
-  name: "France",
-  tagline: "Art, Culture & Romance",
-  description: "Experience the elegance of France - from romantic Paris to the lavender fields of Provence, charming Loire Valley to the glamorous Riviera. Bon voyage!",
-  heroImage: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800",
-    "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
-    "https://images.unsplash.com/photo-1533929736562-7c335c1c0a5d?w=800"
-  ],
-  packages: [
-    {
-      id: "france-paris-special",
-      name: "Paris Special",
-      duration: "5D/4N",
-      originalPrice: 145000,
-      currentPrice: 123250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800",
-      description: "Complete Paris experience with all iconic attractions.",
-      highlights: ["Eiffel Tower", "Louvre Museum", "Versailles", "Seine Cruise"],
-      inclusions: ["4 Nights Hotel", "Breakfast", "City Tour", "Museum Passes", "Transfers"],
-      exclusions: ["Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Paris Arrival", description: "Arrive and Eiffel Tower evening.", highlights: ["CDG Pickup", "Eiffel Tower Night", "Seine Walk"] },
-        { day: 2, title: "Paris Highlights", description: "Louvre and city landmarks.", highlights: ["Louvre Museum", "Notre Dame Area", "Latin Quarter"] },
-        { day: 3, title: "Versailles Day", description: "Full day Palace of Versailles.", highlights: ["Versailles Palace", "Gardens", "Trianon"] },
-        { day: 4, title: "Paris Exploration", description: "Montmartre and shopping.", highlights: ["Sacré-Cœur", "Montmartre", "Champs-Élysées Shopping"] },
-        { day: 5, title: "Departure", description: "Seine cruise and departure.", highlights: ["Seine Cruise", "Departure"] }
-      ]
-    },
-    {
-      id: "france-complete",
-      name: "Complete France Tour",
-      duration: "10D/9N",
-      originalPrice: 285000,
-      currentPrice: 256500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
-      description: "Complete France experience - Paris, Loire, Provence, and Riviera.",
-      highlights: ["Paris Icons", "Loire Castles", "Provence Lavender", "Nice Beaches"],
-      inclusions: ["9 Nights Hotels", "Breakfast", "TGV Trains", "Castle Entries", "Tours"],
-      exclusions: ["Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Paris Arrival", description: "Arrive Paris. City orientation.", highlights: ["CDG Pickup", "Champs-Élysées", "Arc de Triomphe"] },
-        { day: 2, title: "Paris Full Day", description: "Complete Paris landmarks.", highlights: ["Eiffel Tower", "Louvre", "Musée d'Orsay"] },
-        { day: 3, title: "Versailles", description: "Palace and gardens.", highlights: ["Versailles", "Marie Antoinette Estate", "Gardens"] },
-        { day: 4, title: "Loire Valley", description: "TGV to Loire. Castle tour.", highlights: ["Chambord", "Chenonceau", "Wine Tasting"] },
-        { day: 5, title: "Loire Exploration", description: "More castles and villages.", highlights: ["Amboise", "Villandry Gardens", "Local Markets"] },
-        { day: 6, title: "To Provence", description: "TGV to Avignon.", highlights: ["TGV South", "Avignon Arrival", "Pope's Palace"] },
-        { day: 7, title: "Provence Day", description: "Lavender fields and villages.", highlights: ["Luberon Villages", "Lavender Fields", "Local Markets"] },
-        { day: 8, title: "To Nice", description: "Train to French Riviera.", highlights: ["Coastal Train", "Nice Arrival", "Promenade Walk"] },
-        { day: 9, title: "Riviera", description: "Nice, Monaco, and Cannes.", highlights: ["Monaco", "Monte Carlo", "Cannes"] },
-        { day: 10, title: "Departure", description: "Nice departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "france-honeymoon",
-      name: "France Romantic Escape",
-      duration: "8D/7N",
-      originalPrice: 345000,
-      currentPrice: 293250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1533929736562-7c335c1c0a5d?w=800",
-      description: "Most romantic France honeymoon with Paris and Provence.",
-      highlights: ["Eiffel Tower Dinner", "Loire Castle Stay", "Provence Balloon", "Private Tours"],
-      inclusions: ["7 Nights Luxury Hotels", "All Meals", "Private Transfers", "Romantic Experiences"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Paris Romance", description: "Arrive to decorated suite.", highlights: ["Flower Suite", "Seine Sunset Cruise", "Champagne"] },
-        { day: 2, title: "Paris Love", description: "Private Paris tour.", highlights: ["Private Tour", "Eiffel Lunch", "Montmartre Evening"] },
-        { day: 3, title: "Eiffel Dinner", description: "Special Eiffel Tower dinner.", highlights: ["Shopping", "Spa", "Eiffel Tower Dinner"] },
-        { day: 4, title: "Loire Castle", description: "Stay in a real castle.", highlights: ["Castle Hotel", "Gardens", "Royal Dinner"] },
-        { day: 5, title: "To Provence", description: "Private transfer to Provence.", highlights: ["Scenic Drive", "Lavender Stop", "Boutique Hotel"] },
-        { day: 6, title: "Hot Air Balloon", description: "Balloon over lavender fields.", highlights: ["Hot Air Balloon", "Champagne", "Romantic Dinner"] },
-        { day: 7, title: "Provence Day", description: "Village exploration.", highlights: ["Luberon Villages", "Cooking Class", "Sunset Picnic"] },
-        { day: 8, title: "Departure", description: "Marseille departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "france-wine",
-      name: "France Wine Tour",
-      duration: "7D/6N",
-      originalPrice: 225000,
-      currentPrice: 191250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
-      description: "Wine lover's France tour through Bordeaux, Burgundy, and Champagne.",
-      highlights: ["Champagne Houses", "Bordeaux Châteaux", "Burgundy Vineyards", "Wine Tastings"],
-      inclusions: ["6 Nights Hotels", "Breakfast", "Wine Tours", "Tastings", "Transfers"],
-      exclusions: ["Airfare", "Visa", "Wine Purchases"],
-      itinerary: [
-        { day: 1, title: "Paris to Champagne", description: "Arrive and drive to Champagne.", highlights: ["Champagne Arrival", "Moët & Chandon", "Champagne Dinner"] },
-        { day: 2, title: "Champagne Day", description: "Full Champagne exploration.", highlights: ["Veuve Clicquot", "Reims Cathedral", "Tastings"] },
-        { day: 3, title: "To Burgundy", description: "Drive to Burgundy wine country.", highlights: ["Dijon", "Beaune", "Wine Auction House"] },
-        { day: 4, title: "Burgundy Wines", description: "Grand Cru vineyard visits.", highlights: ["Vineyard Tours", "Wine Tastings", "Local Cuisine"] },
-        { day: 5, title: "To Bordeaux", description: "TGV to Bordeaux.", highlights: ["TGV Ride", "Bordeaux City", "Wine Bar Dinner"] },
-        { day: 6, title: "Bordeaux Châteaux", description: "Médoc and Saint-Émilion.", highlights: ["Médoc", "Saint-Émilion", "Grand Cru Tastings"] },
-        { day: 7, title: "Departure", description: "Bordeaux departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "france-riviera",
-      name: "French Riviera Escape",
-      duration: "6D/5N",
-      originalPrice: 195000,
-      currentPrice: 165750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1533929736562-7c335c1c0a5d?w=800",
-      description: "Glamorous French Riviera experience - Nice, Monaco, Cannes.",
-      highlights: ["Nice Beaches", "Monaco Casino", "Cannes Croisette", "St. Tropez"],
-      inclusions: ["5 Nights Luxury Hotel", "Breakfast", "Transfers", "Tours"],
-      exclusions: ["Airfare", "Visa", "Casino Money", "Meals"],
-      itinerary: [
-        { day: 1, title: "Nice Arrival", description: "Arrive Nice. Promenade evening.", highlights: ["Nice Arrival", "Promenade des Anglais", "Old Town Dinner"] },
-        { day: 2, title: "Nice Exploration", description: "Nice full day tour.", highlights: ["Old Nice", "Cours Saleya Market", "Castle Hill"] },
-        { day: 3, title: "Monaco Day", description: "Day trip to Monaco.", highlights: ["Monte Carlo Casino", "Prince's Palace", "Oceanographic Museum"] },
-        { day: 4, title: "Cannes & St. Tropez", description: "Riviera glamour day.", highlights: ["Cannes Croisette", "Film Festival Palace", "St. Tropez"] },
-        { day: 5, title: "Beach Day", description: "Relaxation on Riviera beaches.", highlights: ["Beach Clubs", "Water Sports", "Sunset Dinner"] },
-        { day: 6, title: "Departure", description: "Nice departure.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
-// Turkey Packages
-export const turkeyData: DestinationData = {
-  id: "turkey",
-  name: "Turkey",
-  tagline: "Where East Meets West",
-  description: "Discover Turkey - where ancient civilizations meet modern culture. From Istanbul's mosques to Cappadocia's fairy chimneys, Turkish Riviera to ancient ruins.",
-  heroImage: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800",
-    "https://images.unsplash.com/photo-1545093149-618ce3bcf49d?w=800",
-    "https://images.unsplash.com/photo-1532763303805-529d595877c5?w=800"
-  ],
-  packages: [
-    {
-      id: "turkey-highlights",
-      name: "Turkey Highlights",
-      duration: "8D/7N",
-      originalPrice: 145000,
-      currentPrice: 123250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800",
-      description: "Complete Turkey tour - Istanbul, Cappadocia, and Pamukkale.",
-      highlights: ["Blue Mosque", "Hot Air Balloon", "Pamukkale Travertines", "Grand Bazaar"],
-      inclusions: ["7 Nights Hotels", "Breakfast", "Domestic Flights", "Tours", "Transfers"],
-      exclusions: ["International Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Istanbul Arrival", description: "Arrive and explore Sultanahmet.", highlights: ["Istanbul Arrival", "Sultanahmet", "Welcome Dinner"] },
-        { day: 2, title: "Istanbul Classic", description: "Full day Istanbul landmarks.", highlights: ["Blue Mosque", "Hagia Sophia", "Topkapi Palace"] },
-        { day: 3, title: "Bosphorus", description: "Bosphorus cruise and bazaars.", highlights: ["Bosphorus Cruise", "Grand Bazaar", "Spice Bazaar"] },
-        { day: 4, title: "To Cappadocia", description: "Fly to magical Cappadocia.", highlights: ["Flight", "Goreme Check-in", "Sunset Point"] },
-        { day: 5, title: "Cappadocia", description: "Hot air balloon and exploration.", highlights: ["Hot Air Balloon", "Fairy Chimneys", "Underground City"] },
-        { day: 6, title: "To Pamukkale", description: "Drive to Pamukkale.", highlights: ["Scenic Drive", "Konya Stop", "Pamukkale Arrival"] },
-        { day: 7, title: "Pamukkale", description: "Travertines and Hierapolis.", highlights: ["Cotton Castle", "Ancient Hierapolis", "Thermal Pools"] },
-        { day: 8, title: "Departure", description: "Fly to Istanbul for departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "turkey-cappadocia",
-      name: "Cappadocia Special",
-      duration: "4D/3N",
-      originalPrice: 75000,
-      currentPrice: 63750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1545093149-618ce3bcf49d?w=800",
-      description: "Focused Cappadocia experience with hot air balloon.",
-      highlights: ["Hot Air Balloon", "Cave Hotels", "Underground City", "Valley Hikes"],
-      inclusions: ["3 Nights Cave Hotel", "Breakfast", "Balloon Ride", "Tours", "Transfers"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Arrival", description: "Arrive Cappadocia. Sunset views.", highlights: ["Airport Pickup", "Cave Hotel", "Sunset Viewpoint"] },
-        { day: 2, title: "Balloon & North", description: "Early balloon ride. North Cappadocia tour.", highlights: ["Hot Air Balloon", "Goreme Museum", "Fairy Chimneys"] },
-        { day: 3, title: "South Tour", description: "Underground city and valleys.", highlights: ["Derinkuyu City", "Pigeon Valley", "Pottery Demo"] },
-        { day: 4, title: "Departure", description: "Morning free. Airport transfer.", highlights: ["Souvenir Shopping", "Departure"] }
-      ]
-    },
-    {
-      id: "turkey-honeymoon",
-      name: "Turkey Romantic Escape",
-      duration: "8D/7N",
-      originalPrice: 195000,
-      currentPrice: 165750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1532763303805-529d595877c5?w=800",
-      description: "Romantic Turkey honeymoon with luxury experiences.",
-      highlights: ["Private Balloon", "Cave Suite", "Bosphorus Dinner", "Turkish Hammam"],
-      inclusions: ["7 Nights Luxury Hotels", "All Meals", "Private Tours", "Romantic Setups"],
-      exclusions: ["Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Istanbul Romance", description: "Arrive to Bosphorus view suite.", highlights: ["Luxury Hotel", "Bosphorus View", "Romantic Dinner"] },
-        { day: 2, title: "Istanbul Love", description: "Private city tour.", highlights: ["Private Guide", "Hidden Gems", "Rooftop Dinner"] },
-        { day: 3, title: "Bosphorus Cruise", description: "Private yacht experience.", highlights: ["Private Yacht", "Sunset Cruise", "On-board Dinner"] },
-        { day: 4, title: "To Cappadocia", description: "Fly to cave hotel.", highlights: ["Flight", "Cave Suite", "Pool Time"] },
-        { day: 5, title: "Private Balloon", description: "VIP balloon experience.", highlights: ["Private Balloon", "Champagne", "Couples Photos"] },
-        { day: 6, title: "Cappadocia Day", description: "Private exploration.", highlights: ["Valley Walk", "Turkish Bath", "Candle Dinner"] },
-        { day: 7, title: "Bodrum Beach", description: "Fly to Turkish Riviera.", highlights: ["Bodrum", "Beach Resort", "Sunset Dinner"] },
-        { day: 8, title: "Departure", description: "Beach morning and departure.", highlights: ["Beach", "Departure"] }
-      ]
-    },
-    {
-      id: "turkey-aegean",
-      name: "Turkey Aegean Coast",
-      duration: "7D/6N",
-      originalPrice: 135000,
-      currentPrice: 114750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800",
-      description: "Ancient ruins and beaches of Turkey's Aegean coast.",
-      highlights: ["Ephesus", "Bodrum", "Pamukkale", "Turkish Beaches"],
-      inclusions: ["6 Nights Hotels", "Breakfast", "Tours", "Transfers"],
-      exclusions: ["Airfare", "Lunch & Dinner", "Optional Activities"],
-      itinerary: [
-        { day: 1, title: "Izmir Arrival", description: "Arrive Izmir.", highlights: ["Izmir Arrival", "Kordon Walk", "Seafood Dinner"] },
-        { day: 2, title: "Ephesus", description: "Ancient Ephesus exploration.", highlights: ["Ephesus Ruins", "Library of Celsus", "House of Virgin Mary"] },
-        { day: 3, title: "Pamukkale", description: "Cotton castle travertines.", highlights: ["Pamukkale", "Hierapolis", "Antique Pool"] },
-        { day: 4, title: "To Bodrum", description: "Drive to Bodrum.", highlights: ["Scenic Drive", "Bodrum Castle", "Marina Walk"] },
-        { day: 5, title: "Bodrum Beach", description: "Beach and water activities.", highlights: ["Beach Day", "Boat Trip", "Nightlife"] },
-        { day: 6, title: "Greek Islands", description: "Optional day trip to Greek island.", highlights: ["Kos Island Option", "Beach Time", "Farewell Dinner"] },
-        { day: 7, title: "Departure", description: "Bodrum departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "turkey-adventure",
-      name: "Turkey Adventure Tour",
-      duration: "9D/8N",
-      originalPrice: 165000,
-      currentPrice: 140250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1545093149-618ce3bcf49d?w=800",
-      description: "Adventure-packed Turkey with trekking and outdoor activities.",
-      highlights: ["Lycian Way Trek", "Paragliding", "Canyon Rafting", "Mountain Biking"],
-      inclusions: ["8 Nights Hotels", "Breakfast", "All Activities", "Equipment", "Guides"],
-      exclusions: ["Airfare", "Personal Gear", "Tips"],
-      itinerary: [
-        { day: 1, title: "Antalya Arrival", description: "Arrive and briefing.", highlights: ["Antalya Arrival", "Old Town", "Briefing"] },
-        { day: 2, title: "Lycian Way Day 1", description: "Begin coastal trek.", highlights: ["Trek Start", "Coastal Views", "Ancient Ruins"] },
-        { day: 3, title: "Lycian Way Day 2", description: "Continue trekking.", highlights: ["Mountain Trail", "Villages", "Swimming Stop"] },
-        { day: 4, title: "Olympos", description: "Reach Olympos. Evening flames.", highlights: ["Olympos Ruins", "Chimera Flames", "Beach Camp"] },
-        { day: 5, title: "Paragliding", description: "Ölüdeniz paragliding.", highlights: ["Drive to Fethiye", "Paragliding", "Blue Lagoon"] },
-        { day: 6, title: "Canyoning", description: "Saklikent Canyon adventure.", highlights: ["Saklikent Canyon", "River Walk", "Mud Baths"] },
-        { day: 7, title: "Cappadocia", description: "Fly to Cappadocia.", highlights: ["Flight", "ATV Ride", "Sunset Valleys"] },
-        { day: 8, title: "Balloon & Bike", description: "Balloon and mountain biking.", highlights: ["Hot Air Balloon", "Mountain Biking", "Underground City"] },
-        { day: 9, title: "Departure", description: "Departure from Cappadocia.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
-// Australia Packages
-export const australiaData: DestinationData = {
-  id: "australia",
-  name: "Australia",
-  tagline: "Land Down Under",
-  description: "Experience Australia - from the iconic Sydney Opera House to the Great Barrier Reef, stunning Uluru to vibrant Melbourne. An adventure like no other.",
-  heroImage: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1920",
-  bannerImages: [
-    "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800",
-    "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800",
-    "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=800"
-  ],
-  packages: [
-    {
-      id: "australia-highlights",
-      name: "Australia Highlights",
-      duration: "10D/9N",
-      originalPrice: 385000,
-      currentPrice: 346500,
-      discount: 10,
-      image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800",
-      description: "Best of Australia - Sydney, Melbourne, and Great Barrier Reef.",
-      highlights: ["Sydney Opera House", "Great Barrier Reef", "Great Ocean Road", "Harbour Bridge"],
-      inclusions: ["9 Nights Hotels", "Breakfast", "Domestic Flights", "Tours", "Transfers"],
-      exclusions: ["International Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Sydney Arrival", description: "Arrive Sydney. Harbour views.", highlights: ["Sydney Arrival", "Harbour Walk", "Opera House View"] },
-        { day: 2, title: "Sydney Day", description: "Full day Sydney exploration.", highlights: ["Opera House Tour", "Harbour Bridge", "Bondi Beach"] },
-        { day: 3, title: "Blue Mountains", description: "Day trip to Blue Mountains.", highlights: ["Three Sisters", "Scenic Railway", "Rainforest Walk"] },
-        { day: 4, title: "To Cairns", description: "Fly to Cairns.", highlights: ["Flight", "Cairns Arrival", "Esplanade Walk"] },
-        { day: 5, title: "Great Barrier Reef", description: "Full day reef experience.", highlights: ["Reef Cruise", "Snorkeling", "Coral Views"] },
-        { day: 6, title: "Rainforest Day", description: "Daintree Rainforest exploration.", highlights: ["Daintree", "Cape Tribulation", "Wildlife Spotting"] },
-        { day: 7, title: "To Melbourne", description: "Fly to Melbourne.", highlights: ["Flight", "Melbourne Lanes", "Evening Dining"] },
-        { day: 8, title: "Melbourne City", description: "Full day Melbourne tour.", highlights: ["Federation Square", "Street Art", "Markets"] },
-        { day: 9, title: "Great Ocean Road", description: "Iconic coastal drive.", highlights: ["Great Ocean Road", "12 Apostles", "Koalas"] },
-        { day: 10, title: "Departure", description: "Melbourne departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "australia-wildlife",
-      name: "Australia Wildlife Adventure",
-      duration: "9D/8N",
-      originalPrice: 345000,
-      currentPrice: 293250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800",
-      description: "Wildlife-focused tour - kangaroos, koalas, and unique Aussie animals.",
-      highlights: ["Kangaroo Island", "Koala Encounters", "Whale Watching", "Wildlife Sanctuaries"],
-      inclusions: ["8 Nights Hotels", "Breakfast", "Wildlife Tours", "Domestic Flights"],
-      exclusions: ["International Airfare", "Visa", "Meals except breakfast"],
-      itinerary: [
-        { day: 1, title: "Adelaide Arrival", description: "Arrive and orientation.", highlights: ["Adelaide Arrival", "City Tour", "Wine Region"] },
-        { day: 2, title: "Kangaroo Island", description: "Ferry to Kangaroo Island.", highlights: ["Ferry Ride", "Seal Colony", "Kangaroo Spotting"] },
-        { day: 3, title: "Island Wildlife", description: "Full wildlife exploration.", highlights: ["Koala Walk", "Echidnas", "Remarkable Rocks"] },
-        { day: 4, title: "To Sydney", description: "Return and fly to Sydney.", highlights: ["Return", "Sydney Flight", "Evening Walk"] },
-        { day: 5, title: "Taronga Zoo", description: "Sydney zoo and wildlife park.", highlights: ["Taronga Zoo", "Featherdale Park", "Koala Photos"] },
-        { day: 6, title: "To Cairns", description: "Fly to tropical north.", highlights: ["Flight", "Wildlife Night Walk", "Nature Tour"] },
-        { day: 7, title: "Reef & Wildlife", description: "Reef wildlife experience.", highlights: ["Reef Snorkeling", "Sea Turtles", "Tropical Fish"] },
-        { day: 8, title: "Crocodile Safari", description: "Crocodile and wildlife cruise.", highlights: ["Crocodile Cruise", "Bird Watching", "Mangroves"] },
-        { day: 9, title: "Departure", description: "Cairns departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "australia-uluru",
-      name: "Australia Outback Explorer",
-      duration: "8D/7N",
-      originalPrice: 325000,
-      currentPrice: 276250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=800",
-      description: "Outback adventure featuring Uluru and Red Centre.",
-      highlights: ["Uluru Sunrise", "Kata Tjuta", "Field of Light", "Kings Canyon"],
-      inclusions: ["7 Nights Hotels", "Breakfast", "Outback Tours", "Domestic Flights"],
-      exclusions: ["International Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Sydney Arrival", description: "Arrive Sydney.", highlights: ["Sydney Arrival", "Harbour Walk", "Welcome Dinner"] },
-        { day: 2, title: "Sydney Day", description: "Sydney highlights tour.", highlights: ["Opera House", "Harbour Cruise", "Bondi Beach"] },
-        { day: 3, title: "To Uluru", description: "Fly to Ayers Rock.", highlights: ["Outback Flight", "Uluru Sunset", "Field of Light"] },
-        { day: 4, title: "Uluru Sunrise", description: "Sacred rock at sunrise.", highlights: ["Uluru Sunrise", "Base Walk", "Cultural Centre"] },
-        { day: 5, title: "Kata Tjuta", description: "Valley of the Winds.", highlights: ["Kata Tjuta", "Valley Walk", "Sunset Views"] },
-        { day: 6, title: "Kings Canyon", description: "Kings Canyon rim walk.", highlights: ["Kings Canyon", "Rim Walk", "Garden of Eden"] },
-        { day: 7, title: "To Melbourne", description: "Fly to Melbourne.", highlights: ["Flight", "Melbourne Lanes", "Final Dinner"] },
-        { day: 8, title: "Departure", description: "Melbourne departure.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "australia-honeymoon",
-      name: "Australia Romantic Escape",
-      duration: "10D/9N",
-      originalPrice: 495000,
-      currentPrice: 420750,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800",
-      description: "Romantic Australia honeymoon with luxury experiences.",
-      highlights: ["Harbour Suite", "Private Reef Tour", "Uluru Dinner", "Wine Country"],
-      inclusions: ["9 Nights Luxury Hotels", "All Meals", "Private Tours", "Romantic Experiences"],
-      exclusions: ["International Airfare", "Visa", "Personal Shopping"],
-      itinerary: [
-        { day: 1, title: "Sydney Romance", description: "Arrive to harbour view suite.", highlights: ["Luxury Suite", "Champagne Welcome", "Opera House Dinner"] },
-        { day: 2, title: "Sydney Love", description: "Private harbour experience.", highlights: ["Private Yacht", "Bondi Walk", "Cliff Top Dinner"] },
-        { day: 3, title: "Hunter Valley", description: "Wine country romance.", highlights: ["Wine Tasting", "Vineyard Lunch", "Hot Air Balloon"] },
-        { day: 4, title: "To Cairns", description: "Fly to tropical paradise.", highlights: ["Flight", "Beach Resort", "Sunset Cocktails"] },
-        { day: 5, title: "Private Reef", description: "Private reef experience.", highlights: ["Private Boat", "Snorkeling", "Beach Picnic"] },
-        { day: 6, title: "Rainforest Spa", description: "Spa in the rainforest.", highlights: ["Daintree Lodge", "Couples Spa", "Nature Walk"] },
-        { day: 7, title: "To Uluru", description: "Fly to the Red Centre.", highlights: ["Flight", "Desert Resort", "Sunset Viewing"] },
-        { day: 8, title: "Uluru Experience", description: "Private Uluru experience.", highlights: ["Private Tour", "Sounds of Silence Dinner", "Star Gazing"] },
-        { day: 9, title: "To Melbourne", description: "Fly to Melbourne.", highlights: ["Flight", "Great Ocean Road", "Farewell Dinner"] },
-        { day: 10, title: "Departure", description: "Departure from Melbourne.", highlights: ["Departure"] }
-      ]
-    },
-    {
-      id: "australia-family",
-      name: "Australia Family Adventure",
-      duration: "10D/9N",
-      originalPrice: 425000,
-      currentPrice: 361250,
-      discount: 15,
-      image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800",
-      description: "Family-friendly Australia with theme parks and wildlife.",
-      highlights: ["Theme Parks", "Zoo Encounters", "Beach Fun", "Reef Snorkeling"],
-      inclusions: ["9 Nights Family Hotels", "Breakfast", "Theme Park Tickets", "Family Tours"],
-      exclusions: ["International Airfare", "Visa", "Lunch & Dinner"],
-      itinerary: [
-        { day: 1, title: "Sydney Arrival", description: "Arrive and settle in.", highlights: ["Sydney Arrival", "Darling Harbour", "Family Dinner"] },
-        { day: 2, title: "Sydney Fun", description: "Family activities in Sydney.", highlights: ["Taronga Zoo", "Harbour Bridge Climb", "Luna Park"] },
-        { day: 3, title: "Blue Mountains", description: "Nature day for families.", highlights: ["Scenic World", "Wildlife Park", "Bush Walk"] },
-        { day: 4, title: "To Gold Coast", description: "Fly to theme park capital.", highlights: ["Flight", "Surfers Paradise", "Beach Time"] },
-        { day: 5, title: "Dreamworld", description: "Full day at Dreamworld.", highlights: ["Dreamworld", "All Rides", "Tiger Island"] },
-        { day: 6, title: "Movie World", description: "Warner Bros experience.", highlights: ["Movie World", "Character Meet", "Stunt Shows"] },
-        { day: 7, title: "To Cairns", description: "Fly to reef country.", highlights: ["Flight", "Cairns Lagoon", "Night Markets"] },
-        { day: 8, title: "Reef Adventure", description: "Great Barrier Reef.", highlights: ["Reef Trip", "Glass Bottom Boat", "Snorkeling"] },
-        { day: 9, title: "Rainforest", description: "Rainforest exploration.", highlights: ["Kuranda Railway", "Butterfly Sanctuary", "Army Duck"] },
-        { day: 10, title: "Departure", description: "Cairns departure.", highlights: ["Departure"] }
-      ]
-    }
-  ]
-};
-
+// Consolidated allDestinations export
 export const allDestinations: Record<string, DestinationData> = {
   kashmir: kashmirData,
   kerala: keralaData,
   ladakh: ladakhData,
-  "himachal-pradesh": himachalData,
-  rajasthan: rajasthanData,
-  goa: goaData,
-  meghalaya: meghalayaData,
-  andaman: andamanData,
-  sikkim: sikkimData,
-  uttarakhand: uttarakhandData,
-  hyderabad: hyderabadData,
-  dubai: dubaiData,
-  singapore: singaporeData,
-  thailand: thailandData,
-  bali: baliData,
-  europe: europeData,
-  usa: usaData,
-  switzerland: switzerlandData,
-  france: franceData,
-  turkey: turkeyData,
-  australia: australiaData
+  "himachal-pradesh": himachalData
 };
+
+// India and International package summaries for search
+export const indiaPackages = Object.values(allDestinations).flatMap(dest => 
+  dest.packages.map(pkg => ({
+    ...pkg,
+    destination: dest.name,
+    destinationId: dest.id,
+    type: 'india' as const
+  }))
+);
+
+export const internationalPackages: typeof indiaPackages = [];
