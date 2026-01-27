@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { allDestinations, DestinationPackage, DestinationData } from "@/data/itineraries";
 import { useState } from "react";
 import InquiryModal from "@/components/InquiryModal";
+import PDFDownloadButton from "@/components/PDFDownloadButton";
+import ItineraryGallery from "@/components/ItineraryGallery";
 import {
   Accordion,
   AccordionContent,
@@ -207,6 +209,19 @@ const PackageDetail = () => {
                   ))}
                 </Accordion>
               </motion.div>
+
+              {/* Photo Gallery */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="mt-8"
+              >
+                <ItineraryGallery 
+                  destinationId={foundDestination.id} 
+                  packageId={foundPackage.id} 
+                />
+              </motion.div>
             </div>
 
             {/* Sidebar */}
@@ -267,12 +282,16 @@ const PackageDetail = () => {
 
                 {/* Actions */}
                 <div className="space-y-3">
-                  <Button className="w-full" size="lg" onClick={() => setIsModalOpen(true)}>
+                <Button className="w-full" size="lg" onClick={() => setIsModalOpen(true)}>
                     Book Now
                   </Button>
                   <Button variant="outline" className="w-full" size="lg" onClick={() => setIsModalOpen(true)}>
                     Get Custom Quote
                   </Button>
+                  <PDFDownloadButton 
+                    packageData={foundPackage} 
+                    destinationData={foundDestination} 
+                  />
                   <a href="tel:+919550504544" className="block">
                     <Button variant="secondary" className="w-full" size="lg">
                       <Phone className="w-4 h-4 mr-2" />
