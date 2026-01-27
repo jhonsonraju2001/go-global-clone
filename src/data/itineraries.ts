@@ -1192,16 +1192,29 @@ export const himachalData: DestinationData = {
   ]
 };
 
+// Import extended destinations
+import { goaData, rajasthanData, hyderabadData, dubaiData, singaporeData, thailandData, europeData } from './destinationsExtended';
+
+// Re-export extended destinations
+export { goaData, rajasthanData, hyderabadData, dubaiData, singaporeData, thailandData, europeData };
+
 // Consolidated allDestinations export
 export const allDestinations: Record<string, DestinationData> = {
   kashmir: kashmirData,
   kerala: keralaData,
   ladakh: ladakhData,
-  "himachal-pradesh": himachalData
+  "himachal-pradesh": himachalData,
+  goa: goaData,
+  rajasthan: rajasthanData,
+  hyderabad: hyderabadData,
+  dubai: dubaiData,
+  singapore: singaporeData,
+  thailand: thailandData,
+  europe: europeData
 };
 
 // India and International package summaries for search
-export const indiaPackages = Object.values(allDestinations).flatMap(dest => 
+export const indiaPackages = [kashmirData, keralaData, ladakhData, himachalData, goaData, rajasthanData, hyderabadData].flatMap(dest => 
   dest.packages.map(pkg => ({
     ...pkg,
     destination: dest.name,
@@ -1210,4 +1223,11 @@ export const indiaPackages = Object.values(allDestinations).flatMap(dest =>
   }))
 );
 
-export const internationalPackages: typeof indiaPackages = [];
+export const internationalPackages = [dubaiData, singaporeData, thailandData, europeData].flatMap(dest => 
+  dest.packages.map(pkg => ({
+    ...pkg,
+    destination: dest.name,
+    destinationId: dest.id,
+    type: 'international' as const
+  }))
+);
