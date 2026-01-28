@@ -1194,9 +1194,11 @@ export const himachalData: DestinationData = {
 
 // Import extended destinations
 import { goaData, rajasthanData, hyderabadData, dubaiData, singaporeData, thailandData, europeData } from './destinationsExtended';
+import { meghalayaData, andamanData, sikkimData, baliData, turkeyData, australiaData, switzerlandData, franceData, japanData, vietnamData, bhutanData, usaData } from './additionalDestinations';
 
-// Re-export extended destinations
+// Re-export all destinations
 export { goaData, rajasthanData, hyderabadData, dubaiData, singaporeData, thailandData, europeData };
+export { meghalayaData, andamanData, sikkimData, baliData, turkeyData, australiaData, switzerlandData, franceData, japanData, vietnamData, bhutanData, usaData };
 
 // Consolidated allDestinations export
 export const allDestinations: Record<string, DestinationData> = {
@@ -1204,17 +1206,31 @@ export const allDestinations: Record<string, DestinationData> = {
   kerala: keralaData,
   ladakh: ladakhData,
   "himachal-pradesh": himachalData,
+  himachal: himachalData,
   goa: goaData,
   rajasthan: rajasthanData,
   hyderabad: hyderabadData,
+  meghalaya: meghalayaData,
+  andaman: andamanData,
+  sikkim: sikkimData,
   dubai: dubaiData,
   singapore: singaporeData,
   thailand: thailandData,
-  europe: europeData
+  europe: europeData,
+  bali: baliData,
+  indonesia: baliData,
+  turkey: turkeyData,
+  australia: australiaData,
+  switzerland: switzerlandData,
+  france: franceData,
+  japan: japanData,
+  vietnam: vietnamData,
+  bhutan: bhutanData,
+  usa: usaData
 };
 
 // India and International package summaries for search
-export const indiaPackages = [kashmirData, keralaData, ladakhData, himachalData, goaData, rajasthanData, hyderabadData].flatMap(dest => 
+export const indiaPackages = [kashmirData, keralaData, ladakhData, himachalData, goaData, rajasthanData, hyderabadData, meghalayaData, andamanData, sikkimData].flatMap(dest => 
   dest.packages.map(pkg => ({
     ...pkg,
     destination: dest.name,
@@ -1223,7 +1239,7 @@ export const indiaPackages = [kashmirData, keralaData, ladakhData, himachalData,
   }))
 );
 
-export const internationalPackages = [dubaiData, singaporeData, thailandData, europeData].flatMap(dest => 
+export const internationalPackages = [dubaiData, singaporeData, thailandData, europeData, baliData, turkeyData, australiaData, switzerlandData, franceData, japanData, vietnamData, bhutanData, usaData].flatMap(dest => 
   dest.packages.map(pkg => ({
     ...pkg,
     destination: dest.name,
