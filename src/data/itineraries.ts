@@ -40,7 +40,10 @@ export const kashmirData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1580651315530-69c8e0026377?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -323,7 +326,10 @@ export const keralaData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1590123552692-4e64ac2a3e5d?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1567157577867-05ccb1388e13?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -588,7 +594,10 @@ export const ladakhData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1609766856923-7e0a0c06e13c?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1575998793938-91e0d1fc62e4?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1600793575654-910699b5e4de?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -907,7 +916,10 @@ export const himachalData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1585916420730-d7f95e942d43?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1596703016252-e0c381de5c8a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1574190637428-fba8f0eb93d0?w=800&h=600&fit=crop"
   ],
   packages: [
     {

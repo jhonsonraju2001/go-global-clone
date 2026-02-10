@@ -10,7 +10,10 @@ export const goaData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1587922546307-776227941871?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -110,7 +113,10 @@ export const rajasthanData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1515091943-9d5c0ad475af?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -234,7 +240,10 @@ export const hyderabadData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1572254077143-f4f2b3e6c695?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1600689516878-a4a7ad7a4f5c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1604422499447-b0e13e537ae2?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1604422499447-b0e13e537ae2?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -289,7 +298,10 @@ export const dubaiData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1583202702468-e58e4e5d9efe?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1583202702468-e58e4e5d9efe?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1597659840241-37e2b7c2f7c9?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -356,7 +368,10 @@ export const singaporeData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -417,7 +432,10 @@ export const thailandData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -490,7 +508,10 @@ export const europeData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=800&h=600&fit=crop"
   ],
   packages: [
     {

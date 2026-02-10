@@ -10,7 +10,10 @@ export const meghalayaData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -134,7 +137,10 @@ export const andamanData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1484291150605-0860ed671f04?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -258,7 +264,10 @@ export const sikkimData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -331,7 +340,10 @@ export const baliData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1573790387438-4da905039392?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1573790387438-4da905039392?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1604999333679-b86d54738315?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -398,7 +410,10 @@ export const turkeyData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1589561454226-796a8aa89b05?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1589561454226-796a8aa89b05?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1609842947419-ba4f04d5d60f?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -483,7 +498,10 @@ export const australiaData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1494233892892-84542a694e72?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1546268060-2592ff93ee24?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -574,7 +592,10 @@ export const switzerlandData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1527095655658-89f085a51e21?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1476900543704-4312b78632f8?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1476900543704-4312b78632f8?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -647,7 +668,10 @@ export const franceData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1551887196-1c1e7c5e6c0a?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1551887196-1c1e7c5e6c0a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1549144511-f099e773c147?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1500039436846-25ae2f11882e?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -726,7 +750,10 @@ export const japanData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -817,7 +844,10 @@ export const vietnamData: DestinationData = {
   bannerImages: [
     "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1464817739973-0128fe77aed1?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?w=800&h=600&fit=crop"
   ],
   packages: [
     {
