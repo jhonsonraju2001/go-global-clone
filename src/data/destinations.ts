@@ -75,6 +75,34 @@ export const worldDestinations: Destination[] = [
     description: "Luxury, adventure & modern marvels",
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
     link: "/destinations/dubai"
+  },
+  {
+    id: "thailand",
+    name: "Thailand",
+    description: "Temples, beaches & vibrant culture",
+    image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop",
+    link: "/destinations/thailand"
+  },
+  {
+    id: "bali",
+    name: "Bali",
+    description: "Island of Gods & tropical paradise",
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop",
+    link: "/destinations/bali"
+  },
+  {
+    id: "turkey",
+    name: "Turkey",
+    description: "Where East meets West in splendor",
+    image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
+    link: "/destinations/turkey"
+  },
+  {
+    id: "australia",
+    name: "Australia",
+    description: "Reef, outback & coastal wonders",
+    image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=600&fit=crop",
+    link: "/destinations/australia"
   }
 ];
 
@@ -97,7 +125,7 @@ export const indiaDestinations: Destination[] = [
     id: "himachal",
     name: "Himachal Pradesh",
     description: "Mountains, valleys & adventure",
-    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1585916420730-d7f95e942d43?w=800&h=600&fit=crop",
     link: "/destinations/himachal"
   },
   {
@@ -122,11 +150,11 @@ export const indiaDestinations: Destination[] = [
     link: "/destinations/goa"
   },
   {
-    id: "hyderabad",
-    name: "Hyderabad",
-    description: "City of Pearls & Biryani",
-    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
-    link: "/destinations/hyderabad"
+    id: "meghalaya",
+    name: "Meghalaya",
+    description: "Living root bridges & crystal rivers",
+    image: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=800&h=600&fit=crop",
+    link: "/destinations/meghalaya"
   },
   {
     id: "andaman",
@@ -134,6 +162,20 @@ export const indiaDestinations: Destination[] = [
     description: "Pristine beaches & coral reefs",
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
     link: "/destinations/andaman"
+  },
+  {
+    id: "sikkim",
+    name: "Sikkim",
+    description: "Hidden Himalayan kingdom & monasteries",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
+    link: "/destinations/sikkim"
+  },
+  {
+    id: "hyderabad",
+    name: "Hyderabad",
+    description: "City of Pearls & Biryani",
+    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+    link: "/destinations/hyderabad"
   }
 ];
 
@@ -151,20 +193,20 @@ export const indiaPackages: Package[] = [
     reviews: 234
   },
   {
-    id: "bhutan-group",
-    name: "Worthy Bhutan Group",
+    id: "bhutan-happiness",
+    name: "Kingdom of Happiness",
     location: "Bhutan",
     image: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
     duration: "7D/6N",
-    originalPrice: 78760,
-    currentPrice: 69560,
-    discount: 12,
+    originalPrice: 125000,
+    currentPrice: 100000,
+    discount: 20,
     rating: 4.8,
     reviews: 156
   },
   {
-    id: "discover-kerala",
-    name: "Discover Kerala",
+    id: "kerala-backwaters",
+    name: "Kerala Backwater Bliss",
     location: "Kerala",
     image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop",
     duration: "5D/4N",
@@ -175,11 +217,11 @@ export const indiaPackages: Package[] = [
     reviews: 312
   },
   {
-    id: "exploring-rajasthan",
-    name: "Exploring Rajasthan",
+    id: "rajasthan-royal",
+    name: "Royal Rajasthan Tour",
     location: "Rajasthan",
     image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&h=600&fit=crop",
-    duration: "7D/6N",
+    duration: "8D/7N",
     originalPrice: 63904,
     currentPrice: 49925,
     discount: 22,
@@ -187,11 +229,11 @@ export const indiaPackages: Package[] = [
     reviews: 445
   },
   {
-    id: "leh-ladakh",
-    name: "Leh Ladakh Expedition",
+    id: "ladakh-adventure",
+    name: "Ladakh Adventure",
     location: "Ladakh",
     image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
-    duration: "6D/5N",
+    duration: "7D/6N",
     originalPrice: 38182,
     currentPrice: 21000,
     discount: 45,
@@ -199,23 +241,23 @@ export const indiaPackages: Package[] = [
     reviews: 289
   },
   {
-    id: "goa-weekend",
-    name: "Goa Weekend Getaway",
+    id: "goa-beaches",
+    name: "Goa Beach Paradise",
     location: "Goa",
     image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop",
-    duration: "3D/2N",
-    originalPrice: 9000,
-    currentPrice: 6499,
-    discount: 28,
+    duration: "5D/4N",
+    originalPrice: 24000,
+    currentPrice: 19200,
+    discount: 20,
     rating: 4.6,
     reviews: 567
   },
   {
     id: "meghalaya-mystic",
-    name: "Mystic Meghalaya",
+    name: "Mystic Meghalaya Explorer",
     location: "Meghalaya",
     image: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=800&h=600&fit=crop",
-    duration: "3N/4D",
+    duration: "6D/5N",
     originalPrice: 38770,
     currentPrice: 24560,
     discount: 37,
@@ -223,26 +265,50 @@ export const indiaPackages: Package[] = [
     reviews: 123
   },
   {
-    id: "manali-exclusive",
-    name: "Exclusive Manali",
+    id: "himachal-highlights",
+    name: "Himachal Highlights",
     location: "Himachal Pradesh",
     image: "https://images.unsplash.com/photo-1585916420730-d7f95e942d43?w=800&h=600&fit=crop",
-    duration: "4N/5D",
+    duration: "6D/5N",
     originalPrice: 17290,
     currentPrice: 12449,
     discount: 28,
     rating: 4.7,
     reviews: 398
+  },
+  {
+    id: "andaman-island-hopping",
+    name: "Andaman Island Paradise",
+    location: "Andaman",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
+    duration: "6D/5N",
+    originalPrice: 45000,
+    currentPrice: 36000,
+    discount: 20,
+    rating: 4.8,
+    reviews: 198
+  },
+  {
+    id: "sikkim-classic",
+    name: "Classic Sikkim Discovery",
+    location: "Sikkim",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
+    duration: "7D/6N",
+    originalPrice: 42000,
+    currentPrice: 33600,
+    discount: 20,
+    rating: 4.9,
+    reviews: 167
   }
 ];
 
 export const internationalPackages: Package[] = [
   {
-    id: "dubai-delight",
-    name: "Dubai Delight",
+    id: "dubai-luxury",
+    name: "Dubai Luxury Experience",
     location: "Dubai",
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
-    duration: "6N/7D",
+    duration: "6D/5N",
     originalPrice: 102500,
     currentPrice: 82000,
     discount: 20,
@@ -250,11 +316,11 @@ export const internationalPackages: Package[] = [
     reviews: 456
   },
   {
-    id: "best-thailand",
-    name: "Best of Thailand",
+    id: "thailand-adventure",
+    name: "Thailand Explorer",
     location: "Thailand",
     image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop",
-    duration: "6N/7D",
+    duration: "7D/6N",
     originalPrice: 32500,
     currentPrice: 25000,
     discount: 23,
@@ -262,11 +328,11 @@ export const internationalPackages: Package[] = [
     reviews: 678
   },
   {
-    id: "best-bali",
-    name: "Best of Bali",
-    location: "Indonesia",
+    id: "bali-essence",
+    name: "Essence of Bali",
+    location: "Bali",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop",
-    duration: "5N/6D",
+    duration: "6D/5N",
     originalPrice: 68750,
     currentPrice: 55000,
     discount: 20,
@@ -274,11 +340,11 @@ export const internationalPackages: Package[] = [
     reviews: 523
   },
   {
-    id: "european-extravaganza",
-    name: "European Extravaganza",
+    id: "europe-highlights",
+    name: "Europe Highlights Tour",
     location: "Europe",
     image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",
-    duration: "12N/13D",
+    duration: "10D/9N",
     originalPrice: 375000,
     currentPrice: 348999,
     discount: 7,
@@ -286,35 +352,23 @@ export const internationalPackages: Package[] = [
     reviews: 234
   },
   {
-    id: "ultimate-europe",
-    name: "Ultimate Europe",
-    location: "Europe",
-    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&h=600&fit=crop",
-    duration: "13N/14D",
-    originalPrice: 394999,
-    currentPrice: 349999,
-    discount: 11,
-    rating: 4.8,
-    reviews: 189
-  },
-  {
-    id: "swiss-france",
-    name: "Best of Swiss & France",
-    location: "Switzerland & France",
+    id: "swiss-highlights",
+    name: "Swiss Alpine Journey",
+    location: "Switzerland",
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",
-    duration: "6N/7D",
+    duration: "7D/6N",
     originalPrice: 169000,
-    currentPrice: 130000,
-    discount: 23,
+    currentPrice: 135200,
+    discount: 20,
     rating: 4.9,
     reviews: 312
   },
   {
-    id: "turkey-tour",
-    name: "All of Turkey",
+    id: "turkey-highlights",
+    name: "Best of Turkey",
     location: "Turkey",
     image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
-    duration: "8N/9D",
+    duration: "9D/8N",
     originalPrice: 118300,
     currentPrice: 91000,
     discount: 23,
@@ -322,16 +376,64 @@ export const internationalPackages: Package[] = [
     reviews: 267
   },
   {
-    id: "australia-ultimate",
-    name: "Ultimate Australia",
+    id: "australia-explorer",
+    name: "Australia Explorer",
     location: "Australia",
     image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=600&fit=crop",
-    duration: "9N/10D",
+    duration: "10D/9N",
     originalPrice: 299999,
     currentPrice: 274999,
     discount: 8,
     rating: 4.9,
     reviews: 145
+  },
+  {
+    id: "japan-classic",
+    name: "Classic Japan Journey",
+    location: "Japan",
+    image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&h=600&fit=crop",
+    duration: "10D/9N",
+    originalPrice: 225000,
+    currentPrice: 180000,
+    discount: 20,
+    rating: 4.8,
+    reviews: 289
+  },
+  {
+    id: "vietnam-discovery",
+    name: "Vietnam Discovery",
+    location: "Vietnam",
+    image: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&h=600&fit=crop",
+    duration: "10D/9N",
+    originalPrice: 95000,
+    currentPrice: 76000,
+    discount: 20,
+    rating: 4.7,
+    reviews: 198
+  },
+  {
+    id: "france-romance",
+    name: "Romantic France",
+    location: "France",
+    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",
+    duration: "8D/7N",
+    originalPrice: 175000,
+    currentPrice: 140000,
+    discount: 20,
+    rating: 4.9,
+    reviews: 234
+  },
+  {
+    id: "usa-highlights",
+    name: "American Dream",
+    location: "USA",
+    image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800&h=600&fit=crop",
+    duration: "12D/11N",
+    originalPrice: 325000,
+    currentPrice: 260000,
+    discount: 20,
+    rating: 4.8,
+    reviews: 178
   }
 ];
 
