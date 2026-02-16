@@ -15,31 +15,36 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
+  // Alison Holidays Office & Team
+  { id: 1, src: "https://lh3.googleusercontent.com/p/AF1QipPITxn4st1o6msbgsg3kdnr-uBG86qa9LEvuaud=w800-h600-k-no", title: "Alison Holidays Office", category: "Office & Team", location: "Hyderabad, India" },
+  { id: 2, src: "https://lh3.googleusercontent.com/p/AF1QipObnulN12Fbz1DQvsS159Mm6D3Y8sF2eOaoHiOJ=w800-h600-k-no", title: "Our Travel Experts", category: "Office & Team", location: "Hyderabad, India" },
+  { id: 3, src: "https://lh3.googleusercontent.com/p/AF1QipPHBzP1G1E9b52qVDHPxrdGn1SHEaZSL4pjdJhe=w800-h600-k-no", title: "Team at Work", category: "Office & Team", location: "Hyderabad, India" },
+  { id: 4, src: "https://lh3.googleusercontent.com/p/AF1QipOWI0Ywu0G-a3KwaWGzSERzc7pxmqjvgkZK_y23=w800-h600-k-no", title: "Client Meeting", category: "Office & Team", location: "Hyderabad, India" },
   // Destinations & Tours
-  { id: 1, src: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop", title: "Kashmir Paradise", category: "Destinations", location: "Kashmir, India" },
-  { id: 2, src: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop", title: "Dubai Skyline", category: "Destinations", location: "Dubai, UAE" },
-  { id: 3, src: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop", title: "Kerala Backwaters", category: "Destinations", location: "Kerala, India" },
-  { id: 4, src: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=800&h=600&fit=crop", title: "Rajasthan Heritage", category: "Destinations", location: "Rajasthan, India" },
-  { id: 5, src: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop", title: "Taj Mahal Sunrise", category: "Destinations", location: "Agra, India" },
-  { id: 6, src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop", title: "Bali Temples", category: "Destinations", location: "Bali, Indonesia" },
+  { id: 5, src: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop", title: "Kashmir Paradise", category: "Destinations", location: "Kashmir, India" },
+  { id: 6, src: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop", title: "Dubai Skyline", category: "Destinations", location: "Dubai, UAE" },
+  { id: 7, src: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop", title: "Kerala Backwaters", category: "Destinations", location: "Kerala, India" },
+  { id: 8, src: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=800&h=600&fit=crop", title: "Rajasthan Heritage", category: "Destinations", location: "Rajasthan, India" },
+  { id: 9, src: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop", title: "Taj Mahal Sunrise", category: "Destinations", location: "Agra, India" },
+  { id: 10, src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop", title: "Bali Temples", category: "Destinations", location: "Bali, Indonesia" },
   // Events & Celebrations
-  { id: 7, src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop", title: "Corporate Event", category: "Events", location: "Hyderabad, India" },
-  { id: 8, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop", title: "Grand Celebration", category: "Events", location: "Hyderabad, India" },
-  { id: 9, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop", title: "Outdoor Festival", category: "Events", location: "Goa, India" },
-  { id: 10, src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop", title: "Luxury Wedding Setup", category: "Events", location: "Udaipur, India" },
+  { id: 11, src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop", title: "Corporate Event", category: "Events", location: "Hyderabad, India" },
+  { id: 12, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop", title: "Grand Celebration", category: "Events", location: "Hyderabad, India" },
+  { id: 13, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop", title: "Outdoor Festival", category: "Events", location: "Goa, India" },
+  { id: 14, src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop", title: "Luxury Wedding Setup", category: "Events", location: "Udaipur, India" },
   // Group Tours
-  { id: 11, src: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop", title: "Road Trip Adventures", category: "Group Tours", location: "Ladakh, India" },
-  { id: 12, src: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop", title: "Lake Expedition", category: "Group Tours", location: "Switzerland" },
-  { id: 13, src: "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800&h=600&fit=crop", title: "Mountain Trekking", category: "Group Tours", location: "Himachal Pradesh" },
-  { id: 14, src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop", title: "Beach Getaway", category: "Group Tours", location: "Andaman Islands" },
+  { id: 15, src: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop", title: "Road Trip Adventures", category: "Group Tours", location: "Ladakh, India" },
+  { id: 16, src: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop", title: "Lake Expedition", category: "Group Tours", location: "Switzerland" },
+  { id: 17, src: "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800&h=600&fit=crop", title: "Mountain Trekking", category: "Group Tours", location: "Himachal Pradesh" },
+  { id: 18, src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop", title: "Beach Getaway", category: "Group Tours", location: "Andaman Islands" },
   // Experiences
-  { id: 15, src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop", title: "Sunset Valley", category: "Experiences", location: "Meghalaya, India" },
-  { id: 16, src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop", title: "Waterfall Bliss", category: "Experiences", location: "Sikkim, India" },
-  { id: 17, src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop", title: "Misty Mountains", category: "Experiences", location: "Munnar, Kerala" },
-  { id: 18, src: "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=600&fit=crop", title: "Tropical Paradise", category: "Experiences", location: "Thailand" },
+  { id: 19, src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop", title: "Sunset Valley", category: "Experiences", location: "Meghalaya, India" },
+  { id: 20, src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop", title: "Waterfall Bliss", category: "Experiences", location: "Sikkim, India" },
+  { id: 21, src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop", title: "Misty Mountains", category: "Experiences", location: "Munnar, Kerala" },
+  { id: 22, src: "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=600&fit=crop", title: "Tropical Paradise", category: "Experiences", location: "Thailand" },
 ];
 
-const categories = ["All", "Destinations", "Events", "Group Tours", "Experiences"];
+const categories = ["All", "Office & Team", "Destinations", "Events", "Group Tours", "Experiences"];
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -149,11 +154,7 @@ const Gallery = () => {
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 rounded-xl"
                     >
-                      <motion.div
-                        initial={{ y: 20, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        className="space-y-1"
-                      >
+                      <div className="space-y-1">
                         <h3 className="text-background font-semibold text-lg">{image.title}</h3>
                         <div className="flex items-center gap-1 text-background/80 text-sm">
                           <MapPin className="w-3 h-3" />
@@ -162,7 +163,7 @@ const Gallery = () => {
                         <span className="inline-block bg-primary/80 text-primary-foreground text-xs px-2 py-0.5 rounded-full mt-1">
                           {image.category}
                         </span>
-                      </motion.div>
+                      </div>
                       <motion.div
                         className="absolute top-4 right-4"
                         whileHover={{ scale: 1.2, rotate: 90 }}
@@ -204,7 +205,7 @@ const Gallery = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <img
-                  src={selectedImage.src.replace("w=800&h=600", "w=1600&h=1200")}
+                  src={selectedImage.src.replace("w=800", "w=1600").replace("h=600", "h=1200")}
                   alt={selectedImage.title}
                   className="w-full h-auto max-h-[75vh] object-contain rounded-2xl"
                 />

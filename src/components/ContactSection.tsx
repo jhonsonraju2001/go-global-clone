@@ -60,7 +60,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Call Us</h4>
-                  <a href="tel:+919550504544" className="text-muted-foreground text-sm hover:text-primary transition-colors">+91 9550504544</a>
+                  <a href="tel:+919700650025" className="text-muted-foreground text-sm hover:text-primary transition-colors">+91 9700650025</a>
                 </div>
               </div>
 
