@@ -13,8 +13,8 @@ const Footer = () => {
     name: "Contact Us",
     href: "/contact"
   }, {
-    name: "Blogs",
-    href: "/blogs"
+    name: "Gallery",
+    href: "/gallery"
   }, {
     name: "Terms & Conditions",
     href: "/terms"
@@ -142,9 +142,9 @@ const Footer = () => {
                 <span className="text-background/70 text-sm">Abids, Hyderabad, Telangana 500001</span>
               </li>
               <li>
-                <a href="tel:+919550504544" className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
+                <a href="tel:+919700650025" className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">+91 9550504544</span>
+                  <span className="text-sm">+91 9700650025</span>
                 </a>
               </li>
               <li>

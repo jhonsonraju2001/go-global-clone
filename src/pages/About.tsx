@@ -74,7 +74,7 @@ const About = () => {
                       Plan Your Trip
                     </Button>
                   </Link>
-                  <a href="tel:+919550504544">
+                  <a href="tel:+919700650025">
                     <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground">
                       Call Us Now
                     </Button>
@@ -320,9 +320,9 @@ const About = () => {
                     Get Free Quote
                   </Button>
                 </Link>
-                <a href="tel:+919550504544">
+                <a href="tel:+919700650025">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                    Call +91 9550504544
+                    Call +91 9700650025
                   </Button>
                 </a>
               </div>

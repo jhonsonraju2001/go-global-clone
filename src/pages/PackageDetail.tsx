@@ -292,7 +292,7 @@ const PackageDetail = () => {
                     packageData={foundPackage} 
                     destinationData={foundDestination} 
                   />
-                  <a href="tel:+919550504544" className="block">
+                  <a href="tel:+919700650025" className="block">
                     <Button variant="secondary" className="w-full" size="lg">
                       <Phone className="w-4 h-4 mr-2" />
                       Call Us

@@ -15,9 +15,9 @@ const Header = () => {
       <div className="bg-foreground text-background py-2 text-sm">
         <div className="container-custom flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-6">
-            <a href="tel:+919550504544" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:+919700650025" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">+91 9550504544</span>
+              <span className="hidden sm:inline">+91 9700650025</span>
             </a>
             <a href="mailto:info@alisonholidays.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="w-4 h-4" />
@@ -31,7 +31,7 @@ const Header = () => {
             <a href="https://www.instagram.com/alisonholidays" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Instagram
             </a>
-            <a href="https://wa.me/919550504544" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <a href="https://wa.me/919700650025" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Whatsapp
             </a>
             <a href="https://www.youtube.com/@alisonholidays" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
