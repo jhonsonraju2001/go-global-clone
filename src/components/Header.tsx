@@ -103,7 +103,7 @@ const Header = () => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link to="/blogs" className="nav-link px-4">Blogs</Link>
+                  <Link to="/gallery" className="nav-link px-4">Gallery</Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -178,8 +178,8 @@ const Header = () => {
                 <Link to="/contact" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>
                   Contact Us
                 </Link>
-                <Link to="/blogs" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>
-                  Blogs
+                <Link to="/gallery" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                  Gallery
                 </Link>
               </div>
             </motion.div>}
