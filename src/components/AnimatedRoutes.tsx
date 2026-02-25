@@ -7,6 +7,7 @@ import DestinationPage from "@/pages/DestinationPage";
 import PackageDetail from "@/pages/PackageDetail";
 import ServicePage from "@/pages/ServicePage";
 import Gallery from "@/pages/Gallery";
+import Vehicles from "@/pages/Vehicles";
 import NotFound from "@/pages/NotFound";
 
 const AnimatedRoutes = () => {
@@ -22,6 +23,7 @@ const AnimatedRoutes = () => {
         <Route path="/packages/:packageId" element={<PackageDetail />} />
         <Route path="/services/:service" element={<ServicePage />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/vehicles" element={<Vehicles />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
