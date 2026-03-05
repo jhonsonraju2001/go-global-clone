@@ -22,9 +22,9 @@ export interface Vehicle {
 
 export const vehicleCategories = [
   "All",
+  "Hatchback",
   "Sedan",
   "SUV",
-  "Hatchback",
   "Luxury",
   "Tempo Traveller",
   "Mini Bus",
@@ -32,7 +32,7 @@ export const vehicleCategories = [
 ];
 
 export const vehicles: Vehicle[] = [
-  // ─── HATCHBACKS ────────────────────────────────────────
+  // ─── HATCHBACKS ──────────────────────────────────────
   {
     id: "wagonr",
     name: "Maruti WagonR",
@@ -41,11 +41,8 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Music System", "Comfortable Seats", "Fuel Efficient", "Easy Parking"],
     priceRange: "₹8/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/110483/wagonr-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/110483/wagonr-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/110483/wagonr-interior-dashboard-2.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/WagonR/10236/1698916430968/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/WagonR/10236/1698916430968/front-left-side-47.jpg"],
     description: "Compact, fuel-efficient and easy to navigate. Ideal for budget-friendly city transfers and quick airport pickups for solo travelers or couples.",
     bestFor: ["City Transfers", "Airport Pickup", "Budget Travel"],
     destinations: ["Hyderabad", "Goa", "Rajasthan", "Kerala"],
@@ -59,30 +56,25 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Touchscreen", "Rear Parking Sensors", "Alloy Wheels", "Stylish Design"],
     priceRange: "₹9/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/10631/1706005108852/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/10631/1706005108852/front-left-side-47.jpg"],
     description: "The sporty Swift combines style and efficiency. A popular choice for weekend getaways and city exploration with its agile handling.",
     bestFor: ["Weekend Getaways", "City Tours", "Youth Travel"],
     destinations: ["Hyderabad", "Goa", "Rajasthan"],
     specs: { fuel: "Petrol", luggage: "1 Bag", doors: "5", transmission: "Manual / AMT" },
   },
 
-  // ─── SEDANS ────────────────────────────────────────────
+  // ─── SEDANS ──────────────────────────────────────────
   {
     id: "swift-dzire",
-    name: "Swift Dzire",
+    name: "Maruti Swift Dzire",
     type: "Sedan",
     capacity: "4 Passengers",
     acType: "AC",
     features: ["AC", "Music System", "Comfortable Seats", "Luggage Space", "GPS Navigation"],
     priceRange: "₹10/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-interior-dashboard.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Dzire/10593/1706005204143/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Dzire/10593/1706005204143/front-left-side-47.jpg"],
     description: "The Swift Dzire is perfect for small families and couples. A reliable and fuel-efficient sedan offering a smooth ride across city tours and short-distance destinations.",
     bestFor: ["City Tours", "Airport Transfers", "Couple Trips"],
     destinations: ["Hyderabad", "Goa", "Rajasthan", "Kerala"],
@@ -97,10 +89,8 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Power Steering", "Central Locking", "Ample Boot Space", "Music System"],
     priceRange: "₹11/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/etios-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/etios-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Etios/6872/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Etios/6872/front-left-side-47.jpg"],
     description: "Toyota Etios offers exceptional reliability and comfort. Ideal for business travel and family outings with its spacious interiors and proven Toyota build quality.",
     bestFor: ["Business Travel", "Family Outings", "Hill Stations"],
     destinations: ["Hyderabad", "Himachal Pradesh", "Uttarakhand", "Rajasthan"],
@@ -114,17 +104,15 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Cruise Control", "Rear Camera", "Touchscreen Infotainment", "Alloy Wheels"],
     priceRange: "₹12/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/amaze-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/amaze-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Amaze/10032/1677914238996/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Amaze/10032/1677914238996/front-left-side-47.jpg"],
     description: "The Honda Amaze is a premium sedan with refined interiors and advanced features. Perfect for travelers seeking a blend of comfort and style on Indian roads.",
     bestFor: ["Premium City Tours", "Weekend Getaways", "Corporate Travel"],
     destinations: ["Goa", "Kerala", "Rajasthan", "Hyderabad"],
     specs: { fuel: "Petrol / Diesel", luggage: "2 Bags", doors: "4", transmission: "Manual / CVT" },
   },
 
-  // ─── SUVs ───────────────────────────────────────────────
+  // ─── SUVs ────────────────────────────────────────────
   {
     id: "toyota-innova",
     name: "Toyota Innova Crysta",
@@ -133,11 +121,8 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Captain Seats", "Ample Luggage Space", "Music System", "Power Windows", "Rear AC Vents"],
     priceRange: "₹16/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-interior-seats.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Innova-Crysta/9076/1697006297247/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Innova-Crysta/9076/1697006297247/front-left-side-47.jpg"],
     description: "The Innova Crysta is India's most loved MPV. Spacious captain seats, powerful engine, and unmatched reliability make it the top choice for family road trips and group tours across all terrains.",
     bestFor: ["Family Trips", "Group Tours", "Hill Station Trips", "Long Distance"],
     destinations: ["Kashmir", "Ladakh", "Kerala", "Rajasthan", "Himachal Pradesh", "Goa", "Uttarakhand"],
@@ -152,10 +137,8 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Panoramic Sunroof", "ADAS", "Wireless Charging", "Ventilated Seats", "360 Camera"],
     priceRange: "₹17/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/141897/carens-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/141897/carens-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Carens/10158/1709109891386/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Carens/10158/1709109891386/front-left-side-47.jpg"],
     description: "Kia Carens blends Korean style with feature-loaded comfort. Ventilated seats, massive sunroof, and premium interiors elevate every journey for modern travelers.",
     bestFor: ["Modern Family Travel", "Premium Group Trips", "Weekend Escapes"],
     destinations: ["Goa", "Kerala", "Rajasthan", "Hyderabad"],
@@ -170,10 +153,8 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Panoramic Sunroof", "ADAS Safety", "Touchscreen", "Wireless Charging", "All-Wheel Drive"],
     priceRange: "₹18/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/XUV700/9380/1655807180296/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/XUV700/9380/1655807180296/front-left-side-47.jpg"],
     description: "The XUV700 combines cutting-edge technology with rugged capability. Its advanced safety features and powerful performance make it ideal for adventurous mountain and off-road journeys.",
     bestFor: ["Adventure Trips", "Mountain Roads", "Off-Road Journeys"],
     destinations: ["Ladakh", "Sikkim", "Meghalaya", "Kashmir", "Himachal Pradesh"],
@@ -187,17 +168,15 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "4x4 Drive", "Leather Seats", "Cruise Control", "Terrain Management", "Premium Audio"],
     priceRange: "₹22/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/10021/1694609988788/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/10021/1694609988788/front-left-side-47.jpg"],
     description: "The Fortuner is the king of SUVs. A premium luxury vehicle built to conquer any terrain. Ideal for VIP travel, mountain expeditions, and those who demand the absolute best.",
     bestFor: ["VIP Travel", "Mountain Expeditions", "Luxury Road Trips"],
     destinations: ["Ladakh", "Kashmir", "Sikkim", "Rajasthan", "Uttarakhand"],
     specs: { fuel: "Diesel", luggage: "4 Bags", doors: "4", transmission: "Manual / Automatic" },
   },
 
-  // ─── LUXURY ─────────────────────────────────────────────
+  // ─── LUXURY ──────────────────────────────────────────
   {
     id: "toyota-vellfire",
     name: "Toyota Vellfire",
@@ -206,10 +185,8 @@ export const vehicles: Vehicle[] = [
     acType: "Dual Zone AC",
     features: ["Dual AC", "Executive Lounge Seats", "Ottoman Footrests", "Ambient Lighting", "Refrigerator", "Power Curtains", "Wireless Charging"],
     priceRange: "₹40/km onwards",
-    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/168997/vellfire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
-    gallery: [
-      "https://imgd.aeplcdn.com/664x374/n/cw/ec/168997/vellfire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Vellfire/9440/1614742645605/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Vellfire/9440/1614742645605/front-left-side-47.jpg"],
     description: "The Toyota Vellfire is the pinnacle of luxury MPV travel. Its executive lounge seats with ottoman footrests and refrigerator make every journey feel like first-class travel.",
     bestFor: ["VVIP Travel", "Celebrity Transport", "Executive Transfers"],
     destinations: ["Hyderabad", "Mumbai", "Delhi", "Dubai"],
@@ -224,10 +201,8 @@ export const vehicles: Vehicle[] = [
     acType: "Multi Zone AC",
     features: ["Multi AC", "Massage Seats", "Glass Roof", "MBUX Infotainment", "Burmester Audio", "Conference Setup"],
     priceRange: "₹50/km onwards",
-    image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=450&fit=crop",
-    ],
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/V-Class/8753/1562234389093/front-left-side-47.jpg",
+    gallery: ["https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/V-Class/8753/1562234389093/front-left-side-47.jpg"],
     description: "The Mercedes V-Class is luxury redefined. Offering business conference seating, Burmester sound, and a glass roof — it's the ultimate executive van for elite clientele.",
     bestFor: ["Corporate Conferences", "Airport VIP", "Luxury Weddings"],
     destinations: ["Hyderabad", "Dubai", "Singapore", "Europe"],
@@ -235,19 +210,17 @@ export const vehicles: Vehicle[] = [
     specs: { fuel: "Diesel", luggage: "3 Bags", doors: "4", transmission: "Automatic" },
   },
 
-  // ─── TEMPO TRAVELLERS ───────────────────────────────────
+  // ─── TEMPO TRAVELLERS ────────────────────────────────
   {
     id: "tempo-9-seater",
-    name: "Tempo Traveller (9 Seater)",
+    name: "Tempo Traveller 9 Seater",
     type: "Tempo Traveller",
     capacity: "9 Passengers",
     acType: "AC / Non-AC",
     features: ["AC", "Push-Back Seats", "Music System", "Curtains", "Reading Light", "Luggage Rack"],
     priceRange: "₹18/km onwards",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/8/GR/WI/FP/4765337/9-seater-tempo-traveller-on-rent.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2022/8/GR/WI/FP/4765337/9-seater-tempo-traveller-on-rent.jpg"],
     description: "The 9-seater Tempo is ideal for small group travel. Comfortable reclining seats and good luggage space make it perfect for pilgrimage tours and corporate team outings.",
     bestFor: ["Small Groups", "Pilgrimages", "Corporate Outings"],
     destinations: ["Kashmir", "Rajasthan", "Kerala", "Goa"],
@@ -255,16 +228,14 @@ export const vehicles: Vehicle[] = [
   },
   {
     id: "tempo-12-seater",
-    name: "Tempo Traveller (12 Seater)",
+    name: "Tempo Traveller 12 Seater",
     type: "Tempo Traveller",
     capacity: "12 Passengers",
     acType: "AC / Non-AC",
     features: ["AC", "Push-Back Seats", "LCD Screen", "Music System", "Luggage Carrier", "Curtains"],
     priceRange: "₹20/km onwards",
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2021/12/FD/EX/RE/4765337/17-seater-tempo-traveller-500x500.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2021/12/FD/EX/RE/4765337/17-seater-tempo-traveller-500x500.jpg"],
     description: "The 12-seater Tempo Traveller is perfect for medium-sized groups. Comfortable push-back seats and entertainment system ensure an enjoyable journey for pilgrimages and group tours.",
     bestFor: ["Group Tours", "Pilgrimages", "Corporate Outings"],
     destinations: ["Kashmir", "Rajasthan", "Kerala", "Goa", "Himachal Pradesh", "Uttarakhand"],
@@ -273,35 +244,31 @@ export const vehicles: Vehicle[] = [
   },
   {
     id: "tempo-17-seater",
-    name: "Tempo Traveller (17 Seater)",
+    name: "Tempo Traveller 17 Seater",
     type: "Tempo Traveller",
     capacity: "17 Passengers",
     acType: "AC / Non-AC",
     features: ["AC", "Push-Back Seats", "LCD Screen", "Mic System", "First Aid Kit", "Large Luggage Space"],
     priceRange: "₹24/km onwards",
-    image: "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2020/10/XK/IJ/AG/4765337/17-seater-force-tempo-traveller-500x500.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2020/10/XK/IJ/AG/4765337/17-seater-force-tempo-traveller-500x500.jpg"],
     description: "The 17-seater Tempo Traveller is ideal for larger groups and educational tours. Spacious interiors and ample luggage space make long journeys comfortable for everyone.",
     bestFor: ["Large Group Tours", "College Trips", "Wedding Parties"],
     destinations: ["Rajasthan", "Kashmir", "Goa", "Kerala", "Andaman"],
     specs: { fuel: "Diesel", luggage: "12 Bags", doors: "3", transmission: "Manual" },
   },
 
-  // ─── MINI BUSES ─────────────────────────────────────────
+  // ─── MINI BUSES ──────────────────────────────────────
   {
     id: "mini-bus-20",
-    name: "Mini Bus (20 Seater)",
+    name: "Mini Bus 20 Seater",
     type: "Mini Bus",
     capacity: "20 Passengers",
     acType: "AC / Non-AC",
     features: ["AC", "Reclining Seats", "PA System", "Emergency Exit", "Overhead Storage", "Curtains"],
     priceRange: "₹30/km onwards",
-    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/7/LI/QO/KQ/4765337/20-seater-mini-bus-hire.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2022/7/LI/QO/KQ/4765337/20-seater-mini-bus-hire.jpg"],
     description: "The 20-seater Mini Bus bridges the gap between tempo travellers and full coaches. Perfect for mid-sized corporate events, school excursions, and community pilgrimages.",
     bestFor: ["Corporate Events", "School Trips", "Community Tours"],
     destinations: ["Rajasthan", "Kerala", "Goa", "Hyderabad", "Andaman"],
@@ -309,16 +276,14 @@ export const vehicles: Vehicle[] = [
   },
   {
     id: "mini-bus-26",
-    name: "Mini Bus (26 Seater)",
+    name: "Mini Bus 26 Seater",
     type: "Mini Bus",
     capacity: "26 Passengers",
     acType: "AC / Non-AC",
     features: ["AC", "Reclining Seats", "PA System", "TV Screen", "First Aid", "Large Luggage Bay"],
     priceRange: "₹35/km onwards",
-    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/2/KT/OZ/QC/4765337/26-seater-mini-bus-rental-services-500x500.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2022/2/KT/OZ/QC/4765337/26-seater-mini-bus-rental-services-500x500.jpg"],
     description: "Our 26-seater mini bus offers the perfect blend of capacity and comfort. Great for team outings, family reunions, and multi-day tours across India.",
     bestFor: ["Team Outings", "Family Reunions", "Multi-Day Tours"],
     destinations: ["Rajasthan", "Kashmir", "Kerala", "Goa", "Himachal Pradesh"],
@@ -326,35 +291,31 @@ export const vehicles: Vehicle[] = [
   },
   {
     id: "mini-bus-32",
-    name: "Mini Bus (32 Seater)",
+    name: "Mini Bus 32 Seater",
     type: "Mini Bus",
     capacity: "32 Passengers",
     acType: "AC",
     features: ["AC", "Reclining Seats", "PA System", "Large TV", "Emergency Exit", "Luggage Bay"],
     priceRange: "₹38/km onwards",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/5/311107065/IC/KM/ND/4765337/32-seater-bus-on-hire.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2023/5/311107065/IC/KM/ND/4765337/32-seater-bus-on-hire.jpg"],
     description: "The 32-seater mini bus is ideal for large family tours and school excursions. It offers a comfortable ride with a spacious luggage bay for extended travel.",
     bestFor: ["Large Family Tours", "School Excursions", "Sports Teams"],
     destinations: ["Rajasthan", "Kerala", "Goa", "Uttarakhand"],
     specs: { fuel: "Diesel", luggage: "Extra Large Bay", doors: "2", transmission: "Manual" },
   },
 
-  // ─── LUXURY COACHES ─────────────────────────────────────
+  // ─── LUXURY COACHES ──────────────────────────────────
   {
     id: "luxury-coach-40",
-    name: "Luxury Coach (40 Seater)",
+    name: "Luxury Coach 40 Seater",
     type: "Luxury Coach",
     capacity: "40 Passengers",
     acType: "AC",
     features: ["AC", "Reclining Seats", "Onboard Washroom", "PA System", "LED TV", "Charging Points", "Mini Pantry"],
     priceRange: "₹45/km onwards",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop&crop=top",
-    gallery: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop&crop=top",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2021/1/VG/LO/BO/4765337/40-seater-luxury-bus-on-rent-500x500.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2021/1/VG/LO/BO/4765337/40-seater-luxury-bus-on-rent-500x500.jpg"],
     description: "Our luxury 40-seater coach is the ultimate group travel experience. Equipped with washroom, pantry, and entertainment — ideal for large corporate groups, weddings, and interstate tours.",
     bestFor: ["Large Corporate Groups", "Wedding Transport", "Interstate Tours"],
     destinations: ["Rajasthan", "Kashmir", "Kerala", "Goa", "Himachal Pradesh", "Andaman"],
@@ -363,16 +324,14 @@ export const vehicles: Vehicle[] = [
   },
   {
     id: "luxury-coach-50",
-    name: "Luxury Coach (50 Seater)",
+    name: "Luxury Coach 50 Seater",
     type: "Luxury Coach",
     capacity: "50 Passengers",
     acType: "AC",
     features: ["AC", "Super Reclining Seats", "Onboard Washroom", "PA System", "LED TV", "Charging Points", "Mini Pantry", "WiFi"],
     priceRange: "₹55/km onwards",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=450&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=450&fit=crop",
-    ],
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/3/295889040/TJ/RZ/MC/4765337/50-seater-luxury-coach-bus-hire-500x500.jpg",
+    gallery: ["https://5.imimg.com/data5/SELLER/Default/2023/3/295889040/TJ/RZ/MC/4765337/50-seater-luxury-coach-bus-hire-500x500.jpg"],
     description: "The 50-seater luxury coach is our flagship vehicle for mega events. WiFi-enabled, washroom-equipped, and designed for maximum comfort on long-distance travel across India and beyond.",
     bestFor: ["Mega Events", "Convention Transport", "Pan-India Tours"],
     destinations: ["Rajasthan", "Kashmir", "Kerala", "Goa", "All India"],
