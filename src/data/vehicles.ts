@@ -7,21 +7,69 @@ export interface Vehicle {
   features: string[];
   priceRange: string;
   image: string;
+  gallery: string[];
   description: string;
   bestFor: string[];
   destinations: string[];
+  badge?: string;
+  specs: {
+    fuel: string;
+    luggage: string;
+    doors: string;
+    transmission: string;
+  };
 }
 
 export const vehicleCategories = [
   "All",
   "Sedan",
   "SUV",
+  "Hatchback",
+  "Luxury",
   "Tempo Traveller",
   "Mini Bus",
   "Luxury Coach",
 ];
 
 export const vehicles: Vehicle[] = [
+  // ─── HATCHBACKS ────────────────────────────────────────
+  {
+    id: "wagonr",
+    name: "Maruti WagonR",
+    type: "Hatchback",
+    capacity: "4 Passengers",
+    acType: "AC",
+    features: ["AC", "Music System", "Comfortable Seats", "Fuel Efficient", "Easy Parking"],
+    priceRange: "₹8/km onwards",
+    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/110483/wagonr-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/110483/wagonr-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/110483/wagonr-interior-dashboard-2.jpeg?isig=0&q=80",
+    ],
+    description: "Compact, fuel-efficient and easy to navigate. Ideal for budget-friendly city transfers and quick airport pickups for solo travelers or couples.",
+    bestFor: ["City Transfers", "Airport Pickup", "Budget Travel"],
+    destinations: ["Hyderabad", "Goa", "Rajasthan", "Kerala"],
+    specs: { fuel: "Petrol / CNG", luggage: "1 Bag", doors: "5", transmission: "Manual" },
+  },
+  {
+    id: "swift-hatch",
+    name: "Maruti Swift",
+    type: "Hatchback",
+    capacity: "4 Passengers",
+    acType: "AC",
+    features: ["AC", "Touchscreen", "Rear Parking Sensors", "Alloy Wheels", "Stylish Design"],
+    priceRange: "₹9/km onwards",
+    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80",
+    ],
+    description: "The sporty Swift combines style and efficiency. A popular choice for weekend getaways and city exploration with its agile handling.",
+    bestFor: ["Weekend Getaways", "City Tours", "Youth Travel"],
+    destinations: ["Hyderabad", "Goa", "Rajasthan"],
+    specs: { fuel: "Petrol", luggage: "1 Bag", doors: "5", transmission: "Manual / AMT" },
+  },
+
+  // ─── SEDANS ────────────────────────────────────────────
   {
     id: "swift-dzire",
     name: "Swift Dzire",
@@ -31,9 +79,15 @@ export const vehicles: Vehicle[] = [
     features: ["AC", "Music System", "Comfortable Seats", "Luggage Space", "GPS Navigation"],
     priceRange: "₹10/km onwards",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-interior-dashboard.jpeg?isig=0&q=80",
+    ],
     description: "The Swift Dzire is perfect for small families and couples. A reliable and fuel-efficient sedan offering a smooth ride across city tours and short-distance destinations.",
     bestFor: ["City Tours", "Airport Transfers", "Couple Trips"],
     destinations: ["Hyderabad", "Goa", "Rajasthan", "Kerala"],
+    badge: "Most Popular",
+    specs: { fuel: "Petrol / CNG", luggage: "2 Bags", doors: "4", transmission: "Manual / AMT" },
   },
   {
     id: "toyota-etios",
@@ -44,9 +98,13 @@ export const vehicles: Vehicle[] = [
     features: ["AC", "Power Steering", "Central Locking", "Ample Boot Space", "Music System"],
     priceRange: "₹11/km onwards",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/etios-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/etios-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    ],
     description: "Toyota Etios offers exceptional reliability and comfort. Ideal for business travel and family outings with its spacious interiors and proven Toyota build quality.",
     bestFor: ["Business Travel", "Family Outings", "Hill Stations"],
     destinations: ["Hyderabad", "Himachal Pradesh", "Uttarakhand", "Rajasthan"],
+    specs: { fuel: "Petrol / Diesel", luggage: "2 Bags", doors: "4", transmission: "Manual" },
   },
   {
     id: "honda-amaze",
@@ -57,10 +115,16 @@ export const vehicles: Vehicle[] = [
     features: ["AC", "Cruise Control", "Rear Camera", "Touchscreen Infotainment", "Alloy Wheels"],
     priceRange: "₹12/km onwards",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/amaze-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/amaze-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    ],
     description: "The Honda Amaze is a premium sedan with refined interiors and advanced features. Perfect for travelers seeking a blend of comfort and style on Indian roads.",
     bestFor: ["Premium City Tours", "Weekend Getaways", "Corporate Travel"],
     destinations: ["Goa", "Kerala", "Rajasthan", "Hyderabad"],
+    specs: { fuel: "Petrol / Diesel", luggage: "2 Bags", doors: "4", transmission: "Manual / CVT" },
   },
+
+  // ─── SUVs ───────────────────────────────────────────────
   {
     id: "toyota-innova",
     name: "Toyota Innova Crysta",
@@ -70,9 +134,33 @@ export const vehicles: Vehicle[] = [
     features: ["AC", "Captain Seats", "Ample Luggage Space", "Music System", "Power Windows", "Rear AC Vents"],
     priceRange: "₹16/km onwards",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-interior-seats.jpeg?isig=0&q=80",
+    ],
     description: "The Innova Crysta is India's most loved MPV. Spacious captain seats, powerful engine, and unmatched reliability make it the top choice for family road trips and group tours across all terrains.",
     bestFor: ["Family Trips", "Group Tours", "Hill Station Trips", "Long Distance"],
     destinations: ["Kashmir", "Ladakh", "Kerala", "Rajasthan", "Himachal Pradesh", "Goa", "Uttarakhand"],
+    badge: "Best Seller",
+    specs: { fuel: "Diesel", luggage: "4 Bags", doors: "4", transmission: "Manual / Automatic" },
+  },
+  {
+    id: "kia-carens",
+    name: "Kia Carens",
+    type: "SUV",
+    capacity: "6-7 Passengers",
+    acType: "AC",
+    features: ["AC", "Panoramic Sunroof", "ADAS", "Wireless Charging", "Ventilated Seats", "360 Camera"],
+    priceRange: "₹17/km onwards",
+    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/141897/carens-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/141897/carens-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+    ],
+    description: "Kia Carens blends Korean style with feature-loaded comfort. Ventilated seats, massive sunroof, and premium interiors elevate every journey for modern travelers.",
+    bestFor: ["Modern Family Travel", "Premium Group Trips", "Weekend Escapes"],
+    destinations: ["Goa", "Kerala", "Rajasthan", "Hyderabad"],
+    badge: "New",
+    specs: { fuel: "Petrol / Diesel", luggage: "3 Bags", doors: "4", transmission: "Manual / DCT" },
   },
   {
     id: "mahindra-xuv700",
@@ -83,9 +171,13 @@ export const vehicles: Vehicle[] = [
     features: ["AC", "Panoramic Sunroof", "ADAS Safety", "Touchscreen", "Wireless Charging", "All-Wheel Drive"],
     priceRange: "₹18/km onwards",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+    ],
     description: "The XUV700 combines cutting-edge technology with rugged capability. Its advanced safety features and powerful performance make it ideal for adventurous mountain and off-road journeys.",
     bestFor: ["Adventure Trips", "Mountain Roads", "Off-Road Journeys"],
     destinations: ["Ladakh", "Sikkim", "Meghalaya", "Kashmir", "Himachal Pradesh"],
+    specs: { fuel: "Diesel / Petrol", luggage: "4 Bags", doors: "4", transmission: "Manual / Automatic" },
   },
   {
     id: "toyota-fortuner",
@@ -96,9 +188,70 @@ export const vehicles: Vehicle[] = [
     features: ["AC", "4x4 Drive", "Leather Seats", "Cruise Control", "Terrain Management", "Premium Audio"],
     priceRange: "₹22/km onwards",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80",
-    description: "The Fortuner is the king of SUVs. A premium luxury vehicle built to conquer any terrain. Ideal for VIP travel, mountain expeditions, and those who demand the absolute best in comfort and power.",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80",
+    ],
+    description: "The Fortuner is the king of SUVs. A premium luxury vehicle built to conquer any terrain. Ideal for VIP travel, mountain expeditions, and those who demand the absolute best.",
     bestFor: ["VIP Travel", "Mountain Expeditions", "Luxury Road Trips"],
     destinations: ["Ladakh", "Kashmir", "Sikkim", "Rajasthan", "Uttarakhand"],
+    specs: { fuel: "Diesel", luggage: "4 Bags", doors: "4", transmission: "Manual / Automatic" },
+  },
+
+  // ─── LUXURY ─────────────────────────────────────────────
+  {
+    id: "toyota-vellfire",
+    name: "Toyota Vellfire",
+    type: "Luxury",
+    capacity: "6-7 Passengers",
+    acType: "Dual Zone AC",
+    features: ["Dual AC", "Executive Lounge Seats", "Ottoman Footrests", "Ambient Lighting", "Refrigerator", "Power Curtains", "Wireless Charging"],
+    priceRange: "₹40/km onwards",
+    image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/168997/vellfire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+    gallery: [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/168997/vellfire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+    ],
+    description: "The Toyota Vellfire is the pinnacle of luxury MPV travel. Its executive lounge seats with ottoman footrests and refrigerator make every journey feel like first-class travel.",
+    bestFor: ["VVIP Travel", "Celebrity Transport", "Executive Transfers"],
+    destinations: ["Hyderabad", "Mumbai", "Delhi", "Dubai"],
+    badge: "Ultra Luxury",
+    specs: { fuel: "Hybrid", luggage: "3 Bags", doors: "4", transmission: "Automatic" },
+  },
+  {
+    id: "mercedes-vclass",
+    name: "Mercedes V-Class",
+    type: "Luxury",
+    capacity: "6-7 Passengers",
+    acType: "Multi Zone AC",
+    features: ["Multi AC", "Massage Seats", "Glass Roof", "MBUX Infotainment", "Burmester Audio", "Conference Setup"],
+    priceRange: "₹50/km onwards",
+    image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=450&fit=crop",
+    ],
+    description: "The Mercedes V-Class is luxury redefined. Offering business conference seating, Burmester sound, and a glass roof — it's the ultimate executive van for elite clientele.",
+    bestFor: ["Corporate Conferences", "Airport VIP", "Luxury Weddings"],
+    destinations: ["Hyderabad", "Dubai", "Singapore", "Europe"],
+    badge: "Premium",
+    specs: { fuel: "Diesel", luggage: "3 Bags", doors: "4", transmission: "Automatic" },
+  },
+
+  // ─── TEMPO TRAVELLERS ───────────────────────────────────
+  {
+    id: "tempo-9-seater",
+    name: "Tempo Traveller (9 Seater)",
+    type: "Tempo Traveller",
+    capacity: "9 Passengers",
+    acType: "AC / Non-AC",
+    features: ["AC", "Push-Back Seats", "Music System", "Curtains", "Reading Light", "Luggage Rack"],
+    priceRange: "₹18/km onwards",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=450&fit=crop",
+    ],
+    description: "The 9-seater Tempo is ideal for small group travel. Comfortable reclining seats and good luggage space make it perfect for pilgrimage tours and corporate team outings.",
+    bestFor: ["Small Groups", "Pilgrimages", "Corporate Outings"],
+    destinations: ["Kashmir", "Rajasthan", "Kerala", "Goa"],
+    specs: { fuel: "Diesel", luggage: "6 Bags", doors: "3", transmission: "Manual" },
   },
   {
     id: "tempo-12-seater",
@@ -108,10 +261,15 @@ export const vehicles: Vehicle[] = [
     acType: "AC / Non-AC",
     features: ["AC", "Push-Back Seats", "LCD Screen", "Music System", "Luggage Carrier", "Curtains"],
     priceRange: "₹20/km onwards",
-    image: "https://www.traveller.com.au/content/dam/images/g/u/n/p/p/3/image.related.articleLeadwide.620x349.gunpp2.png/1488330286782.jpg",
+    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=450&fit=crop",
+    ],
     description: "The 12-seater Tempo Traveller is perfect for medium-sized groups. Comfortable push-back seats and entertainment system ensure an enjoyable journey for pilgrimages and group tours.",
     bestFor: ["Group Tours", "Pilgrimages", "Corporate Outings"],
     destinations: ["Kashmir", "Rajasthan", "Kerala", "Goa", "Himachal Pradesh", "Uttarakhand"],
+    badge: "Most Booked",
+    specs: { fuel: "Diesel", luggage: "8 Bags", doors: "3", transmission: "Manual" },
   },
   {
     id: "tempo-17-seater",
@@ -121,11 +279,17 @@ export const vehicles: Vehicle[] = [
     acType: "AC / Non-AC",
     features: ["AC", "Push-Back Seats", "LCD Screen", "Mic System", "First Aid Kit", "Large Luggage Space"],
     priceRange: "₹24/km onwards",
-    image: "https://5.imimg.com/data5/SELLER/Default/2021/12/FD/EX/RE/4765337/17-seater-tempo-traveller-500x500.jpg",
+    image: "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=800&h=450&fit=crop",
+    ],
     description: "The 17-seater Tempo Traveller is ideal for larger groups and educational tours. Spacious interiors and ample luggage space make long journeys comfortable for everyone.",
     bestFor: ["Large Group Tours", "College Trips", "Wedding Parties"],
     destinations: ["Rajasthan", "Kashmir", "Goa", "Kerala", "Andaman"],
+    specs: { fuel: "Diesel", luggage: "12 Bags", doors: "3", transmission: "Manual" },
   },
+
+  // ─── MINI BUSES ─────────────────────────────────────────
   {
     id: "mini-bus-20",
     name: "Mini Bus (20 Seater)",
@@ -134,10 +298,14 @@ export const vehicles: Vehicle[] = [
     acType: "AC / Non-AC",
     features: ["AC", "Reclining Seats", "PA System", "Emergency Exit", "Overhead Storage", "Curtains"],
     priceRange: "₹30/km onwards",
-    image: "https://5.imimg.com/data5/SELLER/Default/2022/7/LI/QO/KQ/4765337/20-seater-mini-bus-hire.jpg",
+    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=450&fit=crop",
+    ],
     description: "The 20-seater Mini Bus bridges the gap between tempo travellers and full coaches. Perfect for mid-sized corporate events, school excursions, and community pilgrimages.",
     bestFor: ["Corporate Events", "School Trips", "Community Tours"],
     destinations: ["Rajasthan", "Kerala", "Goa", "Hyderabad", "Andaman"],
+    specs: { fuel: "Diesel", luggage: "Large Bay", doors: "2", transmission: "Manual" },
   },
   {
     id: "mini-bus-26",
@@ -147,11 +315,34 @@ export const vehicles: Vehicle[] = [
     acType: "AC / Non-AC",
     features: ["AC", "Reclining Seats", "PA System", "TV Screen", "First Aid", "Large Luggage Bay"],
     priceRange: "₹35/km onwards",
-    image: "https://5.imimg.com/data5/SELLER/Default/2022/2/KT/OZ/QC/4765337/26-seater-mini-bus-rental-services-500x500.jpg",
+    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&h=450&fit=crop",
+    ],
     description: "Our 26-seater mini bus offers the perfect blend of capacity and comfort. Great for team outings, family reunions, and multi-day tours across India.",
     bestFor: ["Team Outings", "Family Reunions", "Multi-Day Tours"],
     destinations: ["Rajasthan", "Kashmir", "Kerala", "Goa", "Himachal Pradesh"],
+    specs: { fuel: "Diesel", luggage: "Large Bay", doors: "2", transmission: "Manual" },
   },
+  {
+    id: "mini-bus-32",
+    name: "Mini Bus (32 Seater)",
+    type: "Mini Bus",
+    capacity: "32 Passengers",
+    acType: "AC",
+    features: ["AC", "Reclining Seats", "PA System", "Large TV", "Emergency Exit", "Luggage Bay"],
+    priceRange: "₹38/km onwards",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
+    ],
+    description: "The 32-seater mini bus is ideal for large family tours and school excursions. It offers a comfortable ride with a spacious luggage bay for extended travel.",
+    bestFor: ["Large Family Tours", "School Excursions", "Sports Teams"],
+    destinations: ["Rajasthan", "Kerala", "Goa", "Uttarakhand"],
+    specs: { fuel: "Diesel", luggage: "Extra Large Bay", doors: "2", transmission: "Manual" },
+  },
+
+  // ─── LUXURY COACHES ─────────────────────────────────────
   {
     id: "luxury-coach-40",
     name: "Luxury Coach (40 Seater)",
@@ -160,10 +351,15 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Reclining Seats", "Onboard Washroom", "PA System", "LED TV", "Charging Points", "Mini Pantry"],
     priceRange: "₹45/km onwards",
-    image: "https://5.imimg.com/data5/SELLER/Default/2021/1/VG/LO/BO/4765337/40-seater-luxury-bus-on-rent-500x500.jpg",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop&crop=top",
+    gallery: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop&crop=top",
+    ],
     description: "Our luxury 40-seater coach is the ultimate group travel experience. Equipped with washroom, pantry, and entertainment — ideal for large corporate groups, weddings, and interstate tours.",
     bestFor: ["Large Corporate Groups", "Wedding Transport", "Interstate Tours"],
     destinations: ["Rajasthan", "Kashmir", "Kerala", "Goa", "Himachal Pradesh", "Andaman"],
+    badge: "Best for Groups",
+    specs: { fuel: "Diesel", luggage: "Extra Large Bay", doors: "2", transmission: "Automatic" },
   },
   {
     id: "luxury-coach-50",
@@ -173,30 +369,35 @@ export const vehicles: Vehicle[] = [
     acType: "AC",
     features: ["AC", "Super Reclining Seats", "Onboard Washroom", "PA System", "LED TV", "Charging Points", "Mini Pantry", "WiFi"],
     priceRange: "₹55/km onwards",
-    image: "https://5.imimg.com/data5/SELLER/Default/2023/3/295889040/TJ/RZ/MC/4765337/50-seater-luxury-coach-bus-hire-500x500.jpg",
+    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=450&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=450&fit=crop",
+    ],
     description: "The 50-seater luxury coach is our flagship vehicle for mega events. WiFi-enabled, washroom-equipped, and designed for maximum comfort on long-distance travel across India and beyond.",
     bestFor: ["Mega Events", "Convention Transport", "Pan-India Tours"],
     destinations: ["Rajasthan", "Kashmir", "Kerala", "Goa", "All India"],
+    badge: "Flagship",
+    specs: { fuel: "Diesel", luggage: "Mega Bay", doors: "2", transmission: "Automatic" },
   },
 ];
 
 export const destinationVehicleMap: Record<string, string[]> = {
-  "Kashmir": ["swift-dzire", "toyota-innova", "mahindra-xuv700", "toyota-fortuner", "tempo-12-seater", "tempo-17-seater", "luxury-coach-40"],
+  "Kashmir": ["swift-dzire", "toyota-innova", "mahindra-xuv700", "toyota-fortuner", "tempo-9-seater", "tempo-12-seater", "tempo-17-seater", "luxury-coach-40"],
   "Ladakh": ["toyota-innova", "mahindra-xuv700", "toyota-fortuner"],
   "Himachal Pradesh": ["toyota-etios", "toyota-innova", "mahindra-xuv700", "tempo-12-seater", "mini-bus-26"],
-  "Kerala": ["swift-dzire", "honda-amaze", "toyota-innova", "tempo-12-seater", "tempo-17-seater", "mini-bus-20", "luxury-coach-40", "luxury-coach-50"],
-  "Rajasthan": ["swift-dzire", "toyota-etios", "honda-amaze", "toyota-innova", "toyota-fortuner", "tempo-12-seater", "tempo-17-seater", "mini-bus-20", "mini-bus-26", "luxury-coach-40", "luxury-coach-50"],
-  "Goa": ["swift-dzire", "honda-amaze", "toyota-innova", "tempo-12-seater", "tempo-17-seater", "mini-bus-20", "luxury-coach-40", "luxury-coach-50"],
+  "Kerala": ["swift-dzire", "honda-amaze", "kia-carens", "toyota-innova", "tempo-9-seater", "tempo-12-seater", "tempo-17-seater", "mini-bus-20", "luxury-coach-40", "luxury-coach-50"],
+  "Rajasthan": ["swift-dzire", "toyota-etios", "honda-amaze", "toyota-innova", "toyota-fortuner", "tempo-9-seater", "tempo-12-seater", "tempo-17-seater", "mini-bus-20", "mini-bus-26", "mini-bus-32", "luxury-coach-40", "luxury-coach-50"],
+  "Goa": ["wagonr", "swift-hatch", "swift-dzire", "honda-amaze", "kia-carens", "toyota-innova", "tempo-12-seater", "tempo-17-seater", "mini-bus-20", "luxury-coach-40", "luxury-coach-50"],
   "Meghalaya": ["mahindra-xuv700", "toyota-innova"],
   "Andaman": ["swift-dzire", "toyota-innova", "tempo-17-seater", "mini-bus-20", "luxury-coach-40"],
   "Sikkim": ["mahindra-xuv700", "toyota-fortuner", "toyota-innova"],
   "Uttarakhand": ["toyota-etios", "toyota-innova", "toyota-fortuner", "tempo-12-seater"],
-  "Hyderabad": ["swift-dzire", "toyota-etios", "honda-amaze", "toyota-innova", "mini-bus-20"],
-  "Dubai": ["toyota-innova", "toyota-fortuner"],
-  "Singapore": ["swift-dzire", "toyota-innova"],
+  "Hyderabad": ["wagonr", "swift-hatch", "swift-dzire", "toyota-etios", "honda-amaze", "toyota-innova", "toyota-vellfire", "mercedes-vclass", "mini-bus-20"],
+  "Dubai": ["toyota-innova", "toyota-fortuner", "toyota-vellfire", "mercedes-vclass"],
+  "Singapore": ["swift-dzire", "toyota-innova", "mercedes-vclass"],
   "Thailand": ["swift-dzire", "toyota-innova"],
   "Bali": ["swift-dzire", "toyota-innova"],
-  "Europe": ["luxury-coach-40", "luxury-coach-50"],
+  "Europe": ["luxury-coach-40", "luxury-coach-50", "mercedes-vclass"],
   "Switzerland": ["toyota-innova", "luxury-coach-40"],
   "Turkey": ["toyota-innova", "luxury-coach-40"],
   "Australia": ["toyota-innova", "luxury-coach-40"],
