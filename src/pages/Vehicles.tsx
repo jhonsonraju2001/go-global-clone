@@ -1,11 +1,11 @@
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import {
   motion, AnimatePresence, useScroll, useTransform,
-  useMotionValue, useSpring, useInView
+  useMotionValue, useSpring, useInView, useAnimationFrame
 } from "framer-motion";
 import {
-  Car, Users, Snowflake, Star, MapPin, ChevronRight, X, Check,
-  Fuel, Luggage, Gauge, Shield, Zap, Award, Phone, Sparkles, ArrowRight
+  Car, Users, Snowflake, MapPin, ChevronRight, X, Check,
+  Fuel, Luggage, Gauge, Shield, Zap, Award, Phone, Sparkles, ArrowRight, Star
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -20,7 +20,7 @@ const categoryIcons: Record<string, string> = {
   Luxury: "✨", "Tempo Traveller": "🚐", "Mini Bus": "🚌", "Luxury Coach": "🚎",
 };
 
-const badgeColors: Record<string, string> = {
+const badgeGradients: Record<string, string> = {
   "Most Popular": "from-primary to-orange-400",
   "Best Seller": "from-amber-500 to-yellow-400",
   "New": "from-accent to-blue-400",
@@ -31,208 +31,229 @@ const badgeColors: Record<string, string> = {
   "Flagship": "from-rose-600 to-pink-400",
 };
 
-// ── 3D Tilt Card Hook ─────────────────────────────────────────────────────────
-const useTilt = () => {
+// ── Word reveal animation ────────────────────────────────────────────
+const WordReveal = ({ text, className, delay = 0 }: { text: string; className?: string; delay?: number }) => {
+  const words = text.split(" ");
+  return (
+    <span className={className}>
+      {words.map((word, i) => (
+        <span key={i} className="inline-block overflow-hidden mr-[0.25em]">
+          <motion.span
+            className="inline-block"
+            initial={{ y: "110%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            transition={{ duration: 0.7, delay: delay + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {word}
+          </motion.span>
+        </span>
+      ))}
+    </span>
+  );
+};
+
+// ── Infinite marquee strip ───────────────────────────────────────────
+const MARQUEE_ITEMS = ["HATCHBACK", "SEDAN", "SUV", "LUXURY", "TEMPO TRAVELLER", "MINI BUS", "LUXURY COACH", "INNOVA CRYSTA", "FORTUNER", "VELLFIRE"];
+
+const Marquee = ({ reverse = false }) => {
+  const x = useMotionValue(0);
+  const speed = reverse ? 0.4 : -0.4;
+
+  useAnimationFrame(() => {
+    x.set(x.get() + speed);
+    if (x.get() < -800) x.set(0);
+    if (x.get() > 0) x.set(-800);
+  });
+
+  return (
+    <div className="overflow-hidden py-3 border-y border-primary/20">
+      <motion.div style={{ x }} className="flex gap-8 whitespace-nowrap w-max">
+        {[...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map((item, i) => (
+          <span key={i} className="flex items-center gap-4 text-xs font-black uppercase tracking-[0.25em] text-foreground/30">
+            {item}
+            <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
+          </span>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
+
+// ── Magnetic 3D Card ────────────────────────────────────────────────
+const MagneticCard = ({ vehicle, index, onClick }: { vehicle: Vehicle; index: number; onClick: () => void }) => {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [8, -8]), { stiffness: 300, damping: 30 });
-  const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-8, 8]), { stiffness: 300, damping: 30 });
-  const glowX = useTransform(x, [-0.5, 0.5], [0, 100]);
-  const glowY = useTransform(y, [-0.5, 0.5], [0, 100]);
-  const glowBg = useTransform(
-    [glowX, glowY],
-    ([gx, gy]: number[]) => `radial-gradient(circle at ${gx}% ${gy}%, hsl(var(--primary)/0.18) 0%, transparent 60%)`
-  );
+  const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [12, -12]), { stiffness: 400, damping: 25 });
+  const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-12, 12]), { stiffness: 400, damping: 25 });
+  const shadowX = useTransform(x, [-0.5, 0.5], [-20, 20]);
+  const shadowY = useTransform(y, [-0.5, 0.5], [-20, 20]);
+  const shimX = useTransform(x, [-0.5, 0.5], ["0%", "100%"]);
+  const shimY = useTransform(y, [-0.5, 0.5], ["0%", "100%"]);
 
-  const onMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+  // Pre-compute all derived motion values at top level (no hooks in JSX)
+  const boxShadow = useTransform(
+    [shadowX, shadowY],
+    ([sx, sy]: number[]) =>
+      `${sx}px ${sy}px 40px hsl(var(--primary)/0.25), 0 4px 20px hsl(var(--foreground)/0.08)`
+  );
+  const shimmerBg = useTransform(
+    [shimX, shimY],
+    ([sx, sy]: string[]) =>
+      `radial-gradient(circle at ${sx} ${sy}, hsl(var(--primary)/0.12) 0%, transparent 55%)`
+  );
+  const imgScale = useTransform(y, [-0.5, 0.5], [1.06, 1.0]);
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
     x.set((e.clientX - rect.left) / rect.width - 0.5);
     y.set((e.clientY - rect.top) / rect.height - 0.5);
   }, [x, y]);
 
-  const onMouseLeave = useCallback(() => {
+  const handleMouseLeave = useCallback(() => {
     x.set(0); y.set(0);
+    setIsHovered(false);
   }, [x, y]);
 
-  return { ref, rotateX, rotateY, glowBg, onMouseMove, onMouseLeave };
-};
-
-// ── Glitch Text Component ─────────────────────────────────────────────────────
-const GlitchText = ({ text, className }: { text: string; className?: string }) => {
-  const [glitching, setGlitching] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setGlitching(true);
-      setTimeout(() => setGlitching(false), 200);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <span className={`relative inline-block ${className}`}>
-      <span className={glitching ? "opacity-0" : "opacity-100"} style={{ transition: "opacity 0.05s" }}>
-        {text}
-      </span>
-      {glitching && (
-        <>
-          <span className="absolute inset-0 text-primary" style={{ clipPath: "inset(20% 0 60% 0)", transform: "translateX(-4px)" }}>
-            {text}
-          </span>
-          <span className="absolute inset-0 text-accent" style={{ clipPath: "inset(60% 0 20% 0)", transform: "translateX(4px)" }}>
-            {text}
-          </span>
-        </>
-      )}
-    </span>
-  );
-};
-
-// ── Animated Counter ─────────────────────────────────────────────────────────
-const Counter = ({ to, suffix = "" }: { to: number; suffix?: string }) => {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    let start = 0;
-    const step = to / 40;
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= to) { setCount(to); clearInterval(timer); }
-      else setCount(Math.floor(start));
-    }, 30);
-    return () => clearInterval(timer);
-  }, [inView, to]);
-
-  return <span ref={ref}>{count}{suffix}</span>;
-};
-
-// ── 3D Vehicle Card ────────────────────────────────────────────────────────────
-const VehicleCard = ({ vehicle, index, onClick }: { vehicle: Vehicle; index: number; onClick: () => void }) => {
-  const { ref, rotateX, rotateY, glowBg, onMouseMove, onMouseLeave } = useTilt();
+  const inViewRef = useRef(null);
+  const isInView = useInView(inViewRef, { once: true, amount: 0.15 });
 
   return (
     <motion.div
-      layout
-      initial={{ opacity: 0, y: 60, scale: 0.9 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.8, y: 20 }}
-      transition={{ delay: index * 0.06, duration: 0.5, type: "spring", stiffness: 120, damping: 18 }}
-      style={{ perspective: 1000 }}
-      className="cursor-pointer group"
+      ref={inViewRef}
+      initial={{ opacity: 0, y: 80 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.65, delay: index * 0.07, ease: [0.22, 1, 0.36, 1] }}
+      style={{ perspective: 1200 }}
+      className="group cursor-pointer"
       onClick={onClick}
     >
       <motion.div
         ref={ref}
-        style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        onMouseMove={onMouseMove}
-        onMouseLeave={onMouseLeave}
-        className="relative h-full"
+        style={{ rotateX, rotateY, transformStyle: "preserve-3d", boxShadow }}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        onMouseEnter={() => setIsHovered(true)}
+        className="rounded-[24px] overflow-hidden bg-card border border-border h-full flex flex-col"
       >
-        {/* Glow spotlight on hover */}
+        {/* Shimmer overlay */}
         <motion.div
-          className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 z-10"
-          style={{ background: glowBg }}
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none z-20 rounded-[24px] transition-opacity duration-300"
+          style={{ background: shimmerBg }}
         />
 
-        <div className="bg-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 border border-border h-full flex flex-col">
-          {/* Image */}
-          <div className="relative overflow-hidden h-52">
-            <motion.img
-              src={vehicle.image}
-              alt={vehicle.name}
-              className="w-full h-full object-cover"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1449965408869-ebd13bc7b0b6?w=800&h=450&fit=crop";
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent" />
+        {/* Image area */}
+        <div className="relative overflow-hidden h-52 flex-shrink-0">
+          <motion.img
+            src={vehicle.image}
+            alt={vehicle.name}
+            className="w-full h-full object-cover"
+            style={{ scale: imgScale }}
+            whileHover={{ scale: 1.08 }}
+            transition={{ duration: 0.6 }}
+            onError={(e) => {
+              (e.target as HTMLImageElement).src =
+                "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=450&fit=crop";
+            }}
+          />
+          {/* Dark gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-            {/* Shimmer sweep on hover */}
+          {/* Shimmer sweep */}
+          <motion.div
+            initial={{ x: "-100%", skewX: -15 }}
+            whileHover={{ x: "250%" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="absolute inset-0 w-1/3 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"
+          />
+
+          {/* Type badge */}
+          <div className="absolute top-3 left-3 z-10">
             <motion.div
-              initial={{ x: "-100%", opacity: 0 }}
-              whileHover={{ x: "200%", opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-background/20 to-transparent skew-x-12 pointer-events-none"
-            />
-
-            {/* Type chip */}
-            <div className="absolute top-3 left-3 z-20">
-              <motion.span
-                whileHover={{ scale: 1.1 }}
-                className="bg-background/90 backdrop-blur-md text-foreground text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow"
-              >
-                {categoryIcons[vehicle.type] || "🚗"} {vehicle.type}
-              </motion.span>
-            </div>
-
-            {/* Badge */}
-            {vehicle.badge && (
-              <div className="absolute top-3 right-3 z-20">
-                <span className={`text-xs font-bold px-3 py-1.5 rounded-full text-white bg-gradient-to-r ${badgeColors[vehicle.badge] || "from-primary to-orange-400"} shadow-lg`}>
-                  {vehicle.badge}
-                </span>
-              </div>
-            )}
-
-            {/* Bottom vehicle info */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
-              <h3 className="text-base font-bold text-background leading-tight">{vehicle.name}</h3>
-              <div className="flex items-center gap-3 text-background/70 text-xs mt-1">
-                <span className="flex items-center gap-1"><Users className="w-3 h-3" />{vehicle.capacity}</span>
-                <span className="flex items-center gap-1"><Snowflake className="w-3 h-3" />{vehicle.acType}</span>
-                <span className="ml-auto font-semibold text-background">{vehicle.priceRange}</span>
-              </div>
-            </div>
-
-            {/* Hover CTA overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileHover={{ opacity: 1 }}
-              className="absolute inset-0 bg-primary/25 backdrop-blur-[2px] flex items-center justify-center z-30"
+              initial={{ opacity: 0, scale: 0.7 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.07 + 0.3 }}
+              className="bg-black/60 backdrop-blur-md text-white text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1.5 border border-white/10"
             >
-              <motion.span
-                initial={{ scale: 0.8, y: 10 }}
-                whileHover={{ scale: 1, y: 0 }}
-                className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full font-semibold flex items-center gap-2 shadow-xl text-sm"
-              >
-                View Details <ChevronRight className="w-4 h-4" />
-              </motion.span>
+              {categoryIcons[vehicle.type] || "🚗"} {vehicle.type}
             </motion.div>
           </div>
 
-          {/* Body */}
-          <div className="p-4 flex-1 flex flex-col gap-3">
-            <p className="text-muted-foreground text-xs line-clamp-2 leading-relaxed">{vehicle.description}</p>
-
-            <div className="grid grid-cols-2 gap-2">
-              <div className="bg-muted/80 rounded-xl p-2 flex items-center gap-1.5">
-                <Fuel className="w-3 h-3 text-primary flex-shrink-0" />
-                <span className="text-xs text-muted-foreground truncate">{vehicle.specs.fuel}</span>
-              </div>
-              <div className="bg-muted/80 rounded-xl p-2 flex items-center gap-1.5">
-                <Luggage className="w-3 h-3 text-primary flex-shrink-0" />
-                <span className="text-xs text-muted-foreground truncate">{vehicle.specs.luggage}</span>
-              </div>
+          {/* Badge */}
+          {vehicle.badge && (
+            <div className="absolute top-3 right-3 z-10">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.7, y: -5 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: index * 0.07 + 0.4 }}
+                className={`text-[10px] font-black px-2.5 py-1 rounded-full text-white bg-gradient-to-r ${badgeGradients[vehicle.badge] || "from-primary to-orange-400"} shadow-lg`}
+              >
+                ✦ {vehicle.badge}
+              </motion.div>
             </div>
+          )}
 
-            <div className="flex flex-wrap gap-1.5 mt-auto">
-              {vehicle.bestFor.slice(0, 3).map((tag) => (
-                <motion.span
-                  key={tag}
-                  whileHover={{ scale: 1.05 }}
-                  className="text-xs bg-primary/10 text-primary px-2.5 py-1 rounded-lg font-medium"
+          {/* Bottom info */}
+          <div className="absolute bottom-0 left-0 right-0 p-3.5 z-10">
+            <motion.h3
+              className="text-sm font-black text-white leading-tight"
+              style={{ translateZ: 20 }}
+            >
+              {vehicle.name}
+            </motion.h3>
+            <div className="flex items-center justify-between mt-1">
+              <div className="flex items-center gap-2 text-white/60 text-[10px]">
+                <span className="flex items-center gap-1"><Users className="w-2.5 h-2.5" />{vehicle.capacity}</span>
+                <span className="flex items-center gap-1"><Snowflake className="w-2.5 h-2.5" />{vehicle.acType}</span>
+              </div>
+              <span className="text-primary font-black text-xs">{vehicle.priceRange}</span>
+            </div>
+          </div>
+
+          {/* Hover CTA */}
+          <AnimatePresence>
+            {isHovered && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="absolute inset-0 flex items-center justify-center z-30 bg-primary/20 backdrop-blur-[3px]"
+              >
+                <motion.div
+                  initial={{ scale: 0.6, y: 15 }}
+                  animate={{ scale: 1, y: 0 }}
+                  exit={{ scale: 0.6, y: 15 }}
+                  className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full font-black text-xs flex items-center gap-2 shadow-2xl"
                 >
-                  {tag}
-                </motion.span>
-              ))}
+                  Explore <ChevronRight className="w-3.5 h-3.5" />
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Card body */}
+        <div className="p-4 flex-1 flex flex-col gap-3">
+          <p className="text-muted-foreground text-[11px] line-clamp-2 leading-relaxed">{vehicle.description}</p>
+          <div className="grid grid-cols-2 gap-1.5">
+            <div className="bg-muted/60 rounded-xl p-2 flex items-center gap-1.5">
+              <Fuel className="w-3 h-3 text-primary" />
+              <span className="text-[10px] text-muted-foreground truncate">{vehicle.specs.fuel}</span>
             </div>
+            <div className="bg-muted/60 rounded-xl p-2 flex items-center gap-1.5">
+              <Luggage className="w-3 h-3 text-primary" />
+              <span className="text-[10px] text-muted-foreground truncate">{vehicle.specs.luggage}</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-1 mt-auto">
+            {vehicle.bestFor.slice(0, 3).map((tag) => (
+              <span key={tag} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-md font-bold">
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </motion.div>
@@ -240,7 +261,7 @@ const VehicleCard = ({ vehicle, index, onClick }: { vehicle: Vehicle; index: num
   );
 };
 
-// ── Vehicle Modal ─────────────────────────────────────────────────────────────
+// ── Vehicle Modal (bottom sheet) ──────────────────────────────────────
 const VehicleModal = ({ vehicle, onClose }: { vehicle: Vehicle; onClose: () => void }) => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -252,71 +273,66 @@ const VehicleModal = ({ vehicle, onClose }: { vehicle: Vehicle; onClose: () => v
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-foreground/70 backdrop-blur-md"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/75 backdrop-blur-md"
       onClick={onClose}
     >
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: "100%", opacity: 0 }}
-        transition={{ type: "spring", stiffness: 280, damping: 30 }}
+        transition={{ type: "spring", stiffness: 300, damping: 32 }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-card w-full sm:max-w-2xl sm:rounded-3xl rounded-t-3xl max-h-[95vh] overflow-y-auto shadow-2xl"
+        className="bg-card w-full sm:max-w-2xl sm:rounded-3xl rounded-t-3xl max-h-[92vh] overflow-y-auto shadow-2xl"
       >
-        {/* Hero */}
-        <div className="relative h-64 sm:h-72 overflow-hidden sm:rounded-t-3xl rounded-t-3xl">
+        {/* Hero image */}
+        <div className="relative h-64 sm:h-72 overflow-hidden sm:rounded-t-3xl rounded-t-3xl flex-shrink-0">
           <motion.img
             src={vehicle.image}
             alt={vehicle.name}
             className="w-full h-full object-cover"
-            initial={{ scale: 1.1 }}
+            initial={{ scale: 1.15 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             onError={(e) => {
-              (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1449965408869-ebd13bc7b0b6?w=800&h=450&fit=crop";
+              (e.target as HTMLImageElement).src =
+                "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=450&fit=crop";
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent" />
-
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 w-9 h-9 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center hover:bg-background transition-colors shadow-lg z-10"
-          >
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+          <button onClick={onClose} className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 text-white transition z-10">
             <X className="w-4 h-4" />
           </button>
-
           {vehicle.badge && (
             <div className="absolute top-4 left-4 z-10">
-              <span className={`text-xs font-bold px-3 py-1.5 rounded-full text-white bg-gradient-to-r ${badgeColors[vehicle.badge] || "from-primary to-orange-400"}`}>
-                ⭐ {vehicle.badge}
+              <span className={`text-[10px] font-black px-2.5 py-1 rounded-full text-white bg-gradient-to-r ${badgeGradients[vehicle.badge] || "from-primary to-orange-400"}`}>
+                ✦ {vehicle.badge}
               </span>
             </div>
           )}
-
           <div className="absolute bottom-5 left-5 right-5">
             <div className="flex items-end justify-between">
               <div>
-                <p className="text-background/60 text-xs mb-0.5">{vehicle.type}</p>
-                <h2 className="text-2xl font-bold text-background">{vehicle.name}</h2>
-                <div className="flex items-center gap-4 mt-1">
-                  <span className="flex items-center gap-1.5 text-background/80 text-sm"><Users className="w-4 h-4" />{vehicle.capacity}</span>
-                  <span className="flex items-center gap-1.5 text-background/80 text-sm"><Snowflake className="w-4 h-4" />{vehicle.acType}</span>
+                <p className="text-white/50 text-xs">{vehicle.type}</p>
+                <h2 className="text-xl font-black text-white">{vehicle.name}</h2>
+                <div className="flex items-center gap-3 mt-1">
+                  <span className="flex items-center gap-1 text-white/60 text-xs"><Users className="w-3.5 h-3.5" />{vehicle.capacity}</span>
+                  <span className="flex items-center gap-1 text-white/60 text-xs"><Snowflake className="w-3.5 h-3.5" />{vehicle.acType}</span>
                 </div>
               </div>
               <div className="text-right">
-                <p className="text-background/60 text-xs">Starting from</p>
-                <p className="text-background font-bold text-xl">{vehicle.priceRange}</p>
+                <p className="text-white/40 text-[10px]">Starting from</p>
+                <p className="text-white font-black text-lg">{vehicle.priceRange}</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="p-5 space-y-5">
-          <p className="text-muted-foreground leading-relaxed text-sm">{vehicle.description}</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">{vehicle.description}</p>
 
           {/* Specs */}
           <div>
-            <h3 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
+            <h3 className="font-black text-foreground mb-3 text-sm flex items-center gap-2">
               <Gauge className="w-4 h-4 text-primary" /> Specifications
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -326,16 +342,11 @@ const VehicleModal = ({ vehicle, onClose }: { vehicle: Vehicle; onClose: () => v
                 { icon: Car, label: "Doors", value: vehicle.specs.doors },
                 { icon: Gauge, label: "Gearbox", value: vehicle.specs.transmission },
               ].map(({ icon: Icon, label, value }, i) => (
-                <motion.div
-                  key={label}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + i * 0.05 }}
-                  className="bg-muted rounded-2xl p-3 text-center"
-                >
+                <motion.div key={label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.06 }}
+                  className="bg-muted rounded-2xl p-3 text-center">
                   <Icon className="w-4 h-4 text-primary mx-auto mb-1" />
-                  <p className="text-xs text-muted-foreground">{label}</p>
-                  <p className="text-xs font-semibold text-foreground mt-0.5">{value}</p>
+                  <p className="text-[10px] text-muted-foreground">{label}</p>
+                  <p className="text-xs font-black text-foreground mt-0.5">{value}</p>
                 </motion.div>
               ))}
             </div>
@@ -343,19 +354,14 @@ const VehicleModal = ({ vehicle, onClose }: { vehicle: Vehicle; onClose: () => v
 
           {/* Features */}
           <div>
-            <h3 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
-              <Star className="w-4 h-4 text-primary" /> Features & Amenities
+            <h3 className="font-black text-foreground mb-3 text-sm flex items-center gap-2">
+              <Star className="w-4 h-4 text-primary" /> Features
             </h3>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-1.5">
               {vehicle.features.map((f, i) => (
-                <motion.span
-                  key={f}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.15 + i * 0.04 }}
-                  className="flex items-center gap-2 text-xs text-muted-foreground bg-muted/50 rounded-xl px-3 py-2"
-                >
-                  <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" /> {f}
+                <motion.span key={f} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}
+                  className="flex items-center gap-2 text-xs text-muted-foreground bg-muted/40 rounded-xl px-3 py-2">
+                  <Check className="w-3 h-3 text-primary flex-shrink-0" /> {f}
                 </motion.span>
               ))}
             </div>
@@ -363,51 +369,40 @@ const VehicleModal = ({ vehicle, onClose }: { vehicle: Vehicle; onClose: () => v
 
           {/* Best For */}
           <div>
-            <h3 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
+            <h3 className="font-black text-foreground mb-3 text-sm flex items-center gap-2">
               <Award className="w-4 h-4 text-primary" /> Best For
             </h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5">
               {vehicle.bestFor.map((b) => (
-                <span key={b} className="text-xs bg-primary/10 text-primary px-3 py-1.5 rounded-full font-semibold">
-                  {b}
-                </span>
+                <span key={b} className="text-xs bg-primary/10 text-primary px-3 py-1.5 rounded-full font-bold">{b}</span>
               ))}
             </div>
           </div>
 
           {/* Destinations */}
           <div>
-            <h3 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
+            <h3 className="font-black text-foreground mb-3 text-sm flex items-center gap-2">
               <MapPin className="w-4 h-4 text-primary" /> Available For
             </h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5">
               {vehicle.destinations.map((d) => (
-                <span key={d} className="text-xs bg-accent/10 text-accent border border-accent/20 px-3 py-1.5 rounded-full font-medium">
-                  {d}
-                </span>
+                <span key={d} className="text-xs bg-accent/10 text-accent border border-accent/20 px-2.5 py-1 rounded-full font-medium">{d}</span>
               ))}
             </div>
           </div>
 
           {/* CTAs */}
-          <div className="flex gap-3 pt-1">
-            <motion.a
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              href={`https://wa.me/919700650025?text=Hi! I'm interested in booking ${vehicle.name} for my trip.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 bg-primary text-primary-foreground py-3.5 rounded-2xl font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-primary/30 text-sm"
-            >
+          <div className="flex gap-2 pt-1">
+            <motion.a whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}
+              href={`https://wa.me/919700650025?text=Hi! I'm interested in booking ${vehicle.name}.`}
+              target="_blank" rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2 bg-primary text-primary-foreground py-3.5 rounded-2xl font-black text-sm shadow-lg shadow-primary/30">
               <Zap className="w-4 h-4" /> Book on WhatsApp
             </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+            <motion.a whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}
               href="tel:+919700650025"
-              className="flex items-center justify-center gap-2 bg-muted text-foreground px-5 py-3.5 rounded-2xl font-semibold hover:bg-muted/70 transition-colors text-sm"
-            >
-              <Phone className="w-4 h-4" /> Call
+              className="flex items-center justify-center gap-2 bg-muted text-foreground px-5 py-3.5 rounded-2xl font-black text-sm">
+              <Phone className="w-4 h-4" />
             </motion.a>
           </div>
         </div>
@@ -416,31 +411,26 @@ const VehicleModal = ({ vehicle, onClose }: { vehicle: Vehicle; onClose: () => v
   );
 };
 
-// ── Floating Particles ─────────────────────────────────────────────────────────
-const FloatingParticles = () => (
-  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    {[...Array(20)].map((_, i) => (
-      <motion.div
-        key={i}
-        className="absolute w-1 h-1 rounded-full bg-primary/40"
-        style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%` }}
-        animate={{
-          y: [0, -30, 0],
-          opacity: [0, 1, 0],
-          scale: [0, 1.5, 0],
-        }}
-        transition={{
-          duration: 3 + Math.random() * 3,
-          repeat: Infinity,
-          delay: Math.random() * 4,
-          ease: "easeInOut",
-        }}
-      />
-    ))}
-  </div>
-);
+// ── Animated counter ─────────────────────────────────────────────────
+const Counter = ({ to, suffix = "" }: { to: number; suffix?: string }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true });
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    let cur = 0;
+    const step = to / 45;
+    const t = setInterval(() => {
+      cur += step;
+      if (cur >= to) { setCount(to); clearInterval(t); }
+      else setCount(Math.floor(cur));
+    }, 28);
+    return () => clearInterval(t);
+  }, [inView, to]);
+  return <span ref={ref}>{count}{suffix}</span>;
+};
 
-// ── Main Page ─────────────────────────────────────────────────────────────────
+// ── Main Page ─────────────────────────────────────────────────────────
 const Vehicles = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedDestination, setSelectedDestination] = useState("All");
@@ -448,26 +438,25 @@ const Vehicles = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
-  const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
-  const titleY = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   const filteredVehicles = useMemo(() => {
-    let result = vehicles;
-    if (selectedCategory !== "All") result = result.filter((v) => v.type === selectedCategory);
+    let r = vehicles;
+    if (selectedCategory !== "All") r = r.filter((v) => v.type === selectedCategory);
     if (selectedDestination !== "All") {
       const ids = destinationVehicleMap[selectedDestination] || [];
-      result = result.filter((v) => ids.includes(v.id));
+      r = r.filter((v) => ids.includes(v.id));
     }
-    return result;
+    return r;
   }, [selectedCategory, selectedDestination]);
 
   const stats = [
-    { icon: Car, label: "Vehicle Types", value: 8, suffix: "+" },
-    { icon: Users, label: "Happy Travelers", value: 50, suffix: "K+" },
-    { icon: MapPin, label: "Destinations", value: 20, suffix: "+" },
-    { icon: Shield, label: "Safety Rating", value: 5, suffix: "★" },
+    { label: "Vehicle Types", value: 8, suffix: "+", icon: Car },
+    { label: "Happy Travelers", value: 50, suffix: "K+", icon: Users },
+    { label: "Destinations", value: 20, suffix: "+", icon: MapPin },
+    { label: "Safety Rating", value: 5, suffix: "★", icon: Shield },
   ];
 
   return (
@@ -475,256 +464,242 @@ const Vehicles = () => {
       <Header />
       <main className="min-h-screen bg-background overflow-x-hidden">
 
-        {/* ── HERO ─────────────────────────────────────────── */}
-        <div ref={heroRef} className="relative h-screen overflow-hidden">
-          <motion.div style={{ y: heroY, scale: heroScale }} className="absolute inset-0 origin-center">
+        {/* ══ CINEMATIC HERO ═══════════════════════════════════════════ */}
+        <div ref={heroRef} className="relative h-screen overflow-hidden bg-black">
+
+          {/* Parallax BG */}
+          <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
             <img
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&h=1080&fit=crop"
-              alt="Vehicle fleet"
+              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&h=1080&fit=crop&q=90"
+              alt="Luxury car"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/90" />
           </motion.div>
 
-          {/* Floating particles */}
-          <FloatingParticles />
-
-          {/* Animated grid lines */}
-          <div className="absolute inset-0 opacity-10 pointer-events-none"
+          {/* Animated noise grain overlay */}
+          <div
+            className="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-overlay"
             style={{
-              backgroundImage: "linear-gradient(hsl(var(--primary)/0.5) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)/0.5) 1px, transparent 1px)",
-              backgroundSize: "80px 80px",
+              backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+              backgroundRepeat: "repeat",
+              backgroundSize: "128px",
             }}
           />
 
           {/* Glowing orbs */}
           <motion.div
-            animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.6, 0.3] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none"
+            animate={{ scale: [1, 1.4, 1], x: [0, 30, 0], opacity: [0.25, 0.5, 0.25] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-1/3 left-1/4 w-[500px] h-[500px] rounded-full bg-primary/30 blur-[120px] pointer-events-none"
           />
           <motion.div
-            animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.5, 0.2] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-accent/20 blur-3xl pointer-events-none"
+            animate={{ scale: [1.2, 1, 1.3], x: [0, -20, 0], opacity: [0.15, 0.35, 0.15] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-accent/20 blur-[100px] pointer-events-none"
           />
 
+          {/* Horizontal line accents */}
           <motion.div
-            style={{ opacity: heroOpacity, y: titleY }}
-            className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1.5, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute top-[20%] left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent origin-left pointer-events-none"
+          />
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1.5, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute bottom-[25%] left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent origin-left pointer-events-none"
+          />
+
+          {/* Hero content */}
+          <motion.div
+            style={{ y: textY, opacity }}
+            className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6"
           >
-            {/* Animated icon */}
+            {/* Pill */}
             <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 180, delay: 0.2 }}
-              whileHover={{ rotate: 10 }}
-              className="w-20 h-20 rounded-2xl bg-primary/30 backdrop-blur-md border border-primary/40 flex items-center justify-center mb-6 shadow-2xl shadow-primary/50"
-            >
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              >
-                <Car className="w-10 h-10 text-primary" />
-              </motion.div>
-            </motion.div>
-
-            {/* Pill tag */}
-            <motion.div
-              initial={{ opacity: 0, y: -20, scale: 0.9 }}
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="flex items-center gap-2 bg-primary/20 backdrop-blur-md border border-primary/30 text-primary px-5 py-2 rounded-full mb-6"
+              transition={{ delay: 0.3, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className="flex items-center gap-2 border border-primary/40 bg-primary/10 backdrop-blur-md text-primary px-4 py-1.5 rounded-full mb-8 text-[11px] font-black uppercase tracking-[0.2em]"
             >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span className="text-xs font-bold uppercase tracking-widest">Premium Fleet 2025</span>
-              <Sparkles className="w-3.5 h-3.5" />
+              <Sparkles className="w-3 h-3" /> Premium Fleet 2025 <Sparkles className="w-3 h-3" />
             </motion.div>
 
-            {/* Glitch title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="text-6xl md:text-8xl font-black text-background leading-none mb-4 tracking-tight"
-            >
-              Our{" "}
-              <GlitchText text="Vehicle" className="text-primary" />
-              <br />
-              <span className="text-background/80">Fleet</span>
-            </motion.h1>
+            {/* Massive title with word reveal */}
+            <div className="mb-6 leading-[0.9]">
+              <div className="block text-[clamp(60px,12vw,130px)] font-black text-white tracking-tighter">
+                <WordReveal text="OUR" delay={0.4} />
+              </div>
+              <div className="block text-[clamp(60px,12vw,130px)] font-black tracking-tighter" style={{ WebkitTextStroke: "2px hsl(var(--primary))", color: "transparent" }}>
+                <WordReveal text="VEHICLE" delay={0.55} />
+              </div>
+              <div className="block text-[clamp(60px,12vw,130px)] font-black text-primary tracking-tighter">
+                <WordReveal text="FLEET" delay={0.7} />
+              </div>
+            </div>
 
+            {/* Subtitle */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="text-background/70 text-lg md:text-xl max-w-2xl leading-relaxed mb-10"
+              transition={{ delay: 1, duration: 0.7 }}
+              className="text-white/50 text-base md:text-lg max-w-xl mb-12 leading-relaxed"
             >
-              17+ premium vehicles — from city hatchbacks to flagship luxury coaches, for every journey
+              17+ premium vehicles — from city hatchbacks to flagship luxury coaches
             </motion.p>
 
-            {/* Stats */}
+            {/* Stats row */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"
+              transition={{ delay: 1.1, duration: 0.6 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl"
             >
-              {stats.map(({ icon: Icon, label, value, suffix }, i) => (
+              {stats.map(({ label, value, suffix, icon: Icon }, i) => (
                 <motion.div
                   key={label}
-                  whileHover={{ scale: 1.05, y: -4 }}
-                  className="bg-background/10 backdrop-blur-md border border-background/20 rounded-2xl px-5 py-4 text-center cursor-default"
+                  whileHover={{ scale: 1.06, y: -4 }}
+                  className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-center"
                 >
-                  <Icon className="w-5 h-5 text-primary mx-auto mb-2" />
-                  <div className="text-background font-black text-2xl tabular-nums">
+                  <Icon className="w-4 h-4 text-primary mx-auto mb-2" />
+                  <div className="text-white font-black text-2xl tabular-nums">
                     <Counter to={value} suffix={suffix} />
                   </div>
-                  <div className="text-background/60 text-xs mt-0.5">{label}</div>
+                  <div className="text-white/40 text-[10px] mt-0.5 uppercase tracking-wider">{label}</div>
                 </motion.div>
               ))}
             </motion.div>
+          </motion.div>
 
-            {/* Scroll indicator */}
+          {/* Scroll mouse indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-none"
+          >
             <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+              animate={{ y: [0, 6, 0] }}
+              transition={{ duration: 1.4, repeat: Infinity }}
+              className="w-6 h-9 rounded-full border-2 border-white/25 flex items-start justify-center pt-1.5"
             >
-              <span className="text-background/40 text-xs uppercase tracking-widest">Scroll</span>
-              <div className="w-5 h-8 rounded-full border-2 border-background/30 flex items-start justify-center p-1">
-                <motion.div
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                  className="w-1 h-2 bg-primary rounded-full"
-                />
-              </div>
+              <div className="w-1 h-2 bg-primary rounded-full" />
             </motion.div>
+            <span className="text-white/30 text-[10px] uppercase tracking-widest">Scroll</span>
           </motion.div>
         </div>
 
-        {/* ── CATEGORY FILTER ────────────────────────────────── */}
-        <section className="py-14 bg-muted/20 relative overflow-hidden">
-          {/* Background text watermark */}
+        {/* ══ TICKER MARQUEE ═══════════════════════════════════════════ */}
+        <div className="bg-background">
+          <Marquee />
+          <Marquee reverse />
+        </div>
+
+        {/* ══ CATEGORY FILTER ══════════════════════════════════════════ */}
+        <section className="py-14 relative overflow-hidden">
+          {/* Giant watermark */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
-            <span className="text-[200px] font-black text-foreground/[0.02] whitespace-nowrap">VEHICLES</span>
+            <span className="text-[20vw] font-black text-foreground/[0.025] whitespace-nowrap leading-none">FLEET</span>
           </div>
 
           <div className="container-custom relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-10"
-            >
-              <motion.span
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+            <div className="text-center mb-10">
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-primary text-xs font-bold uppercase tracking-widest bg-primary/10 px-4 py-1.5 rounded-full"
+                className="text-primary font-black text-xs uppercase tracking-[0.25em] mb-3"
               >
-                Browse by Type
-              </motion.span>
-              <h2 className="text-3xl md:text-5xl font-black text-foreground mt-3 mb-2">
-                Choose Your
-                <span className="text-primary"> Ride</span>
-              </h2>
-              <p className="text-muted-foreground max-w-md mx-auto text-sm">From compact city cars to flagship luxury coaches</p>
-            </motion.div>
+                ✦ Browse by Type ✦
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="text-4xl md:text-6xl font-black text-foreground"
+              >
+                Choose Your <span className="text-primary">Ride</span>
+              </motion.h2>
+            </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
               {vehicleCategories.map((cat, i) => (
                 <motion.button
                   key={cat}
-                  initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.06, type: "spring", stiffness: 200 }}
-                  whileHover={{ scale: 1.08, y: -6 }}
-                  whileTap={{ scale: 0.92 }}
+                  transition={{ delay: i * 0.05, type: "spring", stiffness: 260 }}
+                  whileHover={{ scale: 1.07, y: -5 }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`relative flex flex-col items-center justify-center gap-2 p-4 rounded-2xl text-center transition-all duration-300 border-2 overflow-hidden ${
+                  className={`relative flex flex-col items-center justify-center gap-2 p-4 rounded-2xl border-2 overflow-hidden transition-colors duration-200 ${
                     selectedCategory === cat
-                      ? "border-primary text-primary-foreground shadow-xl shadow-primary/30"
-                      : "bg-card border-border text-muted-foreground hover:border-primary/40 hover:text-foreground hover:shadow-lg"
+                      ? "border-primary text-primary-foreground"
+                      : "bg-card border-border text-muted-foreground hover:border-primary/30 hover:text-foreground"
                   }`}
                 >
                   {selectedCategory === cat && (
-                    <motion.div
-                      layoutId="categoryBg"
-                      className="absolute inset-0 bg-gradient-to-br from-primary to-orange-400 -z-10"
-                    />
+                    <motion.div layoutId="catBg" className="absolute inset-0 bg-gradient-to-br from-primary to-orange-400" />
                   )}
-                  <motion.span
-                    animate={selectedCategory === cat ? { scale: [1, 1.3, 1] } : {}}
-                    transition={{ duration: 0.4 }}
-                    className="text-2xl"
-                  >
-                    {categoryIcons[cat] || "🚗"}
-                  </motion.span>
-                  <span className="text-xs font-bold leading-tight">{cat}</span>
-                  {selectedCategory === cat && (
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-white/70"
-                    />
-                  )}
+                  <span className="relative z-10 text-xl">{categoryIcons[cat]}</span>
+                  <span className="relative z-10 text-[10px] font-black leading-tight text-center">{cat}</span>
                 </motion.button>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ── DESTINATION FILTER ────────────────────────────── */}
-        <section className="container-custom py-5">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex items-center gap-2 flex-wrap"
-          >
-            <div className="flex items-center gap-1.5 mr-1">
-              <MapPin className="w-4 h-4 text-primary" />
-              <span className="text-sm font-bold text-foreground">Destination:</span>
+        {/* ══ DESTINATION PILLS ════════════════════════════════════════ */}
+        <section className="container-custom pb-6">
+          <div className="flex items-center gap-2 flex-wrap">
+            <div className="flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-primary" />
+              <span className="text-xs font-black text-foreground uppercase tracking-wider">Destination:</span>
             </div>
             {["All", ...allDestinations].map((dest) => (
               <motion.button
                 key={dest}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.06 }}
+                whileTap={{ scale: 0.94 }}
                 onClick={() => setSelectedDestination(dest)}
-                className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 border ${
+                className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all duration-200 border ${
                   selectedDestination === dest
-                    ? "bg-primary border-primary text-primary-foreground shadow-md shadow-primary/25"
-                    : "bg-card border-border text-muted-foreground hover:border-primary/40 hover:text-foreground"
+                    ? "bg-primary border-primary text-primary-foreground shadow-md shadow-primary/20"
+                    : "bg-card border-border text-muted-foreground hover:border-primary/30 hover:text-foreground"
                 }`}
               >
                 {dest === "All" ? "🌐 All" : dest}
               </motion.button>
             ))}
-          </motion.div>
+          </div>
         </section>
 
-        {/* ── VEHICLE GRID ──────────────────────────────────── */}
-        <section className="container-custom pb-20">
-          <div className="flex items-center justify-between mb-8">
+        {/* ══ VEHICLE GRID ═════════════════════════════════════════════ */}
+        <section className="container-custom pb-24">
+          {/* Results label */}
+          <AnimatePresence mode="wait">
             <motion.div
               key={`${selectedCategory}-${selectedDestination}`}
-              initial={{ opacity: 0, x: -15 }}
+              initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="flex items-center gap-3"
+              exit={{ opacity: 0, x: 10 }}
+              className="flex items-center gap-3 mb-8"
             >
-              <div className="w-1 h-8 bg-gradient-to-b from-primary to-orange-400 rounded-full" />
+              <div className="w-0.5 h-10 bg-gradient-to-b from-primary to-orange-400 rounded-full" />
               <div>
-                <p className="text-xs text-muted-foreground uppercase tracking-wider">Results</p>
-                <p className="font-black text-xl text-foreground">
+                <p className="text-[10px] text-muted-foreground uppercase tracking-widest">Showing</p>
+                <p className="font-black text-xl text-foreground leading-tight">
                   {filteredVehicles.length} Vehicle{filteredVehicles.length !== 1 ? "s" : ""}
                   {selectedCategory !== "All" && <span className="text-primary"> · {selectedCategory}</span>}
                 </p>
               </div>
             </motion.div>
-          </div>
+          </AnimatePresence>
 
           <AnimatePresence mode="popLayout">
             {filteredVehicles.length === 0 ? (
@@ -732,62 +707,47 @@ const Vehicles = () => {
                 key="empty"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                exit={{ opacity: 0 }}
                 className="text-center py-24"
               >
                 <motion.div
-                  animate={{ rotate: [0, 10, -10, 0] }}
+                  animate={{ rotate: [0, 15, -15, 0] }}
                   transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}
-                  className="text-7xl mb-4"
-                >🚗</motion.div>
-                <p className="text-muted-foreground text-lg font-medium">No vehicles for this combination</p>
+                  className="text-7xl mb-4 inline-block"
+                >
+                  🚗
+                </motion.div>
+                <p className="text-muted-foreground font-bold">No vehicles for this combination</p>
                 <button
                   onClick={() => { setSelectedCategory("All"); setSelectedDestination("All"); }}
-                  className="mt-4 text-primary hover:underline text-sm font-semibold"
+                  className="mt-4 text-primary text-sm font-black hover:underline"
                 >
                   ← Clear filters
                 </button>
               </motion.div>
             ) : (
-              <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredVehicles.map((vehicle, index) => (
-                  <VehicleCard
-                    key={vehicle.id}
-                    vehicle={vehicle}
-                    index={index}
-                    onClick={() => setSelectedVehicle(vehicle)}
-                  />
+              <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredVehicles.map((vehicle, i) => (
+                  <MagneticCard key={vehicle.id} vehicle={vehicle} index={i} onClick={() => setSelectedVehicle(vehicle)} />
                 ))}
               </motion.div>
             )}
           </AnimatePresence>
         </section>
 
-        {/* ── CTA ───────────────────────────────────────────── */}
-        <section className="relative overflow-hidden py-24">
-          {/* Animated background */}
-          <div className="absolute inset-0 bg-foreground">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-              className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] opacity-5"
-              style={{
-                backgroundImage: "conic-gradient(from 0deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)))"
-              }}
-            />
-          </div>
-          <FloatingParticles />
-
-          {/* Orbs */}
+        {/* ══ CTA SECTION ══════════════════════════════════════════════ */}
+        <section className="relative overflow-hidden py-28 bg-black">
+          {/* Conic gradient bg */}
           <motion.div
-            animate={{ scale: [1, 1.4, 1], x: [0, 20, 0] }}
-            transition={{ duration: 6, repeat: Infinity }}
-            className="absolute top-0 left-0 w-96 h-96 rounded-full bg-primary/30 blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] aspect-square opacity-10 pointer-events-none"
+            style={{ background: "conic-gradient(from 0deg, hsl(var(--primary)), hsl(var(--accent)), transparent, hsl(var(--primary)))" }}
           />
           <motion.div
-            animate={{ scale: [1.2, 1, 1.2], x: [0, -20, 0] }}
-            transition={{ duration: 7, repeat: Infinity, delay: 1 }}
-            className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-accent/20 blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none"
+            animate={{ scale: [1, 1.5, 1] }}
+            transition={{ duration: 5, repeat: Infinity }}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/20 blur-[120px] pointer-events-none"
           />
 
           <div className="container-custom text-center relative z-10">
@@ -796,39 +756,30 @@ const Vehicles = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <motion.div
-                animate={{ rotate: [0, 10, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-                className="text-6xl mb-5 inline-block"
-              >
-                🚀
-              </motion.div>
-              <h2 className="text-4xl md:text-6xl font-black text-background mb-4 leading-tight">
-                Need a Custom<br />
-                <span className="text-primary">Fleet?</span>
+              <p className="text-primary text-xs font-black uppercase tracking-[0.25em] mb-4">✦ Custom Fleet ✦</p>
+              <h2 className="text-5xl md:text-7xl font-black text-white leading-tight mb-4">
+                Need a<br /><span className="text-primary">Custom Fleet?</span>
               </h2>
-              <p className="text-background/60 max-w-lg mx-auto mb-10 text-base">
-                Weddings, corporate convoys, multi-city tours — we handle any scale with dedicated 24/7 support.
+              <p className="text-white/40 max-w-md mx-auto mb-10 text-sm leading-relaxed">
+                Weddings, corporate convoys, multi-city tours — we handle any scale with 24/7 support.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <motion.a
-                  whileHover={{ scale: 1.05, boxShadow: "0 20px 40px hsl(var(--primary)/0.5)" }}
-                  whileTap={{ scale: 0.97 }}
+                  whileHover={{ scale: 1.05, boxShadow: "0 0 50px hsl(var(--primary)/0.6)" }}
+                  whileTap={{ scale: 0.96 }}
                   href="https://wa.me/919700650025?text=Hi! I need a custom vehicle package."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-2xl font-bold text-base shadow-2xl shadow-primary/30"
+                  target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-2xl font-black text-sm shadow-2xl shadow-primary/40"
                 >
-                  <Zap className="w-5 h-5" /> Chat on WhatsApp
-                  <ArrowRight className="w-4 h-4" />
+                  <Zap className="w-4 h-4" /> Chat on WhatsApp <ArrowRight className="w-4 h-4" />
                 </motion.a>
                 <motion.a
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.97 }}
+                  whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+                  whileTap={{ scale: 0.96 }}
                   href="tel:+919700650025"
-                  className="inline-flex items-center gap-2 bg-background/10 border border-background/20 backdrop-blur-sm text-background px-8 py-4 rounded-2xl font-bold text-base hover:bg-background/20 transition-colors"
+                  className="inline-flex items-center gap-2 bg-white/5 border border-white/15 text-white px-8 py-4 rounded-2xl font-black text-sm transition-colors"
                 >
-                  <Phone className="w-5 h-5" /> +91 9700650025
+                  <Phone className="w-4 h-4" /> +91 9700650025
                 </motion.a>
               </div>
             </motion.div>
