@@ -236,14 +236,14 @@ export const hyderabadData: DestinationData = {
   name: "Hyderabad",
   tagline: "City of Pearls & Biryani",
   description: "Experience the grandeur of the Nizams, the iconic Charminar, world-famous Hyderabadi biryani, and the perfect blend of ancient heritage with modern tech city vibes.",
-  heroImage: "https://images.unsplash.com/photo-1572254077143-f4f2b3e6c695?w=1920&h=1080&fit=crop",
+  heroImage: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1572254077143-f4f2b3e6c695?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1600689516878-a4a7ad7a4f5c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1604422499447-b0e13e537ae2?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop"
   ],
   packages: [
     {
@@ -253,7 +253,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 22000,
       currentPrice: 17600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1572254077143-f4f2b3e6c695?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
       description: "Discover the royal heritage of the Nizams, from the iconic Charminar to the opulent Falaknuma Palace, and savor the legendary Hyderabadi cuisine.",
       highlights: ["Charminar", "Golconda Fort", "Falaknuma Palace", "Authentic Biryani Trail"],
       inclusions: ["3 Nights 5-Star Hotel", "Daily Breakfast", "Heritage Tours", "Biryani Food Tour", "All Transfers"],
@@ -261,27 +261,189 @@ export const hyderabadData: DestinationData = {
       itinerary: [
         {
           day: 1,
-          title: "Arrival - Old City Immersion",
-          description: "Arrive at Rajiv Gandhi International Airport and transfer to your hotel in the heritage area. After freshening up, begin exploring the Old City of Hyderabad - the heart of Nizam heritage. Start at the iconic Charminar (1591), the symbol of Hyderabad, built by Muhammad Quli Qutb Shah to commemorate the end of a deadly plague. Climb to the top for views of the bustling old city. Walk through Laad Bazaar, the bangle market stretching alongside Charminar - thousands of colorful lac and glass bangles glitter in the shops. Continue to Mecca Masjid, one of the largest mosques in India, built with bricks reportedly made from soil brought from Mecca. Evening, experience a walking food tour through the old city - Paya soup, Haleem, Kebabs at Shadab, and the famous Irani chai at a century-old café. End with your first taste of authentic Hyderabadi Dum Biryani.",
-          highlights: ["Charminar 1591 - City Symbol", "Top-Level Panoramic Views", "Laad Bazaar Bangle Shopping", "Mecca Masjid Visit", "Old City Food Walking Tour", "First Authentic Dum Biryani"]
+          title: "Arrival - Charminar & Old City Immersion",
+          description: "Arrive at Rajiv Gandhi International Airport and transfer to your hotel. Start at the iconic Charminar (1591), Hyderabad's defining monument. Walk through Laad Bazaar's glittering bangle shops. Visit Mecca Masjid, one of India's largest mosques. Evening: Old City food tour with Haleem, Paya, and authentic Dum Biryani.",
+          highlights: ["Charminar 1591 - City Symbol", "Laad Bazaar Bangle Shopping", "Mecca Masjid Visit", "Old City Food Walking Tour", "First Authentic Dum Biryani", "Irani Chai at Century-Old Café"]
         },
         {
           day: 2,
           title: "Golconda Fort & Nizam Heritage",
-          description: "Morning visit to Golconda Fort, one of India's most magnificent fortresses and the seat of the Qutb Shahi dynasty before the Nizams. The fort is famous for its acoustic engineering - a clap at the entrance gate can be heard at the highest point, a kilometer away! This was an ingenious alarm system. Explore the royal chambers, the aqueduct system that brought water to every level, and the ruins of the palace. The diamond vaults once held the Hope Diamond, Kohinoor, and other legendary gems. After lunch, visit the Qutb Shahi Tombs - a peaceful necropolis with impressive dome tombs of the Qutb Shahi rulers, often overlooked by tourists. Evening, experience the grandeur of Falaknuma Palace - the Nizam's opulent palace now a luxury Taj hotel. Pre-book the palace tour to see the world's longest dining table (101 seats), Venetian chandeliers, and royal collections. High tea at Falaknuma is an unforgettable experience.",
-          highlights: ["Golconda Fort Acoustic Marvel", "Royal Chambers & Diamond Vaults", "Qutb Shahi Tombs Visit", "400-Year-Old Necropolis", "Falaknuma Palace Tour", "High Tea with Nizam Grandeur"]
+          description: "Visit Golconda Fort, the seat of the Qutb Shahi dynasty, famous for its incredible acoustic engineering where a clap at the entrance echoes at the summit a kilometer away. Explore diamond vaults that once held the Kohinoor. Visit Qutb Shahi Tombs. Evening: High tea at Falaknuma Palace, the Nizam's opulent residence now a Taj heritage hotel.",
+          highlights: ["Golconda Fort Acoustic Marvel", "Royal Diamond Vaults History", "Qutb Shahi Tombs Visit", "Falaknuma Palace Tour", "High Tea with Nizam Grandeur", "101-Seat World's Longest Dining Table"]
         },
         {
           day: 3,
-          title: "Museums, Pearls & Modern Hyderabad",
-          description: "Explore the treasures of the Nizams at the Salar Jung Museum, one of the world's largest one-man collections. Highlights include the Veiled Rebecca (marble sculpture so delicate the veil seems real), the musical clock, and collections spanning Egyptian mummies to European art. Continue to Chowmahalla Palace, the official residence of the Nizams during their rule - the Durbar Hall with its 19 Belgian crystal chandeliers is stunning. Afternoon, visit the pearl market in Pathergatti - Hyderabad has been the 'City of Pearls' for centuries. Learn to distinguish real from cultured pearls and shop for jewelry. Evening, experience modern Hyderabad - visit Ramoji Film City (the world's largest film studio complex) for a studio tour, or explore the bustling Banjara Hills and Jubilee Hills areas with their shopping malls and cafes. Dinner at a modern restaurant serving contemporary takes on Hyderabadi cuisine.",
-          highlights: ["Salar Jung Museum Treasures", "Veiled Rebecca Marble Wonder", "Chowmahalla Palace Durbar", "Pearl Market Shopping", "Ramoji Film City (optional)", "Modern Hyderabad Evening"]
+          title: "Salar Jung Museum, Hussain Sagar & Pearls",
+          description: "Explore the Salar Jung Museum — one of the world's largest one-man collections — featuring the Veiled Rebecca marble wonder. Visit Chowmahalla Palace's stunning Durbar Hall. Afternoon: stroll the shores of Hussain Sagar Lake and photograph the towering Buddha statue on its island. Shop for real pearls at Pathergatti.",
+          highlights: ["Salar Jung Museum Treasures", "Veiled Rebecca Marble Wonder", "Chowmahalla Palace Durbar Hall", "Hussain Sagar Lake & Buddha Statue", "Pearl Market Pathergatti Shopping", "Birla Mandir Hilltop Temple"]
         },
         {
           day: 4,
           title: "Biryani Trail & Departure",
-          description: "Your final morning is dedicated to Hyderabad's most famous export - Biryani. Join a biryani trail to understand the differences between the styles. Start at Paradise for the famous mainstream version, then to Bawarchi for their distinctive preparation, and finally to a local's favorite like Café Bahar or Shah Ghouse. Learn about the dum cooking technique, the specific Hyderabadi spices, and what makes authentic Hyderabadi biryani different from other versions. Pick up biryani masala packets and other food souvenirs from established shops. Time permitting, visit Hussain Sagar Lake and the Buddha statue, or NTR Gardens for a peaceful end to your Hyderabad journey. Transfer to the airport for your departure, carrying the flavors and royal grandeur of the City of Pearls with you.",
-          highlights: ["Authentic Biryani Trail", "Paradise, Bawarchi & More", "Dum Cooking Technique Learn", "Biryani Masala Shopping", "Hussain Sagar Lake (optional)", "City of Pearls Farewell"]
+          description: "Dedicate your final morning to Hyderabad's most famous export — Biryani. Visit Paradise, Bawarchi, and Shah Ghouse for different styles. Learn dum cooking techniques. Pick up biryani masala and food souvenirs. Transfer to airport with flavors and royal grandeur of the City of Pearls.",
+          highlights: ["Authentic Biryani Trail", "Paradise, Bawarchi & Shah Ghouse", "Dum Cooking Technique", "Biryani Masala Shopping", "NTR Gardens (optional)", "City of Pearls Farewell"]
+        }
+      ]
+    },
+    {
+      id: "hyderabad-1day-city",
+      name: "1 Day Hyderabad City Tour",
+      duration: "1D",
+      originalPrice: 4500,
+      currentPrice: 3500,
+      discount: 22,
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+      description: "The perfect one-day whirlwind tour covering all of Hyderabad's iconic landmarks — Charminar, Golconda Fort, Hussain Sagar, and world-famous biryani — in a single memorable day.",
+      highlights: ["Charminar Visit", "Golconda Fort", "Hussain Sagar Lake", "Authentic Biryani Lunch"],
+      inclusions: ["AC Vehicle for Full Day", "Driver Guide", "Biryani Lunch at Top Restaurant", "All Entry Tickets", "Water Bottle"],
+      exclusions: ["Personal Expenses", "Shopping", "Dinner"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Hyderabad in a Day — Pearls, Forts & Biryani",
+          description: "Start at 8 AM at Charminar, the 1591 monument and soul of Old Hyderabad. Explore Laad Bazaar for bangles and Mecca Masjid. Drive to Golconda Fort for the famous acoustic clap test and panoramic views from the top. Lunch at Paradise or Bawarchi for authentic Hyderabadi biryani. Afternoon: Salar Jung Museum for the Veiled Rebecca. Visit Hussain Sagar Lake and see the Buddha statue from the shore. Evening stroll at Tank Bund before departure.",
+          highlights: ["Charminar & Laad Bazaar Morning", "Golconda Fort Acoustic Experience", "Authentic Biryani Lunch", "Salar Jung Museum", "Hussain Sagar Lake & Buddha Statue", "Tank Bund Evening Walk"]
+        }
+      ]
+    },
+    {
+      id: "hyderabad-2day-heritage",
+      name: "2 Day Hyderabad Heritage Tour",
+      duration: "2D/1N",
+      originalPrice: 9500,
+      currentPrice: 7600,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
+      description: "A deep-dive into Hyderabad's royal Nizam heritage over two days — from Charminar's old city lanes to Falaknuma Palace's grandeur and the legendary pearl bazaars.",
+      highlights: ["Charminar & Old City", "Golconda Fort Sound & Light Show", "Falaknuma Palace", "Pearl Shopping"],
+      inclusions: ["1 Night Heritage Hotel", "Daily Breakfast", "AC Vehicle", "Golconda Sound & Light Show Tickets"],
+      exclusions: ["Flights", "Lunch & Dinner", "Personal Shopping"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Old City Heritage — Charminar to Golconda",
+          description: "Morning: Charminar — climb to the top for panoramic old city views. Walk Laad Bazaar and visit Mecca Masjid. Visit Chowmahalla Palace, the official Nizam residence with its stunning crystal-chandelier Durbar Hall. Afternoon: Golconda Fort — explore its massive walls, royal chambers, and legendary acoustic marvel. Evening: Golconda Sound & Light Show narrating 400 years of the fort's history under the stars.",
+          highlights: ["Charminar Top-Level Views", "Laad Bazaar Bangle Market", "Chowmahalla Palace Durbar Hall", "Golconda Fort Exploration", "Diamond Vault History", "Golconda Sound & Light Show"]
+        },
+        {
+          day: 2,
+          title: "Falaknuma Palace, Pearls & Hussain Sagar",
+          description: "Morning: Falaknuma Palace heritage tour — the world's longest dining table, Italian marble, Venetian chandeliers, and the Nizam's personal library. Pearl shopping at Pathergatti, Asia's largest pearl market. Afternoon: Salar Jung Museum's world-class art collection. Drive to Hussain Sagar Lake — photograph the 18-meter Buddha monolith on the island. Birla Mandir temple at sunset before departure.",
+          highlights: ["Falaknuma Palace Morning Tour", "Pathergatti Pearl Bazaar", "Salar Jung Museum Highlights", "Hussain Sagar Lake & Buddha", "Birla Mandir Sunset Temple", "Heritage Farewell Dinner"]
+        }
+      ]
+    },
+    {
+      id: "hyderabad-srisailam-3day",
+      name: "3 Day Hyderabad + Srisailam Tour",
+      duration: "3D/2N",
+      originalPrice: 14500,
+      currentPrice: 11600,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
+      description: "Combine the royal heritage of Hyderabad with a pilgrimage to the sacred Mallikarjuna Jyotirlinga temple at Srisailam and the majestic dam overlooking the Krishna river gorge.",
+      highlights: ["Charminar Hyderabad", "Srisailam Dam", "Mallikarjuna Temple", "Krishna River Gorge"],
+      inclusions: ["2 Nights Hotel", "Daily Breakfast", "AC Vehicle All Days", "Temple Darshan Assistance"],
+      exclusions: ["Flights", "Lunch & Dinner", "Temple Donations"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Hyderabad — Charminar, Golconda & Birla Mandir",
+          description: "Arrive in Hyderabad and begin with the iconic Charminar and Laad Bazaar exploration. Drive to Golconda Fort for its historic grandeur. Afternoon: Hussain Sagar Lake with the Buddha monolith statue. Visit Birla Mandir, built with pure white Rajasthani marble on a 280-foot rocky hill. Evening at leisure in the city.",
+          highlights: ["Charminar Morning Visit", "Laad Bazaar Shopping", "Golconda Fort Tour", "Hussain Sagar Lake", "Buddha Monolith View", "Birla Mandir White Marble Temple"]
+        },
+        {
+          day: 2,
+          title: "Srisailam — Sacred Mallikarjuna Temple & Dam",
+          description: "Early morning drive to Srisailam (220 km, ~4 hrs) through the scenic Nallamala forest. Arrive and seek blessings at Mallikarjuna Jyotirlinga — one of the 12 sacred Shiva Jyotirlingas, perched above the Krishna river. Explore the ancient Bhramaramba Devi temple alongside. Post-darshan, visit the magnificent Srisailam Dam — one of India's largest, spanning the Krishna River Gorge. Panoramic views of the reservoir surrounded by the Nallamala Hills are breathtaking. Overnight at Srisailam.",
+          highlights: ["Mallikarjuna Jyotirlinga Darshan", "Bhramaramba Devi Temple", "Krishna River Sacred Dip", "Srisailam Dam Panoramic Views", "Nallamala Forest Drive", "Krishna River Gorge Sunset"]
+        },
+        {
+          day: 3,
+          title: "Mantralayam Pilgrimage & Return",
+          description: "Drive to Mantralayam (80 km from Srisailam), the sacred town on the banks of the Tungabhadra River. Visit the Raghavendra Swamy Brindavana — the samadhi of Sri Raghavendra Swami, revered by millions of devotees. The 400-year-old Mutt exudes divine peace. Return to Hyderabad (210 km) by afternoon. Optional pearl shopping before airport drop.",
+          highlights: ["Mantralayam Raghavendra Swamy Temple", "Tungabhadra River Sacred Bathing", "Ancient Mutt Spiritual Darshan", "300-Year-Old Brindavana", "Return Journey to Hyderabad", "Pearl Shopping Before Departure"]
+        }
+      ]
+    },
+    {
+      id: "hyderabad-temple-tour",
+      name: "Hyderabad Temple Tour",
+      duration: "3D/2N",
+      originalPrice: 12000,
+      currentPrice: 9600,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop",
+      description: "A sacred pilgrimage tour covering the most revered temples of Hyderabad and Telangana — from the golden spires of Yadadri to the hilltop Chilkur Balaji and the famous Tirupati Balaji.",
+      highlights: ["Yadadri Lakshmi Narasimha Temple", "Birla Mandir", "Chilkur Balaji", "Tirupati Darshan"],
+      inclusions: ["2 Nights Accommodation", "Daily Breakfast", "AC Vehicle", "Temple Darshan Guidance", "Tirupati Special Darshan Tickets"],
+      exclusions: ["Flights", "Lunch & Dinner", "Personal Donations"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Hyderabad City Temples — Birla, Chilkur & Osmansagar",
+          description: "Start at Birla Mandir, Hyderabad's most beautiful white marble temple dedicated to Lord Venkateswara, perched atop a 280-ft rock hill with sweeping city views. Drive to Chilkur Balaji — the 'Visa Balaji' temple, where thousands of devotees seeking overseas visas have had their wishes granted for centuries. Ancient rituals here date back 500 years. Visit Keesara Gutta Shiva Temple along the scenic Osmansagar Lake route. Evening: Hussain Sagar Lake sunset and NTR Garden.",
+          highlights: ["Birla Mandir White Marble Temple", "Hilltop Panoramic City Views", "Chilkur Balaji 500-Year-Old Temple", "Visa Balaji Darshan", "Keesara Gutta Shiva Temple", "Hussain Sagar Lake Sunset"]
+        },
+        {
+          day: 2,
+          title: "Yadadri — The Golden Temple of Telangana",
+          description: "Drive to Yadadri (60 km) — the newly renovated Lakshmi Narasimha Swamy temple, now among India's most magnificent temple complexes after a ₹1,800 crore renovation. The golden gopuram gleams across the Telangana plains. Seek blessings at Lord Narasimha — one of Lord Vishnu's most fierce and protective incarnations. Explore the sacred cave shrines within the hill. Return to Hyderabad and visit Keesaragutta, an ancient Shiva temple with a spectacular annual festival. Evening dinner at a traditional Telangana home-style restaurant.",
+          highlights: ["Yadadri Lakshmi Narasimha Temple", "Golden Gopuram Splendor", "₹1800 Crore Renovation Marvel", "Sacred Cave Shrines", "Keesaragutta Ancient Shiva Temple", "Traditional Telangana Dinner"]
+        },
+        {
+          day: 3,
+          title: "Tirupati — Lord Venkateswara Darshan",
+          description: "Early morning drive to Tirupati (560 km or fly/night train). Visit the Tirumala Venkateswara Temple — the world's richest and most-visited pilgrimage site, receiving over 80,000 devotees daily. The sacred Lord Venkateswara (Balaji) idol is believed to be a wish-fulfilling deity. Experience the overwhelming spiritual energy of Tirumala Hills. After darshan, visit Sri Padmavathi Devi Temple at Tiruchanur. Return to Hyderabad or Tirupati for overnight.",
+          highlights: ["Tirumala Venkateswara Temple Darshan", "World's Richest Temple Visit", "80,000 Daily Devotees Atmosphere", "Special Darshan Assistance", "Padmavathi Devi Temple Tiruchanur", "Sacred Tirumala Hills Blessing"]
+        }
+      ]
+    },
+    {
+      id: "hyderabad-night-tour",
+      name: "Hyderabad Night Tour",
+      duration: "1D (Evening)",
+      originalPrice: 3500,
+      currentPrice: 2800,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+      description: "Discover Hyderabad's magical transformation after dark — illuminated monuments, night street food, lakeside lights, and the famous Golconda Sound & Light show.",
+      highlights: ["Illuminated Charminar", "Golconda Light Show", "Hussain Sagar Night View", "Street Food Trail"],
+      inclusions: ["AC Vehicle Evening", "Golconda Sound & Light Show Ticket", "Street Food Tour with Guide", "Water"],
+      exclusions: ["Lunch", "Personal Shopping"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Hyderabad After Dark — Lights, Food & Heritage",
+          description: "Begin at 5 PM at the illuminated Charminar — the monument glows golden against the evening sky while the surrounding bazaars buzz with activity. Explore Laad Bazaar's bangle shops, lit up in vibrant colors after dark. Street food trail: Shadab's Haleem, hot Irani chai at Nimrah Café, Kebabs at local stalls. Drive along Hussain Sagar Lake for the sparkling city reflections. Arrive at Golconda Fort for the iconic Sound & Light Show at 7 PM — a dramatic narration of 400 years of Qutb Shahi dynasty history projected on the ancient walls. Conclude at Banjara Hills for dessert — Qubani ka Meetha (apricot dessert) and Double Ka Meetha.",
+          highlights: ["Charminar Golden Night Illumination", "Laad Bazaar Night Shopping", "Old City Street Food Trail", "Hussain Sagar Night Lake View", "Golconda Sound & Light Show", "Banjara Hills Dessert Trail"]
+        }
+      ]
+    },
+    {
+      id: "hyderabad-ramoji-tour",
+      name: "Ramoji Film City & Hyderabad Tour",
+      duration: "2D/1N",
+      originalPrice: 11000,
+      currentPrice: 8800,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop",
+      description: "Experience the world's largest film studio complex at Ramoji Film City combined with Hyderabad's iconic heritage landmarks for a perfect blend of entertainment and history.",
+      highlights: ["Ramoji Film City Full Day", "Film Sets & Studio Tours", "Charminar Heritage", "Hussain Sagar Lake"],
+      inclusions: ["1 Night Hotel", "Daily Breakfast", "Ramoji Film City Entry Tickets", "AC Vehicle", "Transfers"],
+      exclusions: ["Flights", "Lunch & Dinner", "Rides Inside Ramoji"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Ramoji Film City — World's Largest Film Studio",
+          description: "Full day at Ramoji Film City (Guinness World Record holder — 1,666 acres), one of Asia's most visited attractions. Explore elaborate film sets representing streets of different Indian cities and foreign countries, gardens, fountains, and live entertainment zones. Watch live shows and stunt performances, visit the Japanese Gardens, and explore Western town sets. Special shows and rides available. Evening: return to hotel and explore the lively Banjara Hills restaurant district for dinner.",
+          highlights: ["Ramoji Film City All-Day Pass", "Guinness Record 1666-Acre Studio", "Film Sets & Street Recreations", "Live Shows & Stunt Performances", "Japanese Gardens & Fountains", "Banjara Hills Dinner"]
+        },
+        {
+          day: 2,
+          title: "Hyderabad Icons — Charminar, Golconda & Hussain Sagar",
+          description: "Morning at Charminar — explore the old city, Laad Bazaar, and Mecca Masjid. Drive to Golconda Fort for its acoustic marvel and hilltop views. Afternoon: Salar Jung Museum to see the Veiled Rebecca and world-class collections. Visit Hussain Sagar Lake and the 18-meter Buddha monolith. Before departure, stop at a certified pearl store at Pathergatti and pick up famous Hyderabadi biryani masala.",
+          highlights: ["Charminar Morning Tour", "Laad Bazaar Shopping", "Golconda Fort Highlights", "Salar Jung Museum", "Hussain Sagar Lake & Buddha", "Pearl & Biryani Masala Shopping"]
         }
       ]
     }
