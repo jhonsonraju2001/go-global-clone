@@ -23,6 +23,54 @@ interface ItineraryGalleryProps {
 
 // Gallery images mapped by destination and package
 const galleryImages: Record<string, Record<string, GalleryImage[]>> = {
+  hyderabad: {
+    "hyderabad-heritage": [
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Charminar — Hyderabad's Icon", day: 1 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Golconda Fort", day: 2 },
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Falaknuma Palace", day: 2 },
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Hussain Sagar Lake & Buddha", day: 3 },
+      { url: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop", caption: "Salar Jung Museum", day: 3 },
+      { url: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop", caption: "Hyderabadi Dum Biryani", day: 4 },
+    ],
+    "hyderabad-1day-city": [
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Charminar Morning", day: 1 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Golconda Fort", day: 1 },
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Hussain Sagar Lake", day: 1 },
+      { url: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop", caption: "Biryani Lunch at Paradise", day: 1 },
+    ],
+    "hyderabad-2day-heritage": [
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Charminar Old City", day: 1 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Golconda Sound & Light Show", day: 1 },
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Falaknuma Palace Heritage", day: 2 },
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Hussain Sagar Buddha", day: 2 },
+      { url: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop", caption: "Pathergatti Pearl Market", day: 2 },
+    ],
+    "hyderabad-srisailam-3day": [
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Charminar Hyderabad", day: 1 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Srisailam Mallikarjuna Temple", day: 2 },
+      { url: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop", caption: "Srisailam Dam Krishna River", day: 2 },
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Mantralayam Raghavendra Swamy", day: 3 },
+    ],
+    "hyderabad-temple-tour": [
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Birla Mandir White Temple", day: 1 },
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Hussain Sagar Sunset", day: 1 },
+      { url: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop", caption: "Yadadri Golden Temple", day: 2 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Tirumala Tirupati Temple", day: 3 },
+      { url: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop", caption: "Padmavathi Devi Temple", day: 3 },
+    ],
+    "hyderabad-night-tour": [
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Charminar Night Illumination", day: 1 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Golconda Light Show", day: 1 },
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Hussain Sagar Lake Night", day: 1 },
+      { url: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop", caption: "Old City Street Food", day: 1 },
+    ],
+    "hyderabad-ramoji-tour": [
+      { url: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop", caption: "Ramoji Film City Studios", day: 1 },
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", caption: "Charminar Day 2", day: 2 },
+      { url: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop", caption: "Golconda Fort Tour", day: 2 },
+      { url: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop", caption: "Hussain Sagar Lake", day: 2 },
+    ],
+  },
   kashmir: {
     "kashmir-highlights": [
       { url: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop", caption: "Dal Lake Shikara Ride", day: 1 },

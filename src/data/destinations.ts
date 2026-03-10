@@ -173,7 +173,7 @@ export const indiaDestinations: Destination[] = [
   {
     id: "hyderabad",
     name: "Hyderabad",
-    description: "City of Pearls & Biryani",
+    description: "City of Pearls, Charminar & Biryani",
     image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
     link: "/destinations/hyderabad"
   }
@@ -220,13 +220,37 @@ export const indiaPackages: Package[] = [
     id: "rajasthan-royal",
     name: "Royal Rajasthan Tour",
     location: "Rajasthan",
-    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=600&fit=crop",
     duration: "8D/7N",
     originalPrice: 63904,
     currentPrice: 49925,
     discount: 22,
     rating: 4.9,
     reviews: 445
+  },
+  {
+    id: "hyderabad-heritage",
+    name: "Hyderabad Heritage Experience",
+    location: "Hyderabad",
+    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+    duration: "4D/3N",
+    originalPrice: 22000,
+    currentPrice: 17600,
+    discount: 20,
+    rating: 4.8,
+    reviews: 312
+  },
+  {
+    id: "hyderabad-srisailam-3day",
+    name: "Hyderabad + Srisailam Tour",
+    location: "Hyderabad",
+    image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
+    duration: "3D/2N",
+    originalPrice: 14500,
+    currentPrice: 11600,
+    discount: 20,
+    rating: 4.7,
+    reviews: 198
   },
   {
     id: "ladakh-adventure",

@@ -197,7 +197,7 @@
   }
 
   .package-card {
-    @apply bg-card rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+    @apply bg-card rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 card-shimmer;
   }
 
   .price-original {
@@ -311,4 +311,163 @@
   .carousel-dot.active {
     @apply bg-primary w-8;
   }
+
+  /* ─── 2025 TRENDING ANIMATIONS ─────────────────────── */
+
+  /* Shimmer sweep */
+  @keyframes shimmer-sweep {
+    0% { transform: translateX(-100%) skewX(-12deg); }
+    100% { transform: translateX(250%) skewX(-12deg); }
+  }
+
+  /* Scroll-reveal entrance */
+  @keyframes reveal-up {
+    from { opacity: 0; transform: translateY(40px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  /* Scroll-reveal from left */
+  @keyframes reveal-left {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Scroll-reveal from right */
+  @keyframes reveal-right {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Smooth bounce (staggered cards) */
+  @keyframes spring-in {
+    0%   { opacity: 0; transform: scale(0.8) translateY(20px); }
+    60%  { transform: scale(1.04) translateY(-6px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  /* Soft pulse glow for CTA buttons */
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.4); }
+    50%       { box-shadow: 0 0 20px 6px hsl(var(--primary) / 0.15); }
+  }
+
+  /* Card image zoom on hover (smooth) */
+  @keyframes img-zoom {
+    from { transform: scale(1); }
+    to   { transform: scale(1.08); }
+  }
+
+  /* Typewriter caret blink */
+  @keyframes caret-blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+
+  /* Infinite marquee scroll */
+  @keyframes marquee-ltr {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* Utility classes */
+  .animate-reveal-up {
+    animation: reveal-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-reveal-left {
+    animation: reveal-left 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-reveal-right {
+    animation: reveal-right 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-spring-in {
+    animation: spring-in 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2.5s ease-in-out infinite;
+  }
+
+  .animate-marquee {
+    animation: marquee-ltr 28s linear infinite;
+  }
+
+  /* Shimmer overlay on card images */
+  .card-shimmer {
+    @apply relative overflow-hidden;
+  }
+
+  .card-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      rgba(255,255,255,0.18) 50%,
+      transparent 60%
+    );
+    transform: translateX(-100%) skewX(-12deg);
+    transition: none;
+  }
+
+  .card-shimmer:hover::after {
+    animation: shimmer-sweep 0.7s ease forwards;
+  }
+
+  /* Hover zoom on destination/package images */
+  .hover-zoom-img img,
+  .hover-zoom-img .img-zoom-target {
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .hover-zoom-img:hover img,
+  .hover-zoom-img:hover .img-zoom-target {
+    transform: scale(1.08);
+  }
+
+  /* Smooth lift card */
+  .card-lift {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .card-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px -12px hsl(var(--primary) / 0.2), 0 18px 36px -18px hsl(var(--foreground) / 0.15);
+  }
+
+  /* Underline sweep link effect */
+  .link-sweep {
+    @apply relative inline-block;
+  }
+
+  .link-sweep::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300;
+  }
+
+  .link-sweep:hover::after {
+    @apply w-full;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Stagger delays for grid children */
+  .stagger-children > *:nth-child(1)  { animation-delay: 0ms; }
+  .stagger-children > *:nth-child(2)  { animation-delay: 80ms; }
+  .stagger-children > *:nth-child(3)  { animation-delay: 160ms; }
+  .stagger-children > *:nth-child(4)  { animation-delay: 240ms; }
+  .stagger-children > *:nth-child(5)  { animation-delay: 320ms; }
+  .stagger-children > *:nth-child(6)  { animation-delay: 400ms; }
+  .stagger-children > *:nth-child(7)  { animation-delay: 480ms; }
+  .stagger-children > *:nth-child(8)  { animation-delay: 560ms; }
 }
+

@@ -27,18 +27,22 @@ const DestinationGrid = ({ title, destinations, sectionId }: DestinationGridProp
           {destinations.map((destination, index) => (
             <motion.div
               key={destination.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
+              transition={{ duration: 0.55, delay: index * 0.07, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -6, transition: { duration: 0.3 } }}
+              className="group"
             >
-              <Link to={destination.link} className="destination-card block h-64 md:h-72">
-                <img
-                  src={destination.image}
-                  alt={destination.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
+              <Link to={destination.link} className="destination-card block h-64 md:h-72 card-shimmer rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500">
+                <div className="w-full h-full overflow-hidden">
+                  <img
+                    src={destination.image}
+                    alt={destination.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="destination-overlay">
                   <motion.h3
                     className="text-xl md:text-2xl font-bold font-display mb-1"
@@ -47,7 +51,7 @@ const DestinationGrid = ({ title, destinations, sectionId }: DestinationGridProp
                     {destination.name}
                   </motion.h3>
                   <p className="text-sm text-white/80 mb-3">{destination.description}</p>
-                  <span className="text-primary font-medium text-sm hover:underline">
+                  <span className="text-primary font-medium text-sm group-hover:underline transition-all">
                     View All Packages →
                   </span>
                 </div>
