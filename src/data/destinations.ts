@@ -173,7 +173,7 @@ export const indiaDestinations: Destination[] = [
   {
     id: "hyderabad",
     name: "Hyderabad",
-    description: "City of Pearls & Biryani",
+    description: "City of Pearls, Charminar & Biryani",
     image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
     link: "/destinations/hyderabad"
   }
