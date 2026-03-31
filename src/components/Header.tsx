@@ -181,18 +181,21 @@ const Header = () => {
                   <summary className="flex items-center justify-between py-2 cursor-pointer hover:text-primary">
                     Other Services <ChevronDown className="w-4 h-4 group-open:rotate-180 transition-transform" />
                   </summary>
-                  <div className="pl-4 space-y-2 mt-2">
-                    {otherServices.map(service => (
-                      <Link key={service} to={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`} className="block py-1 text-muted-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
-                        {service}
-                      </Link>
-                    ))}
-                  </div>
-                </details>
+                    <div className="pl-4 space-y-2 mt-2">
+                      {otherServices.map(service => {
+                        const isVehicles = service === "Vehicles";
+                        const to = isVehicles ? "/vehicles" : `/services/${service.toLowerCase().replace(/\s+/g, "-")}`;
+                        return (
+                          <Link key={service} to={to} className={`block py-1 hover:text-primary ${isVehicles ? "text-primary font-semibold" : "text-muted-foreground"}`} onClick={() => setIsMenuOpen(false)}>
+                            {isVehicles ? "🚗 " : ""}{service}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </details>
                 <Link to="/about" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>About Us</Link>
                 <Link to="/contact" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                 <Link to="/gallery" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
-                <Link to="/vehicles" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Vehicles</Link>
               </div>
             </motion.div>
           )}
