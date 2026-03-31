@@ -25,6 +25,7 @@ const AnimatedRoutes = () => {
         <Route path="/services/:service" element={<ServicePage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/vehicles" element={<Vehicles />} />
+        <Route path="/hyderabad-packages" element={<HyderabadPackages />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

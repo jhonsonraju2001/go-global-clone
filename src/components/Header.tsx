@@ -113,10 +113,6 @@ const Header = () => {
                 <NavigationMenuItem>
                   <Link to="/gallery" className="inline-flex items-center h-10 px-4 text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">Gallery</Link>
                 </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link to="/vehicles" className="inline-flex items-center h-10 px-4 text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">Vehicles</Link>
-                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
 
