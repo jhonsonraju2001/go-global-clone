@@ -89,11 +89,15 @@ const Header = () => {
                   <NavigationMenuTrigger className="h-10 px-4 text-sm font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">Other Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid gap-2 p-4 w-[300px]">
-                      {otherServices.map(service => (
-                        <Link key={service} to={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`} className="block p-2 rounded-lg hover:bg-muted transition-colors text-sm">
-                          {service}
-                        </Link>
-                      ))}
+                      {otherServices.map(service => {
+                        const isVehicles = service === "Vehicles";
+                        const to = isVehicles ? "/vehicles" : `/services/${service.toLowerCase().replace(/\s+/g, "-")}`;
+                        return (
+                          <Link key={service} to={to} className={`block p-2 rounded-lg hover:bg-muted transition-colors text-sm ${isVehicles ? "font-semibold text-primary bg-primary/5 border border-primary/20" : ""}`}>
+                            {isVehicles ? "🚗 " : ""}{service}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
