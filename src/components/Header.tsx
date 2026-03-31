@@ -9,7 +9,7 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const indiaDestinations = ["Kashmir", "Ladakh", "Himachal Pradesh", "Kerala", "Rajasthan", "Goa", "Meghalaya", "Andaman", "Sikkim", "Uttarakhand", "Hyderabad"];
   const globalDestinations = ["Singapore", "Thailand", "Dubai", "Bali", "Europe", "USA", "Switzerland", "France", "Turkey", "Australia"];
-  const otherServices = ["Visa Services", "Travel Insurance", "Forex Exchange", "Hotel Booking", "Flight Booking", "Corporate Travel"];
+  const otherServices = ["Vehicles", "Visa Services", "Travel Insurance", "Forex Exchange", "Hotel Booking", "Flight Booking", "Corporate Travel"];
 
   return (
     <header className="sticky top-0 z-50">
@@ -89,11 +89,15 @@ const Header = () => {
                   <NavigationMenuTrigger className="h-10 px-4 text-sm font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">Other Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid gap-2 p-4 w-[300px]">
-                      {otherServices.map(service => (
-                        <Link key={service} to={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`} className="block p-2 rounded-lg hover:bg-muted transition-colors text-sm">
-                          {service}
-                        </Link>
-                      ))}
+                      {otherServices.map(service => {
+                        const isVehicles = service === "Vehicles";
+                        const to = isVehicles ? "/vehicles" : `/services/${service.toLowerCase().replace(/\s+/g, "-")}`;
+                        return (
+                          <Link key={service} to={to} className={`block p-2 rounded-lg hover:bg-muted transition-colors text-sm ${isVehicles ? "font-semibold text-primary bg-primary/5 border border-primary/20" : ""}`}>
+                            {isVehicles ? "🚗 " : ""}{service}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -108,10 +112,6 @@ const Header = () => {
 
                 <NavigationMenuItem>
                   <Link to="/gallery" className="inline-flex items-center h-10 px-4 text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">Gallery</Link>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link to="/vehicles" className="inline-flex items-center h-10 px-4 text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">Vehicles</Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -181,18 +181,21 @@ const Header = () => {
                   <summary className="flex items-center justify-between py-2 cursor-pointer hover:text-primary">
                     Other Services <ChevronDown className="w-4 h-4 group-open:rotate-180 transition-transform" />
                   </summary>
-                  <div className="pl-4 space-y-2 mt-2">
-                    {otherServices.map(service => (
-                      <Link key={service} to={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`} className="block py-1 text-muted-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
-                        {service}
-                      </Link>
-                    ))}
-                  </div>
-                </details>
+                    <div className="pl-4 space-y-2 mt-2">
+                      {otherServices.map(service => {
+                        const isVehicles = service === "Vehicles";
+                        const to = isVehicles ? "/vehicles" : `/services/${service.toLowerCase().replace(/\s+/g, "-")}`;
+                        return (
+                          <Link key={service} to={to} className={`block py-1 hover:text-primary ${isVehicles ? "text-primary font-semibold" : "text-muted-foreground"}`} onClick={() => setIsMenuOpen(false)}>
+                            {isVehicles ? "🚗 " : ""}{service}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </details>
                 <Link to="/about" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>About Us</Link>
                 <Link to="/contact" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                 <Link to="/gallery" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
-                <Link to="/vehicles" className="block py-2 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Vehicles</Link>
               </div>
             </motion.div>
           )}

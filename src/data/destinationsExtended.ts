@@ -446,6 +446,93 @@ export const hyderabadData: DestinationData = {
           highlights: ["Charminar Morning Tour", "Laad Bazaar Shopping", "Golconda Fort Highlights", "Salar Jung Museum", "Hussain Sagar Lake & Buddha", "Pearl & Biryani Masala Shopping"]
         }
       ]
+    },
+    {
+      id: "nagarjuna-sagar-tour",
+      name: "Nagarjuna Sagar Dam & Buddhist Heritage Tour",
+      duration: "2D/1N",
+      originalPrice: 8500,
+      currentPrice: 6800,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      description: "Visit the world's tallest masonry dam at Nagarjuna Sagar, explore ancient Buddhist ruins on Nagarjunakonda Island, and witness the spectacular Krishna River valley.",
+      highlights: ["Nagarjuna Sagar Dam", "Nagarjunakonda Island Museum", "Buddhist Ruins", "Krishna River Valley"],
+      inclusions: ["1 Night Hotel", "Daily Breakfast", "AC Vehicle", "Boat to Nagarjunakonda Island", "Entry Tickets"],
+      exclusions: ["Lunch & Dinner", "Personal Expenses"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Hyderabad to Nagarjuna Sagar — The Mighty Dam",
+          description: "Depart Hyderabad early morning (150 km, ~3 hrs) through the scenic Telangana countryside. Arrive at Nagarjuna Sagar Dam — the world's tallest masonry dam at 124 meters, holding back the mighty Krishna River. The dam creates a reservoir stretching 250 sq km. Watch the water cascading through spillways — a truly awe-inspiring engineering marvel. Visit the Nagarjuna Sagar Dam Park and enjoy panoramic views from the dam's crest. Afternoon: take the government boat to Nagarjunakonda Island — a museum island preserving 3rd-century Buddhist ruins discovered before the dam submerged the valley. The museum houses exquisite Buddhist sculptures, inscriptions, and artifacts from the Ikshvaku dynasty.",
+          highlights: ["Nagarjuna Sagar Dam Views", "World's Tallest Masonry Dam", "Krishna River Spillway", "Boat Ride to Museum Island", "3rd Century Buddhist Ruins", "Ikshvaku Dynasty Artifacts"]
+        },
+        {
+          day: 2,
+          title: "Ethipothala Falls & Return to Hyderabad",
+          description: "Morning visit to Ethipothala Waterfalls (11 km from the dam) — a stunning 70-foot cascade formed by three streams. The crocodile breeding center nearby is a unique attraction. Return via the scenic route through Macherla town. Stop at Phansigutta for local Andhra-style lunch. Arrive Hyderabad by evening with memories of one of South India's most impressive engineering and archaeological wonders.",
+          highlights: ["Ethipothala Waterfalls 70ft", "Crocodile Breeding Center", "Macherla Town Visit", "Andhra-Style Lunch", "Scenic Return Drive", "Krishna Valley Memories"]
+        }
+      ]
+    },
+    {
+      id: "araku-valley-tour",
+      name: "Araku Valley & Borra Caves Nature Tour",
+      duration: "3D/2N",
+      originalPrice: 16000,
+      currentPrice: 12800,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      description: "Journey through the Eastern Ghats to the lush Araku Valley — famous for its organic coffee plantations, ancient Borra Caves, and vibrant tribal culture surrounded by misty mountains.",
+      highlights: ["Araku Coffee Plantations", "Borra Caves", "Tribal Museum", "Eastern Ghats Train"],
+      inclusions: ["2 Nights Resort", "Daily Breakfast", "AC Vehicle", "Borra Caves Entry", "Coffee Plantation Tour", "Tribal Museum Entry"],
+      exclusions: ["Flights to Vizag", "Lunch & Dinner", "Personal Shopping"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Vizag to Araku Valley — Through the Eastern Ghats",
+          description: "Depart Vizag early morning for Araku Valley (115 km, ~3.5 hrs) via the spectacular Ghat road with 40+ hairpin bends. En route, stop at Borra Caves — million-year-old limestone caverns with stunning stalactite and stalagmite formations, the deepest caves in India at 80 meters. The naturally lit formations resemble Shiva Lingams, Mother and Child, and human brains. Continue to Araku Valley — a hill station at 3,200 feet surrounded by the Eastern Ghats. Check into your resort amidst coffee plantations. Afternoon: visit the Tribal Museum showcasing the rich culture, costumes, and lifestyles of the Araku tribal communities — Konda Dora, Bagata, and Khond tribes. Evening walk through coffee plantations as mist rolls in.",
+          highlights: ["40 Hairpin Bends Ghat Road", "Borra Caves - India's Deepest", "Stalactite & Stalagmite Wonders", "Araku Valley 3200ft Hill Station", "Tribal Museum Cultural Tour", "Coffee Plantation Evening Walk"]
+        },
+        {
+          day: 2,
+          title: "Araku Coffee Trail & Padmapuram Gardens",
+          description: "Morning: immersive coffee plantation tour — learn about Araku's world-famous organic Arabica coffee, from bean to cup. Taste freshly brewed single-origin coffee at a plantation café. Visit Padmapuram Gardens — a unique botanical garden built around a massive 200-year-old tree with hanging roots forming natural corridors. Explore Chaparai Water Cascade, a seasonal waterfall flowing over terraced rock formations. Afternoon: interact with local tribal artisans making bamboo crafts, dhokra metal art, and bell-metal jewelry. Try the local bamboo chicken — chicken cooked inside bamboo tubes over an open fire — a signature tribal delicacy.",
+          highlights: ["Organic Coffee Plantation Tour", "Single-Origin Coffee Tasting", "Padmapuram Botanical Gardens", "200-Year-Old Banyan Tree", "Tribal Artisan Crafts", "Famous Bamboo Chicken Lunch"]
+        },
+        {
+          day: 3,
+          title: "Araku Sunrise & Return via Scenic Route",
+          description: "Early morning trek to a viewpoint for a spectacular sunrise over the valley — layers of mist, green hills, and golden light create a photographer's paradise. After breakfast, depart for Vizag. Optional: take the Kirandul-Vizag train (one of India's most scenic rail journeys) through 58 tunnels and over lush green valleys. Arrive Vizag by afternoon. Visit RK Beach or Kailasagiri for sunset before departure.",
+          highlights: ["Valley Sunrise Trek", "Misty Mountain Photography", "Scenic Train Option", "58 Tunnels Rail Journey", "RK Beach Sunset", "Eastern Ghats Farewell"]
+        }
+      ]
+    },
+    {
+      id: "vizag-beach-tour",
+      name: "Vizag RK Beach & Kailasagiri Tour",
+      duration: "2D/1N",
+      originalPrice: 9000,
+      currentPrice: 7200,
+      discount: 20,
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+      description: "Experience the 'City of Destiny' — Vizag's stunning RK Beach coastline, the panoramic Kailasagiri Hill Park, submarine museum, and the beautiful Rushikonda golden beach.",
+      highlights: ["RK Beach Sunrise", "Kailasagiri Hill Park", "INS Kursura Submarine", "Rushikonda Beach"],
+      inclusions: ["1 Night Beach Resort", "Daily Breakfast", "AC Vehicle", "Kailasagiri Ropeway Ticket", "Submarine Museum Entry"],
+      exclusions: ["Flights", "Lunch & Dinner", "Water Sports"],
+      itinerary: [
+        {
+          day: 1,
+          title: "Vizag Beach Circuit — RK Beach to Kailasagiri",
+          description: "Arrive in Vizag and head straight to the iconic RK Beach (Ramakrishna Beach) — the city's most famous seafront with its golden sand and promenade. Visit the INS Kursura Submarine Museum — walk through a real decommissioned submarine from the Indian Navy. Continue along Beach Road to see the VUDA Park and Matsyadarshini Aquarium. Afternoon: ascend Kailasagiri Hill (360 feet) via the scenic ropeway for 360-degree panoramic views of the Bay of Bengal coastline. The hilltop features a massive Shiva-Parvati sculpture and beautifully landscaped gardens. Sunset from Kailasagiri is magical — the entire coastline glows orange. Evening: seafood dinner at a beach-facing restaurant.",
+          highlights: ["RK Beach Promenade Walk", "INS Kursura Submarine Museum", "Kailasagiri Ropeway Ride", "360° Bay of Bengal Views", "Shiva-Parvati Hilltop Sculpture", "Beachfront Seafood Dinner"]
+        },
+        {
+          day: 2,
+          title: "Rushikonda Beach & Simhachalam Temple",
+          description: "Morning at Rushikonda Beach — Vizag's most beautiful golden beach with gentle waves perfect for swimming and water sports. Try jet skiing or banana boat rides. Visit the ancient Simhachalam Temple (dedicated to Lord Narasimha), perched on a hill 800 feet above sea level with stunning architecture dating back to the 11th century. The temple's annual Chandanotsavam festival is world-famous. Drive along the scenic coastal road to Bheemunipatnam (Bhimli) — India's second oldest municipality with Dutch colonial ruins. Return to Vizag for departure with coastal memories.",
+          highlights: ["Rushikonda Golden Beach", "Water Sports & Swimming", "Simhachalam 11th Century Temple", "800ft Hilltop Temple Views", "Bhimli Dutch Colonial Ruins", "Coastal Vizag Farewell"]
+        }
+      ]
     }
   ]
 };
