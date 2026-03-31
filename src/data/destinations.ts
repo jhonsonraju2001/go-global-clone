@@ -108,6 +108,13 @@ export const worldDestinations: Destination[] = [
 
 export const indiaDestinations: Destination[] = [
   {
+    id: "hyderabad",
+    name: "Hyderabad",
+    description: "City of Pearls, Charminar & Biryani",
+    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+    link: "/destinations/hyderabad"
+  },
+  {
     id: "kashmir",
     name: "Kashmir",
     description: "Paradise on Earth with scenic valleys",
@@ -169,13 +176,6 @@ export const indiaDestinations: Destination[] = [
     description: "Hidden Himalayan kingdom & monasteries",
     image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
     link: "/destinations/sikkim"
-  },
-  {
-    id: "hyderabad",
-    name: "Hyderabad",
-    description: "City of Pearls, Charminar & Biryani",
-    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
-    link: "/destinations/hyderabad"
   }
 ];
 
