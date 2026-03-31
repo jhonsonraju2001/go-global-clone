@@ -9,7 +9,7 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const indiaDestinations = ["Kashmir", "Ladakh", "Himachal Pradesh", "Kerala", "Rajasthan", "Goa", "Meghalaya", "Andaman", "Sikkim", "Uttarakhand", "Hyderabad"];
   const globalDestinations = ["Singapore", "Thailand", "Dubai", "Bali", "Europe", "USA", "Switzerland", "France", "Turkey", "Australia"];
-  const otherServices = ["Visa Services", "Travel Insurance", "Forex Exchange", "Hotel Booking", "Flight Booking", "Corporate Travel"];
+  const otherServices = ["Vehicles", "Visa Services", "Travel Insurance", "Forex Exchange", "Hotel Booking", "Flight Booking", "Corporate Travel"];
 
   return (
     <header className="sticky top-0 z-50">

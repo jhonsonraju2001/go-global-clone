@@ -8,6 +8,7 @@ import PackageDetail from "@/pages/PackageDetail";
 import ServicePage from "@/pages/ServicePage";
 import Gallery from "@/pages/Gallery";
 import Vehicles from "@/pages/Vehicles";
+import HyderabadPackages from "@/pages/HyderabadPackages";
 import NotFound from "@/pages/NotFound";
 
 const AnimatedRoutes = () => {
