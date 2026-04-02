@@ -618,7 +618,7 @@ export const singaporeData: DestinationData = {
     "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop",
     "https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=1200&h=675&fit=crop",
     "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=1200&h=675&fit=crop",
-    "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=1200&h=675&fit=crop",
+    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop",
     "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=1200&h=675&fit=crop",
     "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=1200&h=675&fit=crop"
   ],
