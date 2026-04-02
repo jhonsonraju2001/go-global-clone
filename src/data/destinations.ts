@@ -66,7 +66,7 @@ export const worldDestinations: Destination[] = [
     id: "switzerland",
     name: "Switzerland",
     description: "Alpine beauty & serene landscapes",
-    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200&h=675&fit=crop",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=675&fit=crop",
     link: "/destinations/switzerland"
   },
   {
