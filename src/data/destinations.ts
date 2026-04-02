@@ -24,7 +24,7 @@ export const worldDestinations: Destination[] = [
     id: "singapore",
     name: "Singapore",
     description: "Filled with diverse cultures & cities",
-    image: "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=1200&h=675&fit=crop",
+    image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop",
     link: "/destinations/singapore"
   },
   {
