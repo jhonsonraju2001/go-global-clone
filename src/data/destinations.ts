@@ -52,7 +52,7 @@ export const worldDestinations: Destination[] = [
     id: "france",
     name: "France",
     description: "Indulge in art, culture & cuisine",
-    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&h=675&fit=crop",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop",
     link: "/destinations/france"
   },
   {
