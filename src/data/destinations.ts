@@ -367,7 +367,7 @@ export const internationalPackages: Package[] = [
     id: "europe-highlights",
     name: "Europe Highlights Tour",
     location: "Europe",
-    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&h=675&fit=crop",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop",
     duration: "10D/9N",
     originalPrice: 375000,
     currentPrice: 348999,
