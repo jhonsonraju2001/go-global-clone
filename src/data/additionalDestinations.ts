@@ -8,12 +8,12 @@ export const meghalayaData: DestinationData = {
   description: "Discover the enchanting land of clouds with its living root bridges, crystal-clear rivers, stunning waterfalls, and unique Khasi culture in India's wettest region.",
   heroImage: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -23,7 +23,7 @@ export const meghalayaData: DestinationData = {
       originalPrice: 38770,
       currentPrice: 24560,
       discount: 37,
-      image: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Journey through the mystical land of clouds, exploring living root bridges, Asia's cleanest village, stunning waterfalls, and the unique matrilineal Khasi culture.",
       highlights: ["Living Root Bridges", "Dawki Crystal River", "Mawlynnong Cleanest Village", "Seven Sisters Falls"],
       inclusions: ["5 Nights Accommodation", "Daily Breakfast & Dinner", "AC Vehicle for Transfers", "Expert Local Guide", "Trekking to Root Bridges", "All Permits"],
@@ -74,7 +74,7 @@ export const meghalayaData: DestinationData = {
       originalPrice: 45000,
       currentPrice: 36000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "For the adventurous traveler - multi-day trek through living root bridges, caving expeditions, and village homestays in Meghalaya's remote Khasi Hills.",
       highlights: ["Rainbow Falls Trek", "Multiple Root Bridges", "Village Homestays", "Cave Exploration"],
       inclusions: ["6 Nights Accommodation (Hotels & Homestays)", "All Meals", "Trek Guide & Porters", "Caving Equipment", "All Permits"],
@@ -135,12 +135,12 @@ export const andamanData: DestinationData = {
   description: "Escape to India's tropical paradise with pristine beaches, crystal-clear waters, world-class diving, colonial history, and indigenous cultures in the Bay of Bengal.",
   heroImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1484291150605-0860ed671f04?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1484291150605-0860ed671f04?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -150,7 +150,7 @@ export const andamanData: DestinationData = {
       originalPrice: 45000,
       currentPrice: 36000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Andaman experience covering Port Blair's history, Havelock's stunning beaches, and Neil Island's serene beauty with snorkeling and water sports.",
       highlights: ["Radhanagar Beach", "Cellular Jail", "Scuba Diving", "Neil Island"],
       inclusions: ["5 Nights Beach Resorts", "Daily Breakfast", "All Ferry Transfers", "Airport Transfers", "Sightseeing as per Itinerary"],
@@ -201,7 +201,7 @@ export const andamanData: DestinationData = {
       originalPrice: 65000,
       currentPrice: 52000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "For dive enthusiasts - PADI certification course with multiple dives at world-class sites, underwater photography, and complete island exploration.",
       highlights: ["PADI Open Water Course", "10+ Dive Sites", "Manta Ray Encounters", "Night Diving"],
       inclusions: ["6 Nights Accommodation", "PADI Certification", "All Diving Equipment", "8 Boat Dives", "Breakfast Daily", "All Transfers"],
@@ -262,12 +262,12 @@ export const sikkimData: DestinationData = {
   description: "Discover the former Buddhist kingdom nestled in the Eastern Himalayas, with stunning views of Kanchenjunga, ancient monasteries, and a unique blend of Nepali, Tibetan, and Lepcha cultures.",
   heroImage: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -277,7 +277,7 @@ export const sikkimData: DestinationData = {
       originalPrice: 42000,
       currentPrice: 33600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Sikkim experience covering Gangtok, Lachen, Lachung, and Pelling with stunning mountain views, ancient monasteries, and high-altitude lakes.",
       highlights: ["Tsomgo Lake", "Nathula Pass", "Yumthang Valley", "Pelling Kanchenjunga Views"],
       inclusions: ["6 Nights Hotels", "Daily Breakfast & Dinner", "Permit Assistance", "All Transfers", "Sightseeing as per Itinerary"],
@@ -338,12 +338,12 @@ export const baliData: DestinationData = {
   description: "Experience the magic of Bali with its ancient temples, terraced rice paddies, vibrant arts scene, world-class surfing, and spiritual Balinese Hindu culture.",
   heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1573790387438-4da905039392?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1604999333679-b86d54738315?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1573790387438-4da905039392?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1604999333679-b86d54738315?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -353,7 +353,7 @@ export const baliData: DestinationData = {
       originalPrice: 68750,
       currentPrice: 55000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Bali experience covering Ubud's culture, Seminyak's beaches, iconic temples, rice terraces, and the unique Balinese Hindu traditions.",
       highlights: ["Ubud Rice Terraces", "Tanah Lot Temple", "Seminyak Beach", "Balinese Spa"],
       inclusions: ["5 Nights Boutique Hotels", "Daily Breakfast", "Airport Transfers", "Ubud Day Tour", "Temple Tours", "English-Speaking Guide"],
@@ -408,12 +408,12 @@ export const turkeyData: DestinationData = {
   description: "Explore the crossroads of civilizations - Byzantine churches, Ottoman mosques, ancient ruins, Mediterranean beaches, and Cappadocia's fairytale landscapes in one amazing country.",
   heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1589561454226-796a8aa89b05?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1609842947419-ba4f04d5d60f?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1589561454226-796a8aa89b05?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1609842947419-ba4f04d5d60f?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -423,7 +423,7 @@ export const turkeyData: DestinationData = {
       originalPrice: 118300,
       currentPrice: 91000,
       discount: 23,
-      image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Turkey journey covering Istanbul's Byzantine wonders, Cappadocia's fairytale landscapes, and the ancient ruins of Ephesus with Mediterranean charm.",
       highlights: ["Hagia Sophia", "Cappadocia Hot Air Balloon", "Ephesus Ancient City", "Pamukkale Travertines"],
       inclusions: ["8 Nights 4-Star Hotels", "Daily Breakfast", "Istanbul City Tour", "Cappadocia Full Tour", "Domestic Flights", "All Transfers"],
@@ -496,12 +496,12 @@ export const australiaData: DestinationData = {
   description: "From the Sydney Opera House to the Great Barrier Reef, from the Outback to cosmopolitan cities - Australia offers diverse landscapes, unique wildlife, and laid-back adventure.",
   heroImage: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1494233892892-84542a694e72?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1546268060-2592ff93ee24?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1494233892892-84542a694e72?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1546268060-2592ff93ee24?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -511,7 +511,7 @@ export const australiaData: DestinationData = {
       originalPrice: 299999,
       currentPrice: 274999,
       discount: 8,
-      image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Australia journey covering Sydney's icons, Great Barrier Reef, and Melbourne's culture with unique wildlife encounters and stunning coastal scenery.",
       highlights: ["Sydney Opera House", "Great Barrier Reef", "Great Ocean Road", "Melbourne Laneways"],
       inclusions: ["9 Nights 4-Star Hotels", "Daily Breakfast", "Sydney Harbor Cruise", "Great Barrier Reef Snorkeling", "Domestic Flights", "All Transfers"],
@@ -590,12 +590,12 @@ export const switzerlandData: DestinationData = {
   description: "Experience fairytale villages, majestic Alpine peaks, pristine lakes, and world-famous chocolate and cheese in one of Europe's most beautiful countries.",
   heroImage: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1527095655658-89f085a51e21?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1476900543704-4312b78632f8?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1527095655658-89f085a51e21?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1476900543704-4312b78632f8?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -605,7 +605,7 @@ export const switzerlandData: DestinationData = {
       originalPrice: 169000,
       currentPrice: 135200,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Swiss experience covering Zurich, Lucerne, Interlaken, and Zermatt with iconic mountain excursions, scenic trains, and charming alpine villages.",
       highlights: ["Jungfraujoch - Top of Europe", "Matterhorn Views", "Lake Lucerne Cruise", "Scenic Train Rides"],
       inclusions: ["6 Nights 4-Star Hotels", "Daily Breakfast", "Swiss Travel Pass (4 days)", "Jungfraujoch Excursion", "All Transfers"],
@@ -666,12 +666,12 @@ export const franceData: DestinationData = {
   description: "From the Eiffel Tower to lavender fields, from the French Riviera to historic châteaux - France offers art, gastronomy, and romance unmatched anywhere in the world.",
   heroImage: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1551887196-1c1e7c5e6c0a?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1549144511-f099e773c147?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1500039436846-25ae2f11882e?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1551887196-1c1e7c5e6c0a?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1549144511-f099e773c147?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1500039436846-25ae2f11882e?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -681,7 +681,7 @@ export const franceData: DestinationData = {
       originalPrice: 175000,
       currentPrice: 140000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The essential French experience covering Paris, Loire Valley châteaux, and the glamorous French Riviera with wine tasting, gastronomy, and iconic sights.",
       highlights: ["Eiffel Tower", "Palace of Versailles", "Loire Châteaux", "Nice & Monaco"],
       inclusions: ["7 Nights 4-Star Hotels", "Daily Breakfast", "Paris City Tour", "Versailles Entry", "TGV Trains", "All Transfers"],
@@ -748,12 +748,12 @@ export const japanData: DestinationData = {
   description: "Experience the perfect blend of ancient tradition and cutting-edge technology - from serene temples and cherry blossoms to neon-lit cities and bullet trains.",
   heroImage: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -763,7 +763,7 @@ export const japanData: DestinationData = {
       originalPrice: 225000,
       currentPrice: 180000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The essential Japan experience covering Tokyo's modernity, Kyoto's ancient temples, and Osaka's food culture with iconic sights and cultural immersion.",
       highlights: ["Tokyo Tower", "Kyoto Temples", "Mount Fuji Views", "Shinkansen Experience"],
       inclusions: ["9 Nights Hotels", "Daily Breakfast", "7-Day JR Pass", "Tokyo City Tour", "Kyoto Temple Tour", "All Transfers"],
@@ -842,12 +842,12 @@ export const vietnamData: DestinationData = {
   description: "Discover a country of breathtaking beauty - from Halong Bay's limestone karsts to ancient Hoi An, French colonial Hanoi to vibrant Ho Chi Minh City.",
   heroImage: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1464817739973-0128fe77aed1?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1528127269322-539801943592?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1464817739973-0128fe77aed1?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -857,7 +857,7 @@ export const vietnamData: DestinationData = {
       originalPrice: 95000,
       currentPrice: 76000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Vietnam journey from north to south covering Hanoi, Halong Bay, Hue, Hoi An, and Ho Chi Minh City with stunning scenery and rich culture.",
       highlights: ["Halong Bay Cruise", "Hoi An Ancient Town", "Hue Imperial City", "Cu Chi Tunnels"],
       inclusions: ["9 Nights Hotels", "Daily Breakfast", "Halong Bay Overnight Cruise", "Domestic Flights", "Guided Tours", "All Transfers"],
@@ -936,9 +936,9 @@ export const bhutanData: DestinationData = {
   description: "Enter the last Himalayan kingdom where Gross National Happiness matters more than GDP - ancient monasteries, pristine nature, and a living Buddhist culture await.",
   heroImage: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1553856622-d1b352e9a211?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1587922546307-776227941871?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1553856622-d1b352e9a211?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1587922546307-776227941871?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -948,7 +948,7 @@ export const bhutanData: DestinationData = {
       originalPrice: 125000,
       currentPrice: 100000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Complete Bhutan experience covering Paro, Thimphu, and Punakha with the iconic Tiger's Nest, ancient dzongs, and immersion in Buddhist culture.",
       highlights: ["Tiger's Nest Monastery", "Thimphu Tashichho Dzong", "Punakha Dzong", "Buddhist Festivals"],
       inclusions: ["6 Nights Hotels", "All Meals (Breakfast, Lunch, Dinner)", "Licensed Bhutanese Guide", "All Entry Fees", "Sustainable Development Fee", "All Transfers"],
@@ -1009,9 +1009,9 @@ export const usaData: DestinationData = {
   description: "From New York's skyline to California's coast, from natural wonders to theme parks - America offers endless diversity in a single country.",
   heroImage: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -1021,7 +1021,7 @@ export const usaData: DestinationData = {
       originalPrice: 325000,
       currentPrice: 260000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Ultimate USA journey covering New York, Las Vegas, Grand Canyon, Los Angeles, and San Francisco - iconic cities and natural wonders in one trip.",
       highlights: ["Statue of Liberty", "Grand Canyon", "Hollywood", "Golden Gate Bridge"],
       inclusions: ["11 Nights 4-Star Hotels", "Daily Breakfast", "Domestic Flights", "City Tours", "Grand Canyon Day Trip", "All Transfers"],

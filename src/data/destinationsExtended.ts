@@ -8,12 +8,12 @@ export const goaData: DestinationData = {
   description: "Experience the perfect blend of pristine beaches, Portuguese heritage, vibrant nightlife, and laid-back coastal charm in India's favorite beach destination.",
   heroImage: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1587922546307-776227941871?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1587922546307-776227941871?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -23,7 +23,7 @@ export const goaData: DestinationData = {
       originalPrice: 24000,
       currentPrice: 19200,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Explore the best beaches of North and South Goa with this comprehensive package covering water sports, beach parties, and Portuguese heritage sites.",
       highlights: ["Calangute Beach", "Dudhsagar Falls", "Old Goa Churches", "Beach Parties"],
       inclusions: ["4 Nights Beach Resort", "Daily Breakfast", "North & South Goa Tour", "Airport Transfers", "Water Sports Package"],
@@ -68,7 +68,7 @@ export const goaData: DestinationData = {
       originalPrice: 20000,
       currentPrice: 16000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Discover Goa beyond beaches - explore 450 years of Portuguese heritage, ancient temples, historic forts, and the unique Indo-Portuguese culture.",
       highlights: ["UNESCO Heritage Sites", "Portuguese Architecture", "Ancient Temples", "Fort Aguada"],
       inclusions: ["3 Nights Heritage Hotel", "Daily Breakfast", "Heritage Tours", "Expert Guide", "All Transfers"],
@@ -111,12 +111,12 @@ export const rajasthanData: DestinationData = {
   description: "Step into a world of magnificent palaces, ancient forts, colorful cities, and the endless golden desert of the Thar. Rajasthan is India's royal heartland.",
   heroImage: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1515091943-9d5c0ad475af?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1515091943-9d5c0ad475af?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -126,7 +126,7 @@ export const rajasthanData: DestinationData = {
       originalPrice: 52000,
       currentPrice: 41600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The definitive Rajasthan experience covering Jaipur, Jodhpur, Jaisalmer, and Udaipur - four cities that define royal India with their magnificent palaces, forts, and traditions.",
       highlights: ["Amber Fort", "Mehrangarh Fort", "Jaisalmer Desert Camp", "Lake Pichola Boat Ride"],
       inclusions: ["7 Nights Heritage Hotels", "Daily Breakfast", "All Transfers in AC Vehicle", "Monument Entry Fees", "Desert Camp with Dinner", "Boat Ride in Udaipur"],
@@ -189,7 +189,7 @@ export const rajasthanData: DestinationData = {
       originalPrice: 32000,
       currentPrice: 25600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1568097657681-cf09d0e09bde?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1568097657681-cf09d0e09bde?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "An immersive desert experience in the Thar - camel safaris, desert camping under stars, and the magic of the golden city of Jaisalmer.",
       highlights: ["Multi-Day Camel Safari", "Luxury Desert Camps", "Village Visits", "Desert Photography"],
       inclusions: ["4 Nights Accommodation", "All Meals During Safari", "Camel Safari", "Desert Camp", "Jeep Safari"],
@@ -238,12 +238,12 @@ export const hyderabadData: DestinationData = {
   description: "Experience the grandeur of the Nizams, the iconic Charminar, world-famous Hyderabadi biryani, and the perfect blend of ancient heritage with modern tech city vibes.",
   heroImage: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -253,7 +253,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 22000,
       currentPrice: 17600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Discover the royal heritage of the Nizams, from the iconic Charminar to the opulent Falaknuma Palace, and savor the legendary Hyderabadi cuisine.",
       highlights: ["Charminar", "Golconda Fort", "Falaknuma Palace", "Authentic Biryani Trail"],
       inclusions: ["3 Nights 5-Star Hotel", "Daily Breakfast", "Heritage Tours", "Biryani Food Tour", "All Transfers"],
@@ -292,7 +292,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 4500,
       currentPrice: 3500,
       discount: 22,
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The perfect one-day whirlwind tour covering all of Hyderabad's iconic landmarks — Charminar, Golconda Fort, Hussain Sagar, and world-famous biryani — in a single memorable day.",
       highlights: ["Charminar Visit", "Golconda Fort", "Hussain Sagar Lake", "Authentic Biryani Lunch"],
       inclusions: ["AC Vehicle for Full Day", "Driver Guide", "Biryani Lunch at Top Restaurant", "All Entry Tickets", "Water Bottle"],
@@ -313,7 +313,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 9500,
       currentPrice: 7600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1609766857326-18a217692f37?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "A deep-dive into Hyderabad's royal Nizam heritage over two days — from Charminar's old city lanes to Falaknuma Palace's grandeur and the legendary pearl bazaars.",
       highlights: ["Charminar & Old City", "Golconda Fort Sound & Light Show", "Falaknuma Palace", "Pearl Shopping"],
       inclusions: ["1 Night Heritage Hotel", "Daily Breakfast", "AC Vehicle", "Golconda Sound & Light Show Tickets"],
@@ -340,7 +340,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 14500,
       currentPrice: 11600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Combine the royal heritage of Hyderabad with a pilgrimage to the sacred Mallikarjuna Jyotirlinga temple at Srisailam and the majestic dam overlooking the Krishna river gorge.",
       highlights: ["Charminar Hyderabad", "Srisailam Dam", "Mallikarjuna Temple", "Krishna River Gorge"],
       inclusions: ["2 Nights Hotel", "Daily Breakfast", "AC Vehicle All Days", "Temple Darshan Assistance"],
@@ -373,7 +373,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 12000,
       currentPrice: 9600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "A sacred pilgrimage tour covering the most revered temples of Hyderabad and Telangana — from the golden spires of Yadadri to the hilltop Chilkur Balaji and the famous Tirupati Balaji.",
       highlights: ["Yadadri Lakshmi Narasimha Temple", "Birla Mandir", "Chilkur Balaji", "Tirupati Darshan"],
       inclusions: ["2 Nights Accommodation", "Daily Breakfast", "AC Vehicle", "Temple Darshan Guidance", "Tirupati Special Darshan Tickets"],
@@ -406,7 +406,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 3500,
       currentPrice: 2800,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Discover Hyderabad's magical transformation after dark — illuminated monuments, night street food, lakeside lights, and the famous Golconda Sound & Light show.",
       highlights: ["Illuminated Charminar", "Golconda Light Show", "Hussain Sagar Night View", "Street Food Trail"],
       inclusions: ["AC Vehicle Evening", "Golconda Sound & Light Show Ticket", "Street Food Tour with Guide", "Water"],
@@ -427,7 +427,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 11000,
       currentPrice: 8800,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1591018653367-7a0b1a8e9515?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Experience the world's largest film studio complex at Ramoji Film City combined with Hyderabad's iconic heritage landmarks for a perfect blend of entertainment and history.",
       highlights: ["Ramoji Film City Full Day", "Film Sets & Studio Tours", "Charminar Heritage", "Hussain Sagar Lake"],
       inclusions: ["1 Night Hotel", "Daily Breakfast", "Ramoji Film City Entry Tickets", "AC Vehicle", "Transfers"],
@@ -454,7 +454,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 8500,
       currentPrice: 6800,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Visit the world's tallest masonry dam at Nagarjuna Sagar, explore ancient Buddhist ruins on Nagarjunakonda Island, and witness the spectacular Krishna River valley.",
       highlights: ["Nagarjuna Sagar Dam", "Nagarjunakonda Island Museum", "Buddhist Ruins", "Krishna River Valley"],
       inclusions: ["1 Night Hotel", "Daily Breakfast", "AC Vehicle", "Boat to Nagarjunakonda Island", "Entry Tickets"],
@@ -481,7 +481,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 16000,
       currentPrice: 12800,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Journey through the Eastern Ghats to the lush Araku Valley — famous for its organic coffee plantations, ancient Borra Caves, and vibrant tribal culture surrounded by misty mountains.",
       highlights: ["Araku Coffee Plantations", "Borra Caves", "Tribal Museum", "Eastern Ghats Train"],
       inclusions: ["2 Nights Resort", "Daily Breakfast", "AC Vehicle", "Borra Caves Entry", "Coffee Plantation Tour", "Tribal Museum Entry"],
@@ -514,7 +514,7 @@ export const hyderabadData: DestinationData = {
       originalPrice: 9000,
       currentPrice: 7200,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Experience the 'City of Destiny' — Vizag's stunning RK Beach coastline, the panoramic Kailasagiri Hill Park, submarine museum, and the beautiful Rushikonda golden beach.",
       highlights: ["RK Beach Sunrise", "Kailasagiri Hill Park", "INS Kursura Submarine", "Rushikonda Beach"],
       inclusions: ["1 Night Beach Resort", "Daily Breakfast", "AC Vehicle", "Kailasagiri Ropeway Ticket", "Submarine Museum Entry"],
@@ -545,12 +545,12 @@ export const dubaiData: DestinationData = {
   description: "Experience the impossible made possible - from the world's tallest building to man-made islands, desert safaris to futuristic architecture. Dubai is the ultimate destination.",
   heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1583202702468-e58e4e5d9efe?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1597659840241-37e2b7c2f7c9?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1583202702468-e58e4e5d9efe?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1597659840241-37e2b7c2f7c9?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -560,7 +560,7 @@ export const dubaiData: DestinationData = {
       originalPrice: 95000,
       currentPrice: 76000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The ultimate Dubai experience covering Burj Khalifa, Palm Jumeirah, desert safari, and the futuristic attractions that make Dubai a world wonder.",
       highlights: ["Burj Khalifa At The Top", "Desert Safari with BBQ", "Dubai Marina Cruise", "Atlantis Aquaventure"],
       inclusions: ["5 Nights 5-Star Hotel", "Daily Breakfast", "Burj Khalifa Tickets", "Desert Safari", "Dubai City Tour", "Marina Dinner Cruise", "Airport Transfers"],
@@ -615,12 +615,12 @@ export const singaporeData: DestinationData = {
   description: "A futuristic city-state where ultra-modern architecture meets lush gardens, diverse cultures blend seamlessly, and every experience is world-class.",
   heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -630,7 +630,7 @@ export const singaporeData: DestinationData = {
       originalPrice: 72000,
       currentPrice: 57600,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "Experience the best of Singapore - from Marina Bay's futuristic skyline to Sentosa's beaches, Chinatown's heritage to Gardens by the Bay's wonder.",
       highlights: ["Marina Bay Sands", "Gardens by the Bay", "Sentosa Island", "Universal Studios"],
       inclusions: ["4 Nights 4-Star Hotel", "Daily Breakfast", "Gardens by the Bay Tickets", "Sentosa Day Pass", "Singapore City Tour", "Airport Transfers"],
@@ -679,12 +679,12 @@ export const thailandData: DestinationData = {
   description: "From the bustling streets of Bangkok to the pristine beaches of Phuket, ancient temples to vibrant nightlife - Thailand offers an intoxicating mix of experiences.",
   heroImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -694,7 +694,7 @@ export const thailandData: DestinationData = {
       originalPrice: 68000,
       currentPrice: 54400,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The complete Thailand experience - Bangkok's temples and markets, Phuket's beaches, and Phi Phi's stunning islands.",
       highlights: ["Grand Palace Bangkok", "Phi Phi Islands", "Phuket Beaches", "Floating Markets"],
       inclusions: ["6 Nights Hotels", "Daily Breakfast", "Bangkok City Tour", "Phi Phi Island Tour", "Internal Flight BKK-Phuket", "All Transfers"],
@@ -755,12 +755,12 @@ export const europeData: DestinationData = {
   description: "From the romance of Paris to the canals of Venice, the Alps to the Mediterranean - experience centuries of history, art, and culture across the world's most visited continent.",
   heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&h=1080&fit=crop",
   bannerImages: [
-    "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=800&h=600&fit=crop"
+    "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
+    "https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop"
   ],
   packages: [
     {
@@ -770,7 +770,7 @@ export const europeData: DestinationData = {
       originalPrice: 195000,
       currentPrice: 156000,
       discount: 20,
-      image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200w=800&h=600&fit=croph=675w=800&h=600&fit=cropfit=crop",
       description: "The classic European journey covering Paris, Swiss Alps, and Italy - three countries, countless memories, the essence of Europe.",
       highlights: ["Eiffel Tower Paris", "Swiss Alps", "Venice Canals", "Rome Colosseum"],
       inclusions: ["9 Nights 4-Star Hotels", "Daily Breakfast", "Eurostar & TGV Trains", "City Tours with Guide", "All Transfers", "Schengen Visa Assistance"],
