@@ -492,7 +492,7 @@ export const heroSlides = [
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1920&h=1080&fit=crop",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&h=1080&fit=crop",
     title: "Tour Europe",
     subtitle: "Old World Charm",
     description: "HISTORY, ART & CULTURE"
