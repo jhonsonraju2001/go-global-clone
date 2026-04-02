@@ -53,10 +53,12 @@ const galleryImages: GalleryImage[] = [
   { id: 31, src: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&h=675&fit=crop", title: "Sunrise Houseboat", category: "Experiences", location: "Kerala, India" },
   { id: 32, src: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1200&h=675&fit=crop", title: "Northern Lights", category: "Experiences", location: "Europe" },
   // Vehicles
-  { id: 33, src: "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80", title: "Toyota Innova Crysta", category: "Vehicles", location: "Fleet" },
-  { id: 34, src: "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80", title: "Toyota Fortuner", category: "Vehicles", location: "Fleet" },
-  { id: 35, src: "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80", title: "Mahindra XUV700", category: "Vehicles", location: "Fleet" },
-  { id: 36, src: "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/dzire-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80", title: "Swift Dzire", category: "Vehicles", location: "Fleet" },
+  { id: 33, src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=675&fit=crop", title: "Toyota Innova Crysta", category: "Vehicles", location: "Fleet" },
+  { id: 34, src: "https://images.unsplash.com/photo-1625231334168-efdb040d09cd?w=1200&h=675&fit=crop", title: "Toyota Fortuner", category: "Vehicles", location: "Fleet" },
+  { id: 35, src: "https://images.unsplash.com/photo-1606220838315-056192d5e927?w=1200&h=675&fit=crop", title: "Mahindra XUV700", category: "Vehicles", location: "Fleet" },
+  { id: 36, src: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=1200&h=675&fit=crop", title: "Swift Dzire", category: "Vehicles", location: "Fleet" },
+  { id: 37, src: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?w=1200&h=675&fit=crop", title: "Tempo Traveller", category: "Vehicles", location: "Fleet" },
+  { id: 38, src: "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=1200&h=675&fit=crop", title: "Luxury Coach", category: "Vehicles", location: "Fleet" },
 ];
 
 const categories = ["All", "Office & Team", "Destinations", "Events", "Group Tours", "Experiences", "Vehicles"];
