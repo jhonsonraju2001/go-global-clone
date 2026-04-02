@@ -439,7 +439,7 @@ export const internationalPackages: Package[] = [
     id: "france-romance",
     name: "Romantic France",
     location: "France",
-    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&h=675&fit=crop",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop",
     duration: "8D/7N",
     originalPrice: 175000,
     currentPrice: 140000,
