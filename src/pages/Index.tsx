@@ -11,6 +11,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CompareButton from "@/components/CompareButton";
+import MobileBottomBar from "@/components/MobileBottomBar";
 import PageTransition from "@/components/PageTransition";
 import {
   worldDestinations,
@@ -80,11 +81,14 @@ const Index = () => {
         
         <Footer />
         
-        {/* WhatsApp Floating Button */}
+        {/* WhatsApp Floating Button - hidden on mobile where bottom bar shows */}
         <WhatsAppButton />
 
         {/* Compare Button */}
         <CompareButton />
+
+        {/* Mobile Bottom Action Bar */}
+        <MobileBottomBar />
       </div>
     </PageTransition>
   );
