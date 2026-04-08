@@ -21,16 +21,16 @@ const galleryImages: GalleryImage[] = [
   { id: 3, src: "https://lh3.googleusercontent.com/p/AF1QipPHBzP1G1E9b52qVDHPxrdGn1SHEaZSL4pjdJhe=w800-h600-k-no", title: "Team at Work", category: "Office & Team", location: "Hyderabad, India" },
   { id: 4, src: "https://lh3.googleusercontent.com/p/AF1QipOWI0Ywu0G-a3KwaWGzSERzc7pxmqjvgkZK_y23=w800-h600-k-no", title: "Client Meeting", category: "Office & Team", location: "Hyderabad, India" },
   // Destinations
-  { id: 5, src: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=1200&h=675&fit=crop", title: "Kashmir Paradise", category: "Destinations", location: "Kashmir, India" },
-  { id: 6, src: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop", title: "Dubai Skyline", category: "Destinations", location: "Dubai, UAE" },
-  { id: 7, src: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&h=675&fit=crop", title: "Kerala Backwaters", category: "Destinations", location: "Kerala, India" },
+  { id: 5, src: "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=1200&h=675&fit=crop", title: "Kashmir Paradise", category: "Destinations", location: "Kashmir, India" },
+  { id: 6, src: "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&h=675&fit=crop", title: "Dubai Skyline", category: "Destinations", location: "Dubai, UAE" },
+  { id: 7, src: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=1200&h=675&fit=crop", title: "Kerala Backwaters", category: "Destinations", location: "Kerala, India" },
   { id: 8, src: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=1200&h=675&fit=crop", title: "Rajasthan Heritage", category: "Destinations", location: "Rajasthan, India" },
   { id: 9, src: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=675&fit=crop", title: "Taj Mahal Sunrise", category: "Destinations", location: "Agra, India" },
-  { id: 10, src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&h=675&fit=crop", title: "Bali Temples", category: "Destinations", location: "Bali, Indonesia" },
+  { id: 10, src: "https://images.unsplash.com/photo-1573790387438-4da905039392?w=1200&h=675&fit=crop", title: "Bali Temples", category: "Destinations", location: "Bali, Indonesia" },
   { id: 23, src: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&h=675&fit=crop", title: "Ladakh Mountains", category: "Destinations", location: "Ladakh, India" },
   { id: 24, src: "https://images.unsplash.com/photo-1590123575668-53235cfe28ef?w=1200&h=675&fit=crop", title: "Goa Beaches", category: "Destinations", location: "Goa, India" },
   { id: 25, src: "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=1200&h=675&fit=crop", title: "Singapore Skyline", category: "Destinations", location: "Singapore" },
-  { id: 26, src: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&h=675&fit=crop", title: "Thailand Temples", category: "Destinations", location: "Thailand" },
+  { id: 26, src: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&h=675&fit=crop", title: "Thailand Temples", category: "Destinations", location: "Thailand" },
   { id: 27, src: "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=1200&h=675&fit=crop", title: "Himachal Valley", category: "Destinations", location: "Himachal Pradesh" },
   { id: 28, src: "https://images.unsplash.com/photo-1573790387438-4da905039392?w=1200&h=675&fit=crop", title: "Andaman Waters", category: "Destinations", location: "Andaman Islands" },
   // Events
@@ -53,12 +53,12 @@ const galleryImages: GalleryImage[] = [
   { id: 31, src: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&h=675&fit=crop", title: "Sunrise Houseboat", category: "Experiences", location: "Kerala, India" },
   { id: 32, src: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1200&h=675&fit=crop", title: "Northern Lights", category: "Experiences", location: "Europe" },
   // Vehicles
-  { id: 33, src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=675&fit=crop", title: "Toyota Innova Crysta", category: "Vehicles", location: "Fleet" },
-  { id: 34, src: "https://images.unsplash.com/photo-1625231334168-efdb040d09cd?w=1200&h=675&fit=crop", title: "Toyota Fortuner", category: "Vehicles", location: "Fleet" },
-  { id: 35, src: "https://images.unsplash.com/photo-1606220838315-056192d5e927?w=1200&h=675&fit=crop", title: "Mahindra XUV700", category: "Vehicles", location: "Fleet" },
-  { id: 36, src: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=1200&h=675&fit=crop", title: "Swift Dzire", category: "Vehicles", location: "Fleet" },
+  { id: 33, src: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200&h=675&fit=crop", title: "Toyota Innova Crysta", category: "Vehicles", location: "Fleet" },
+  { id: 34, src: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200&h=675&fit=crop", title: "Toyota Fortuner", category: "Vehicles", location: "Fleet" },
+  { id: 35, src: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&h=675&fit=crop", title: "Mahindra XUV700", category: "Vehicles", location: "Fleet" },
+  { id: 36, src: "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=1200&h=675&fit=crop", title: "Swift Dzire", category: "Vehicles", location: "Fleet" },
   { id: 37, src: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?w=1200&h=675&fit=crop", title: "Tempo Traveller", category: "Vehicles", location: "Fleet" },
-  { id: 38, src: "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=1200&h=675&fit=crop", title: "Luxury Coach", category: "Vehicles", location: "Fleet" },
+  { id: 38, src: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=675&fit=crop", title: "Luxury Coach", category: "Vehicles", location: "Fleet" },
 ];
 
 const categories = ["All", "Office & Team", "Destinations", "Events", "Group Tours", "Experiences", "Vehicles"];
