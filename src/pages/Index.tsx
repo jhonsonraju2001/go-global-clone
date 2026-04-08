@@ -23,7 +23,7 @@ import {
 const Index = () => {
   return (
     <PageTransition>
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-14 md:pb-0">
         <Header />
         
         <main>
