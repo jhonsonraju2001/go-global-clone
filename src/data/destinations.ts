@@ -103,6 +103,34 @@ export const worldDestinations: Destination[] = [
     description: "Reef, outback & coastal wonders",
     image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1200&h=675&fit=crop",
     link: "/destinations/australia"
+  },
+  {
+    id: "maldives",
+    name: "Maldives",
+    description: "Overwater villas & tropical paradise",
+    image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1200&h=675&fit=crop",
+    link: "/destinations/maldives"
+  },
+  {
+    id: "sri-lanka",
+    name: "Sri Lanka",
+    description: "Ancient temples & pristine beaches",
+    image: "https://images.unsplash.com/photo-1586613835721-5c1a0da667d2?w=1200&h=675&fit=crop",
+    link: "/destinations/sri-lanka"
+  },
+  {
+    id: "nepal",
+    name: "Nepal",
+    description: "Himalayan peaks & ancient temples",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&h=675&fit=crop",
+    link: "/destinations/nepal"
+  },
+  {
+    id: "malaysia",
+    name: "Malaysia",
+    description: "Twin towers, islands & street food",
+    image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&h=675&fit=crop",
+    link: "/destinations/malaysia"
   }
 ];
 
@@ -458,6 +486,54 @@ export const internationalPackages: Package[] = [
     discount: 20,
     rating: 4.8,
     reviews: 178
+  },
+  {
+    id: "maldives-luxury",
+    name: "Maldives Luxury Escape",
+    location: "Maldives",
+    image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1200&h=675&fit=crop",
+    duration: "5D/4N",
+    originalPrice: 185000,
+    currentPrice: 148000,
+    discount: 20,
+    rating: 4.9,
+    reviews: 389
+  },
+  {
+    id: "sri-lanka-classic",
+    name: "Classic Sri Lanka Circuit",
+    location: "Sri Lanka",
+    image: "https://images.unsplash.com/photo-1586613835721-5c1a0da667d2?w=1200&h=675&fit=crop",
+    duration: "7D/6N",
+    originalPrice: 89000,
+    currentPrice: 71200,
+    discount: 20,
+    rating: 4.8,
+    reviews: 267
+  },
+  {
+    id: "nepal-classic",
+    name: "Classic Nepal Discovery",
+    location: "Nepal",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&h=675&fit=crop",
+    duration: "7D/6N",
+    originalPrice: 72000,
+    currentPrice: 57600,
+    discount: 20,
+    rating: 4.9,
+    reviews: 345
+  },
+  {
+    id: "malaysia-highlights",
+    name: "Best of Malaysia",
+    location: "Malaysia",
+    image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&h=675&fit=crop",
+    duration: "7D/6N",
+    originalPrice: 78000,
+    currentPrice: 62400,
+    discount: 20,
+    rating: 4.8,
+    reviews: 298
   }
 ];
 
