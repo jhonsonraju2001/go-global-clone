@@ -13,27 +13,6 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Top Bar */}
-      <div className="bg-foreground text-background py-1.5 text-sm">
-        <div className="container-custom flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-6">
-            <a href="tel:+919700650025" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">+91 9700650025</span>
-            </a>
-            <a href="mailto:info@alisonholidays.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Mail className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">info@alisonholidays.com</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-4 text-xs">
-            <a href="https://www.facebook.com/alisonholidays" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Facebook</a>
-            <a href="https://www.instagram.com/alisonholidays" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
-            <a href="https://wa.me/919700650025" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Whatsapp</a>
-            <a href="https://www.youtube.com/@alisonholidays" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Youtube</a>
-          </div>
-        </div>
-      </div>
 
       {/* Main Navigation */}
       <nav className="bg-background shadow-md">
