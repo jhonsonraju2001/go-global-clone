@@ -1212,6 +1212,9 @@ import { meghalayaData, andamanData, sikkimData, baliData, turkeyData, australia
 export { goaData, rajasthanData, hyderabadData, dubaiData, singaporeData, thailandData, europeData };
 export { meghalayaData, andamanData, sikkimData, baliData, turkeyData, australiaData, switzerlandData, franceData, japanData, vietnamData, bhutanData, usaData };
 
+import { maldivesData, sriLankaData, nepalData, malaysiaData } from "./newDestinations";
+export { maldivesData, sriLankaData, nepalData, malaysiaData };
+
 // Consolidated allDestinations export
 export const allDestinations: Record<string, DestinationData> = {
   kashmir: kashmirData,
@@ -1238,7 +1241,11 @@ export const allDestinations: Record<string, DestinationData> = {
   japan: japanData,
   vietnam: vietnamData,
   bhutan: bhutanData,
-  usa: usaData
+  usa: usaData,
+  maldives: maldivesData,
+  "sri-lanka": sriLankaData,
+  nepal: nepalData,
+  malaysia: malaysiaData
 };
 
 // India and International package summaries for search
@@ -1251,7 +1258,7 @@ export const indiaPackages = [kashmirData, keralaData, ladakhData, himachalData,
   }))
 );
 
-export const internationalPackages = [dubaiData, singaporeData, thailandData, europeData, baliData, turkeyData, australiaData, switzerlandData, franceData, japanData, vietnamData, bhutanData, usaData].flatMap(dest => 
+export const internationalPackages = [dubaiData, singaporeData, thailandData, europeData, baliData, turkeyData, australiaData, switzerlandData, franceData, japanData, vietnamData, bhutanData, usaData, maldivesData, sriLankaData, nepalData, malaysiaData].flatMap(dest => 
   dest.packages.map(pkg => ({
     ...pkg,
     destination: dest.name,
